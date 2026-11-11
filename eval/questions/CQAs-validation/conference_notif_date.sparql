@@ -1,0 +1,26 @@
+#question: What is the acceptance-notification date for each conference?
+# CQA: conference_notif_date
+
+# federation: UNION of complete alternative answers from each source
+
+SELECT DISTINCT ?s ?o
+WHERE {
+  {
+    # source: conference
+    SERVICE <http://192.168.100.44:3030/conference/sparql> {
+      ?s <http://conference#has_important_dates> ?conference_o2 .
+      ?conference_o2 a <http://conference#Important_dates>.
+      ?conference_o2 <http://conference#is_a_date_of_acceptance_announcement> ?o.
+    }
+  }
+  UNION
+  {
+    # source: confof
+    SERVICE <http://192.168.100.44:3030/confof/sparql> {
+      ?s a <http://confOf#Conference>.
+      ?s <http://confOf#hasAdministrativeEvent> ?confof_o2 .
+      ?confof_o2 a <http://confOf#Reviewing_results_event> .
+      ?confof_o2 <http://confOf#starts_on> ?o .
+    }
+  }
+}

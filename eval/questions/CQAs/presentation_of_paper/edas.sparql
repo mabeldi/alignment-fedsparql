@@ -1,0 +1,5 @@
+PREFIX :<http://edas#>
+
+SELECT distinct ?s ?o WHERE {  
+?s :relatedToPaper ?o .
+}

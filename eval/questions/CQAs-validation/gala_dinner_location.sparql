@@ -1,0 +1,33 @@
+#question: Where is each gala dinner held?
+# CQA: gala_dinner_location
+
+# federation: UNION of complete alternative answers from each source
+
+SELECT DISTINCT ?s ?o
+WHERE {
+  {
+    # source: confof
+    SERVICE <http://192.168.100.44:3030/confof/sparql> {
+      ?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://confOf#Banquet> .
+      ?s <http://confOf#location> ?o .
+    }
+  }
+  UNION
+  {
+    # source: edas
+    SERVICE <http://192.168.100.44:3030/edas/sparql> {
+      ?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://edas#ConferenceDinner> .
+      ?s <http://edas#hasLocation> ?edas_o2 .
+      ?edas_o2 <http://www.w3.org/2000/01/rdf-schema#label> ?o .
+    }
+  }
+  UNION
+  {
+    # source: ekaw
+    SERVICE <http://192.168.100.44:3030/ekaw/sparql> {
+      ?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ekaw#Conference_Banquet> .
+      ?s <http://ekaw#heldIn> ?ekaw_o2 .
+      ?ekaw_o2 <http://www.w3.org/2000/01/rdf-schema#label> ?o .
+    }
+  }
+}

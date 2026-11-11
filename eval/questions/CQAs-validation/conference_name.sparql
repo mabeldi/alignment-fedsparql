@@ -1,0 +1,43 @@
+#question: What is the name of each conference?
+# CQA: conference_name
+
+# federation: UNION of complete alternative answers from each source
+
+SELECT DISTINCT ?s ?o
+WHERE {
+  {
+    # source: cmt
+    SERVICE <http://192.168.100.44:3030/cmt/sparql> {
+      ?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://cmt#Conference> . ?s <http://cmt#name> ?o .
+    }
+  }
+  UNION
+  {
+    # source: conference
+    SERVICE <http://192.168.100.44:3030/conference/sparql> {
+      ?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://conference#Conference> . ?s <http://conference#has_a_name> ?o .
+    }
+  }
+  UNION
+  {
+    # source: confof
+    SERVICE <http://192.168.100.44:3030/confof/sparql> {
+      ?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://confOf#Conference> . ?s <http://confOf#has_title> ?o .
+    }
+  }
+  UNION
+  {
+    # source: edas
+    SERVICE <http://192.168.100.44:3030/edas/sparql> {
+      ?s <http://edas#hasName> ?o .
+    }
+  }
+  UNION
+  {
+    # source: ekaw
+    SERVICE <http://192.168.100.44:3030/ekaw/sparql> {
+      ?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ekaw#Conference> .
+      ?s <http://www.w3.org/2000/01/rdf-schema#label> ?o .
+    }
+  }
+}

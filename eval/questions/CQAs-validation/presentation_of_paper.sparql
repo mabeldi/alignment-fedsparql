@@ -1,0 +1,31 @@
+#question: Which paper is presented by each presentation?
+# CQA: presentation_of_paper
+
+# federation: UNION of complete alternative answers from each source
+
+SELECT DISTINCT ?s ?o
+WHERE {
+  {
+    # source: conference
+    SERVICE <http://192.168.100.44:3030/conference/sparql> {
+      ?s a <http://conference#Presentation>.
+      ?s <http://conference#has_an_abstract> ?conference_o2 .
+      ?o <http://conference#has_an_abstract> ?conference_o2 .
+      ?o a <http://conference#Written_contribution> .
+    }
+  }
+  UNION
+  {
+    # source: edas
+    SERVICE <http://192.168.100.44:3030/edas/sparql> {
+      ?s <http://edas#relatedToPaper> ?o .
+    }
+  }
+  UNION
+  {
+    # source: ekaw
+    SERVICE <http://192.168.100.44:3030/ekaw/sparql> {
+      ?s <http://ekaw#presentationOfPaper> ?o . ?o <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ekaw#Paper> .
+    }
+  }
+}

@@ -1,0 +1,209 @@
+{
+  "format_version": 1,
+  "question_folder": "Which_abstract_belongs_to_each_invited_talk",
+  "calculated_at": "2026-09-12T19:56:27.373981+00:00",
+  "selected_runs": [
+    1,
+    2,
+    3
+  ],
+  "policy": {
+    "answer_comparison": "distinct complete value tuples; best global column assignment",
+    "extra_columns": "ignored after assignment; duplicate projected rows removed",
+    "split_union_columns": "not coalesced",
+    "rdf_identity": "saved value strings; ignore type, datatype, and language; instance URIs <source>-instances#<id> merged by <id> (one thing held by several sources); answer_raw_uri keeps every URI distinct",
+    "source_comparison": "distinct SERVICE endpoint IRIs in query text, not coordinator or runtime contacts",
+    "failures": "execution errors score answer F1=0 and exact_match=0; a query that neither parses nor executes scores source F1=0",
+    "unreachable_endpoint": "never judged, so unscored; aggregate withheld until executed again",
+    "missing_or_stale_artifacts": "unscored; aggregate withheld until repaired"
+  },
+  "runs": [
+    {
+      "run": 1,
+      "status": "scored",
+      "execution_success": 1,
+      "query_sha256": "70fc6b0cf82318013db4ed13719d39eaaea022f9dfc2de429e3fd991a3264ecc",
+      "result_count": 42,
+      "source_selection": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": 1,
+        "endpoints": [
+          "http://192.168.100.45:3030/conference/sparql",
+          "http://192.168.100.45:3030/ekaw/sparql"
+        ],
+        "missing_endpoints": [],
+        "extra_endpoints": []
+      },
+      "answer": {
+        "true_positive": 21,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": 1,
+        "column_mapping": {
+          "abstract": "abstract",
+          "talk": "invited_talk"
+        },
+        "ignored_generated_columns": [],
+        "generated_unique_rows": 21,
+        "reference_unique_rows": 21
+      },
+      "answer_raw_uri": {
+        "true_positive": 42,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": 1,
+        "column_mapping": {
+          "abstract": "abstract",
+          "talk": "invited_talk"
+        },
+        "ignored_generated_columns": [],
+        "generated_unique_rows": 42,
+        "reference_unique_rows": 42
+      }
+    },
+    {
+      "run": 2,
+      "status": "scored",
+      "execution_success": 1,
+      "query_sha256": "dc1e3f5bb3bb7e72e84e95baa5ee27b5654f1fd2708b25658b5d3198611f0f73",
+      "result_count": 42,
+      "source_selection": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": 1,
+        "endpoints": [
+          "http://192.168.100.45:3030/conference/sparql",
+          "http://192.168.100.45:3030/ekaw/sparql"
+        ],
+        "missing_endpoints": [],
+        "extra_endpoints": []
+      },
+      "answer": {
+        "true_positive": 21,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": 1,
+        "column_mapping": {
+          "abstract": "abstract",
+          "talk": "invited_talk"
+        },
+        "ignored_generated_columns": [],
+        "generated_unique_rows": 21,
+        "reference_unique_rows": 21
+      },
+      "answer_raw_uri": {
+        "true_positive": 42,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": 1,
+        "column_mapping": {
+          "abstract": "abstract",
+          "talk": "invited_talk"
+        },
+        "ignored_generated_columns": [],
+        "generated_unique_rows": 42,
+        "reference_unique_rows": 42
+      }
+    },
+    {
+      "run": 3,
+      "status": "scored",
+      "execution_success": 1,
+      "query_sha256": "f234098de715541a7b3c5dbc79216902a885900b1348c33fdcd9f8145ec0183c",
+      "result_count": 42,
+      "source_selection": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": 1,
+        "endpoints": [
+          "http://192.168.100.45:3030/conference/sparql",
+          "http://192.168.100.45:3030/ekaw/sparql"
+        ],
+        "missing_endpoints": [],
+        "extra_endpoints": []
+      },
+      "answer": {
+        "true_positive": 21,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": 1,
+        "column_mapping": {
+          "abstract": "abstract",
+          "talk": "invited_talk"
+        },
+        "ignored_generated_columns": [],
+        "generated_unique_rows": 21,
+        "reference_unique_rows": 21
+      },
+      "answer_raw_uri": {
+        "true_positive": 42,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": 1,
+        "column_mapping": {
+          "abstract": "abstract",
+          "talk": "invited_talk"
+        },
+        "ignored_generated_columns": [],
+        "generated_unique_rows": 42,
+        "reference_unique_rows": 42
+      }
+    }
+  ],
+  "question": "Which abstract belongs to each invited talk?",
+  "reference": {
+    "folder": "C:\\Users\\beldi\\Desktop\\Generation_SPARQL\\sparrql-llm\\app\\agents\\evaluation\\results\\Which_abstract_belongs_to_each_invited_talk",
+    "query_sha256": "fd87cfcfb5bc694918b7bc8d3a5f28565362693374707b070a2d994d091c9832",
+    "result_count": 42,
+    "variables": [
+      "abstract",
+      "talk"
+    ],
+    "endpoints": [
+      "http://192.168.100.45:3030/conference/sparql",
+      "http://192.168.100.45:3030/ekaw/sparql"
+    ]
+  },
+  "status": "complete",
+  "aggregate": {
+    "run_count": 3,
+    "answer_precision_mean": 1.0,
+    "answer_recall_mean": 1.0,
+    "answer_f1_mean": 1.0,
+    "answer_f1_raw_uri_mean": 1.0,
+    "exact_match_accuracy": 1,
+    "source_selection_f1_mean": 1.0,
+    "execution_success_rate": 1
+  }
+}

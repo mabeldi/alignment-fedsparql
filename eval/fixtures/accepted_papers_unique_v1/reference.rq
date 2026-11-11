@@ -1,0 +1,9 @@
+SELECT DISTINCT ?paper WHERE {
+{ SERVICE <http://192.168.100.45:3030/cmt/sparql> { ?paper <http://cmt#hasDecision> ?decision . ?decision a <http://cmt#Acceptance> . } }
+UNION
+{ SERVICE <http://192.168.100.45:3030/conference/sparql> { ?paper a <http://conference#Accepted_contribution> . } }
+UNION
+{ SERVICE <http://192.168.100.45:3030/edas/sparql> { ?paper a <http://edas#AcceptedPaper> . } }
+UNION
+{ SERVICE <http://192.168.100.45:3030/ekaw/sparql> { ?paper a <http://ekaw#Accepted_Paper> . } }
+}

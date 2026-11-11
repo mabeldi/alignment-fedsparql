@@ -1,0 +1,5 @@
+PREFIX :<http://cmt#>
+
+SELECT distinct ?s ?o WHERE {  
+?o :siteURL ?s .
+ }

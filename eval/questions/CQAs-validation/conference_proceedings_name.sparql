@@ -1,0 +1,23 @@
+#question: What is the name of each conference proceedings volume?
+# CQA: conference_proceedings_name
+
+# federation: UNION of complete alternative answers from each source
+
+SELECT DISTINCT ?s ?o
+WHERE {
+  {
+    # source: conference
+    SERVICE <http://192.168.100.44:3030/conference/sparql> {
+      ?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://conference#Conference_proceedings> .
+      ?s <http://conference#has_a_name> ?o .
+    }
+  }
+  UNION
+  {
+    # source: ekaw
+    SERVICE <http://192.168.100.44:3030/ekaw/sparql> {
+      ?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ekaw#Conference_Proceedings> .
+      ?s <http://www.w3.org/2000/01/rdf-schema#label> ?o .
+    }
+  }
+}

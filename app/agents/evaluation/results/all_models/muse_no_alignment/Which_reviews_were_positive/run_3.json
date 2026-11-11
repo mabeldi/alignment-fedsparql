@@ -1,0 +1,367 @@
+{
+  "question": "Which reviews were positive?",
+  "run": 3,
+  "status": "generated",
+  "endpoint": "http://127.0.0.1:8999/query",
+  "parallel_requests": 1,
+  "server_diagnostics_note": "Server token counters and debug files are shared across requests; do not use them for per-run measurements during concurrent requests.",
+  "started_at": "2026-09-12T15:58:52.042629+00:00",
+  "http_status": 200,
+  "response": {
+    "question": "Which reviews were positive?",
+    "alignments_enabled": false,
+    "extracted": {
+      "classes": [
+        "Positive Review"
+      ],
+      "objectProperties": [],
+      "dataTypeProperties": [],
+      "literals": []
+    },
+    "matches": {
+      "Positive Review": [
+        {
+          "label": "Positive_Review",
+          "uri": "http://ekaw#Positive_Review",
+          "type": "Class",
+          "name": "Positive_Review",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Positive_Review",
+            "name": "Positive_Review",
+            "label": "Positive_Review",
+            "source": "ekaw"
+          },
+          "score": 0.9269239
+        },
+        {
+          "label": "ReviewQuestion",
+          "uri": "http://edas#ReviewQuestion",
+          "type": "Class",
+          "name": "ReviewQuestion",
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#ReviewQuestion",
+            "name": "ReviewQuestion",
+            "label": "ReviewQuestion",
+            "source": "edas"
+          },
+          "score": 0.7170558
+        }
+      ]
+    },
+    "context_filtered_matches": {
+      "Positive Review": [
+        {
+          "label": "Positive_Review",
+          "uri": "http://ekaw#Positive_Review",
+          "type": "Class",
+          "name": "Positive_Review",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Positive_Review",
+            "name": "Positive_Review",
+            "label": "Positive_Review",
+            "source": "ekaw"
+          },
+          "score": 0.9269239
+        },
+        {
+          "label": "ReviewQuestion",
+          "uri": "http://edas#ReviewQuestion",
+          "type": "Class",
+          "name": "ReviewQuestion",
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#ReviewQuestion",
+            "name": "ReviewQuestion",
+            "label": "ReviewQuestion",
+            "source": "edas"
+          },
+          "score": 0.7170558
+        }
+      ]
+    },
+    "context_removed_matches": {},
+    "top_sources": {
+      "ekaw": 0.9269239,
+      "edas": 0.7170558
+    },
+    "base_source": "ekaw",
+    "class_paths": [
+      {
+        "class": "http://ekaw#Positive_Review",
+        "source": "ekaw",
+        "outgoing": [
+          [
+            [
+              "http://ekaw#Positive_Review",
+              "http://ekaw#writtenBy",
+              "http://ekaw#Person"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Positive_Review",
+              "http://ekaw#updatedVersionOf",
+              "http://ekaw#Document"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Positive_Review",
+              "http://ekaw#hasUpdatedVersion",
+              "http://ekaw#Document"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Positive_Review",
+              "http://ekaw#reviewOfPaper",
+              "http://ekaw#Paper"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Positive_Review",
+              "http://ekaw#reviewWrittenBy",
+              "http://ekaw#Possible_Reviewer"
+            ]
+          ]
+        ],
+        "incoming": [
+          [
+            [
+              "http://ekaw#Document",
+              "http://ekaw#updatedVersionOf",
+              "http://ekaw#Positive_Review"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Person",
+              "http://ekaw#authorOf",
+              "http://ekaw#Positive_Review"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Document",
+              "http://ekaw#hasUpdatedVersion",
+              "http://ekaw#Positive_Review"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Accepted_Paper",
+              "http://ekaw#hasReview",
+              "http://ekaw#Positive_Review"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Paper",
+              "http://ekaw#hasReview",
+              "http://ekaw#Positive_Review"
+            ]
+          ]
+        ],
+        "values": []
+      },
+      {
+        "class": "http://edas#ReviewQuestion",
+        "source": "edas",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      }
+    ],
+    "summarize_class_paths": [
+      {
+        "label": "Positive_Review",
+        "class": "http://ekaw#Positive_Review",
+        "source": "ekaw",
+        "outgoing": [
+          "Positive_Review -[writtenBy]-> Person",
+          "Positive_Review -[updatedVersionOf]-> Document",
+          "Positive_Review -[hasUpdatedVersion]-> Document",
+          "Positive_Review -[reviewOfPaper]-> Paper",
+          "Positive_Review -[reviewWrittenBy]-> Possible_Reviewer"
+        ],
+        "incoming": [
+          "Document -[updatedVersionOf]-> Positive_Review",
+          "Person -[authorOf]-> Positive_Review",
+          "Document -[hasUpdatedVersion]-> Positive_Review",
+          "Accepted_Paper -[hasReview]-> Positive_Review",
+          "Paper -[hasReview]-> Positive_Review"
+        ],
+        "values": []
+      },
+      {
+        "label": "ReviewQuestion",
+        "class": "http://edas#ReviewQuestion",
+        "source": "edas",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "label": "Person",
+        "class": "http://ekaw#Person",
+        "source": "ekaw",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "label": "Paper",
+        "class": "http://ekaw#Paper",
+        "source": "ekaw",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "label": "Accepted_Paper",
+        "class": "http://ekaw#Accepted_Paper",
+        "source": "ekaw",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "label": "Document",
+        "class": "http://ekaw#Document",
+        "source": "ekaw",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "label": "Possible_Reviewer",
+        "class": "http://ekaw#Possible_Reviewer",
+        "source": "ekaw",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      }
+    ],
+    "summarize_contextual_class_paths": [
+      {
+        "class": "http://ekaw#Positive_Review",
+        "source": "ekaw",
+        "label": "Positive_Review",
+        "outgoing": [],
+        "incoming": [],
+        "values": [],
+        "answers_question": true
+      }
+    ],
+    "selected_class_paths": [
+      {
+        "class": "http://ekaw#Positive_Review",
+        "source": "ekaw",
+        "label": "Positive_Review",
+        "outgoing": [],
+        "incoming": [],
+        "values": [],
+        "answers_question": true,
+        "complete_answer_branch": true,
+        "source_complete_answer_branch": true
+      }
+    ],
+    "validated_class_paths": [
+      {
+        "class": "http://ekaw#Positive_Review",
+        "source": "ekaw",
+        "label": "Positive_Review",
+        "outgoing": [],
+        "incoming": [],
+        "values": [],
+        "answers_question": true,
+        "complete_answer_branch": true,
+        "source_complete_answer_branch": true
+      }
+    ],
+    "path_scores": [
+      {
+        "source": "ekaw",
+        "chain": "",
+        "full": 0.7592881972037085,
+        "classes": 0.7588534941352408,
+        "relations": 0.7588534941352408,
+        "total": 0.7590708456694747,
+        "complete": true,
+        "kept": true,
+        "reason": "at or above tier threshold"
+      }
+    ],
+    "source_scores": {
+      "ekaw": 0.7590708456694747
+    },
+    "provider_plan": [],
+    "cut_sources": [],
+    "alignment": [],
+    "query": "PREFIX ekaw: <http://ekaw#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nSELECT DISTINCT ?positive_review\nWHERE {\nSERVICE <http://192.168.100.45:3030/ekaw/sparql> { ?positive_review a ekaw:Positive_Review . }\n}",
+    "token_usage": {
+      "by_agent": [
+        {
+          "agent": "agent7_sparql_generator",
+          "provider": "vercel",
+          "model": "meta/muse-spark-1.3",
+          "calls": 1,
+          "prompt_tokens": 2436,
+          "completion_tokens": 1289,
+          "total_tokens": 3725,
+          "max_prompt_tokens": 2436,
+          "avg_prompt_tokens": 2436,
+          "calls_without_usage": 0
+        },
+        {
+          "agent": "agent6_path_filter",
+          "provider": "vercel",
+          "model": "meta/muse-spark-1.3",
+          "calls": 2,
+          "prompt_tokens": 2334,
+          "completion_tokens": 3169,
+          "total_tokens": 5503,
+          "max_prompt_tokens": 1237,
+          "avg_prompt_tokens": 1167,
+          "calls_without_usage": 0
+        },
+        {
+          "agent": "agent4_match_relevance",
+          "provider": "vercel",
+          "model": "meta/muse-spark-1.3",
+          "calls": 2,
+          "prompt_tokens": 1594,
+          "completion_tokens": 1950,
+          "total_tokens": 3544,
+          "max_prompt_tokens": 799,
+          "avg_prompt_tokens": 797,
+          "calls_without_usage": 0
+        },
+        {
+          "agent": "agent1_extractor",
+          "provider": "vercel",
+          "model": "meta/muse-spark-1.3",
+          "calls": 1,
+          "prompt_tokens": 1186,
+          "completion_tokens": 732,
+          "total_tokens": 1918,
+          "max_prompt_tokens": 1186,
+          "avg_prompt_tokens": 1186,
+          "calls_without_usage": 0
+        }
+      ],
+      "totals": {
+        "calls": 6,
+        "prompt_tokens": 7550,
+        "completion_tokens": 7140,
+        "total_tokens": 14690
+      }
+    }
+  },
+  "elapsed_seconds": 52.217,
+  "finished_at": "2026-09-12T15:59:44.260595+00:00"
+}

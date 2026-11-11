@@ -1,0 +1,4 @@
+# Global schema-alignment switch for the complete query-generation pipeline.
+# Restart FastAPI after changing this value.
+# Instance data and stored owl:sameAs links are unchanged in either mode.
+alignments_enabled: false

@@ -1,0 +1,9 @@
+#Which poster sessions are in the programme?
+
+PREFIX ekaw: <http://ekaw#>  
+SELECT DISTINCT?session WHERE {
+     
+    SERVICE <http://192.168.100.44:3030/ekaw/sparql> {
+          ?session a ekaw:Poster_Session ;
+    } 
+}

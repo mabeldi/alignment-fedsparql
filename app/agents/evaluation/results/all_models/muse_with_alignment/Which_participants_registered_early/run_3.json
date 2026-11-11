@@ -1,0 +1,2350 @@
+{
+  "question": "Which participants registered early?",
+  "run": 3,
+  "status": "generated",
+  "endpoint": "http://127.0.0.1:8999/query",
+  "parallel_requests": 1,
+  "server_diagnostics_note": "Server token counters and debug files are shared across requests; do not use them for per-run measurements during concurrent requests.",
+  "started_at": "2026-09-11T23:29:24.152151+00:00",
+  "http_status": 200,
+  "response": {
+    "question": "Which participants registered early?",
+    "alignments_enabled": true,
+    "extracted": {
+      "classes": [
+        "Early Registered Participant"
+      ],
+      "objectProperties": [],
+      "dataTypeProperties": [],
+      "literals": []
+    },
+    "matches": {
+      "Early Registered Participant": [
+        {
+          "label": "Early-Registered_Participant",
+          "uri": "http://ekaw#Early-Registered_Participant",
+          "type": "Class",
+          "name": "Early-Registered_Participant",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Early-Registered_Participant",
+            "name": "Early-Registered_Participant",
+            "label": "Early-Registered_Participant",
+            "source": "ekaw"
+          },
+          "score": 0.9252707
+        },
+        {
+          "label": "Late-Registered_Participant",
+          "uri": "http://ekaw#Late-Registered_Participant",
+          "type": "Class",
+          "name": "Late-Registered_Participant",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Late-Registered_Participant",
+            "name": "Late-Registered_Participant",
+            "label": "Late-Registered_Participant",
+            "source": "ekaw"
+          },
+          "score": 0.8414171
+        },
+        {
+          "label": "earlyRegistration",
+          "uri": "http://confOf#earlyRegistration",
+          "type": "DatatypeProperty",
+          "name": "earlyRegistration",
+          "payload": {
+            "type": "DatatypeProperty",
+            "name": "earlyRegistration",
+            "uri": "http://confOf#earlyRegistration",
+            "label": "earlyRegistration",
+            "domain": "Participant",
+            "range": "http://www.w3.org/2001/XMLSchema#boolean",
+            "domainUri": "http://confOf#Participant",
+            "rangeUri": "http://www.w3.org/2001/XMLSchema#boolean",
+            "domains": [
+              "Participant"
+            ],
+            "ranges": [
+              "http://www.w3.org/2001/XMLSchema#boolean"
+            ],
+            "domainUris": [
+              "http://confOf#Participant"
+            ],
+            "rangeUris": [
+              "http://www.w3.org/2001/XMLSchema#boolean"
+            ],
+            "source": "confof"
+          },
+          "score": 0.81853974,
+          "selected_ends": {
+            "domain": [
+              "http://confOf#Participant"
+            ],
+            "range": []
+          }
+        },
+        {
+          "label": "Participant",
+          "uri": "http://confOf#Participant",
+          "type": "Class",
+          "name": "Participant",
+          "payload": {
+            "type": "Class",
+            "uri": "http://confOf#Participant",
+            "name": "Participant",
+            "label": "Participant",
+            "source": "confof"
+          },
+          "score": 0.76385033
+        },
+        {
+          "label": "registrationDueOn",
+          "uri": "http://edas#registrationDueOn",
+          "type": "DatatypeProperty",
+          "name": "registrationDueOn",
+          "payload": {
+            "type": "DatatypeProperty",
+            "name": "registrationDueOn",
+            "uri": "http://edas#registrationDueOn",
+            "label": "registrationDueOn",
+            "domain": "Conference",
+            "range": "http://www.w3.org/2001/XMLSchema#dateTime",
+            "domainUri": "http://edas#Conference",
+            "rangeUri": "http://www.w3.org/2001/XMLSchema#dateTime",
+            "domains": [
+              "Conference"
+            ],
+            "ranges": [
+              "http://www.w3.org/2001/XMLSchema#dateTime"
+            ],
+            "domainUris": [
+              "http://edas#Conference"
+            ],
+            "rangeUris": [
+              "http://www.w3.org/2001/XMLSchema#dateTime"
+            ],
+            "source": "edas"
+          },
+          "score": 0.7526358
+        },
+        {
+          "label": "Early_paid_applicant",
+          "uri": "http://conference#Early_paid_applicant",
+          "type": "Class",
+          "name": "Early_paid_applicant",
+          "payload": {
+            "type": "Class",
+            "uri": "http://conference#Early_paid_applicant",
+            "name": "Early_paid_applicant",
+            "label": "Early_paid_applicant",
+            "source": "conference"
+          },
+          "score": 0.73971635
+        },
+        {
+          "label": "Attendee",
+          "uri": "http://edas#Attendee",
+          "type": "Class",
+          "name": "Attendee",
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#Attendee",
+            "name": "Attendee",
+            "label": "Attendee",
+            "source": "edas"
+          },
+          "score": 0.7234938
+        },
+        {
+          "label": "attendeeAt",
+          "uri": "http://edas#attendeeAt",
+          "type": "ObjectProperty",
+          "name": "attendeeAt",
+          "payload": {
+            "type": "ObjectProperty",
+            "name": "attendeeAt",
+            "uri": "http://edas#attendeeAt",
+            "label": "attendeeAt",
+            "domain": "Attendee",
+            "range": "ConferenceEvent",
+            "domainUri": "http://edas#Attendee",
+            "rangeUri": "http://edas#ConferenceEvent",
+            "domains": [
+              "Person"
+            ],
+            "ranges": [
+              "ConferenceEvent"
+            ],
+            "domainUris": [
+              "http://edas#Person"
+            ],
+            "rangeUris": [
+              "http://edas#ConferenceEvent"
+            ],
+            "source": "edas"
+          },
+          "score": 0.7168256,
+          "selected_ends": {
+            "domain": [
+              "http://edas#Attendee"
+            ],
+            "range": [
+              "http://edas#ConferenceEvent"
+            ]
+          }
+        },
+        {
+          "label": "Registeered_applicant",
+          "uri": "http://conference#Registeered_applicant",
+          "type": "Class",
+          "name": "Registeered_applicant",
+          "payload": {
+            "type": "Class",
+            "uri": "http://conference#Registeered_applicant",
+            "name": "Registeered_applicant",
+            "label": "Registeered_applicant",
+            "source": "conference"
+          },
+          "score": 0.7121986
+        },
+        {
+          "label": "Conference_Participant",
+          "uri": "http://ekaw#Conference_Participant",
+          "type": "Class",
+          "name": "Conference_Participant",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Conference_Participant",
+            "name": "Conference_Participant",
+            "label": "Conference_Participant",
+            "source": "ekaw"
+          },
+          "score": 0.7100165
+        },
+        {
+          "label": "Registration_of_participants_event",
+          "uri": "http://confOf#Registration_of_participants_event",
+          "type": "Class",
+          "name": "Registration_of_participants_event",
+          "payload": {
+            "type": "Class",
+            "uri": "http://confOf#Registration_of_participants_event",
+            "name": "Registration_of_participants_event",
+            "label": "Registration_of_participants_event",
+            "source": "confof"
+          },
+          "score": 0.7074518
+        },
+        {
+          "label": "Conference_participant",
+          "uri": "http://conference#Conference_participant",
+          "type": "Class",
+          "name": "Conference_participant",
+          "payload": {
+            "type": "Class",
+            "uri": "http://conference#Conference_participant",
+            "name": "Conference_participant",
+            "label": "Conference_participant",
+            "source": "conference"
+          },
+          "score": 0.7073813
+        }
+      ]
+    },
+    "context_filtered_matches": {
+      "Early Registered Participant": [
+        {
+          "label": "Early-Registered_Participant",
+          "uri": "http://ekaw#Early-Registered_Participant",
+          "type": "Class",
+          "name": "Early-Registered_Participant",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Early-Registered_Participant",
+            "name": "Early-Registered_Participant",
+            "label": "Early-Registered_Participant",
+            "source": "ekaw"
+          },
+          "score": 0.9252707
+        },
+        {
+          "label": "earlyRegistration",
+          "uri": "http://confOf#earlyRegistration",
+          "type": "DatatypeProperty",
+          "name": "earlyRegistration",
+          "payload": {
+            "type": "DatatypeProperty",
+            "name": "earlyRegistration",
+            "uri": "http://confOf#earlyRegistration",
+            "label": "earlyRegistration",
+            "domain": "Participant",
+            "range": "http://www.w3.org/2001/XMLSchema#boolean",
+            "domainUri": "http://confOf#Participant",
+            "rangeUri": "http://www.w3.org/2001/XMLSchema#boolean",
+            "domains": [
+              "Participant"
+            ],
+            "ranges": [
+              "http://www.w3.org/2001/XMLSchema#boolean"
+            ],
+            "domainUris": [
+              "http://confOf#Participant"
+            ],
+            "rangeUris": [
+              "http://www.w3.org/2001/XMLSchema#boolean"
+            ],
+            "source": "confof"
+          },
+          "score": 0.81853974,
+          "selected_ends": {
+            "domain": [
+              "http://confOf#Participant"
+            ],
+            "range": []
+          }
+        },
+        {
+          "label": "Participant",
+          "uri": "http://confOf#Participant",
+          "type": "Class",
+          "name": "Participant",
+          "payload": {
+            "type": "Class",
+            "uri": "http://confOf#Participant",
+            "name": "Participant",
+            "label": "Participant",
+            "source": "confof"
+          },
+          "score": 0.76385033
+        },
+        {
+          "label": "Attendee",
+          "uri": "http://edas#Attendee",
+          "type": "Class",
+          "name": "Attendee",
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#Attendee",
+            "name": "Attendee",
+            "label": "Attendee",
+            "source": "edas"
+          },
+          "score": 0.7234938
+        },
+        {
+          "label": "attendeeAt",
+          "uri": "http://edas#attendeeAt",
+          "type": "ObjectProperty",
+          "name": "attendeeAt",
+          "payload": {
+            "type": "ObjectProperty",
+            "name": "attendeeAt",
+            "uri": "http://edas#attendeeAt",
+            "label": "attendeeAt",
+            "domain": "Attendee",
+            "range": "ConferenceEvent",
+            "domainUri": "http://edas#Attendee",
+            "rangeUri": "http://edas#ConferenceEvent",
+            "domains": [
+              "Person"
+            ],
+            "ranges": [
+              "ConferenceEvent"
+            ],
+            "domainUris": [
+              "http://edas#Person"
+            ],
+            "rangeUris": [
+              "http://edas#ConferenceEvent"
+            ],
+            "source": "edas"
+          },
+          "score": 0.7168256,
+          "selected_ends": {
+            "domain": [
+              "http://edas#Attendee"
+            ],
+            "range": [
+              "http://edas#ConferenceEvent"
+            ]
+          }
+        },
+        {
+          "label": "Early_paid_applicant",
+          "uri": "http://conference#Early_paid_applicant",
+          "type": "Class",
+          "name": "Early_paid_applicant",
+          "payload": {
+            "type": "Class",
+            "uri": "http://conference#Early_paid_applicant",
+            "name": "Early_paid_applicant",
+            "label": "Early_paid_applicant",
+            "source": "conference"
+          },
+          "score": 0.73971635
+        },
+        {
+          "label": "Conference_participant",
+          "uri": "http://conference#Conference_participant",
+          "type": "Class",
+          "name": "Conference_participant",
+          "payload": {
+            "type": "Class",
+            "uri": "http://conference#Conference_participant",
+            "name": "Conference_participant",
+            "label": "Conference_participant",
+            "source": "conference"
+          },
+          "score": 0.7073813
+        },
+        {
+          "label": "ConferenceEvent",
+          "uri": "http://edas#ConferenceEvent",
+          "type": "Class",
+          "score": 0.0,
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#ConferenceEvent",
+            "label": "ConferenceEvent",
+            "source": "edas"
+          },
+          "derived_from": "http://edas#attendeeAt"
+        },
+        {
+          "label": "Conference_Participant",
+          "uri": "http://ekaw#Conference_Participant",
+          "type": "Class",
+          "score": 0.0,
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Conference_Participant",
+            "label": "Conference_Participant",
+            "source": "ekaw"
+          },
+          "expanded_from": "http://confOf#Participant",
+          "via_alignment": "confof:Participant = ekaw:Conference_Participant"
+        },
+        {
+          "label": "Event",
+          "uri": "http://confOf#Event",
+          "type": "Class",
+          "score": 0.0,
+          "payload": {
+            "type": "Class",
+            "uri": "http://confOf#Event",
+            "label": "Event",
+            "source": "confof"
+          },
+          "expanded_from": "http://edas#ConferenceEvent",
+          "via_alignment": "confof:Event = edas:ConferenceEvent"
+        },
+        {
+          "label": "Conference_part",
+          "uri": "http://conference#Conference_part",
+          "type": "Class",
+          "score": 0.0,
+          "payload": {
+            "type": "Class",
+            "uri": "http://conference#Conference_part",
+            "label": "Conference_part",
+            "source": "conference"
+          },
+          "expanded_from": "http://edas#ConferenceEvent",
+          "via_alignment": "conference:Conference_part = edas:ConferenceEvent"
+        },
+        {
+          "label": "Event",
+          "uri": "http://ekaw#Event",
+          "type": "Class",
+          "score": 0.0,
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Event",
+            "label": "Event",
+            "source": "ekaw"
+          },
+          "expanded_from": "http://edas#ConferenceEvent",
+          "via_alignment": "edas:ConferenceEvent = ekaw:Event"
+        },
+        {
+          "label": "Scientific_Event",
+          "uri": "http://ekaw#Scientific_Event",
+          "type": "Class",
+          "score": 0.0,
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Scientific_Event",
+            "label": "Scientific_Event",
+            "source": "ekaw"
+          },
+          "expanded_from": "http://edas#ConferenceEvent",
+          "via_alignment": "edas:ConferenceEvent = ekaw:Scientific_Event OR ekaw:Social_Event"
+        },
+        {
+          "label": "Social_Event",
+          "uri": "http://ekaw#Social_Event",
+          "type": "Class",
+          "score": 0.0,
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Social_Event",
+            "label": "Social_Event",
+            "source": "ekaw"
+          },
+          "expanded_from": "http://edas#ConferenceEvent",
+          "via_alignment": "edas:ConferenceEvent = ekaw:Scientific_Event OR ekaw:Social_Event"
+        }
+      ]
+    },
+    "context_removed_matches": {
+      "Early Registered Participant": [
+        {
+          "label": "Late-Registered_Participant",
+          "uri": "http://ekaw#Late-Registered_Participant",
+          "type": "Class",
+          "name": "Late-Registered_Participant",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Late-Registered_Participant",
+            "name": "Late-Registered_Participant",
+            "label": "Late-Registered_Participant",
+            "source": "ekaw"
+          },
+          "score": 0.8414171
+        },
+        {
+          "label": "registrationDueOn",
+          "uri": "http://edas#registrationDueOn",
+          "type": "DatatypeProperty",
+          "name": "registrationDueOn",
+          "payload": {
+            "type": "DatatypeProperty",
+            "name": "registrationDueOn",
+            "uri": "http://edas#registrationDueOn",
+            "label": "registrationDueOn",
+            "domain": "Conference",
+            "range": "http://www.w3.org/2001/XMLSchema#dateTime",
+            "domainUri": "http://edas#Conference",
+            "rangeUri": "http://www.w3.org/2001/XMLSchema#dateTime",
+            "domains": [
+              "Conference"
+            ],
+            "ranges": [
+              "http://www.w3.org/2001/XMLSchema#dateTime"
+            ],
+            "domainUris": [
+              "http://edas#Conference"
+            ],
+            "rangeUris": [
+              "http://www.w3.org/2001/XMLSchema#dateTime"
+            ],
+            "source": "edas"
+          },
+          "score": 0.7526358
+        },
+        {
+          "label": "Registeered_applicant",
+          "uri": "http://conference#Registeered_applicant",
+          "type": "Class",
+          "name": "Registeered_applicant",
+          "payload": {
+            "type": "Class",
+            "uri": "http://conference#Registeered_applicant",
+            "name": "Registeered_applicant",
+            "label": "Registeered_applicant",
+            "source": "conference"
+          },
+          "score": 0.7121986
+        },
+        {
+          "label": "Conference_Participant",
+          "uri": "http://ekaw#Conference_Participant",
+          "type": "Class",
+          "name": "Conference_Participant",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Conference_Participant",
+            "name": "Conference_Participant",
+            "label": "Conference_Participant",
+            "source": "ekaw"
+          },
+          "score": 0.7100165
+        },
+        {
+          "label": "Registration_of_participants_event",
+          "uri": "http://confOf#Registration_of_participants_event",
+          "type": "Class",
+          "name": "Registration_of_participants_event",
+          "payload": {
+            "type": "Class",
+            "uri": "http://confOf#Registration_of_participants_event",
+            "name": "Registration_of_participants_event",
+            "label": "Registration_of_participants_event",
+            "source": "confof"
+          },
+          "score": 0.7074518
+        }
+      ]
+    },
+    "top_sources": {
+      "ekaw": 0.9252707,
+      "confof": 0.76385033,
+      "edas": 0.7234938,
+      "conference": 0.73971635
+    },
+    "base_source": "ekaw",
+    "class_paths": [
+      {
+        "class": "http://ekaw#Early-Registered_Participant",
+        "source": "ekaw",
+        "outgoing": [
+          [
+            [
+              "http://ekaw#Early-Registered_Participant",
+              "http://ekaw#authorOf",
+              "http://ekaw#Document"
+            ],
+            [
+              "http://ekaw#Document",
+              "http://ekaw#writtenBy",
+              "http://ekaw#Conference_Participant"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Early-Registered_Participant",
+              "http://ekaw#authorOf",
+              "http://ekaw#Document"
+            ],
+            [
+              "http://ekaw#Conference_Participant",
+              "http://ekaw#authorOf",
+              "http://ekaw#Document"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Early-Registered_Participant",
+              "http://ekaw#organises",
+              "http://ekaw#Event"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Early-Registered_Participant",
+              "http://ekaw#organises",
+              "http://ekaw#Scientific_Event"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Early-Registered_Participant",
+              "http://ekaw#organises",
+              "http://ekaw#Social_Event"
+            ]
+          ]
+        ],
+        "incoming": [
+          [
+            [
+              "http://ekaw#Document",
+              "http://ekaw#writtenBy",
+              "http://ekaw#Early-Registered_Participant"
+            ],
+            [
+              "http://ekaw#Document",
+              "http://ekaw#writtenBy",
+              "http://ekaw#Conference_Participant"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Document",
+              "http://ekaw#writtenBy",
+              "http://ekaw#Early-Registered_Participant"
+            ],
+            [
+              "http://ekaw#Conference_Participant",
+              "http://ekaw#authorOf",
+              "http://ekaw#Document"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Camera_Ready_Paper",
+              "http://ekaw#writtenBy",
+              "http://ekaw#Early-Registered_Participant"
+            ],
+            [
+              "http://ekaw#Camera_Ready_Paper",
+              "http://ekaw#writtenBy",
+              "http://ekaw#Conference_Participant"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Camera_Ready_Paper",
+              "http://ekaw#writtenBy",
+              "http://ekaw#Early-Registered_Participant"
+            ],
+            [
+              "http://ekaw#Conference_Participant",
+              "http://ekaw#authorOf",
+              "http://ekaw#Camera_Ready_Paper"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Event",
+              "http://ekaw#organisedBy",
+              "http://ekaw#Early-Registered_Participant"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Scientific_Event",
+              "http://ekaw#organisedBy",
+              "http://ekaw#Early-Registered_Participant"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Social_Event",
+              "http://ekaw#organisedBy",
+              "http://ekaw#Early-Registered_Participant"
+            ]
+          ]
+        ],
+        "values": []
+      },
+      {
+        "class": "http://ekaw#Conference_Participant",
+        "source": "ekaw",
+        "outgoing": [
+          [
+            [
+              "http://ekaw#Conference_Participant",
+              "http://ekaw#authorOf",
+              "http://ekaw#Document"
+            ],
+            [
+              "http://ekaw#Early-Registered_Participant",
+              "http://ekaw#authorOf",
+              "http://ekaw#Document"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Conference_Participant",
+              "http://ekaw#authorOf",
+              "http://ekaw#Document"
+            ],
+            [
+              "http://ekaw#Document",
+              "http://ekaw#writtenBy",
+              "http://ekaw#Early-Registered_Participant"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Conference_Participant",
+              "http://ekaw#authorOf",
+              "http://ekaw#Camera_Ready_Paper"
+            ],
+            [
+              "http://ekaw#Camera_Ready_Paper",
+              "http://ekaw#writtenBy",
+              "http://ekaw#Early-Registered_Participant"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Conference_Participant",
+              "http://ekaw#organises",
+              "http://ekaw#Event"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Conference_Participant",
+              "http://ekaw#organises",
+              "http://ekaw#Scientific_Event"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Conference_Participant",
+              "http://ekaw#organises",
+              "http://ekaw#Social_Event"
+            ]
+          ]
+        ],
+        "incoming": [
+          [
+            [
+              "http://ekaw#Document",
+              "http://ekaw#writtenBy",
+              "http://ekaw#Conference_Participant"
+            ],
+            [
+              "http://ekaw#Early-Registered_Participant",
+              "http://ekaw#authorOf",
+              "http://ekaw#Document"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Document",
+              "http://ekaw#writtenBy",
+              "http://ekaw#Conference_Participant"
+            ],
+            [
+              "http://ekaw#Document",
+              "http://ekaw#writtenBy",
+              "http://ekaw#Early-Registered_Participant"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Camera_Ready_Paper",
+              "http://ekaw#writtenBy",
+              "http://ekaw#Conference_Participant"
+            ],
+            [
+              "http://ekaw#Camera_Ready_Paper",
+              "http://ekaw#writtenBy",
+              "http://ekaw#Early-Registered_Participant"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Event",
+              "http://ekaw#organisedBy",
+              "http://ekaw#Conference_Participant"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Scientific_Event",
+              "http://ekaw#organisedBy",
+              "http://ekaw#Conference_Participant"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Social_Event",
+              "http://ekaw#organisedBy",
+              "http://ekaw#Conference_Participant"
+            ]
+          ]
+        ],
+        "values": []
+      },
+      {
+        "class": "http://ekaw#Event",
+        "source": "ekaw",
+        "outgoing": [
+          [
+            [
+              "http://ekaw#Event",
+              "http://ekaw#organisedBy",
+              "http://ekaw#Early-Registered_Participant"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Event",
+              "http://ekaw#organisedBy",
+              "http://ekaw#Conference_Participant"
+            ]
+          ]
+        ],
+        "incoming": [
+          [
+            [
+              "http://ekaw#Early-Registered_Participant",
+              "http://ekaw#organises",
+              "http://ekaw#Event"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Conference_Participant",
+              "http://ekaw#organises",
+              "http://ekaw#Event"
+            ]
+          ]
+        ],
+        "values": []
+      },
+      {
+        "class": "http://ekaw#Scientific_Event",
+        "source": "ekaw",
+        "outgoing": [
+          [
+            [
+              "http://ekaw#Scientific_Event",
+              "http://ekaw#organisedBy",
+              "http://ekaw#Early-Registered_Participant"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Scientific_Event",
+              "http://ekaw#organisedBy",
+              "http://ekaw#Conference_Participant"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Scientific_Event",
+              "http://ekaw#partOfEvent",
+              "http://ekaw#Social_Event"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Scientific_Event",
+              "http://ekaw#hasEvent",
+              "http://ekaw#Social_Event"
+            ]
+          ]
+        ],
+        "incoming": [
+          [
+            [
+              "http://ekaw#Early-Registered_Participant",
+              "http://ekaw#organises",
+              "http://ekaw#Scientific_Event"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Conference_Participant",
+              "http://ekaw#organises",
+              "http://ekaw#Scientific_Event"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Social_Event",
+              "http://ekaw#partOfEvent",
+              "http://ekaw#Scientific_Event"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Social_Event",
+              "http://ekaw#hasEvent",
+              "http://ekaw#Scientific_Event"
+            ]
+          ]
+        ],
+        "values": []
+      },
+      {
+        "class": "http://ekaw#Social_Event",
+        "source": "ekaw",
+        "outgoing": [
+          [
+            [
+              "http://ekaw#Social_Event",
+              "http://ekaw#organisedBy",
+              "http://ekaw#Early-Registered_Participant"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Social_Event",
+              "http://ekaw#organisedBy",
+              "http://ekaw#Conference_Participant"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Social_Event",
+              "http://ekaw#partOfEvent",
+              "http://ekaw#Scientific_Event"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Social_Event",
+              "http://ekaw#hasEvent",
+              "http://ekaw#Scientific_Event"
+            ]
+          ]
+        ],
+        "incoming": [
+          [
+            [
+              "http://ekaw#Early-Registered_Participant",
+              "http://ekaw#organises",
+              "http://ekaw#Social_Event"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Conference_Participant",
+              "http://ekaw#organises",
+              "http://ekaw#Social_Event"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Scientific_Event",
+              "http://ekaw#partOfEvent",
+              "http://ekaw#Social_Event"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Scientific_Event",
+              "http://ekaw#hasEvent",
+              "http://ekaw#Social_Event"
+            ]
+          ]
+        ],
+        "values": []
+      },
+      {
+        "class": "http://confOf#Participant",
+        "source": "confof",
+        "outgoing": [
+          [
+            [
+              "http://confOf#Participant",
+              "http://confOf#employedBy",
+              "http://confOf#Organization"
+            ]
+          ],
+          [
+            [
+              "http://confOf#Participant",
+              "http://confOf#hasCity",
+              "http://confOf#City"
+            ]
+          ],
+          [
+            [
+              "http://confOf#Participant",
+              "http://confOf#hasCountry",
+              "http://confOf#Country"
+            ]
+          ]
+        ],
+        "incoming": [],
+        "values": [
+          [
+            "http://confOf#Participant",
+            "http://confOf#earlyRegistration",
+            "http://www.w3.org/2001/XMLSchema#boolean"
+          ],
+          [
+            "http://confOf#Participant",
+            "http://confOf#hasStreet",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Participant",
+            "http://confOf#hasEmail",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Participant",
+            "http://confOf#hasPostalCode",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Participant",
+            "http://confOf#hasHomePage",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Participant",
+            "http://confOf#hasSurname",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Participant",
+            "http://confOf#hasFax",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Participant",
+            "http://confOf#hasPhone",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Participant",
+            "http://confOf#hasFirstName",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "class": "http://confOf#Event",
+        "source": "confof",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://confOf#Event",
+            "http://confOf#starts_on",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Event",
+            "http://confOf#ends_on",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "class": "http://edas#Attendee",
+        "source": "edas",
+        "outgoing": [
+          [
+            [
+              "http://edas#Attendee",
+              "http://edas#attendeeAt",
+              "http://edas#ConferenceEvent"
+            ]
+          ]
+        ],
+        "incoming": [
+          [
+            [
+              "http://edas#ConferenceEvent",
+              "http://edas#hasAttendee",
+              "http://edas#Attendee"
+            ]
+          ]
+        ],
+        "values": [
+          [
+            "http://edas#Attendee",
+            "http://edas#hasBiography",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://edas#Attendee",
+            "http://edas#hasLastName",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://edas#Attendee",
+            "http://edas#hasEmail",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://edas#Attendee",
+            "http://edas#hasFirstName",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "class": "http://edas#ConferenceEvent",
+        "source": "edas",
+        "outgoing": [
+          [
+            [
+              "http://edas#ConferenceEvent",
+              "http://edas#hasAttendee",
+              "http://edas#Attendee"
+            ]
+          ]
+        ],
+        "incoming": [
+          [
+            [
+              "http://edas#Attendee",
+              "http://edas#attendeeAt",
+              "http://edas#ConferenceEvent"
+            ]
+          ]
+        ],
+        "values": [
+          [
+            "http://edas#ConferenceEvent",
+            "http://edas#hasStartDateTime",
+            "http://www.w3.org/2001/XMLSchema#dateTime"
+          ],
+          [
+            "http://edas#ConferenceEvent",
+            "http://edas#hasEndDateTime",
+            "http://www.w3.org/2001/XMLSchema#dateTime"
+          ]
+        ]
+      },
+      {
+        "class": "http://conference#Early_paid_applicant",
+        "source": "conference",
+        "outgoing": [
+          [
+            [
+              "http://conference#Early_paid_applicant",
+              "http://conference#contributes",
+              "http://conference#Conference_document"
+            ],
+            [
+              "http://conference#Conference_document",
+              "http://conference#has_authors",
+              "http://conference#Conference_participant"
+            ]
+          ],
+          [
+            [
+              "http://conference#Early_paid_applicant",
+              "http://conference#contributes",
+              "http://conference#Conference_document"
+            ],
+            [
+              "http://conference#Conference_participant",
+              "http://conference#contributes",
+              "http://conference#Conference_document"
+            ]
+          ]
+        ],
+        "incoming": [
+          [
+            [
+              "http://conference#Conference_document",
+              "http://conference#has_authors",
+              "http://conference#Early_paid_applicant"
+            ],
+            [
+              "http://conference#Conference_document",
+              "http://conference#has_authors",
+              "http://conference#Conference_participant"
+            ]
+          ],
+          [
+            [
+              "http://conference#Conference_document",
+              "http://conference#has_authors",
+              "http://conference#Early_paid_applicant"
+            ],
+            [
+              "http://conference#Conference_participant",
+              "http://conference#contributes",
+              "http://conference#Conference_document"
+            ]
+          ]
+        ],
+        "values": [
+          [
+            "http://conference#Early_paid_applicant",
+            "http://conference#has_gender",
+            null
+          ],
+          [
+            "http://conference#Early_paid_applicant",
+            "http://conference#has_an_email",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://conference#Early_paid_applicant",
+            "http://conference#has_the_first_name",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://conference#Early_paid_applicant",
+            "http://conference#has_the_last_name",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "class": "http://conference#Conference_participant",
+        "source": "conference",
+        "outgoing": [
+          [
+            [
+              "http://conference#Conference_participant",
+              "http://conference#contributes",
+              "http://conference#Conference_document"
+            ],
+            [
+              "http://conference#Early_paid_applicant",
+              "http://conference#contributes",
+              "http://conference#Conference_document"
+            ]
+          ],
+          [
+            [
+              "http://conference#Conference_participant",
+              "http://conference#contributes",
+              "http://conference#Conference_document"
+            ],
+            [
+              "http://conference#Conference_document",
+              "http://conference#has_authors",
+              "http://conference#Early_paid_applicant"
+            ]
+          ]
+        ],
+        "incoming": [
+          [
+            [
+              "http://conference#Conference_document",
+              "http://conference#has_authors",
+              "http://conference#Conference_participant"
+            ],
+            [
+              "http://conference#Early_paid_applicant",
+              "http://conference#contributes",
+              "http://conference#Conference_document"
+            ]
+          ],
+          [
+            [
+              "http://conference#Conference_document",
+              "http://conference#has_authors",
+              "http://conference#Conference_participant"
+            ],
+            [
+              "http://conference#Conference_document",
+              "http://conference#has_authors",
+              "http://conference#Early_paid_applicant"
+            ]
+          ]
+        ],
+        "values": [
+          [
+            "http://conference#Conference_participant",
+            "http://conference#has_gender",
+            null
+          ],
+          [
+            "http://conference#Conference_participant",
+            "http://conference#has_an_email",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://conference#Conference_participant",
+            "http://conference#has_the_first_name",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://conference#Conference_participant",
+            "http://conference#has_the_last_name",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "class": "http://conference#Conference_part",
+        "source": "conference",
+        "outgoing": [
+          [
+            [
+              "http://conference#Conference_part",
+              "http://conference#is_part_of_conference_volumes",
+              "http://conference#Conference_volume"
+            ]
+          ],
+          [
+            [
+              "http://conference#Conference_part",
+              "http://conference#has_a_track-workshop-tutorial_topic",
+              "http://conference#Topic"
+            ]
+          ],
+          [
+            [
+              "http://conference#Conference_part",
+              "http://conference#has_a_track-workshop-tutorial_chair",
+              "http://conference#Track-workshop_chair"
+            ]
+          ]
+        ],
+        "incoming": [
+          [
+            [
+              "http://conference#Track-workshop_chair",
+              "http://conference#was_a_track-workshop_chair_of",
+              "http://conference#Conference_part"
+            ]
+          ],
+          [
+            [
+              "http://conference#Conference_volume",
+              "http://conference#has_parts",
+              "http://conference#Conference_part"
+            ]
+          ],
+          [
+            [
+              "http://conference#Topic",
+              "http://conference#is_a_topis_of_conference_parts",
+              "http://conference#Conference_part"
+            ]
+          ]
+        ],
+        "values": [
+          [
+            "http://conference#Conference_part",
+            "http://conference#has_a_name",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      }
+    ],
+    "summarize_class_paths": [
+      {
+        "label": "Early-Registered_Participant",
+        "class": "http://ekaw#Early-Registered_Participant",
+        "source": "ekaw",
+        "outgoing": [
+          "Early-Registered_Participant -[authorOf]-> Document",
+          "Early-Registered_Participant -[authorOf]-> Document -[writtenBy]-> Conference_Participant",
+          "Early-Registered_Participant -[authorOf]-> Document <-[authorOf]- Conference_Participant",
+          "Early-Registered_Participant -[organises]-> Event",
+          "Early-Registered_Participant -[organises]-> Scientific_Event",
+          "Early-Registered_Participant -[organises]-> Social_Event"
+        ],
+        "incoming": [
+          "Document -[writtenBy]-> Early-Registered_Participant",
+          "Camera_Ready_Paper -[writtenBy]-> Early-Registered_Participant",
+          "Early-Registered_Participant <-[writtenBy]- Document -[writtenBy]-> Conference_Participant",
+          "Early-Registered_Participant <-[writtenBy]- Document <-[authorOf]- Conference_Participant",
+          "Early-Registered_Participant <-[writtenBy]- Camera_Ready_Paper -[writtenBy]-> Conference_Participant",
+          "Early-Registered_Participant <-[writtenBy]- Camera_Ready_Paper <-[authorOf]- Conference_Participant",
+          "Event -[organisedBy]-> Early-Registered_Participant",
+          "Scientific_Event -[organisedBy]-> Early-Registered_Participant",
+          "Social_Event -[organisedBy]-> Early-Registered_Participant"
+        ],
+        "values": []
+      },
+      {
+        "label": "Conference_Participant",
+        "class": "http://ekaw#Conference_Participant",
+        "source": "ekaw",
+        "outgoing": [
+          "Conference_Participant -[authorOf]-> Document",
+          "Conference_Participant -[authorOf]-> Camera_Ready_Paper",
+          "Conference_Participant -[authorOf]-> Document <-[authorOf]- Early-Registered_Participant",
+          "Conference_Participant -[authorOf]-> Document -[writtenBy]-> Early-Registered_Participant",
+          "Conference_Participant -[authorOf]-> Camera_Ready_Paper -[writtenBy]-> Early-Registered_Participant",
+          "Conference_Participant -[organises]-> Event",
+          "Conference_Participant -[organises]-> Scientific_Event",
+          "Conference_Participant -[organises]-> Social_Event"
+        ],
+        "incoming": [
+          "Document -[writtenBy]-> Conference_Participant",
+          "Camera_Ready_Paper -[writtenBy]-> Conference_Participant",
+          "Conference_Participant <-[writtenBy]- Document <-[authorOf]- Early-Registered_Participant",
+          "Conference_Participant <-[writtenBy]- Document -[writtenBy]-> Early-Registered_Participant",
+          "Conference_Participant <-[writtenBy]- Camera_Ready_Paper -[writtenBy]-> Early-Registered_Participant",
+          "Event -[organisedBy]-> Conference_Participant",
+          "Scientific_Event -[organisedBy]-> Conference_Participant",
+          "Social_Event -[organisedBy]-> Conference_Participant"
+        ],
+        "values": []
+      },
+      {
+        "label": "Event",
+        "class": "http://ekaw#Event",
+        "source": "ekaw",
+        "outgoing": [
+          "Event -[organisedBy]-> Early-Registered_Participant",
+          "Event -[organisedBy]-> Conference_Participant"
+        ],
+        "incoming": [
+          "Early-Registered_Participant -[organises]-> Event",
+          "Conference_Participant -[organises]-> Event"
+        ],
+        "values": []
+      },
+      {
+        "label": "Scientific_Event",
+        "class": "http://ekaw#Scientific_Event",
+        "source": "ekaw",
+        "outgoing": [
+          "Scientific_Event -[organisedBy]-> Early-Registered_Participant",
+          "Scientific_Event -[organisedBy]-> Conference_Participant",
+          "Scientific_Event -[partOfEvent]-> Social_Event",
+          "Scientific_Event -[hasEvent]-> Social_Event"
+        ],
+        "incoming": [
+          "Early-Registered_Participant -[organises]-> Scientific_Event",
+          "Conference_Participant -[organises]-> Scientific_Event",
+          "Social_Event -[partOfEvent]-> Scientific_Event",
+          "Social_Event -[hasEvent]-> Scientific_Event"
+        ],
+        "values": []
+      },
+      {
+        "label": "Social_Event",
+        "class": "http://ekaw#Social_Event",
+        "source": "ekaw",
+        "outgoing": [
+          "Social_Event -[organisedBy]-> Early-Registered_Participant",
+          "Social_Event -[organisedBy]-> Conference_Participant",
+          "Social_Event -[partOfEvent]-> Scientific_Event",
+          "Social_Event -[hasEvent]-> Scientific_Event"
+        ],
+        "incoming": [
+          "Early-Registered_Participant -[organises]-> Social_Event",
+          "Conference_Participant -[organises]-> Social_Event",
+          "Scientific_Event -[partOfEvent]-> Social_Event",
+          "Scientific_Event -[hasEvent]-> Social_Event"
+        ],
+        "values": []
+      },
+      {
+        "label": "Participant",
+        "class": "http://confOf#Participant",
+        "source": "confof",
+        "outgoing": [
+          "Participant -[employedBy]-> Organization",
+          "Participant -[hasCity]-> City",
+          "Participant -[hasCountry]-> Country"
+        ],
+        "incoming": [],
+        "values": [
+          [
+            "http://confOf#Participant",
+            "http://confOf#earlyRegistration",
+            "http://www.w3.org/2001/XMLSchema#boolean"
+          ],
+          [
+            "http://confOf#Participant",
+            "http://confOf#hasStreet",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Participant",
+            "http://confOf#hasEmail",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Participant",
+            "http://confOf#hasPostalCode",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Participant",
+            "http://confOf#hasHomePage",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Participant",
+            "http://confOf#hasSurname",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Participant",
+            "http://confOf#hasFax",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Participant",
+            "http://confOf#hasPhone",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Participant",
+            "http://confOf#hasFirstName",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "label": "Event",
+        "class": "http://confOf#Event",
+        "source": "confof",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://confOf#Event",
+            "http://confOf#starts_on",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Event",
+            "http://confOf#ends_on",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "label": "Attendee",
+        "class": "http://edas#Attendee",
+        "source": "edas",
+        "outgoing": [
+          "Attendee -[attendeeAt]-> ConferenceEvent"
+        ],
+        "incoming": [
+          "ConferenceEvent -[hasAttendee]-> Attendee"
+        ],
+        "values": [
+          [
+            "http://edas#Attendee",
+            "http://edas#hasBiography",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://edas#Attendee",
+            "http://edas#hasLastName",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://edas#Attendee",
+            "http://edas#hasEmail",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://edas#Attendee",
+            "http://edas#hasFirstName",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "label": "ConferenceEvent",
+        "class": "http://edas#ConferenceEvent",
+        "source": "edas",
+        "outgoing": [
+          "ConferenceEvent -[hasAttendee]-> Attendee"
+        ],
+        "incoming": [
+          "Attendee -[attendeeAt]-> ConferenceEvent"
+        ],
+        "values": [
+          [
+            "http://edas#ConferenceEvent",
+            "http://edas#hasStartDateTime",
+            "http://www.w3.org/2001/XMLSchema#dateTime"
+          ],
+          [
+            "http://edas#ConferenceEvent",
+            "http://edas#hasEndDateTime",
+            "http://www.w3.org/2001/XMLSchema#dateTime"
+          ]
+        ]
+      },
+      {
+        "label": "Early_paid_applicant",
+        "class": "http://conference#Early_paid_applicant",
+        "source": "conference",
+        "outgoing": [
+          "Early_paid_applicant -[contributes]-> Conference_document",
+          "Early_paid_applicant -[contributes]-> Conference_document -[has_authors]-> Conference_participant",
+          "Early_paid_applicant -[contributes]-> Conference_document <-[contributes]- Conference_participant"
+        ],
+        "incoming": [
+          "Conference_document -[has_authors]-> Early_paid_applicant",
+          "Early_paid_applicant <-[has_authors]- Conference_document -[has_authors]-> Conference_participant",
+          "Early_paid_applicant <-[has_authors]- Conference_document <-[contributes]- Conference_participant"
+        ],
+        "values": [
+          [
+            "http://conference#Early_paid_applicant",
+            "http://conference#has_gender",
+            null
+          ],
+          [
+            "http://conference#Early_paid_applicant",
+            "http://conference#has_an_email",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://conference#Early_paid_applicant",
+            "http://conference#has_the_first_name",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://conference#Early_paid_applicant",
+            "http://conference#has_the_last_name",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "label": "Conference_participant",
+        "class": "http://conference#Conference_participant",
+        "source": "conference",
+        "outgoing": [
+          "Conference_participant -[contributes]-> Conference_document",
+          "Conference_participant -[contributes]-> Conference_document <-[contributes]- Early_paid_applicant",
+          "Conference_participant -[contributes]-> Conference_document -[has_authors]-> Early_paid_applicant"
+        ],
+        "incoming": [
+          "Conference_document -[has_authors]-> Conference_participant",
+          "Conference_participant <-[has_authors]- Conference_document <-[contributes]- Early_paid_applicant",
+          "Conference_participant <-[has_authors]- Conference_document -[has_authors]-> Early_paid_applicant"
+        ],
+        "values": [
+          [
+            "http://conference#Conference_participant",
+            "http://conference#has_gender",
+            null
+          ],
+          [
+            "http://conference#Conference_participant",
+            "http://conference#has_an_email",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://conference#Conference_participant",
+            "http://conference#has_the_first_name",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://conference#Conference_participant",
+            "http://conference#has_the_last_name",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "label": "Conference_part",
+        "class": "http://conference#Conference_part",
+        "source": "conference",
+        "outgoing": [
+          "Conference_part -[is_part_of_conference_volumes]-> Conference_volume",
+          "Conference_part -[has_a_track-workshop-tutorial_topic]-> Topic",
+          "Conference_part -[has_a_track-workshop-tutorial_chair]-> Track-workshop_chair"
+        ],
+        "incoming": [
+          "Track-workshop_chair -[was_a_track-workshop_chair_of]-> Conference_part",
+          "Conference_volume -[has_parts]-> Conference_part",
+          "Topic -[is_a_topis_of_conference_parts]-> Conference_part"
+        ],
+        "values": [
+          [
+            "http://conference#Conference_part",
+            "http://conference#has_a_name",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "label": "Camera_Ready_Paper",
+        "class": "http://ekaw#Camera_Ready_Paper",
+        "source": "ekaw",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "label": "Document",
+        "class": "http://ekaw#Document",
+        "source": "ekaw",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "label": "City",
+        "class": "http://confOf#City",
+        "source": "confof",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "label": "Organization",
+        "class": "http://confOf#Organization",
+        "source": "confof",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://confOf#Organization",
+            "http://confOf#hasStreet",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Organization",
+            "http://confOf#hasPostalCode",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "label": "Country",
+        "class": "http://confOf#Country",
+        "source": "confof",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "label": "Conference_document",
+        "class": "http://conference#Conference_document",
+        "source": "conference",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://conference#Conference_document",
+            "http://conference#has_a_date_of_issue",
+            "http://www.w3.org/2001/XMLSchema#date"
+          ]
+        ]
+      },
+      {
+        "label": "Topic",
+        "class": "http://conference#Topic",
+        "source": "conference",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://conference#Topic",
+            "http://conference#has_a_name",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "label": "Track-workshop_chair",
+        "class": "http://conference#Track-workshop_chair",
+        "source": "conference",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://conference#Track-workshop_chair",
+            "http://conference#has_gender",
+            null
+          ],
+          [
+            "http://conference#Track-workshop_chair",
+            "http://conference#has_an_email",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://conference#Track-workshop_chair",
+            "http://conference#has_the_first_name",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://conference#Track-workshop_chair",
+            "http://conference#has_the_last_name",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "label": "Conference_volume",
+        "class": "http://conference#Conference_volume",
+        "source": "conference",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://conference#Conference_volume",
+            "http://conference#has_a_name",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://conference#Conference_volume",
+            "http://conference#has_a_location",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      }
+    ],
+    "summarize_contextual_class_paths": [
+      {
+        "class": "http://ekaw#Early-Registered_Participant",
+        "source": "ekaw",
+        "label": "Early-Registered_Participant",
+        "outgoing": [],
+        "incoming": [],
+        "values": [],
+        "answers_question": true
+      },
+      {
+        "class": "http://confOf#Participant",
+        "source": "confof",
+        "label": "Participant",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://confOf#Participant",
+            "http://confOf#earlyRegistration",
+            "http://www.w3.org/2001/XMLSchema#boolean"
+          ],
+          [
+            "http://confOf#Participant",
+            "http://confOf#hasStreet",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Participant",
+            "http://confOf#hasEmail",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Participant",
+            "http://confOf#hasPostalCode",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Participant",
+            "http://confOf#hasHomePage",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Participant",
+            "http://confOf#hasSurname",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Participant",
+            "http://confOf#hasFax",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Participant",
+            "http://confOf#hasPhone",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Participant",
+            "http://confOf#hasFirstName",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ],
+        "answers_question": true
+      },
+      {
+        "class": "http://edas#Attendee",
+        "source": "edas",
+        "label": "Attendee",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://edas#Attendee",
+            "http://edas#hasBiography",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://edas#Attendee",
+            "http://edas#hasLastName",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://edas#Attendee",
+            "http://edas#hasEmail",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://edas#Attendee",
+            "http://edas#hasFirstName",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ],
+        "answers_question": true
+      },
+      {
+        "class": "http://conference#Early_paid_applicant",
+        "source": "conference",
+        "label": "Early_paid_applicant",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://conference#Early_paid_applicant",
+            "http://conference#has_gender",
+            null
+          ],
+          [
+            "http://conference#Early_paid_applicant",
+            "http://conference#has_an_email",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://conference#Early_paid_applicant",
+            "http://conference#has_the_first_name",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://conference#Early_paid_applicant",
+            "http://conference#has_the_last_name",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ],
+        "answers_question": true
+      }
+    ],
+    "selected_class_paths": [
+      {
+        "class": "http://ekaw#Early-Registered_Participant",
+        "source": "ekaw",
+        "label": "Early-Registered_Participant",
+        "outgoing": [],
+        "incoming": [],
+        "values": [],
+        "answers_question": true,
+        "complete_answer_branch": true,
+        "source_complete_answer_branch": true
+      },
+      {
+        "class": "http://confOf#Participant",
+        "source": "confof",
+        "label": "Participant",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://confOf#Participant",
+            "http://confOf#earlyRegistration",
+            "http://www.w3.org/2001/XMLSchema#boolean"
+          ],
+          [
+            "http://confOf#Participant",
+            "http://confOf#hasStreet",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Participant",
+            "http://confOf#hasEmail",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Participant",
+            "http://confOf#hasPostalCode",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Participant",
+            "http://confOf#hasHomePage",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Participant",
+            "http://confOf#hasSurname",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Participant",
+            "http://confOf#hasFax",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Participant",
+            "http://confOf#hasPhone",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Participant",
+            "http://confOf#hasFirstName",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ],
+        "answers_question": true,
+        "complete_answer_branch": false,
+        "source_complete_answer_branch": true
+      },
+      {
+        "class": "http://conference#Early_paid_applicant",
+        "source": "conference",
+        "label": "Early_paid_applicant",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://conference#Early_paid_applicant",
+            "http://conference#has_gender",
+            null
+          ],
+          [
+            "http://conference#Early_paid_applicant",
+            "http://conference#has_an_email",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://conference#Early_paid_applicant",
+            "http://conference#has_the_first_name",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://conference#Early_paid_applicant",
+            "http://conference#has_the_last_name",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ],
+        "answers_question": true,
+        "complete_answer_branch": false,
+        "source_complete_answer_branch": true
+      }
+    ],
+    "validated_class_paths": [
+      {
+        "class": "http://ekaw#Early-Registered_Participant",
+        "source": "ekaw",
+        "label": "Early-Registered_Participant",
+        "outgoing": [],
+        "incoming": [],
+        "values": [],
+        "answers_question": true,
+        "complete_answer_branch": true,
+        "source_complete_answer_branch": true
+      },
+      {
+        "class": "http://confOf#Participant",
+        "source": "confof",
+        "label": "Participant",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://confOf#Participant",
+            "http://confOf#earlyRegistration",
+            "http://www.w3.org/2001/XMLSchema#boolean"
+          ],
+          [
+            "http://confOf#Participant",
+            "http://confOf#hasStreet",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Participant",
+            "http://confOf#hasEmail",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Participant",
+            "http://confOf#hasPostalCode",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Participant",
+            "http://confOf#hasHomePage",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Participant",
+            "http://confOf#hasSurname",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Participant",
+            "http://confOf#hasFax",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Participant",
+            "http://confOf#hasPhone",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Participant",
+            "http://confOf#hasFirstName",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ],
+        "answers_question": true,
+        "complete_answer_branch": false,
+        "source_complete_answer_branch": true
+      },
+      {
+        "class": "http://edas#Attendee",
+        "source": "edas",
+        "label": "Attendee",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://edas#Attendee",
+            "http://edas#hasBiography",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://edas#Attendee",
+            "http://edas#hasLastName",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://edas#Attendee",
+            "http://edas#hasEmail",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://edas#Attendee",
+            "http://edas#hasFirstName",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ],
+        "answers_question": true,
+        "complete_answer_branch": false,
+        "source_complete_answer_branch": false
+      },
+      {
+        "class": "http://conference#Early_paid_applicant",
+        "source": "conference",
+        "label": "Early_paid_applicant",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://conference#Early_paid_applicant",
+            "http://conference#has_gender",
+            null
+          ],
+          [
+            "http://conference#Early_paid_applicant",
+            "http://conference#has_an_email",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://conference#Early_paid_applicant",
+            "http://conference#has_the_first_name",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://conference#Early_paid_applicant",
+            "http://conference#has_the_last_name",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ],
+        "answers_question": true,
+        "complete_answer_branch": false,
+        "source_complete_answer_branch": true
+      }
+    ],
+    "path_scores": [
+      {
+        "source": "ekaw",
+        "chain": "",
+        "full": 0.8663816922372468,
+        "classes": 0.8663863628002276,
+        "relations": 0.8663863628002276,
+        "total": 0.8663840275187372,
+        "complete": true,
+        "kept": true,
+        "reason": "at or above tier threshold"
+      },
+      {
+        "source": "confof",
+        "chain": "",
+        "full": 0.7444669580259046,
+        "classes": 0.6379251674419846,
+        "relations": 0.7817443719379941,
+        "total": 0.7199599036331464,
+        "complete": false,
+        "kept": true,
+        "reason": "at or above tier threshold"
+      },
+      {
+        "source": "conference",
+        "chain": "",
+        "full": 0.656979331960523,
+        "classes": 0.6674002258886264,
+        "relations": 0.5062544099635417,
+        "total": 0.6299606157395577,
+        "complete": false,
+        "kept": true,
+        "reason": "at or above tier threshold"
+      },
+      {
+        "source": "edas",
+        "chain": "",
+        "full": 0.6316318760931519,
+        "classes": 0.6192238576340787,
+        "relations": 0.5427568562564439,
+        "total": 0.6101344665880883,
+        "complete": false,
+        "kept": true,
+        "reason": "at or above tier threshold"
+      }
+    ],
+    "source_scores": {
+      "ekaw": 0.8663840275187372
+    },
+    "provider_plan": [],
+    "cut_sources": [
+      "edas"
+    ],
+    "alignment": [
+      "<http://conference#Early_paid_applicant> = <http://ekaw#Early-Registered_Participant>",
+      "<http://ekaw#Early-Registered_Participant> = <http://confOf#Participant> AND (<http://confOf#earlyRegistration> xsd:Equal true)",
+      "<http://confOf#Participant> = <http://ekaw#Conference_Participant>",
+      "<http://confOf#Participant> = <http://edas#Attendee>"
+    ],
+    "query": "PREFIX conference: <http://conference#>\nPREFIX confof: <http://confOf#>\nPREFIX ekaw: <http://ekaw#>\nSELECT DISTINCT ?early_registered_participant WHERE { { SERVICE <http://192.168.100.45:3030/ekaw/sparql> { ?early_registered_participant a ekaw:Early-Registered_Participant . } } UNION { SERVICE <http://192.168.100.45:3030/conference/sparql> { ?early_registered_participant a conference:Early_paid_applicant . } } UNION { SERVICE <http://192.168.100.45:3030/confof/sparql> { ?early_registered_participant a confof:Participant . ?early_registered_participant confof:earlyRegistration \"true\" . } } }",
+    "token_usage": {
+      "by_agent": [
+        {
+          "agent": "agent6_path_filter",
+          "provider": "vercel",
+          "model": "meta/muse-spark-1.3",
+          "calls": 4,
+          "prompt_tokens": 5313,
+          "completion_tokens": 7555,
+          "total_tokens": 12868,
+          "max_prompt_tokens": 1535,
+          "avg_prompt_tokens": 1328,
+          "calls_without_usage": 0
+        },
+        {
+          "agent": "agent7_sparql_generator",
+          "provider": "vercel",
+          "model": "meta/muse-spark-1.3",
+          "calls": 1,
+          "prompt_tokens": 4366,
+          "completion_tokens": 1358,
+          "total_tokens": 5724,
+          "max_prompt_tokens": 4366,
+          "avg_prompt_tokens": 4366,
+          "calls_without_usage": 0
+        },
+        {
+          "agent": "agent4_match_relevance",
+          "provider": "vercel",
+          "model": "meta/muse-spark-1.3",
+          "calls": 4,
+          "prompt_tokens": 3454,
+          "completion_tokens": 10769,
+          "total_tokens": 14223,
+          "max_prompt_tokens": 881,
+          "avg_prompt_tokens": 864,
+          "calls_without_usage": 0
+        },
+        {
+          "agent": "agent8_source_selector",
+          "provider": "vercel",
+          "model": "meta/muse-spark-1.3",
+          "calls": 1,
+          "prompt_tokens": 1276,
+          "completion_tokens": 2448,
+          "total_tokens": 3724,
+          "max_prompt_tokens": 1276,
+          "avg_prompt_tokens": 1276,
+          "calls_without_usage": 0
+        },
+        {
+          "agent": "agent1_extractor",
+          "provider": "vercel",
+          "model": "meta/muse-spark-1.3",
+          "calls": 1,
+          "prompt_tokens": 1186,
+          "completion_tokens": 3372,
+          "total_tokens": 4558,
+          "max_prompt_tokens": 1186,
+          "avg_prompt_tokens": 1186,
+          "calls_without_usage": 0
+        }
+      ],
+      "totals": {
+        "calls": 11,
+        "prompt_tokens": 15595,
+        "completion_tokens": 25502,
+        "total_tokens": 41097
+      }
+    }
+  },
+  "elapsed_seconds": 155.331,
+  "finished_at": "2026-09-11T23:31:59.484611+00:00"
+}

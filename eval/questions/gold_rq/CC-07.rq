@@ -1,0 +1,73 @@
+
+#Which conferences are there, and by when must the final version of a paper be handed in?
+
+PREFIX cmt: <http://cmt#>
+PREFIX conference: <http://conference#>
+PREFIX confof: <http://confOf#>
+PREFIX edas: <http://edas#>
+PREFIX ekaw: <http://ekaw#>
+
+SELECT DISTINCT ?conference ?manuscriptDueOn WHERE {
+    {
+        SERVICE <http://192.168.100.44:3030/ekaw/sparql> {
+            ?conference a ekaw:Conference .
+        }
+        OPTIONAL {
+
+            SERVICE <http://192.168.100.44:3030/edas/sparql> {
+                ?edas_conference <http://www.w3.org/2002/07/owl#sameAs> ?conference ;
+                a edas:Conference ;
+                edas:manuscriptDueOn ?manuscriptDueOn .
+            }
+        }
+    }
+    UNION {
+
+        SERVICE <http://192.168.100.44:3030/cmt/sparql> {
+            ?conference a cmt:Conference .
+        }
+        OPTIONAL {
+
+            SERVICE <http://192.168.100.44:3030/edas/sparql> {
+                ?edas_conference <http://www.w3.org/2002/07/owl#sameAs> ?conference ;
+                a edas:Conference ;
+                edas:manuscriptDueOn ?manuscriptDueOn .
+            }
+        }
+    }
+    UNION {
+
+        SERVICE <http://192.168.100.44:3030/conference/sparql> {
+            ?conference a conference:Conference .
+        }
+        OPTIONAL {
+
+            SERVICE <http://192.168.100.44:3030/edas/sparql> {
+                ?edas_conference <http://www.w3.org/2002/07/owl#sameAs> ?conference ;
+                a edas:Conference ;
+                edas:manuscriptDueOn ?manuscriptDueOn .
+            }
+        }
+    }
+    UNION {
+
+        SERVICE <http://192.168.100.44:3030/confof/sparql> {
+            ?conference a confof:Conference .
+        }
+        OPTIONAL {
+
+            SERVICE <http://192.168.100.44:3030/edas/sparql> {
+                ?edas_conference <http://www.w3.org/2002/07/owl#sameAs> ?conference ;
+                a edas:Conference ;
+                edas:manuscriptDueOn ?manuscriptDueOn .
+            }
+        }
+    }
+    UNION {
+
+        SERVICE <http://192.168.100.44:3030/edas/sparql> {
+            ?conference a edas:Conference ;
+            edas:manuscriptDueOn ?manuscriptDueOn .
+        }
+    }
+}

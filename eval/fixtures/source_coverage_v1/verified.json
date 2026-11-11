@@ -1,0 +1,11 @@
+{
+  "fixture": "source-coverage-v1",
+  "verified_at": "2026-09-12T17:42:34.881830+00:00",
+  "triples": {
+    "cmt": 800,
+    "conference": 3400,
+    "edas": 1020,
+    "ekaw": 2120,
+    "confof": 2540
+  }
+}

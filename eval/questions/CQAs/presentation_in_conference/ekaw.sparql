@@ -1,0 +1,8 @@
+PREFIX :<http://ekaw#>
+
+SELECT distinct ?s ?o WHERE {  
+?s a :Contributed_Talk.
+?o a :Conference .
+?s :partOfEvent ?o.
+
+ }

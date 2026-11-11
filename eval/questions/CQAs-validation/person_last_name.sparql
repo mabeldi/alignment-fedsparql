@@ -1,0 +1,28 @@
+#question: What is each person's last name?
+# CQA: person_last_name
+
+# federation: UNION of complete alternative answers from each source
+
+SELECT DISTINCT ?s ?o
+WHERE {
+  {
+    # source: conference
+    SERVICE <http://192.168.100.44:3030/conference/sparql> {
+      ?s <http://conference#has_the_last_name> ?o .
+    }
+  }
+  UNION
+  {
+    # source: confof
+    SERVICE <http://192.168.100.44:3030/confof/sparql> {
+      ?s <http://confOf#hasSurname> ?o .
+    }
+  }
+  UNION
+  {
+    # source: edas
+    SERVICE <http://192.168.100.44:3030/edas/sparql> {
+      ?s <http://edas#hasLastName> ?o .
+    }
+  }
+}

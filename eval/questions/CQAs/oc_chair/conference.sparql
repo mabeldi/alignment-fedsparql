@@ -1,0 +1,3 @@
+SELECT distinct ?s WHERE {  
+?s <http://conference#was_a_committee_chair_of> ?o2 . ?o2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://conference#Organizing_committee> .  
+ }

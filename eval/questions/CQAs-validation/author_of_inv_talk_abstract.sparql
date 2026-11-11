@@ -1,0 +1,26 @@
+#question: Who authored each invited-talk abstract?
+# CQA: author_of_inv_talk_abstract
+
+# federation: UNION of complete alternative answers from each source
+
+SELECT DISTINCT ?s ?o
+WHERE {
+  {
+    # source: conference
+    SERVICE <http://192.168.100.44:3030/conference/sparql> {
+      ?o a <http://conference#Abstract>.
+      ?s <http://conference#contributes> ?o .
+      ?conference_o2 <http://conference#has_an_abstract> ?o.
+      ?conference_o2 a <http://conference#Invited_talk>.
+    }
+  }
+  UNION
+  {
+    # source: ekaw
+    SERVICE <http://192.168.100.44:3030/ekaw/sparql> {
+      ?s a <http://ekaw#Invited_Speaker>.
+      ?o <http://ekaw#writtenBy> ?s.
+      ?o a <http://ekaw#Invited_Talk_Abstract>.
+    }
+  }
+}

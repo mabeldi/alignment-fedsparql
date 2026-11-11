@@ -1,0 +1,5 @@
+PREFIX :<http://conference#>
+
+SELECT distinct ?s WHERE {  
+?s a :Contribution_1th-author.
+}

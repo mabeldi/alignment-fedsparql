@@ -1,0 +1,13 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX edas: <http://edas#>
+
+# question: Which papers were withdrawn?
+# Gold source: DS-01; only EDAS declares a withdrawn-paper class.
+
+SELECT DISTINCT ?paper
+WHERE {
+  # source: edas
+  SERVICE <http://192.168.100.45:3030/edas/sparql> {
+    ?paper rdf:type edas:WithdrawnPaper .
+  }
+}

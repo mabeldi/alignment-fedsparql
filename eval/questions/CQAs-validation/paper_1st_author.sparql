@@ -1,0 +1,21 @@
+#question: Who are the first authors of papers?
+# CQA: paper_1st_author
+
+# federation: UNION of complete alternative answers from each source
+
+SELECT DISTINCT ?s
+WHERE {
+  {
+    # source: cmt
+    SERVICE <http://192.168.100.44:3030/cmt/sparql> {
+      ?cmt_o2 <http://cmt#hasAuthor> ?s .
+    }
+  }
+  UNION
+  {
+    # source: conference
+    SERVICE <http://192.168.100.44:3030/conference/sparql> {
+      ?s a <http://conference#Contribution_1th-author>.
+    }
+  }
+}

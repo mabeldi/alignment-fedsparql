@@ -1,0 +1,11 @@
+#Which travel grants are on offer?
+
+PREFIX edas: <http://edas#>
+
+SELECT ?grant
+WHERE {
+
+    SERVICE <http://192.168.100.44:3030/edas/sparql> {
+        ?grant a edas:TravelGrant .
+    }
+}

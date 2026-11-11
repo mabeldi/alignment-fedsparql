@@ -1,0 +1,8 @@
+PREFIX :<http://ekaw#>
+
+SELECT distinct ?s ?o WHERE {  
+?s a :Invited_Speaker.
+?o2 :writtenBy ?s.
+?o2 :paperPresentedAs ?o.
+?o a :Invited_Talk.
+ }

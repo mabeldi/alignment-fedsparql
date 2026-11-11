@@ -1,0 +1,2 @@
+PREFIX confof: <http://confOf#>
+SELECT DISTINCT ?camera_ready_event WHERE { SERVICE <http://192.168.100.45:3030/confof/sparql> { ?camera_ready_event a confof:Camera_Ready_event . } }

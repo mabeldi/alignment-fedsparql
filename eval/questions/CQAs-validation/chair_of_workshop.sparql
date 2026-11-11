@@ -1,0 +1,23 @@
+#question: Who chairs each workshop?
+# CQA: chair_of_workshop
+
+# federation: UNION of complete alternative answers from each source
+
+SELECT DISTINCT ?s ?o
+WHERE {
+  {
+    # source: conference
+    SERVICE <http://192.168.100.44:3030/conference/sparql> {
+      ?s <http://conference#was_a_track-workshop_chair_of> ?o . ?o <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://conference#Workshop> .
+    }
+  }
+  UNION
+  {
+    # source: ekaw
+    SERVICE <http://192.168.100.44:3030/ekaw/sparql> {
+      ?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ekaw#Workshop_Chair> .
+      ?s <http://ekaw#organises> ?o .
+      ?o a <http://ekaw#Workshop> .
+    }
+  }
+}

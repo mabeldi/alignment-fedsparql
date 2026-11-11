@@ -1,0 +1,48 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX cmt: <http://cmt#>
+PREFIX conference: <http://conference#>
+PREFIX confof: <http://confOf#>
+PREFIX edas: <http://edas#>
+PREFIX ekaw: <http://ekaw#>
+
+# question: Which topics are listed?
+# sources: gold MC-03 and CQA topic
+# federation: UNION of complete alternative answers from each source
+
+SELECT DISTINCT ?topic
+WHERE {
+  {
+    # source: cmt
+    SERVICE <http://192.168.100.45:3030/cmt/sparql> {
+      ?topic rdf:type cmt:SubjectArea .
+    }
+  }
+  UNION
+  {
+    # source: conference
+    SERVICE <http://192.168.100.45:3030/conference/sparql> {
+      ?topic rdf:type conference:Topic .
+    }
+  }
+  UNION
+  {
+    # source: confof
+    SERVICE <http://192.168.100.45:3030/confof/sparql> {
+      ?topic rdf:type confof:Topic .
+    }
+  }
+  UNION
+  {
+    # source: edas
+    SERVICE <http://192.168.100.45:3030/edas/sparql> {
+      ?topic rdf:type edas:Topic .
+    }
+  }
+  UNION
+  {
+    # source: ekaw
+    SERVICE <http://192.168.100.45:3030/ekaw/sparql> {
+      ?topic rdf:type ekaw:Research_Topic .
+    }
+  }
+}

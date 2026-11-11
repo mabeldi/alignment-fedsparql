@@ -1,0 +1,21 @@
+#question: What is the registration deadline for each conference?
+# CQA: conference_regis_date
+
+# federation: UNION of complete alternative answers from each source
+
+SELECT DISTINCT ?s ?o
+WHERE {
+  {
+    # source: confof
+    SERVICE <http://192.168.100.44:3030/confof/sparql> {
+      ?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://confOf#Conference> . ?s <http://confOf#hasAdministrativeEvent> ?confof_o2 . ?confof_o2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://confOf#Registration_of_participants_event> . ?confof_o2 <http://confOf#ends_on> ?o .
+    }
+  }
+  UNION
+  {
+    # source: edas
+    SERVICE <http://192.168.100.44:3030/edas/sparql> {
+      ?s <http://edas#registrationDueOn> ?o .
+    }
+  }
+}

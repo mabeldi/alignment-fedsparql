@@ -1,0 +1,47 @@
+#Retrieve the list of papers along with their titles.
+
+PREFIX cmt: <http://cmt#>
+PREFIX confof: <http://confOf#>
+
+SELECT
+DISTINCT ?paper ?title
+WHERE {
+    {
+
+        SERVICE <http://192.168.100.44:3030/cmt/sparql> {
+            ?paper a cmt:Paper .
+            ?paper cmt:title ?title .
+        }
+    }
+    UNION {
+
+        SERVICE <http://192.168.100.44:3030/confof/sparql> {
+            ?paper a confof:Paper .
+            ?paper confof:hasTitle ?title .
+        }
+    }
+}
+
+
+
+PREFIX cmt: <http://cmt#>
+PREFIX confof: <http://confOf#>
+
+SELECT
+?paper ?title
+WHERE {
+    {
+
+        SERVICE <http://192.168.100.45:3030/cmt/sparql> {
+            ?paper a cmt:Paper ;
+            cmt:title ?title .
+        }
+    }
+    UNION {
+
+        SERVICE <http://192.168.100.45:3030/confof/sparql> {
+            ?paper a confof:Paper ;
+            confof:hasTitle ?title .
+        }
+    }
+}

@@ -1,0 +1,13 @@
+
+PREFIX ekaw: <http://ekaw#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT
+DISTINCT ?conference_banquet
+WHERE {
+
+    SERVICE <http://192.168.100.45:3030/ekaw/sparql> {
+        ?conference_banquet a ekaw:Conference_Banquet .
+        ?conference_banquet ekaw:organisedBy ?organisation .
+    }
+}

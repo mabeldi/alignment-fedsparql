@@ -1,0 +1,198 @@
+{
+  "format_version": 1,
+  "question_folder": "Which_papers_were_withdrawn",
+  "calculated_at": "2026-09-12T19:49:34.804867+00:00",
+  "selected_runs": [
+    1,
+    2,
+    3
+  ],
+  "policy": {
+    "answer_comparison": "distinct complete value tuples; best global column assignment",
+    "extra_columns": "ignored after assignment; duplicate projected rows removed",
+    "split_union_columns": "not coalesced",
+    "rdf_identity": "saved value strings; ignore type, datatype, and language; instance URIs <source>-instances#<id> merged by <id> (one thing held by several sources); answer_raw_uri keeps every URI distinct",
+    "source_comparison": "distinct SERVICE endpoint IRIs in query text, not coordinator or runtime contacts",
+    "failures": "execution errors score answer F1=0 and exact_match=0; a query that neither parses nor executes scores source F1=0",
+    "unreachable_endpoint": "never judged, so unscored; aggregate withheld until executed again",
+    "missing_or_stale_artifacts": "unscored; aggregate withheld until repaired"
+  },
+  "runs": [
+    {
+      "run": 1,
+      "status": "scored",
+      "execution_success": 1,
+      "query_sha256": "ae530b7a77a7e96b6158c5a3b16b4e5b31eab046ac9afd605579e2480903dc21",
+      "result_count": 3,
+      "source_selection": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": 1,
+        "endpoints": [
+          "http://192.168.100.45:3030/edas/sparql"
+        ],
+        "missing_endpoints": [],
+        "extra_endpoints": []
+      },
+      "answer": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": 1,
+        "column_mapping": {
+          "paper": "withdrawnpaper"
+        },
+        "ignored_generated_columns": [],
+        "generated_unique_rows": 3,
+        "reference_unique_rows": 3
+      },
+      "answer_raw_uri": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": 1,
+        "column_mapping": {
+          "paper": "withdrawnpaper"
+        },
+        "ignored_generated_columns": [],
+        "generated_unique_rows": 3,
+        "reference_unique_rows": 3
+      }
+    },
+    {
+      "run": 2,
+      "status": "scored",
+      "execution_success": 1,
+      "query_sha256": "79c436f8156dd82a9c16d1562978321e84e31e95679e766846d661a02523499d",
+      "result_count": 3,
+      "source_selection": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": 1,
+        "endpoints": [
+          "http://192.168.100.45:3030/edas/sparql"
+        ],
+        "missing_endpoints": [],
+        "extra_endpoints": []
+      },
+      "answer": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": 1,
+        "column_mapping": {
+          "paper": "withdrawnpaper"
+        },
+        "ignored_generated_columns": [],
+        "generated_unique_rows": 3,
+        "reference_unique_rows": 3
+      },
+      "answer_raw_uri": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": 1,
+        "column_mapping": {
+          "paper": "withdrawnpaper"
+        },
+        "ignored_generated_columns": [],
+        "generated_unique_rows": 3,
+        "reference_unique_rows": 3
+      }
+    },
+    {
+      "run": 3,
+      "status": "scored",
+      "execution_success": 1,
+      "query_sha256": "6ee6e6b416cbbc84a8116bad54132e7c4683ecdde4dd03eab5f59042c813e465",
+      "result_count": 3,
+      "source_selection": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": 1,
+        "endpoints": [
+          "http://192.168.100.45:3030/edas/sparql"
+        ],
+        "missing_endpoints": [],
+        "extra_endpoints": []
+      },
+      "answer": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": 1,
+        "column_mapping": {
+          "paper": "withdrawnpaper"
+        },
+        "ignored_generated_columns": [],
+        "generated_unique_rows": 3,
+        "reference_unique_rows": 3
+      },
+      "answer_raw_uri": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": 1,
+        "column_mapping": {
+          "paper": "withdrawnpaper"
+        },
+        "ignored_generated_columns": [],
+        "generated_unique_rows": 3,
+        "reference_unique_rows": 3
+      }
+    }
+  ],
+  "question": "Which papers were withdrawn?",
+  "reference": {
+    "folder": "C:\\Users\\beldi\\Desktop\\Generation_SPARQL\\sparrql-llm\\app\\agents\\evaluation\\results\\Which_papers_were_withdrawn",
+    "query_sha256": "77e9248b59ed05ef8384bd41a6ec215911017b8631fcfcbf26e81083536928ba",
+    "result_count": 3,
+    "variables": [
+      "paper"
+    ],
+    "endpoints": [
+      "http://192.168.100.45:3030/edas/sparql"
+    ]
+  },
+  "status": "complete",
+  "aggregate": {
+    "run_count": 3,
+    "answer_precision_mean": 1.0,
+    "answer_recall_mean": 1.0,
+    "answer_f1_mean": 1.0,
+    "answer_f1_raw_uri_mean": 1.0,
+    "exact_match_accuracy": 1,
+    "source_selection_f1_mean": 1.0,
+    "execution_success_rate": 1
+  }
+}

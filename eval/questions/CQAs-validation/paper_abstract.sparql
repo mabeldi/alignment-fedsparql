@@ -1,0 +1,23 @@
+#question: Which paper abstracts are there?
+# CQA: paper_abstract
+
+# federation: UNION of complete alternative answers from each source
+
+SELECT DISTINCT ?s
+WHERE {
+  {
+    # source: cmt
+    SERVICE <http://192.168.100.44:3030/cmt/sparql> {
+      ?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://cmt#PaperAbstract> .
+    }
+  }
+  UNION
+  {
+    # source: conference
+    SERVICE <http://192.168.100.44:3030/conference/sparql> {
+      ?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://conference#Abstract> .
+      ?s <http://conference#is_the_1th_part_of> ?conference_o2.
+      ?conference_o2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://conference#Written_contribution> .
+    }
+  }
+}

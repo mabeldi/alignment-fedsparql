@@ -1,0 +1,9 @@
+PREFIX edas: <http://edas#>
+PREFIX ekaw: <http://ekaw#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT DISTINCT ?acceptedpaper
+WHERE {
+{ SERVICE <http://192.168.100.45:3030/edas/sparql> { ?acceptedpaper a edas:AcceptedPaper . } }
+UNION
+{ SERVICE <http://192.168.100.45:3030/ekaw/sparql> { ?acceptedpaper a ekaw:Accepted_Paper . } }
+}

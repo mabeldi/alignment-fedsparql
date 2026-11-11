@@ -1,0 +1,23 @@
+# Secrets
+.env
+*.env
+!.env.example
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+
+# Created by the pipeline on every run
+app/agents/output/
+
+# Download cache used by eval/verify_gold_questions.py
+eval/.cache/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

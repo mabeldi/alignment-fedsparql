@@ -1,0 +1,8 @@
+PREFIX cmt: <http://cmt#>
+PREFIX ekaw: <http://ekaw#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT DISTINCT ?title WHERE {
+SERVICE <http://192.168.100.45:3030/ekaw/sparql> { ?paper a ekaw:Paper . ?paper ekaw:hasReview ?negative_review . ?negative_review a ekaw:Negative_Review . }
+SERVICE <http://192.168.100.45:3030/cmt/sparql> { ?cmt_paper owl:sameAs ?paper . ?cmt_paper a cmt:Paper . ?cmt_paper cmt:title ?title . }
+}

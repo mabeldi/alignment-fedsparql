@@ -1,0 +1,51 @@
+
+#List the papers that have been given to reviewers.
+
+PREFIX cmt: <http://cmt#>
+PREFIX conference: <http://conference#>
+PREFIX confof: <http://confOf#>
+PREFIX edas: <http://edas#>
+PREFIX ekaw: <http://ekaw#>
+
+SELECT DISTINCT ?paper WHERE {
+    {
+
+        SERVICE <http://192.168.100.44:3030/conference/sparql> {
+            ?paper a conference:Paper .
+            ?reviewer a conference:Reviewer .
+            ?paper conference:has_authors ?reviewer .
+        }
+    }
+    UNION {
+
+        SERVICE <http://192.168.100.44:3030/cmt/sparql> {
+            ?paper a cmt:Paper .
+            ?reviewer a cmt:Reviewer .
+            ?paper cmt:assignedTo ?reviewer .
+        }
+    }
+    UNION {
+
+        SERVICE <http://192.168.100.44:3030/confof/sparql> {
+            ?paper a confof:Paper .
+            ?member_pc a confof:Member_PC .
+            ?member_pc confof:reviewes ?paper .
+        }
+    }
+    UNION {
+
+        SERVICE <http://192.168.100.44:3030/edas/sparql> {
+            ?paper a edas:Paper .
+            ?reviewer a edas:Reviewer .
+            ?paper edas:isReviewedBy ?reviewer .
+        }
+    }
+    UNION {
+
+        SERVICE <http://192.168.100.44:3030/ekaw/sparql> {
+            ?paper a ekaw:Paper .
+            ?possible_reviewer a ekaw:Possible_Reviewer .
+            ?possible_reviewer ekaw:reviewerOfPaper ?paper .
+        }
+    }
+}

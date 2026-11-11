@@ -1,0 +1,37 @@
+#question: At which conference is each presentation given?
+# CQA: presentation_in_conference
+
+# federation: UNION of complete alternative answers from each source
+
+SELECT DISTINCT ?s ?o
+WHERE {
+  {
+    # source: conference
+    SERVICE <http://192.168.100.44:3030/conference/sparql> {
+      ?s a <http://conference#Presentation> .
+      ?s <http://conference#has_an_abstract> ?conference_o2 .
+      ?conference_o4 <http://conference#has_an_abstract> ?conference_o2 .
+      ?conference_o4 a <http://conference#Written_contribution> .
+      ?conference_o4 <http://conference#is_submitted_at> ?o.
+    }
+  }
+  UNION
+  {
+    # source: edas
+    SERVICE <http://192.168.100.44:3030/edas/sparql> {
+      ?s a <http://edas#PaperPresentation> .
+      ?s <http://edas#relatedToPaper> ?edas_o2 .
+      ?o <http://edas#hasRelatedDocument> ?edas_o2 .
+      ?o a <http://edas#Conference> .
+    }
+  }
+  UNION
+  {
+    # source: ekaw
+    SERVICE <http://192.168.100.44:3030/ekaw/sparql> {
+      ?s a <http://ekaw#Contributed_Talk>.
+      ?o a <http://ekaw#Conference> .
+      ?s <http://ekaw#partOfEvent> ?o.
+    }
+  }
+}

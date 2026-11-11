@@ -1,0 +1,4 @@
+PREFIX confof: <http://confOf#>
+PREFIX edas: <http://edas#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT DISTINCT ?conference ?startDate WHERE { { SERVICE <http://192.168.100.45:3030/confof/sparql> { ?conference a confof:Conference . ?conference confof:starts_on ?startDate . } } UNION { SERVICE <http://192.168.100.45:3030/edas/sparql> { ?conference a edas:Conference . ?conference edas:startDate ?startDate . } } }

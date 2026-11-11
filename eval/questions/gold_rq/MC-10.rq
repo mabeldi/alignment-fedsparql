@@ -1,0 +1,25 @@
+
+#Which of the people are still studying?
+
+PREFIX cmt: <http://cmt#>
+PREFIX conference: <http://conference#>
+PREFIX confof: <http://confOf#>
+PREFIX edas: <http://edas#>
+PREFIX ekaw: <http://ekaw#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT
+DISTINCT ?student
+WHERE {
+    {
+        SERVICE <http://192.168.100.44:3030/confof/sparql> {
+            ?student a confof:Student .
+        }
+    }
+    UNION {
+
+        SERVICE <http://192.168.100.44:3030/ekaw/sparql> {
+            ?student a ekaw:Student .
+        }
+    }
+}

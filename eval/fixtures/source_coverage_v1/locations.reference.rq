@@ -1,0 +1,22 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX edas: <http://edas#>
+PREFIX conference: <http://conference#>
+
+# question: Retrieve a list of conferences, including their locations and registration deadlines.
+# sources: Conference supplies the location text; EDAS supplies the registration deadline.
+# federation: join aligned conference individuals with owl:sameAs.
+# note: both location and registration deadline are required.
+
+SELECT DISTINCT ?conference ?location ?deadline
+WHERE {
+  SERVICE <http://192.168.100.45:3030/conference/sparql> {
+    ?conference rdf:type conference:Conference_volume .
+    ?conference conference:has_a_location ?location .
+  }
+  SERVICE <http://192.168.100.45:3030/edas/sparql> {
+    ?conferenceEdas owl:sameAs ?conference .
+    ?conferenceEdas edas:registrationDueOn ?deadline .
+  }
+}
+

@@ -1,0 +1,695 @@
+{
+  "description": "Gold questions for the federated-SPARQL evaluation. Per-source SPARQL comes from the IRIT CQA dataset (eval/cqa_source); the wording, source sets and combination are ours. Built by eval/build_gold_questions.py — edit that, not this file.",
+  "endpoints": {
+    "cmt": "http://192.168.100.44:3030/cmt/sparql",
+    "confof": "http://192.168.100.44:3030/confof/sparql",
+    "ekaw": "http://192.168.100.44:3030/ekaw/sparql",
+    "conference": "http://192.168.100.44:3030/conference/sparql",
+    "edas": "http://192.168.100.44:3030/edas/sparql"
+  },
+  "categories": {
+    "conditional": 8,
+    "cross-source-join": 14,
+    "distractor": 7,
+    "multi-source": 13
+  },
+  "count": 42,
+  "questions": [
+    {
+      "id": "MC-01",
+      "category": "multi-source",
+      "question": "List all the papers.",
+      "combination": "union",
+      "join_on": null,
+      "select": [
+        "paper"
+      ],
+      "gold_query": "./gold_rq/MC-01.rq"
+    },
+    {
+      "id": "MC-02",
+      "category": "multi-source",
+      "question": "Who are the authors?",
+      "gold_sources": [
+        "cmt",
+        "conference",
+        "confof",
+        "edas",
+        "ekaw"
+      ],
+      "combination": "union",
+      "join_on": null,
+      "select": [
+        "person"
+      ],
+      "gold_query": "./gold_rq/MC-02.rq"
+    },
+    {
+      "id": "MC-03",
+      "category": "multi-source",
+      "question": "Which research areas are listed?",
+      "gold_sources": [
+        "cmt",
+        "conference",
+        "confof",
+        "edas",
+        "ekaw"
+      ],
+      "combination": "union",
+      "join_on": null,
+      "select": [
+        "topic"
+      ],
+      "gold_query": "./gold_rq/MC-03.rq"
+    },
+    {
+      "id": "MC-04",
+      "category": "multi-source",
+      "question": "Retrieve the list of conferences",
+   
+      "gold_sources": [
+        "cmt",
+        "conference",
+        "confof",
+        "edas",
+        "ekaw"
+      ],
+      "combination": "union",
+      "join_on": null,
+      "select": [
+        "conf"
+      ],
+      "gold_query": "./gold_rq/MC-04.rq"
+    },
+    {
+      "id": "MC-05",
+      "category": "multi-source",
+      "question": "Retrieve the list of papers along with their titles.",
+      "gold_sources": [
+        "cmt",
+        "confof",
+        "conference",
+        "edas",
+        "ekaw"
+      ],
+      "combination": "union",
+      "join_on": null,
+      "select": [
+        "paper",
+        "title"
+      ],
+      "gold_query": "./gold_rq/MC-06.rq"
+      },
+    {
+      "id": "MC-06",
+      "category": "multi-source",
+      "question": "Who were the participants in a social event?",
+      "gold_sources": [
+        "conference",
+        "confof",
+        "edas",
+        "ekaw"
+      ],
+      "combination": "join",
+      "join_on": null,
+      "select": [
+        "participant"
+      ],
+      "gold_query": "./gold_rq/MC-06.rq"
+    },
+    {
+      "id": "MC-07",
+      "category": "multi-source",
+      "question": "Who was the chair of the programme committee?",
+      "gold_sources": [
+        "cmt",
+        "conference",
+        "confof",
+        "ekaw"
+      ],
+      "combination": "union",
+      "join_on": null,
+      "select": [
+        "chair"
+      ],
+      "gold_query": "./gold_rq/MC-07.rq"
+    },
+    {
+      "id": "MC-08",
+      "category": "multi-source",
+      "question": "Which conference dinners are organised?",
+      "gold_sources": [
+        "confof",
+        "edas",
+        "ekaw"
+      ],
+      "combination": "union",
+      "join_on": null,
+      "select": [
+        "conferencedinner"
+      ],
+      "gold_query": "./gold_rq/MC-08.rq"
+ 
+    },
+    {
+      "id": "MC-09",
+      "category": "multi-source",
+      "question": "Which higher-education institutions appear?",
+      "gold_sources": [
+        "confof",
+        "edas",
+        "ekaw"
+      ],
+      "combination": "union",
+      "join_on": null,
+      "select": [
+        "org"
+      ],
+      "gold_query": "./gold_rq/MC-09.rq"
+    
+    },
+    {
+      "id": "MC-10",
+      "category": "multi-source",
+      "question": "Which of the people are still studying?",
+      "gold_sources": [
+        "confof",
+        "ekaw"
+      ],
+      "combination": "union",
+      "join_on": null,
+      "select": [
+        "student"
+      ],
+      "gold_query": "./gold_rq/MC-10.rq"
+    },
+    {
+      "id": "MC-11",
+      "category": "multi-source",
+      "question": "retrieve the list of compagnies",
+      "cqa_ids": [
+        "company"
+      ],
+      "gold_sources": [
+        "confof"
+      ],
+      "combination": "union",
+      "join_on": null,
+      "select": [
+        "company "
+      ],
+      "gold_query": "./gold_rq/MC-11.rq"
+    
+    },
+    {
+      "id": "CJ-05",
+      "category": "cross-source-join",
+      "question": "Which people ran a workshop, what is each one's surname, and which workshop did they run?",
+      "cqa_ids": [
+        "chair_of_workshop",
+        "person_last_name"
+      ],
+      "gold_sources": [
+        "edas",
+        "ekaw"
+      ],
+      "combination": "join",
+      "join_on": "person",
+      "select": [
+        "person",
+        "surname",
+        "workshop"
+      ],
+      "gold_query": ""
+    },
+    {
+      "id": "CJ-06",
+      "category": "cross-source-join",
+      "question": "Which administrative staff belong to a conference, and to which one?",
+      "cqa_ids": [
+        "administrator",
+        "member_of_conference"
+      ],
+      "gold_sources": [
+        "confof",
+        "edas"
+      ],
+      "combination": "join",
+      "join_on": "person",
+      "select": [
+        "person",
+        "conf"
+      ],
+      "gold_query": "SELECT DISTINCT ?person ?conf WHERE {\n  SERVICE <http://192.168.100.44:3030/confof/sparql> { ?person <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://confOf#Administrator> . }\n  SERVICE <http://192.168.100.44:3030/edas/sparql> { ?person_edas <http://www.w3.org/2002/07/owl#sameAs> ?person . ?person_edas <http://edas#isMemberOf> ?conf . }\n}"
+    },
+    {
+      "id": "CJ-07",
+      "category": "cross-source-join",
+      "question": "Which people are still studying, and what is each one's given name?",
+      "cqa_ids": [
+        "person_first_name",
+        "student"
+      ],
+      "gold_sources": [
+        "confof",
+        "ekaw"
+      ],
+      "combination": "join",
+      "join_on": "person",
+      "select": [
+        "person",
+        "firstname"
+      ],
+      "gold_query": "SELECT DISTINCT ?person ?firstname WHERE {\n  SERVICE <http://192.168.100.44:3030/ekaw/sparql> { ?person <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ekaw#Student> . }\n  SERVICE <http://192.168.100.44:3030/confof/sparql> { ?person_confof <http://www.w3.org/2002/07/owl#sameAs> ?person . ?person_confof <http://confOf#hasFirstName> ?firstname . }\n}",
+      "notes": "First name taken from confof, not edas. The person_first_name CQA is answerable in several ontologies and the generator's pick between them was arbitrary: CJ-08 already binds the same CQA to confof, so CJ-07 disagreed with it for no stated reason. Changed for consistency, not to match any run."
+    },
+    {
+      "id": "CJ-08",
+      "category": "cross-source-join",
+      "question": "Which people brought in extra reviewers, whom did they bring in, and what is the inviter's given name?",
+      "cqa_ids": [
+        "invite_reviewer",
+        "person_first_name"
+      ],
+      "gold_sources": [
+        "cmt",
+        "confof"
+      ],
+      "combination": "join",
+      "join_on": "person",
+      "select": [
+        "person",
+        "firstname",
+        "invitee"
+      ],
+      "gold_query": "SELECT DISTINCT ?person ?firstname ?invitee WHERE {\n  SERVICE <http://192.168.100.44:3030/cmt/sparql> { ?person <http://cmt#assignExternalReviewer> ?invitee . }\n  SERVICE <http://192.168.100.44:3030/confof/sparql> { ?person_confof <http://www.w3.org/2002/07/owl#sameAs> ?person . ?person_confof <http://confOf#hasFirstName> ?firstname . }\n}"
+    },
+    {
+      "id": "CJ-10",
+      "category": "cross-source-join",
+      "question": "Which conferences are there, where is each one held, and by when must you register?",
+      "cqa_ids": [
+        "conference_location",
+        "conference_regis_date"
+      ],
+      "gold_sources": [
+        "edas",
+        "ekaw"
+      ],
+      "combination": "join",
+      "join_on": "conf",
+      "select": [
+        "conf",
+        "place",
+        "deadline"
+      ],
+      "gold_query": "SELECT DISTINCT ?conf ?place ?deadline WHERE {\n  SERVICE <http://192.168.100.44:3030/ekaw/sparql> { ?conf a <http://ekaw#Conference> . ?conf <http://ekaw#heldIn> ?place . }\n  SERVICE <http://192.168.100.44:3030/edas/sparql> { ?conf_edas <http://www.w3.org/2002/07/owl#sameAs> ?conf . ?conf_edas <http://edas#registrationDueOn> ?deadline . }\n}",
+      "sources": {
+        "ekaw": {
+          "cqa_id": "conference_location",
+          "cqa_file": "eval/cqa_source/CQAs/conference_location/ekaw.sparql",
+          "endpoint": "http://192.168.100.44:3030/ekaw/sparql",
+          "body": "?conf a <http://ekaw#Conference> . ?conf <http://ekaw#heldIn> ?place .",
+          "triple_patterns": [
+            [
+              "?conf",
+              "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+              "<http://ekaw#Conference>"
+            ],
+            [
+              "?conf",
+              "<http://ekaw#heldIn>",
+              "?place"
+            ]
+          ],
+          "operators": [],
+          "classes": [
+            "http://ekaw#Conference"
+          ],
+          "properties": [
+            "http://ekaw#heldIn"
+          ]
+        },
+        "edas": {
+          "cqa_id": "conference_regis_date",
+          "cqa_file": "eval/cqa_source/CQAs/conference_regis_date/edas.sparql",
+          "endpoint": "http://192.168.100.44:3030/edas/sparql",
+          "body": "?conf_edas <http://www.w3.org/2002/07/owl#sameAs> ?conf . ?conf_edas <http://edas#registrationDueOn> ?deadline .",
+          "triple_patterns": [
+            [
+              "?conf_edas",
+              "<http://edas#registrationDueOn>",
+              "?deadline"
+            ],
+            [
+              "?conf_edas",
+              "<http://www.w3.org/2002/07/owl#sameAs>",
+              "?conf"
+            ]
+          ],
+          "operators": [],
+          "classes": [],
+          "properties": [
+            "http://edas#registrationDueOn",
+            "http://www.w3.org/2002/07/owl#sameAs"
+          ]
+        }
+      },
+      "gold_classes": [
+        "http://ekaw#Conference"
+      ],
+      "gold_properties": [
+        "http://edas#registrationDueOn",
+        "http://ekaw#heldIn",
+        "http://www.w3.org/2002/07/owl#sameAs"
+      ],
+      "exercises": [],
+      "notes": "Returns the place itself rather than its label: ekaw:Location declares no datatype property, so a label was the only text on it and the schema does not declare that either."
+    },
+    {
+      "id": "CJ-11",
+      "category": "cross-source-join",
+      "question": "Which conferences are there, what is the web address of each one, and on what day does it end?",
+      "cqa_ids": [
+        "conference_end_date",
+        "site_url_of_conference"
+      ],
+      "gold_sources": [
+        "cmt",
+        "edas"
+      ],
+      "combination": "join",
+      "join_on": "conf",
+      "select": [
+        "conf",
+        "url",
+        "enddate"
+      ],
+      "gold_query": "SELECT DISTINCT ?conf ?url ?enddate WHERE {\n  SERVICE <http://192.168.100.44:3030/cmt/sparql> { ?conf <http://cmt#siteURL> ?url . }\n  SERVICE <http://192.168.100.44:3030/edas/sparql> { ?conf_edas <http://www.w3.org/2002/07/owl#sameAs> ?conf . ?conf_edas <http://edas#endDate> ?enddate . }\n}",
+      "notes": null
+    },
+    {
+      "id": "CJ-12",
+      "category": "cross-source-join",
+      "question": "Which workshops are there, what is each one about, and when does it begin?",
+      "cqa_ids": [
+        "workshop_start_date",
+        "workshop_topic"
+      ],
+      "gold_sources": [
+        "conference",
+        "edas"
+      ],
+      "combination": "join",
+      "join_on": "workshop",
+      "select": [
+        "workshop",
+        "topic",
+        "startdate"
+      ],
+      "gold_query": "SELECT DISTINCT ?workshop ?topic ?startdate WHERE {\n  SERVICE <http://192.168.100.44:3030/conference/sparql> { ?workshop <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://conference#Workshop> . ?workshop <http://conference#has_a_track-workshop-tutorial_topic> ?topic . }\n  SERVICE <http://192.168.100.44:3030/edas/sparql> { ?workshop_edas <http://www.w3.org/2002/07/owl#sameAs> ?workshop . ?workshop_edas <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://edas#Workshop> . ?workshop_edas <http://edas#hasStartDateTime> ?startdate . }\n}"
+    },
+    {
+      "id": "CJ-13",
+      "category": "cross-source-join",
+      "question": "Which workshops belong to a conference, which conference is it, and when is their submission deadline?",
+      "cqa_ids": [
+        "workshop_of_conference",
+        "workshop_submission_date"
+      ],
+      "gold_sources": [
+        "confof",
+        "ekaw"
+      ],
+      "combination": "join",
+      "join_on": "workshop",
+      "select": [
+        "workshop",
+        "conf",
+        "deadline"
+      ],
+      "gold_query": "SELECT DISTINCT ?workshop ?conf ?deadline WHERE {\n  SERVICE <http://192.168.100.44:3030/ekaw/sparql> { ?conf <http://ekaw#hasEvent> ?workshop . ?conf <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ekaw#Conference> . ?workshop <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ekaw#Workshop> . }\n  SERVICE <http://192.168.100.44:3030/confof/sparql> { ?workshop_confof <http://www.w3.org/2002/07/owl#sameAs> ?workshop . ?workshop_confof a <http://confOf#Workshop> . ?workshop_confof <http://confOf#hasAdministrativeEvent> ?confof_o2 . ?confof_o2 a <http://confOf#Submission_event>. ?confof_o2 <http://confOf#ends_on> ?deadline. }\n}"
+    },
+    {
+      "id": "CJ-14",
+      "category": "cross-source-join",
+      "question": "Which papers were accepted, and what subject does each deal with?",
+      "cqa_ids": [
+        "accepted_paper",
+        "topic_of_paper"
+      ],
+      "gold_sources": [
+        "conference",
+        "confof"
+      ],
+      "combination": "join",
+      "join_on": "paper",
+      "select": [
+        "paper",
+        "topic"
+      ],
+      "gold_query": "SELECT DISTINCT ?paper ?topic WHERE {\n  SERVICE <http://192.168.100.44:3030/conference/sparql> { ?paper <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://conference#Accepted_contribution> . }\n  SERVICE <http://192.168.100.44:3030/confof/sparql> { ?paper_confof <http://www.w3.org/2002/07/owl#sameAs> ?paper . ?paper_confof <http://confOf#dealsWith> ?topic . }\n}"
+    },
+    {
+      "id": "CC-01",
+      "category": "conditional",
+      "question": "Which papers were accepted?",
+      "cqa_ids": [
+        "accepted_paper"
+      ],
+      "gold_sources": [
+        "cmt",
+        "conference",
+        "edas",
+        "ekaw"
+      ],
+      "combination": "union",
+      "join_on": null,
+      "select": [
+        "paper"
+      ],
+      "gold_query": "SELECT DISTINCT ?paper WHERE {\n  {\n  SERVICE <http://192.168.100.44:3030/cmt/sparql> { { ?paper <http://cmt#hasDecision> ?cmt_o2 . ?cmt_o2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://cmt#Acceptance> . } UNION { ?paper <http://cmt#acceptedBy> ?cmt_o2 . } }\n  }\n  UNION\n  {\n  SERVICE <http://192.168.100.44:3030/conference/sparql> { ?paper <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://conference#Accepted_contribution> . }\n  }\n  UNION\n  {\n  SERVICE <http://192.168.100.44:3030/edas/sparql> { ?paper <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://edas#AcceptedPaper> . }\n  }\n  UNION\n  {\n  SERVICE <http://192.168.100.44:3030/ekaw/sparql> { ?paper <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ekaw#Accepted_Paper> . }\n  }\n}",
+      "exercises": [
+        "ekaw:Accepted_Paper = cmt:Paper AND (cmt:hasDecision -> cmt:Acceptance)",
+        "conference:Accepted_contribution = cmt:Paper AND (cmt:hasDecision -> cmt:Acceptance)"
+      ]
+    },
+    {
+      "id": "CC-02",
+      "category": "conditional",
+      "question": "Which papers were turned down?",
+      "cqa_ids": [
+        "rejected_paper"
+      ],
+      "gold_sources": [
+        "cmt",
+        "conference",
+        "edas",
+        "ekaw"
+      ],
+      "combination": "union",
+      "join_on": null,
+      "select": [
+        "paper"
+      ],
+      "gold_query": "SELECT DISTINCT ?paper WHERE {\n  {\n  SERVICE <http://192.168.100.44:3030/cmt/sparql> { { ?paper <http://cmt#hasDecision> ?cmt_o2 . ?cmt_o2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://cmt#Rejection> . } UNION { ?paper <http://cmt#rejectedBy> ?cmt_o2 . } }\n  }\n  UNION\n  {\n  SERVICE <http://192.168.100.44:3030/conference/sparql> { ?paper <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://conference#Rejected_contribution> . }\n  }\n  UNION\n  {\n  SERVICE <http://192.168.100.44:3030/edas/sparql> { ?paper <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://edas#RejectedPaper> . }\n  }\n  UNION\n  {\n  SERVICE <http://192.168.100.44:3030/ekaw/sparql> { ?paper <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ekaw#Rejected_Paper> . }\n  }\n}",
+      "exercises": [
+        "ekaw:Rejected_Paper = cmt:Paper AND (cmt:hasDecision -> cmt:Rejection)",
+        "conference:Rejected_contribution = cmt:Paper AND (cmt:hasDecision -> cmt:Rejection)"
+      ],
+      "notes": null
+    },
+    {
+      "id": "CC-03",
+      "category": "conditional",
+      "question": "Who signed up early?",
+      "cqa_ids": [
+        "early_registered_participant"
+      ],
+      "gold_sources": [
+        "conference",
+        "confof",
+        "ekaw"
+      ],
+      "combination": "union",
+      "join_on": null,
+      "select": [
+        "person"
+      ],
+      "gold_query": "./gold_rq/CC-03.rq"
+     
+    },
+    {
+      "id": "CC-07",
+      "category": "conditional",
+      "question": "Which conferences are there, and by when must the final version of a paper be handed in?",
+      "cqa_ids": [
+        "conference_camera_date"
+      ],
+      "gold_sources": [
+        "conference",
+        "confof",
+        "edas"
+      ],
+      "combination": "union",
+      "join_on": null,
+      "select": [
+        "conf",
+        "date"
+      ],
+      "gold_query": "./gold_rq/CC-07.rq"
+    },
+    {
+      "id": "CC-08",
+      "category": "conditional",
+      "question": "List the papers that have been given to reviewers",
+      "cqa_ids": [
+        "is_assigned_reviewer_of"
+      ],
+      "gold_sources": [
+        "cmt",
+        "conference",
+        "confof",
+        "edas",
+        "ekaw"
+      ],
+      "combination": "union",
+      "join_on": null,
+      "select": [
+        "paper"
+      ],
+      "gold_query": "",
+      "notes": "the three CQA blocks ask it from the reviewer's side and are reused with the paper as the answer variable; the ekaw and edas blocks are written from the correspondence, which no CQA covers."
+    },
+    {
+      "id": "CC-09",
+      "category": "multi-source",
+      "question": "List all events",
+      "gold_sources": [
+        "edas",
+        "ekaw"
+      ],
+      "combination": "union",
+      "join_on": null,
+      "select": [
+        "event"
+      ],
+      "gold_query": "./gold_rq/CC-09.rq"
+
+    },
+    {
+      "id": "DS-01",
+      "category": "distractor",
+      "question": "retrieve withdrawn papers",
+      "cqa_ids": [],
+      "gold_sources": [
+        "edas"
+      ],
+      "combination": "single",
+      "join_on": null,
+      "select": [
+        "paper"
+      ],
+      "gold_query": "./gold_rq/DS-01.rq",
+      "notes": "papers exist in all five; withdrawal only in edas."
+    },
+    {
+      "id": "DS-02",
+      "category": "distractor",
+      "question": "Which reviews were positive?",
+      "cqa_ids": [],
+      "gold_sources": [
+        "ekaw"
+      ],
+      "combination": "single",
+      "join_on": null,
+      "select": [
+        "review"
+      ],
+      "gold_query": "./gold_rq/DS-02.rq",
+      "notes": "reviews exist in four sources; a verdict on the review only in ekaw."
+    },
+    {
+      "id": "DS-03",
+      "category": "distractor",
+      "question": "Who is registered as a user of the submission system?",
+      "cqa_ids": [],
+      "gold_sources": [
+        "cmt"
+      ],
+      "combination": "single",
+      "join_on": null,
+      "select": [
+        "person"
+      ],
+      "gold_query": "./gold_rq/DS-03.rq",
+      "notes": "people exist in all five; a system account only in cmt."
+    },
+    {
+      "id": "DS-04",
+      "category": "distractor",
+      "question": "Who volunteered to help out?",
+      "cqa_ids": [],
+      "gold_sources": [
+        "confof"
+      ],
+      "combination": "single",
+      "join_on": null,
+      "select": [
+        "person"
+      ],
+      "gold_query": "./gold_rq/DS-04.rq",
+      "notes": "roles exist everywhere; this one only in confof."
+    },
+    {
+      "id": "DS-05",
+      "category": "distractor",
+      "question": "Which announcements were published about the conference?",
+      "cqa_ids": [],
+      "gold_sources": [
+        "conference"
+      ],
+      "combination": "single",
+      "join_on": null,
+      "select": [
+        "item"
+      ],
+      "gold_query": "./gold_rq/DS-05.rq",
+      "notes": "conferences are in all five; their announcements only in conference."
+    },
+    {
+      "id": "DS-06",
+      "category": "distractor",
+      "question": "Which poster sessions are in the programme?",
+      "cqa_ids": [],
+      "gold_sources": [
+        "ekaw"
+      ],
+      "combination": "single",
+      "join_on": null,
+      "select": [
+        "session"
+      ],
+      "gold_query": "./gold_rq/DS-06.rq",
+      "notes": "sessions and events are widespread; poster sessions only in ekaw."
+    },
+    {
+      "id": "DS-07",
+      "category": "distractor",
+      "question": "Which travel grants are on offer?",
+      "cqa_ids": [],
+      "gold_sources": [
+        "edas"
+      ],
+      "combination": "single",
+      "join_on": null,
+      "select": [
+        "grant"
+      ],
+      "gold_query": "./gold_rq/DS-07.rq",
+      "gold_properties": [],
+      "exercises": [],
+      "notes": "money and registration appear in several sources; grants only in edas."
+    }
+  ]
+}

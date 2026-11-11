@@ -1,0 +1,21 @@
+#question: Which paper does each review evaluate?
+# CQA: review_of_paper
+
+# federation: UNION of complete alternative answers from each source
+
+SELECT DISTINCT ?s ?o
+WHERE {
+  {
+    # source: conference
+    SERVICE <http://192.168.100.44:3030/conference/sparql> {
+      ?s <http://conference#reviews> ?o .
+    }
+  }
+  UNION
+  {
+    # source: ekaw
+    SERVICE <http://192.168.100.44:3030/ekaw/sparql> {
+      ?s <http://ekaw#reviewOfPaper> ?o .
+    }
+  }
+}

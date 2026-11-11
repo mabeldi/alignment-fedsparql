@@ -1,0 +1,97 @@
+{
+  "variables": [
+    "conferenceDinner"
+  ],
+  "bindings": [
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://confOf-instances#event-616659485_-104081973"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://confOf-instances#event-616659485_1428971814"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://confOf-instances#event-616659485_943277065"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://confOf-instances#event-616659485_-1409861683"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://confOf-instances#event-616659485_69622803"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://edas-instances#event-616659485_943277065"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://edas-instances#event-616659485_-104081973"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://edas-instances#event-616659485_1428971814"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://edas-instances#event-616659485_69622803"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://edas-instances#event-616659485_-1409861683"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://ekaw-instances#event-616659485_1428971814"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://ekaw-instances#event-616659485_-104081973"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://ekaw-instances#event-616659485_943277065"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://ekaw-instances#event-616659485_69622803"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://ekaw-instances#event-616659485_-1409861683"
+      }
+    }
+  ]
+}

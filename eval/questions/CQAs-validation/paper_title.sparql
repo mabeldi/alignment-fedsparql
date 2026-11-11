@@ -1,0 +1,54 @@
+#question: What is the title of each paper?
+# CQA: paper_title
+
+# federation: UNION of complete alternative answers from each source
+
+SELECT DISTINCT ?s ?o
+WHERE {
+  {
+    # source: cmt
+    SERVICE <http://192.168.100.44:3030/cmt/sparql> {
+      ?s <http://cmt#title> ?o .
+      ?s a <http://cmt#PaperFullVersion> .
+    }
+  }
+  UNION
+  {
+    # source: conference
+    SERVICE <http://192.168.100.44:3030/conference/sparql> {
+      {
+      ?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://conference#Paper> .
+      }
+      UNION
+      {
+      ?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://conference#Written_contribution> .
+      ?conference_o2 <http://conference#is_the_1th_part_of> ?s.
+      ?conference_o2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://conference#Written_contribution> .
+      }
+      ?s <http://www.w3.org/2000/01/rdf-schema#label> ?o.
+    }
+  }
+  UNION
+  {
+    # source: confof
+    SERVICE <http://192.168.100.44:3030/confof/sparql> {
+      ?s <http://confOf#hasTitle> ?o .
+    }
+  }
+  UNION
+  {
+    # source: edas
+    SERVICE <http://192.168.100.44:3030/edas/sparql> {
+      ?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://edas#Paper> .
+      ?s <http://www.w3.org/2000/01/rdf-schema#label> ?o.
+    }
+  }
+  UNION
+  {
+    # source: ekaw
+    SERVICE <http://192.168.100.44:3030/ekaw/sparql> {
+      ?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ekaw#Paper> .
+      ?s <http://www.w3.org/2000/01/rdf-schema#label> ?o.
+    }
+  }
+}

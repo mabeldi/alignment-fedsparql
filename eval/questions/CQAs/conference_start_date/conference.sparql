@@ -1,0 +1,7 @@
+SELECT distinct ?s ?o WHERE {  
+
+?s <http://conference#has_important_dates> ?o2 .  
+?s a <http://conference#Conference_volume> .
+?o2 <http://conference#is_a_starting_date> ?o .  
+
+ }

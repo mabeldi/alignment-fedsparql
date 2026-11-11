@@ -1,0 +1,13 @@
+{
+ "note": "FROZEN LIST — DO NOT REGENERATE. These question ids are left out of the answer metrics (execution accuracy, answer rows F1, answer F1) because their gold query returns zero rows against the loaded data: the data has no instances of the thing the question asks about, so the benchmark has no answer to compare against. That is a gap in the data, not an empty answer the question intends. The list is written by hand and frozen so the denominator of the answer metrics cannot drift between scoring runs.",
+ "why_a_separate_file": "eval/questions/gold_questions.json is rebuilt by eval/build_gold_questions.py. Keeping this list in its own file means a rebuild of the gold questions cannot wipe it. Nothing generates this file; edit it by hand, and only after checking the data by hand.",
+ "read_by": "eval/harness/score.py — a gold query that returns no rows and is NOT listed here raises a loud warning and is marked unscorable, and an id listed here that starts returning rows raises a loud warning too. Either warning means the data changed under the benchmark and this list needs a human.",
+ "frozen": true,
+ "excluded": {
+  "DS-01": "no withdrawn papers exist in the loaded data, so the gold query returns zero rows",
+  "DS-04": "no volunteers exist in the loaded data, so the gold query returns zero rows",
+  "DS-05": "no published announcements exist in the loaded data, so the gold query returns zero rows",
+  "DS-06": "no poster sessions exist in the loaded data, so the gold query returns zero rows",
+  "DS-07": "no travel grants exist in the loaded data, so the gold query returns zero rows"
+ }
+}

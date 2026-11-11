@@ -1,0 +1,10 @@
+PREFIX :<http://conference#>
+
+SELECT distinct ?s ?o WHERE {  
+?s a :Presentation .
+?s :has_an_abstract ?o2 .
+?o4 :has_an_abstract ?o2 .
+?o4 a :Written_contribution .
+?o4 :is_submitted_at ?o.
+
+}

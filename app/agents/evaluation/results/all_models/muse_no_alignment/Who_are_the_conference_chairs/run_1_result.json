@@ -1,0 +1,80 @@
+{
+  "format_version": 1,
+  "question": "Who are the conference chairs?",
+  "query_file": "run_1.rq",
+  "query_sha256": "687a06c7e7897e3fa4a93e54255bef3a51e4b9e83776d33d63f8754fa193095f",
+  "started_at": "2026-09-12T19:49:39.836013+00:00",
+  "status": "success",
+  "query_kind": "generated",
+  "run": 1,
+  "generation_metadata_file": "run_1.json",
+  "coordinator_endpoint": "http://192.168.100.45:3030/cmt/sparql",
+  "variables": [
+    "conferencechair"
+  ],
+  "result_count": 10,
+  "bindings": [
+    {
+      "conferencechair": {
+        "type": "uri",
+        "value": "http://cmt-instances#person-1093044844"
+      }
+    },
+    {
+      "conferencechair": {
+        "type": "uri",
+        "value": "http://cmt-instances#person-1541430228"
+      }
+    },
+    {
+      "conferencechair": {
+        "type": "uri",
+        "value": "http://cmt-instances#person-1819475020"
+      }
+    },
+    {
+      "conferencechair": {
+        "type": "uri",
+        "value": "http://cmt-instances#person-2061098514"
+      }
+    },
+    {
+      "conferencechair": {
+        "type": "uri",
+        "value": "http://cmt-instances#person201055647"
+      }
+    },
+    {
+      "conferencechair": {
+        "type": "uri",
+        "value": "http://edas-instances#person-1093044844"
+      }
+    },
+    {
+      "conferencechair": {
+        "type": "uri",
+        "value": "http://edas-instances#person-1541430228"
+      }
+    },
+    {
+      "conferencechair": {
+        "type": "uri",
+        "value": "http://edas-instances#person-1819475020"
+      }
+    },
+    {
+      "conferencechair": {
+        "type": "uri",
+        "value": "http://edas-instances#person-2061098514"
+      }
+    },
+    {
+      "conferencechair": {
+        "type": "uri",
+        "value": "http://edas-instances#person201055647"
+      }
+    }
+  ],
+  "elapsed_seconds": 0.032,
+  "finished_at": "2026-09-12T19:49:39.868764+00:00"
+}

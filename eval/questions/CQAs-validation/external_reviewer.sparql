@@ -1,0 +1,32 @@
+#question: Who are the external reviewers?
+# CQA: external_reviewer
+
+# federation: UNION of complete alternative answers from each source
+
+SELECT DISTINCT ?s
+WHERE {
+  {
+    # source: cmt
+    SERVICE <http://192.168.100.44:3030/cmt/sparql> {
+      ?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://cmt#ExternalReviewer> .
+    }
+  }
+  UNION
+  {
+    # source: conference
+    SERVICE <http://192.168.100.44:3030/conference/sparql> {
+      ?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://conference#Reviewer> .
+      ?s <http://conference#invited_by> ?conference_o2 .
+    }
+  }
+  UNION
+  {
+    # source: ekaw
+    SERVICE <http://192.168.100.44:3030/ekaw/sparql> {
+      ?ekaw_o3 <http://ekaw#reviewWrittenBy> ?s.
+      MINUS{
+      ?s <http://ekaw#reviewerOfPaper> ?ekaw_o2.
+      }
+    }
+  }
+}

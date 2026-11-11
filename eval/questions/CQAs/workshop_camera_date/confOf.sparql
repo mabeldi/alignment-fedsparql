@@ -1,0 +1,8 @@
+PREFIX :<http://confOf#>
+
+SELECT distinct ?s ?o WHERE {  
+?s a :Workshop .
+?s :hasAdministrativeEvent ?o2 .
+?o2 a :Camera_Ready_event.
+?o2 :ends_on ?o.
+ }

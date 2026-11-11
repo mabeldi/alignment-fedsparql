@@ -1,0 +1,468 @@
+{
+  "format_version": 1,
+  "question": "Which_conference_dinners_are_organised",
+  "query_file": "reference.rq",
+  "query_sha256": "39f0a676938a13a9f8efa22affc29cd347edfca37dea481f832dacd5ebe4b08e",
+  "started_at": "2026-09-12T19:56:27.538946+00:00",
+  "status": "success",
+  "query_kind": "reference",
+  "coordinator_endpoint": "http://192.168.100.45:3030/confof/sparql",
+  "variables": [
+    "conferenceDinner"
+  ],
+  "result_count": 75,
+  "bindings": [
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://confOf-instances#dinner-081-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://confOf-instances#dinner-082-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://confOf-instances#dinner-083-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://confOf-instances#dinner-084-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://confOf-instances#dinner-085-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://confOf-instances#dinner-086-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://confOf-instances#dinner-087-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://confOf-instances#dinner-088-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://confOf-instances#dinner-089-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://confOf-instances#dinner-090-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://confOf-instances#dinner-091-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://confOf-instances#dinner-092-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://confOf-instances#dinner-093-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://confOf-instances#dinner-094-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://confOf-instances#dinner-095-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://confOf-instances#dinner-096-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://confOf-instances#dinner-097-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://confOf-instances#dinner-098-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://confOf-instances#dinner-099-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://confOf-instances#dinner-100-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://confOf-instances#event-616659485_-104081973"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://confOf-instances#event-616659485_-1409861683"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://confOf-instances#event-616659485_1428971814"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://confOf-instances#event-616659485_69622803"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://confOf-instances#event-616659485_943277065"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://edas-instances#dinner-041-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://edas-instances#dinner-042-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://edas-instances#dinner-043-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://edas-instances#dinner-044-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://edas-instances#dinner-045-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://edas-instances#dinner-046-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://edas-instances#dinner-047-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://edas-instances#dinner-048-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://edas-instances#dinner-049-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://edas-instances#dinner-050-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://edas-instances#dinner-051-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://edas-instances#dinner-052-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://edas-instances#dinner-053-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://edas-instances#dinner-054-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://edas-instances#dinner-055-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://edas-instances#dinner-056-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://edas-instances#dinner-057-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://edas-instances#dinner-058-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://edas-instances#dinner-059-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://edas-instances#dinner-060-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://edas-instances#event-616659485_-104081973"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://edas-instances#event-616659485_-1409861683"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://edas-instances#event-616659485_1428971814"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://edas-instances#event-616659485_69622803"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://edas-instances#event-616659485_943277065"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://ekaw-instances#dinner-061-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://ekaw-instances#dinner-062-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://ekaw-instances#dinner-063-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://ekaw-instances#dinner-064-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://ekaw-instances#dinner-065-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://ekaw-instances#dinner-066-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://ekaw-instances#dinner-067-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://ekaw-instances#dinner-068-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://ekaw-instances#dinner-069-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://ekaw-instances#dinner-070-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://ekaw-instances#dinner-071-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://ekaw-instances#dinner-072-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://ekaw-instances#dinner-073-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://ekaw-instances#dinner-074-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://ekaw-instances#dinner-075-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://ekaw-instances#dinner-076-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://ekaw-instances#dinner-077-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://ekaw-instances#dinner-078-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://ekaw-instances#dinner-079-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://ekaw-instances#dinner-080-aug"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://ekaw-instances#event-616659485_-104081973"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://ekaw-instances#event-616659485_-1409861683"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://ekaw-instances#event-616659485_1428971814"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://ekaw-instances#event-616659485_69622803"
+      }
+    },
+    {
+      "conferenceDinner": {
+        "type": "uri",
+        "value": "http://ekaw-instances#event-616659485_943277065"
+      }
+    }
+  ],
+  "elapsed_seconds": 0.14,
+  "finished_at": "2026-09-12T19:56:27.679543+00:00"
+}

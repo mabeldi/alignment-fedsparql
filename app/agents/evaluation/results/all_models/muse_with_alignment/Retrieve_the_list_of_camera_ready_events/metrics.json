@@ -1,0 +1,202 @@
+{
+  "format_version": 1,
+  "question_folder": "Retrieve_the_list_of_camera_ready_events",
+  "calculated_at": "2026-09-12T19:55:25.872066+00:00",
+  "selected_runs": [
+    1,
+    2,
+    3
+  ],
+  "policy": {
+    "answer_comparison": "distinct complete value tuples; best global column assignment",
+    "extra_columns": "ignored after assignment; duplicate projected rows removed",
+    "split_union_columns": "not coalesced",
+    "rdf_identity": "saved value strings; ignore type, datatype, and language; instance URIs <source>-instances#<id> merged by <id> (one thing held by several sources); answer_raw_uri keeps every URI distinct",
+    "source_comparison": "distinct SERVICE endpoint IRIs in query text, not coordinator or runtime contacts",
+    "failures": "execution errors score answer F1=0 and exact_match=0; a query that neither parses nor executes scores source F1=0",
+    "unreachable_endpoint": "never judged, so unscored; aggregate withheld until executed again",
+    "missing_or_stale_artifacts": "unscored; aggregate withheld until repaired"
+  },
+  "runs": [
+    {
+      "run": 1,
+      "status": "scored",
+      "execution_success": 1,
+      "query_sha256": "5eee85b486192064b0cccb8259bef1d08d13dc3a762fcec66986644a2760ac8b",
+      "result_count": 921,
+      "source_selection": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": 1,
+        "endpoints": [
+          "http://192.168.100.45:3030/confof/sparql",
+          "http://192.168.100.45:3030/ekaw/sparql"
+        ],
+        "missing_endpoints": [],
+        "extra_endpoints": []
+      },
+      "answer": {
+        "true_positive": 921,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": 1,
+        "column_mapping": {
+          "event": "camera_ready_event"
+        },
+        "ignored_generated_columns": [],
+        "generated_unique_rows": 921,
+        "reference_unique_rows": 921
+      },
+      "answer_raw_uri": {
+        "true_positive": 921,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": 1,
+        "column_mapping": {
+          "event": "camera_ready_event"
+        },
+        "ignored_generated_columns": [],
+        "generated_unique_rows": 921,
+        "reference_unique_rows": 921
+      }
+    },
+    {
+      "run": 2,
+      "status": "scored",
+      "execution_success": 1,
+      "query_sha256": "9aaa1b4e2e9169159686e3a4a5624cc4a327b63f3cfa2079f2b6f15dedad6b13",
+      "result_count": 921,
+      "source_selection": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": 1,
+        "endpoints": [
+          "http://192.168.100.45:3030/confof/sparql",
+          "http://192.168.100.45:3030/ekaw/sparql"
+        ],
+        "missing_endpoints": [],
+        "extra_endpoints": []
+      },
+      "answer": {
+        "true_positive": 921,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": 1,
+        "column_mapping": {
+          "event": "camera_ready_event"
+        },
+        "ignored_generated_columns": [],
+        "generated_unique_rows": 921,
+        "reference_unique_rows": 921
+      },
+      "answer_raw_uri": {
+        "true_positive": 921,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": 1,
+        "column_mapping": {
+          "event": "camera_ready_event"
+        },
+        "ignored_generated_columns": [],
+        "generated_unique_rows": 921,
+        "reference_unique_rows": 921
+      }
+    },
+    {
+      "run": 3,
+      "status": "scored",
+      "execution_success": 1,
+      "query_sha256": "0d25d65f9eccc506c6d617ccd34a0556fe8b70af3b2dda80edd4520660892408",
+      "result_count": 921,
+      "source_selection": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": 1,
+        "endpoints": [
+          "http://192.168.100.45:3030/confof/sparql",
+          "http://192.168.100.45:3030/ekaw/sparql"
+        ],
+        "missing_endpoints": [],
+        "extra_endpoints": []
+      },
+      "answer": {
+        "true_positive": 921,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": 1,
+        "column_mapping": {
+          "event": "camera_ready_event"
+        },
+        "ignored_generated_columns": [],
+        "generated_unique_rows": 921,
+        "reference_unique_rows": 921
+      },
+      "answer_raw_uri": {
+        "true_positive": 921,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": 1,
+        "column_mapping": {
+          "event": "camera_ready_event"
+        },
+        "ignored_generated_columns": [],
+        "generated_unique_rows": 921,
+        "reference_unique_rows": 921
+      }
+    }
+  ],
+  "question": "Retrieve the list of camera-ready events.",
+  "reference": {
+    "folder": "C:\\Users\\beldi\\Desktop\\Generation_SPARQL\\sparrql-llm\\app\\agents\\evaluation\\results\\Retrieve_the_list_of_camera_ready_events",
+    "query_sha256": "ca47ed0a43dadde024303a4fd6084b3d3ff16a85066ed7522ea78b1dd0c21e7e",
+    "result_count": 921,
+    "variables": [
+      "event"
+    ],
+    "endpoints": [
+      "http://192.168.100.45:3030/confof/sparql",
+      "http://192.168.100.45:3030/ekaw/sparql"
+    ]
+  },
+  "status": "complete",
+  "aggregate": {
+    "run_count": 3,
+    "answer_precision_mean": 1.0,
+    "answer_recall_mean": 1.0,
+    "answer_f1_mean": 1.0,
+    "answer_f1_raw_uri_mean": 1.0,
+    "exact_match_accuracy": 1,
+    "source_selection_f1_mean": 1.0,
+    "execution_success_rate": 1
+  }
+}

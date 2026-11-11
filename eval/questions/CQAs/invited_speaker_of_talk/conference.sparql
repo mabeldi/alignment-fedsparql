@@ -1,0 +1,7 @@
+PREFIX :<http://conference#>
+
+SELECT distinct ?s ?o WHERE {  
+?s a :Invited_speaker.
+?s :contributes ?o .
+?o a :Invited_talk.
+ }

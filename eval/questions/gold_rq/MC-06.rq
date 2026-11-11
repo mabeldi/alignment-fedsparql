@@ -1,0 +1,16 @@
+#Who were the participants in a social event?
+
+PREFIX confof: <http://confOf#>
+PREFIX edas: <http://edas#>
+
+SELECT DISTINCT ?participant WHERE {
+    SERVICE <http://192.168.100.44:3030/confof/sparql> {
+        ?social_event_a a confof:Social_event .
+    }
+    SERVICE <http://192.168.100.44:3030/edas/sparql> {
+        ?social_event_b <http://www.w3.org/2002/07/owl#sameAs> ?social_event_a .
+        ?social_event_b a edas:SocialEvent .
+        ?participant a edas:Attendee .
+        ?participant edas:attendeeAt ?social_event_b .
+    }
+}

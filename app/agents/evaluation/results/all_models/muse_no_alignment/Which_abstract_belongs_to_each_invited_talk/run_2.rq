@@ -1,0 +1,3 @@
+PREFIX conference: <http://conference#>
+PREFIX ekaw: <http://ekaw#>
+SELECT DISTINCT ?invited_talk ?abstract WHERE { { SERVICE <http://192.168.100.45:3030/conference/sparql> { ?invited_talk a conference:Invited_talk . ?abstract a conference:Abstract . ?invited_talk conference:has_an_abstract ?abstract . } } UNION { SERVICE <http://192.168.100.45:3030/ekaw/sparql> { ?invited_talk a ekaw:Invited_Talk . ?abstract a ekaw:Invited_Talk_Abstract . ?abstract ekaw:paperPresentedAs ?invited_talk . } } }

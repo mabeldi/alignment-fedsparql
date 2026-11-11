@@ -1,0 +1,21 @@
+#question: Who are the administrators?
+# CQA: administrator
+
+# federation: UNION of complete alternative answers from each source
+
+SELECT DISTINCT ?s
+WHERE {
+  {
+    # source: cmt
+    SERVICE <http://192.168.100.44:3030/cmt/sparql> {
+      ?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://cmt#Administrator> .
+    }
+  }
+  UNION
+  {
+    # source: confof
+    SERVICE <http://192.168.100.44:3030/confof/sparql> {
+      ?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://confOf#Administrator> .
+    }
+  }
+}

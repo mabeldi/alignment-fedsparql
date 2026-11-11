@@ -1,0 +1,24 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX cmt: <http://cmt#>
+PREFIX edas: <http://edas#>
+
+# question: Who are the conference chairs?
+# source: CQA conference_chair
+# federation: UNION of complete alternative answers from each source
+
+SELECT DISTINCT ?chair
+WHERE {
+  {
+    # source: cmt
+    SERVICE <http://192.168.100.45:3030/cmt/sparql> {
+      ?chair rdf:type cmt:ConferenceChair .
+    }
+  }
+  UNION
+  {
+    # source: edas
+    SERVICE <http://192.168.100.45:3030/edas/sparql> {
+      ?chair rdf:type edas:ConferenceChair .
+    }
+  }
+}

@@ -1,0 +1,36 @@
+
+PREFIX cmt: <http://cmt#>
+PREFIX conference: <http://conference#>
+PREFIX edas: <http://edas#>
+PREFIX ekaw: <http://ekaw#>
+
+SELECT
+DISTINCT ?acceptedpaper
+WHERE {
+    {
+
+        SERVICE <http://192.168.100.45:3030/edas/sparql> {
+            ?acceptedpaper a edas:AcceptedPaper .
+        }
+    }
+    UNION {
+
+        SERVICE <http://192.168.100.45:3030/cmt/sparql> {
+            ?acceptedpaper a cmt:Paper .
+            ?acceptedpaper cmt:hasDecision ?dec .
+            ?dec a cmt:Acceptance .
+        }
+    }
+    UNION {
+
+        SERVICE <http://192.168.100.45:3030/conference/sparql> {
+            ?acceptedpaper a conference:Accepted_contribution .
+        }
+    }
+    UNION {
+
+        SERVICE <http://192.168.100.45:3030/ekaw/sparql> {
+            ?acceptedpaper a ekaw:Accepted_Paper .
+        }
+    }
+}

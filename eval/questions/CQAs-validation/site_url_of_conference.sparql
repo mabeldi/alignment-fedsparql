@@ -1,0 +1,25 @@
+#question: What website URL belongs to each conference?
+# CQA: site_url_of_conference
+
+# federation: UNION of complete alternative answers from each source
+
+SELECT DISTINCT ?s ?o
+WHERE {
+  {
+    # source: cmt
+    SERVICE <http://192.168.100.44:3030/cmt/sparql> {
+      ?o <http://cmt#siteURL> ?s .
+    }
+  }
+  UNION
+  {
+    # source: ekaw
+    SERVICE <http://192.168.100.44:3030/ekaw/sparql> {
+      ?o a <http://ekaw#Conference> .
+      ?ekaw_o2 <http://ekaw#listsEvent> ?o .
+      ?ekaw_o2 a <http://ekaw#Web_Site> .
+      ?ekaw_o2 <http://www.w3.org/2000/01/rdf-schema#label> ?s .
+      filter(regex(?s,"^http"))
+    }
+  }
+}

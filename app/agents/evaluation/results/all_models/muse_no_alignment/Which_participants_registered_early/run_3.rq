@@ -1,0 +1,5 @@
+PREFIX ekaw: <http://ekaw#>
+SELECT DISTINCT ?early_registered_participant
+WHERE {
+SERVICE <http://192.168.100.45:3030/ekaw/sparql> { ?early_registered_participant a ekaw:Early-Registered_Participant . }
+}

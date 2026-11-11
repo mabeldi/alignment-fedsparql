@@ -1,0 +1,32 @@
+#Who was the chair of the programme committee?
+
+PREFIX conference: <http://conference#>
+PREFIX cmt: <http://cmt#>
+PREFIX confof: <http://confOf#>
+PREFIX ekaw: <http://ekaw#>
+
+SELECT DISTINCT ?chair WHERE {
+    {
+        SERVICE <http://192.168.100.44:3030/conference/sparql> {
+            ?chair a conference:Chair .
+        }
+    }
+    UNION {
+
+        SERVICE <http://192.168.100.44:3030/cmt/sparql> {
+            ?chair a cmt:ProgramCommitteeChair .
+        }
+    }
+    UNION {
+
+        SERVICE <http://192.168.100.44:3030/confof/sparql> {
+            ?chair a confof:Chair_PC .
+        }
+    }
+    UNION {
+
+        SERVICE <http://192.168.100.44:3030/ekaw/sparql> {
+            ?chair a ekaw:PC_Chair .
+        }
+    }
+}

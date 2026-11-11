@@ -1,0 +1,202 @@
+{
+  "format_version": 1,
+  "question_folder": "Who_are_the_invited_speakers",
+  "calculated_at": "2026-09-12T19:56:35.329052+00:00",
+  "selected_runs": [
+    1,
+    2,
+    3
+  ],
+  "policy": {
+    "answer_comparison": "distinct complete value tuples; best global column assignment",
+    "extra_columns": "ignored after assignment; duplicate projected rows removed",
+    "split_union_columns": "not coalesced",
+    "rdf_identity": "saved value strings; ignore type, datatype, and language; instance URIs <source>-instances#<id> merged by <id> (one thing held by several sources); answer_raw_uri keeps every URI distinct",
+    "source_comparison": "distinct SERVICE endpoint IRIs in query text, not coordinator or runtime contacts",
+    "failures": "execution errors score answer F1=0 and exact_match=0; a query that neither parses nor executes scores source F1=0",
+    "unreachable_endpoint": "never judged, so unscored; aggregate withheld until executed again",
+    "missing_or_stale_artifacts": "unscored; aggregate withheld until repaired"
+  },
+  "runs": [
+    {
+      "run": 1,
+      "status": "scored",
+      "execution_success": 1,
+      "query_sha256": "ee8ed6d78e66c8e08e3e49d0fdc61b20ed462a2992790e836e723b85bd641254",
+      "result_count": 42,
+      "source_selection": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": 1,
+        "endpoints": [
+          "http://192.168.100.45:3030/conference/sparql",
+          "http://192.168.100.45:3030/ekaw/sparql"
+        ],
+        "missing_endpoints": [],
+        "extra_endpoints": []
+      },
+      "answer": {
+        "true_positive": 21,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": 1,
+        "column_mapping": {
+          "s": "invited_speaker"
+        },
+        "ignored_generated_columns": [],
+        "generated_unique_rows": 21,
+        "reference_unique_rows": 21
+      },
+      "answer_raw_uri": {
+        "true_positive": 42,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": 1,
+        "column_mapping": {
+          "s": "invited_speaker"
+        },
+        "ignored_generated_columns": [],
+        "generated_unique_rows": 42,
+        "reference_unique_rows": 42
+      }
+    },
+    {
+      "run": 2,
+      "status": "scored",
+      "execution_success": 1,
+      "query_sha256": "ee8ed6d78e66c8e08e3e49d0fdc61b20ed462a2992790e836e723b85bd641254",
+      "result_count": 42,
+      "source_selection": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": 1,
+        "endpoints": [
+          "http://192.168.100.45:3030/conference/sparql",
+          "http://192.168.100.45:3030/ekaw/sparql"
+        ],
+        "missing_endpoints": [],
+        "extra_endpoints": []
+      },
+      "answer": {
+        "true_positive": 21,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": 1,
+        "column_mapping": {
+          "s": "invited_speaker"
+        },
+        "ignored_generated_columns": [],
+        "generated_unique_rows": 21,
+        "reference_unique_rows": 21
+      },
+      "answer_raw_uri": {
+        "true_positive": 42,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": 1,
+        "column_mapping": {
+          "s": "invited_speaker"
+        },
+        "ignored_generated_columns": [],
+        "generated_unique_rows": 42,
+        "reference_unique_rows": 42
+      }
+    },
+    {
+      "run": 3,
+      "status": "scored",
+      "execution_success": 1,
+      "query_sha256": "ee8ed6d78e66c8e08e3e49d0fdc61b20ed462a2992790e836e723b85bd641254",
+      "result_count": 42,
+      "source_selection": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": 1,
+        "endpoints": [
+          "http://192.168.100.45:3030/conference/sparql",
+          "http://192.168.100.45:3030/ekaw/sparql"
+        ],
+        "missing_endpoints": [],
+        "extra_endpoints": []
+      },
+      "answer": {
+        "true_positive": 21,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": 1,
+        "column_mapping": {
+          "s": "invited_speaker"
+        },
+        "ignored_generated_columns": [],
+        "generated_unique_rows": 21,
+        "reference_unique_rows": 21
+      },
+      "answer_raw_uri": {
+        "true_positive": 42,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": 1,
+        "column_mapping": {
+          "s": "invited_speaker"
+        },
+        "ignored_generated_columns": [],
+        "generated_unique_rows": 42,
+        "reference_unique_rows": 42
+      }
+    }
+  ],
+  "question": "Who are the invited speakers?",
+  "reference": {
+    "folder": "C:\\Users\\beldi\\Desktop\\Generation_SPARQL\\sparrql-llm\\app\\agents\\evaluation\\results\\Who_are_the_invited_speakers",
+    "query_sha256": "d5dcbf1b2a7efdf28b0cda2941a7c367e43196101be805fa3a0583f967b2a45c",
+    "result_count": 42,
+    "variables": [
+      "s"
+    ],
+    "endpoints": [
+      "http://192.168.100.45:3030/conference/sparql",
+      "http://192.168.100.45:3030/ekaw/sparql"
+    ]
+  },
+  "status": "complete",
+  "aggregate": {
+    "run_count": 3,
+    "answer_precision_mean": 1.0,
+    "answer_recall_mean": 1.0,
+    "answer_f1_mean": 1.0,
+    "answer_f1_raw_uri_mean": 1.0,
+    "exact_match_accuracy": 1,
+    "source_selection_f1_mean": 1.0,
+    "execution_success_rate": 1
+  }
+}

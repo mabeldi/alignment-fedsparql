@@ -1,0 +1,4 @@
+SELECT distinct ?s ?o WHERE {  
+?s a <http://cmt#PaperFullVersion> .
+?s <http://cmt#hasSubjectArea> ?o .  
+ }

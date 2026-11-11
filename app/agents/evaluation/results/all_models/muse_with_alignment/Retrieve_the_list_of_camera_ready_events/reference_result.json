@@ -1,0 +1,5544 @@
+{
+  "format_version": 1,
+  "question": "Retrieve the list of camera-ready events.",
+  "query_file": "reference.rq",
+  "query_sha256": "ca47ed0a43dadde024303a4fd6084b3d3ff16a85066ed7522ea78b1dd0c21e7e",
+  "started_at": "2026-09-12T19:55:25.516795+00:00",
+  "status": "success",
+  "query_kind": "reference",
+  "coordinator_endpoint": "http://192.168.100.45:3030/confof/sparql",
+  "variables": [
+    "event"
+  ],
+  "result_count": 921,
+  "bindings": [
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt-1015565448"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt-104081973"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt-1124309768"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt-1148263533"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt-1172457915"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt-1406424965"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt-1409861683"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt-147842296"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt-1493254443"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt-1503329724"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt-1628246333"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt-1640015237"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt-165628313"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt-169034248"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt-1828802822"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt-1837124011"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt-2111076817"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt-229105075"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt-292819272"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt-39352928"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt-450026137"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt-546410694"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt-677739588"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt-684273803"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt-743781487"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt1148041327"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt1212945492"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt1284626608"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt1299770676"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt1363654922"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt1428971814"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt1547038773"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt16403672"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt1728232209"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt1740347374"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt191249194"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt1951362132"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt1980477004"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt214658277"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt362072479"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt492476701"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt517009024"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt534385640"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt69622803"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt70044726"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt717895308"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt760592706"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt800399354"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt81231077"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt943277065"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-10140749615101114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-101412517078257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-10197076583581114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-10279070292502198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-10318174732262198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-10383822314262198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-10421966453972198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-10471626671281114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1061898766171114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-10621745376421114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-10651508131301263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-10660131037981114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-10723706712872198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1074964566151263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-10791443671341263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-10810558073652198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1083289491221263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1085247158562198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-10859588042911114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-11017150814502198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1108990714671263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1112042345331311"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-11123399774602198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1113800859401263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-11244645216622198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1126645578261263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1128344779222198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-11293037242671114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1129953298241114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-11335234908121114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1142171596239257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-11444436824182198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-11488887355532198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-115280736382198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1159186596812198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1164692375128257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1175049146139257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1176175376751114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-11766553337692198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-117779688050257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-11779753376372198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1178947877231114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1188284398841114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1190054884652198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-11921963886712198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-11924102145372198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-11928254536371114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-11962411182172198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-11993797186761114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-12100473013032198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-12255865186552198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1231814023811263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-12326964085622198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-12348036884992198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-12359394721771114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-12363021452051114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-124007769831263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1241951949112257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-12456609641381114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-12520929453101114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1253629534150257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-12585220392612198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-12642488974922198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1266567992741114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-126942672471257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-12722607208442198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-12795566372181114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1283522445612198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-12851958061401263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1288324261157257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-129339882122257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-12977174433162198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1298132778291114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1299781347592198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-13036334072822198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-13044743392622198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-13055096957512198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1312288591731263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-13124708332312198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1315540791271263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1315805681153257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-13239496807461114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-13265564756731114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-13324503124261114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-133780376011263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-13381007651351114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-13422966616591114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-13483611524092198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-13499247191021263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1358769097882198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-13744389395962198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-13801068551692198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1382001305131114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-138251123261114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1383201269251311"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1390810602722198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1398922881951263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-14062788332651114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-14101616067257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1411660958241263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-14127074444731114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-14134743957292198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1414779963226257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-14161523766682198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-142410066321311"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-14280059524592198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-14340778001122198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1436154263681114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-14394593735912198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1440326336551263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-14418133564112198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1446402940901263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1451531404701263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-14532539833231114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1453822590721114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-14545984484352198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-14666976024441114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-14810052594411114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1484019480100257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1484616304141263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-148583572581263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-14890338317992198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1492841288741114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-14962518438312198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1496932442121114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-14974095061411263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-14976118028682198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-14995117155632198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-15012981928162198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-15049849702222198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1510435208922198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-151734347189257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1520307401111263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1525088682451263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-15293805221331263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-15397889128342198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-15445461874412198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-15476247493262198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-154925287171263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-155176937179257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-15542218421481114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-15566824353392198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-15619369797621114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-15699165408311114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1572850852178257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-15747047267032198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-15765906475922198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1577886233191263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1583043004176257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-15877756354257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-15889653232111114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-16005311345812198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-16027465493082198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1603308079118257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1610809300131311"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-16196865304131114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-162112851371263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1621251246691263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1622591075662198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1624315447481114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-16247040002142198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1624792796201263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-16289977937321114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-16500658315772198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-16556358293421114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1656100800351263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1657941092681263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-16613193454392198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-16628274054282198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-16657167746872198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-16706349221602198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-16716037645032198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1677275992061114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-16778145577152198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-16820849881221263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1684379913871114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1685024237772198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-169214983490257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1692325419221311"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-16950876161681114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-170254755791114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-17055835732221114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-17106170444872198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1711640671101263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-17203840236061114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1723605982501263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-17279142514901114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1735295038391263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-17368267144012198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-17400839661042198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-17446768368241114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-17554846632921114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1756669991195257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-17569695456082198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-17609859548142198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-17622321695312198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-17688067177111114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-17737885092982198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-17758318654332198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-177586591521311"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-179833744292198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-18046975621152198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-18220469552402198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-182373286959257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-18448086243841114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-18463132875431114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-18502326201992198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-18510416534002198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1862342557702198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-18626069538412198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-18735951912891114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-18767976014512198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-18774820916352198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1880221682601263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1886346842181263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-18916387484552198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1893141227861263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-18947729386442198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-18961490172292198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1897148521981263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-189850802095257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-18997476588462198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-19032183835042198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-19067245591111263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-19093268757372198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-19105496877402198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-191069260371311"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-19134670214542198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-19148055417971114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-19171452403222198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1921869894163257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1925073489701114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1926869951391263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-19301615261451114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1936359888381311"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-19429050788112198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-19451552058622198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1945341641702198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-19463424131882198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-19526603084991114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-19576017665641114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1962166153661263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1971162207202198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-19728812481562198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-19756913143112198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1980828754170257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-19842197745811114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-19849950701142198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-19873598827522198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-1992475758122198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-19932817883122198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-20120836555111114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-2012208257164257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-2013129122152198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-20167272621531114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-20211115611261263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-20260658142032198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-202908585521114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-2029313114041114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-20295285427732198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-20313073068472198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-20349130035571114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-2037520576321114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-20436860723481114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-2047317383572198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-20499829135692198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-20523485941991114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-2052895783711263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-20563420611292198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-2057007911081263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-20650704412852198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-20746895525461114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-2078465622711114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-20840994223562198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-20984081916132198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-21009973777452198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-2106356029212257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-2108471831091263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-21091653135742198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-21116501487022198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-21130128881131114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-21167756158362198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-2117653441591263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-21227973552232198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-21253096747592198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-21316571504042198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-2135180926187257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-21385084995592198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-2146507973472198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-2159326121361263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-2159444624562198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-221279057141311"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-2280533293921114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-2306859742562198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-236316244271311"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-2482640998092198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-2519680485322198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-2591339936291114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-261363742211311"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-2637525135951114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-2754042396691114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-280043399661114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-2807395125321114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-2894374863722198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-29177991149257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-295779770244257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-2997157543012198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-3023819713251114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-3034757995091114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-3050140715301114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-3083021173701114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-313738464208257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-319353416631263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-324536197832198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-33217493012198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-3359665356191114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-337047316182257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-3455652841201263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-34713425862198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-3495113292841114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-363804886211263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-3651215206662198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-3735428353542198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-3754340686031114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-3769032521201114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-388354834161257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-3922885601211263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-3965331577521114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-39922788545257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-4017895006671114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-407584461222198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-4094685682871114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-411047560331263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-4112537604782198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-41153594521114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-4140188006182198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-414049857142198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-4150600525412198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-4293697431241263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-43613519721263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-4384786546461114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-4413303583451114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-441385023201311"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-444776811101263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-4475245875562198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-4477999293151114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-464841479219257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-4685066676012198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-472235213341263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-473804703322198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-4739876831672198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-47871508081114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-4830058262198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-4894718866492198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-492491405482198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-4950446783911114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-4969530136302198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-503342428311263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-525243631811114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-5306278516412198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-5415075797341114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-5437091667661114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-5445128015712198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-5465510948411114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-5597285995991114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-5630458154291114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-5630999064361114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-563471775136257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-565265636241114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-5680981708402198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-5739265263171114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-5769134202572198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-5838718992821114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-593311437791263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-5993335381051263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-6015201651661114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-607701195521114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-6094711038381114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-6147191613792198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-6159515494062198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-6195281106112198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-6207991041831114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-6227512362431114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-6245146476042198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-625893114151311"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-63295216672198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-6337111045201114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-6401632837742198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-6435673815211114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-6447973144121114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-6489796146831114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-655003381891114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-6673980181141263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-669251979281263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-6716170885672198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-6721307788231114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-6746358006052198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-6771259663181114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-6793154597192198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-6819395821591114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-689310185341114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-6897900161321263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-6987901671262198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-6989693775902198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-7029051882571114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-703330888741263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-7078107892422198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-712172722802198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-72103844836257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-7291040736572198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-7294979442901114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-7303766808011114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-735588045371114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-737481212561114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-7383231647052198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-740184691200257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-75297886121257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-7542396204301114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-7544413946152198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-7550745251252198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-758772885622198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-7625943871231263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-766454672042198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-772854622341311"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-7745819076092198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-7822817487942198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-7900045585242198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-79466076133257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-7965256991972198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-798231422471263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-8083020233892198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-813924806911114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-817908575301263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-8204642507812198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-8282923795941114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-8367213188212198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-849934625185257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-850973303141114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-85151428037257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-8531570091041114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-8552958001302198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-8608946987302198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-8625319092862198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-86418239376257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-8784401216681114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-882375368931263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-8827214018257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-885368962681114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-892130392732198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-89528283441263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-899178023961114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-9057370616941114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-9131120261311114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-914461116511114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-918011803981114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-92735573587257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-9278318081381263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-9314016512881114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-9379262191071263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-9441417481114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-944342976452198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-9481015734601114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-9481702572582198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-9569325823812198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-96035516731263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-9707083621031263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-9719043614511114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-9739717394091114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-9782779751251263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-9808321263531114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-9848422373941114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation-99532077125257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation10003631153257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation10007890197171114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation100134572362198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation10164366201911114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation10324919267212198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation10358057437762198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation104233461720257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation10427514344982198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation10466146024202198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation105043433761114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation10516216718052198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1053904242431114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1062147049801263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1064711176761114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1066494970207257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation10804471197272198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1088948290332198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation10914441135241114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation11004676304802198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation11016995311402198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1103567549881263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1104824422922198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation11110867037392198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation11122018161471114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation11139601563192198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation11148893697062198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1114967372101311"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation111637910201263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation11427714017841114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation114497381889257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation11694183232182198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation117117520851263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation11757482104701114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation11765180277431114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation11771672395061114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation11804710954161114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation11814189488452198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation11834162057051114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation11843278636382198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation11965444441912198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation11991802167401114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation12012207311071114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1202806619235257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation120361422223257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation12108365556522198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation12122673363362198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation12190130492372198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation12246783302611114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation12355082306032198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation12368767441052198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1243828842114257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation12471267331171114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation12491334426111114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation12503213933762198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation12565295487562198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation12584326533501114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation12604591163071114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation12641150406781114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1272618003177257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation12764134262691114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation12862968232972198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation12913995642642198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation130190385661114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation13081154172861114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation13084331735842198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1311784873351311"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation13213116006702198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1323814567871114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1328599111121263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1329934975129257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation13331495514312198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1334661937561263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1335835198201114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation13358507951171263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1338902870183257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation13391573546222198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation13457689395871114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation13480149222141114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation13611234516091114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1361889792209257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation13739100688001114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation13742665533201114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1377140680602198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1382534074247257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation138501835391311"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation138637021952198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation13923132425751114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation13930299043632198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1395502235180257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation14046939292052198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation141307758261263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation14160164054951114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation14171119325152198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation141838268551263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1425870440169257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1427555952162257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation14298952632731114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation14309471675722198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1431178177248257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1434203523155257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation14390600651001263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1457401293291311"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation146081988577257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation14638892855611114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation14761693637641114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1484118652371311"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation14883166801311263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation15035961513862198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation15146736178351114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1520822400121311"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1521451519781263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation15286935301512198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation15305161044912198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation15325991613242198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation15369780223257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation15380597863591114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation15408314025221114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation15434030271382198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1543506923231311"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation15454364005382198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1552967967771263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation155352228898257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation15718819331601114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1576449341841114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1577036953582198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation15808528161311"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation158253124132198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation15849601546312198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation158998057866257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1595068563141257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1611906392121263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation16130333557672198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation16169920644021114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1634013805179257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation16414856621263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1646959714022198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1649937830381263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1655092958192198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation16553169226772198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation166278660411263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1663128876621114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation16634970244582198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation16834214795021114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1685740316292198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation16900400533572198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1690058892160257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1708353513571263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation17145834166751114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1717727136126257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation172003636451311"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1726173436972198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation17281049511031114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation17292358313372198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation17317040971141114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation17331929871161263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation17354941481652198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation17528046577682198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation175872423391263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation17610816431362198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1761898039831114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation17624397877232198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation176424082729257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation17729173865531114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation17805018926071114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation17898619874452198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation17941022894642198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1800315539161114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation18070785462602198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation18127323225982198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation18127510013942198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation18206517281922198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation18326206947891114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1840163056262198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation18486496592692198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1850386443322198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1857483636782198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation18593490447281114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation18610590771212198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation18610679141011263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1874260441161263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation189028147481311"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation18908628598632198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation18953656262102198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1897527752302198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation19052627338542198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1907445132652198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation19126782906431114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation19288308911422198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation19398142512271114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation19399193732591114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation19401835222041114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation19453131372011114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation19461289372832198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation19465070872101114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation19480416976021114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation19516612518292198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation195282307548257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1958205882871263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation19599173998482198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1970283638122257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1978607001481263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation1989555706362198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation19920804511371263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation200455921561257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation2019202422792198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation20250103824902198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation20280801344391114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation20295704267881114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation20303151585752198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation20349195773452198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation20379351224911114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation20531305521631114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation20531740204762198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation20680300817251114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation20743817312342198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation20776632976192198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation2079652649751263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation20810705195051114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation20832477471791114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation20885024483492198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation20958557174622198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation2102418070351114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation21187211938322198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation21194831561412198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation212130853667257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation21240863133771114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation212433777220257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation21250937051462198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation21272334301161114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation21291639331961114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation21334614984882198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation2145585418111257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation2211680167091114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation2232738374492198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation226481691210257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation2302800655552198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation24150780351114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation2540166175182198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation2560076474662198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation2577402161492198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation259226493301311"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation2623058461932198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation2667139935052198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation2737370851022198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation2785121293142198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation2788085435351114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation2861402034461114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation2891462627831114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation2926881983871114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation3070541774941114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation3219391854952198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation328378755362198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation3424900614981114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation3440451218302198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation349072218572198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation3634197963982198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation3703679941032198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation38742721713257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation38927241741311"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation400021036131263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation4033533511351263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation4058746518492198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation420085662321263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation4256424735102198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation429792839138257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation4307187517282198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation4342929698712198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation4361046052721114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation4444029921671114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation4516250283651114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation4544194391772198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation4577469084671114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation4599865703321114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation4660652791722198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation4703464097712198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation474123316411114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation4767085354752198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation4774813631822198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation4795775772082198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation4849946186912198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation49432569752198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation496808317461263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation5004011824561114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation5073181783131114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation51625365575257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation51714282191257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation5226708358612198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation5278932227642198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation5393611043241114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation542860004225257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation5450474733711114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation558318215240257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation5608555808012198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation5633787125652198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation568349807582198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation576256738431263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation57788163512257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation5844226623601114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation585684047951114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation586839224184257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation5974765587551114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation6032501132091114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation608405588137257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation609304444442198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation6128553426502198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation621019774531263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation6251747771291114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation626956663191311"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation627528845192257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation6296048756652198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation6336186233811114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation6356011216402198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation6374187426251114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation6394655896561114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation639928460532198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation64290301519257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation645726131951114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation661251262122198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation670709255181114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation6708888503922198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation6735118741761114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation6749038955011114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation6771650865132198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation679300687422198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation680009760921263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation6845760623257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation6914789277002198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation6923206552251114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation6931542006802198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation7044938196992198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation7095392496392198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation712949446412198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation7153600631942198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation7162567281002198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation724042224131114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation7243673688222198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation7257223181131263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation7262069604422198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation734942138932198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation7427113593631114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation7434242358361114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation7518063466672198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation75200365502198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation7533232062198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation7553521236041114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation7572457462882198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation757978853392198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation760500623491263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation7639439165631114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation7658773994231114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation7672663207622198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation7678220524812198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation7748729711061263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation7776591416051114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation779911771381114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation7873452535122198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation7949756757451114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation8017424493791114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation802777832361263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation8114860302771114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation8231667705272198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation8243886006542198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation8251433866102198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation8264051283881114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation829158470991114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation829291975971114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation8299635183912198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation838955395241311"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation8414972397061114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation844922815181257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation852974058311311"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation8569871193672198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation857413306312198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation86289256985257"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation873860899511263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation889183351701114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation8901458602261114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation8937860237202198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation8954980211782198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation904402331041263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation9154491406261114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation919539828642198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation927130606641263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation9283345328391114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation9285069965821114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation93704463232198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation9436274936782198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation9456309597651114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation95112806201114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation9547827335192198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation960319979611263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation9605153921811114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation961762052581263"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation9669606896471114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation9828098773352198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation9868861664122198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation9939682991491114"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation997091241182198"
+      }
+    },
+    {
+      "event": {
+        "type": "uri",
+        "value": "http://ekaw-instances#presentation99734157206257"
+      }
+    }
+  ],
+  "elapsed_seconds": 0.14,
+  "finished_at": "2026-09-12T19:55:25.656991+00:00"
+}

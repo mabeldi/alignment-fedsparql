@@ -1,0 +1,339 @@
+{
+  "fixture": "source-coverage-v1",
+  "measured_at": "2026-09-12T17:42:29.600980+00:00",
+  "cases": {
+    "locations": {
+      "reference_raw_rows": 25,
+      "reference_normalized_rows": 25,
+      "reference_sha256": "3e9713f594bc935493c27322daf1e7254a76d4c79832ef57644f72d214558295",
+      "runs": {
+        "1": {
+          "query_sha256": "2606966b42720b3df95341a8cd37b4a0940b3f4bb8525373d97375bde6167298",
+          "source_endpoints": [
+            "http://192.168.100.45:3030/confof/sparql",
+            "http://192.168.100.45:3030/edas/sparql"
+          ],
+          "answer": {
+            "true_positive": 5,
+            "false_positive": 20,
+            "false_negative": 20,
+            "precision": 0.2,
+            "recall": 0.2,
+            "f1": 0.2,
+            "exact_match": 0,
+            "column_mapping": {
+              "conference": "conference",
+              "location": "location",
+              "deadline": "registrationDueOn"
+            },
+            "ignored_generated_columns": [],
+            "generated_unique_rows": 25,
+            "reference_unique_rows": 25
+          }
+        },
+        "2": {
+          "query_sha256": "92ef6f9af7535829d40759b26f9cd238e55aedf00300074a933183fde7b484a9",
+          "source_endpoints": [
+            "http://192.168.100.45:3030/confof/sparql",
+            "http://192.168.100.45:3030/edas/sparql"
+          ],
+          "answer": {
+            "true_positive": 5,
+            "false_positive": 20,
+            "false_negative": 20,
+            "precision": 0.2,
+            "recall": 0.2,
+            "f1": 0.2,
+            "exact_match": 0,
+            "column_mapping": {
+              "conference": "conference",
+              "location": "location",
+              "deadline": "registrationDueOn"
+            },
+            "ignored_generated_columns": [],
+            "generated_unique_rows": 25,
+            "reference_unique_rows": 25
+          }
+        },
+        "3": {
+          "query_sha256": "ec16cf4b82c405a9ec8c9757a1081396affb48700f25beb12b474bd97cd529f9",
+          "source_endpoints": [
+            "http://192.168.100.45:3030/confof/sparql",
+            "http://192.168.100.45:3030/edas/sparql"
+          ],
+          "answer": {
+            "true_positive": 5,
+            "false_positive": 60,
+            "false_negative": 20,
+            "precision": 0.07692307692307693,
+            "recall": 0.2,
+            "f1": 0.1111111111111111,
+            "exact_match": 0,
+            "column_mapping": {
+              "conference": "conference",
+              "location": "location",
+              "deadline": "registrationDueOn"
+            },
+            "ignored_generated_columns": [],
+            "generated_unique_rows": 65,
+            "reference_unique_rows": 25
+          }
+        }
+      }
+    },
+    "start_dates": {
+      "reference_raw_rows": 75,
+      "reference_normalized_rows": 65,
+      "reference_sha256": "43f6dc35b3804b1441e8d6121d4d1c01cb658bb446302433e78d679458e6c2a0",
+      "runs": {
+        "1": {
+          "query_sha256": "d32cbfef3cb0396ade66a09b2b409917fad0b39b30a16fffef1eb5bee23579ce",
+          "source_endpoints": [
+            "http://192.168.100.45:3030/confof/sparql",
+            "http://192.168.100.45:3030/edas/sparql"
+          ],
+          "answer": {
+            "true_positive": 45,
+            "false_positive": 0,
+            "false_negative": 20,
+            "precision": 1.0,
+            "recall": 0.6923076923076923,
+            "f1": 0.8181818181818182,
+            "exact_match": 0,
+            "column_mapping": {
+              "conference": "conference",
+              "startDate": "startDate"
+            },
+            "ignored_generated_columns": [],
+            "generated_unique_rows": 45,
+            "reference_unique_rows": 65
+          }
+        },
+        "2": {
+          "query_sha256": "df17ea6ccaa86d4b4a75b9e217eeaa020c446ebe94d498275c833603ae4655f2",
+          "source_endpoints": [
+            "http://192.168.100.45:3030/confof/sparql",
+            "http://192.168.100.45:3030/edas/sparql"
+          ],
+          "answer": {
+            "true_positive": 45,
+            "false_positive": 0,
+            "false_negative": 20,
+            "precision": 1.0,
+            "recall": 0.6923076923076923,
+            "f1": 0.8181818181818182,
+            "exact_match": 0,
+            "column_mapping": {
+              "conference": "conference",
+              "startDate": "starts_on"
+            },
+            "ignored_generated_columns": [],
+            "generated_unique_rows": 45,
+            "reference_unique_rows": 65
+          }
+        },
+        "3": {
+          "query_sha256": "61bc9ccf873045537fd4a572e2043fd87d0df44ae610f63d128cd92040c22d2c",
+          "source_endpoints": [
+            "http://192.168.100.45:3030/confof/sparql",
+            "http://192.168.100.45:3030/edas/sparql"
+          ],
+          "answer": {
+            "true_positive": 45,
+            "false_positive": 0,
+            "false_negative": 20,
+            "precision": 1.0,
+            "recall": 0.6923076923076923,
+            "f1": 0.8181818181818182,
+            "exact_match": 0,
+            "column_mapping": {
+              "conference": "conference",
+              "startDate": "startDate"
+            },
+            "ignored_generated_columns": [],
+            "generated_unique_rows": 45,
+            "reference_unique_rows": 65
+          }
+        }
+      }
+    },
+    "dinners": {
+      "reference_raw_rows": 75,
+      "reference_normalized_rows": 65,
+      "reference_sha256": "39f0a676938a13a9f8efa22affc29cd347edfca37dea481f832dacd5ebe4b08e",
+      "runs": {
+        "2": {
+          "query_sha256": "0a9b8efcf382ad0bb6b67b15d2bef4f8fcaa6566e2f941ad4ce6cb34821095e6",
+          "source_endpoints": [
+            "http://192.168.100.45:3030/edas/sparql",
+            "http://192.168.100.45:3030/ekaw/sparql"
+          ],
+          "answer": {
+            "true_positive": 45,
+            "false_positive": 0,
+            "false_negative": 20,
+            "precision": 1.0,
+            "recall": 0.6923076923076923,
+            "f1": 0.8181818181818182,
+            "exact_match": 0,
+            "column_mapping": {
+              "conferenceDinner": "conferencedinner"
+            },
+            "ignored_generated_columns": [],
+            "generated_unique_rows": 45,
+            "reference_unique_rows": 65
+          }
+        }
+      }
+    },
+    "early_registration": {
+      "reference_raw_rows": 7665,
+      "reference_normalized_rows": 3355,
+      "reference_sha256": "b33839a47772d4ecbb1f0d8049436ebdbaae454e00df1c77c8c007c858d358a8",
+      "runs": {
+        "1": {
+          "query_sha256": "b51db86478d49d5730b2b423d277d4222aafd61c17f1e33ebc0a25423de98cb2",
+          "source_endpoints": [
+            "http://192.168.100.45:3030/ekaw/sparql"
+          ],
+          "answer": {
+            "true_positive": 2555,
+            "false_positive": 0,
+            "false_negative": 800,
+            "precision": 1.0,
+            "recall": 0.7615499254843517,
+            "f1": 0.8646362098138748,
+            "exact_match": 0,
+            "column_mapping": {
+              "participant": "early_registered_participant"
+            },
+            "ignored_generated_columns": [],
+            "generated_unique_rows": 2555,
+            "reference_unique_rows": 3355
+          }
+        },
+        "2": {
+          "query_sha256": "f497c7276125aee2cad90ee85338c484cbb275aaa399f6374bdf29e442ff2af4",
+          "source_endpoints": [
+            "http://192.168.100.45:3030/ekaw/sparql"
+          ],
+          "answer": {
+            "true_positive": 2555,
+            "false_positive": 0,
+            "false_negative": 800,
+            "precision": 1.0,
+            "recall": 0.7615499254843517,
+            "f1": 0.8646362098138748,
+            "exact_match": 0,
+            "column_mapping": {
+              "participant": "early_registered_participant"
+            },
+            "ignored_generated_columns": [],
+            "generated_unique_rows": 2555,
+            "reference_unique_rows": 3355
+          }
+        },
+        "3": {
+          "query_sha256": "718ca108c7d2172f8ffa592fa8c0e99e058aef687f33c63172a9adb6cfe1f73d",
+          "source_endpoints": [
+            "http://192.168.100.45:3030/ekaw/sparql"
+          ],
+          "answer": {
+            "true_positive": 2555,
+            "false_positive": 0,
+            "false_negative": 800,
+            "precision": 1.0,
+            "recall": 0.7615499254843517,
+            "f1": 0.8646362098138748,
+            "exact_match": 0,
+            "column_mapping": {
+              "participant": "early_registered_participant"
+            },
+            "ignored_generated_columns": [],
+            "generated_unique_rows": 2555,
+            "reference_unique_rows": 3355
+          }
+        }
+      }
+    },
+    "topics": {
+      "reference_raw_rows": 18663,
+      "reference_normalized_rows": 7563,
+      "reference_sha256": "dbd3875bb5d90de0e95f8e9627513c39c7371d6461615ddb3001a4c7567d9915",
+      "runs": {
+        "1": {
+          "query_sha256": "50fc0fd7ac9738f5c80213a422fc9b0b37108f7f8b12d8090e6f73424c0973fa",
+          "source_endpoints": [
+            "http://192.168.100.45:3030/conference/sparql",
+            "http://192.168.100.45:3030/confof/sparql",
+            "http://192.168.100.45:3030/edas/sparql",
+            "http://192.168.100.45:3030/ekaw/sparql"
+          ],
+          "answer": {
+            "true_positive": 6763,
+            "false_positive": 0,
+            "false_negative": 800,
+            "precision": 1.0,
+            "recall": 0.8942218696284543,
+            "f1": 0.9441574759179114,
+            "exact_match": 0,
+            "column_mapping": {
+              "topic": "topic"
+            },
+            "ignored_generated_columns": [],
+            "generated_unique_rows": 6763,
+            "reference_unique_rows": 7563
+          }
+        },
+        "2": {
+          "query_sha256": "48324bbd9291bb8b049137e3ba9e8367fbcefa922450cef1a958a21c7622b59d",
+          "source_endpoints": [
+            "http://192.168.100.45:3030/conference/sparql",
+            "http://192.168.100.45:3030/confof/sparql",
+            "http://192.168.100.45:3030/edas/sparql",
+            "http://192.168.100.45:3030/ekaw/sparql"
+          ],
+          "answer": {
+            "true_positive": 6763,
+            "false_positive": 0,
+            "false_negative": 800,
+            "precision": 1.0,
+            "recall": 0.8942218696284543,
+            "f1": 0.9441574759179114,
+            "exact_match": 0,
+            "column_mapping": {
+              "topic": "topic"
+            },
+            "ignored_generated_columns": [],
+            "generated_unique_rows": 6763,
+            "reference_unique_rows": 7563
+          }
+        },
+        "3": {
+          "query_sha256": "48324bbd9291bb8b049137e3ba9e8367fbcefa922450cef1a958a21c7622b59d",
+          "source_endpoints": [
+            "http://192.168.100.45:3030/conference/sparql",
+            "http://192.168.100.45:3030/confof/sparql",
+            "http://192.168.100.45:3030/edas/sparql",
+            "http://192.168.100.45:3030/ekaw/sparql"
+          ],
+          "answer": {
+            "true_positive": 6763,
+            "false_positive": 0,
+            "false_negative": 800,
+            "precision": 1.0,
+            "recall": 0.8942218696284543,
+            "f1": 0.9441574759179114,
+            "exact_match": 0,
+            "column_mapping": {
+              "topic": "topic"
+            },
+            "ignored_generated_columns": [],
+            "generated_unique_rows": 6763,
+            "reference_unique_rows": 7563
+          }
+        }
+      }
+    }
+  }
+}

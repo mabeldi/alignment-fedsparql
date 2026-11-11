@@ -1,0 +1,34 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX conference: <http://conference#>
+PREFIX confof: <http://confOf#>
+PREFIX ekaw: <http://ekaw#>
+
+# question: Which participants registered early?
+# CQA: early_registered_participant
+# federation: UNION of complete alternative answers from each source.
+
+SELECT DISTINCT ?participant
+WHERE {
+  {
+    # source: conference
+    SERVICE <http://192.168.100.45:3030/conference/sparql> {
+      ?participant rdf:type conference:Conference_participant .
+      ?participant rdf:type conference:Early_paid_applicant .
+    }
+  }
+  UNION
+  {
+    # source: confof
+    SERVICE <http://192.168.100.45:3030/confof/sparql> {
+      ?participant confof:earlyRegistration "true" .
+    }
+  }
+  UNION
+  {
+    # source: ekaw
+    SERVICE <http://192.168.100.45:3030/ekaw/sparql> {
+      ?participant rdf:type ekaw:Early-Registered_Participant .
+    }
+  }
+}

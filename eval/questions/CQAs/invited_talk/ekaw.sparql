@@ -1,0 +1,3 @@
+SELECT distinct ?s WHERE {  
+?s a <http://ekaw#Invited_Talk> .  
+ }

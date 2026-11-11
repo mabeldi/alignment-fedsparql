@@ -1,0 +1,130 @@
+# =============================================================================
+# Central model configuration for all LLM agents.
+#
+# Change the provider / model / temperature here to experiment with different
+# models per agent. No code changes are needed — the agents read this file.
+#
+# provider options:
+#   ollama       -> local models served by Ollama   (http://localhost:11434/v1)
+#   gemini       -> Google Gemini API                (needs GEMINI_API_KEY)
+#   vercel       -> Vercel AI Gateway                (needs VERCEL_AI_API_KEY)
+#   openai       -> OpenAI API                       (needs OPENAI_API_KEY)
+#   anthropic    -> Anthropic Claude API             (needs CLAUDE_API_KEY)
+#   huggingface  -> HuggingFace Inference API        (needs HUGFACE_API_KEY)
+#
+# Vercel model ids are namespaced vendor-first ("google/gemini-2.5-flash-lite"); a bare
+# name is not valid. `python app/tools/vercel_client.py` prints what the gateway
+# knows, but access is per ACCOUNT — a listed id can still answer 403.
+#
+# EMBEDDINGS ARE NOT ROUTED HERE. app/embeddings/index_ontology.py reads
+# EMBED_MODEL from .env and talks to Ollama directly, so changing a provider
+# below never touches the vectors and never calls for a re-index.
+#
+# SWITCHING BETWEEN GEMINI AND LOCAL OLLAMA
+# Each agent below carries both lines: the active one, and the other commented
+# out directly under it. Swap the '#' to go back to fully local — nothing else
+# in the codebase changes, and no agent file is touched.
+#
+# Local models currently available in Ollama (`ollama list`):
+#   mistral-nemo:12b-instruct-2407-q8_0   (13 GB, best all-round JSON/instruct)
+#   qwen:14b                        (~20B, reasoning-tuned)
+#   phi4-mini:latest                      (2.5 GB, fast, lightweight)
+# =============================================================================
+
+# reasoning_effort: low | medium | high
+#
+# SET IT ONLY ON REASONING MODELS (gpt-oss). Ollama rejects it otherwise with
+# HTTP 400 '"<model>" does not support thinking', so it must NOT go in defaults:
+# mistral-nemo and qwen would fail on every call.
+#
+# Nothing is set below right now: agents 1, 6 and 7 moved from gpt-oss to
+# qwen:14b, which is not a thinking model. Verified directly against Ollama —
+# qwen:14b returns that 400 for any reasoning_effort. Put the key back only
+# alongside a model that supports it.
+#
+# WHY IT IS NEEDED. Ollama serves a 4096-token context by default, and a
+# reasoning model spends that budget on its chain of thought BEFORE writing the
+# answer. On the Agent 7 prompt, gpt-oss at default effort produced:
+#     finish_reason=length, prompt 2447 + completion 1649 = 4096 (window full),
+#     reasoning 7275 chars (containing a finished query), content 0 chars.
+# The answer was never written down and the agent received "". At effort "low"
+# the same prompt finishes with finish_reason=stop and a complete query.
+#
+# Raise to medium/high only after enlarging the server's window
+# (OLLAMA_CONTEXT_LENGTH, or PARAMETER num_ctx in a Modelfile). Setting
+# `options: {num_ctx: ...}` from the client does NOT work — Ollama's
+# OpenAI-compatible endpoint ignores it.
+defaults:
+  temperature: 0 #0.2
+
+agents:
+  # Agent 1 — extracts structured JSON (classes, properties, literals) from the
+  # natural-language question. Needs reliable strict-JSON output.
+  agent1_extractor:
+    provider: vercel
+    model: meta/muse-spark-1.3
+    # provider: gemini
+    # model: gemini-3.5-flash-lite
+    # provider: ollama
+    # model: qwen:14b
+    temperature: 0 #0.2
+
+  # Agent 4 — filters matched ontology terms to those relevant to the question.
+  # Moved off local mistral-nemo, which was the last agent not on Gemini.
+  # Measured on "which papers were withdrawn?": retrieval returned the exact
+  # answer class as its top hit at 0.9764, and this agent dropped it along with
+  # every other candidate for that keyword, while keeping five generic matches
+  # for the other keyword. Nothing downstream can recover from that — the two
+  # agents after it correctly produced no query at all, because after the drop
+  # no remaining class meant "withdrawn".
+  agent4_match_relevance:
+    provider: vercel
+    model: meta/muse-spark-1.3
+    # provider: gemini
+    # model: gemini-3.5-flash-lite
+    # provider: ollama
+    # model: mistral-nemo:12b-instruct-2407-q8_0
+    temperature: 0  #0.2
+
+  # Agent 6 — selects which ontology class paths are useful for the query.
+  # Reasoning-heavy, and the hardest step to keep stable: it decides per
+  # ontology and its answer is all-or-nothing, so one borderline judgement drops
+  # a whole source rather than one path. Measured on the gold set, it emptied
+  # every source on 3 of 12 coverage questions.
+  agent6_path_filter:
+    provider: vercel
+    model: meta/muse-spark-1.3
+    # provider: gemini
+    # model: gemini-3.5-flash-lite
+    # provider: ollama
+    # model: qwen:14b
+    temperature: 0 # 0.2
+
+  # Agent 8 — selects which ontologies the query reads from, seeing all of them
+  # in one call. Agent 6 judges one source at a time and cannot tell that the
+  # same concept is modelled precisely in one source and only generally in the
+  # others; this is the step that compares them.
+  agent8_source_selector:
+    provider: vercel
+    model: meta/muse-spark-1.3
+    # provider: gemini
+    # model: gemini-3.5-flash-lite
+    # provider: ollama
+    # model: qwen:14b
+    temperature: 0 #0.2
+
+  # Agent 7 — generates the final SPARQL / federated SPARQL query.
+  # Hardest step: code generation + federation logic.
+  agent7_sparql_generator:
+    provider: vercel
+    model: meta/muse-spark-1.3
+    temperature: 0
+    # provider: gemini
+    # model: gemini-3.5-flash-lite
+    # provider: ollama
+    # model: qwen:14b
+
+providers:
+  ollama:
+    # Overridable via the OLLAMA_BASE_URL env var (falls back to this value).
+    base_url: http://localhost:11434/v1

@@ -1,0 +1,22 @@
+#question: Who publishes each conference proceedings volume?
+# CQA: proceedings_publisher
+
+# federation: UNION of complete alternative answers from each source
+
+SELECT DISTINCT ?s ?o
+WHERE {
+  {
+    # source: conference
+    SERVICE <http://192.168.100.44:3030/conference/sparql> {
+      ?s <http://conference#has_a_publisher> ?o .
+    }
+  }
+  UNION
+  {
+    # source: ekaw
+    SERVICE <http://192.168.100.44:3030/ekaw/sparql> {
+      ?o <http://ekaw#publisherOf> ?s .
+      ?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ekaw#Conference_Proceedings> .
+    }
+  }
+}

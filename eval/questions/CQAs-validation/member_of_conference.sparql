@@ -1,0 +1,21 @@
+#question: Which person is a member of which conference?
+# CQA: member_of_conference
+
+# federation: UNION of complete alternative answers from each source
+
+SELECT DISTINCT ?s ?o
+WHERE {
+  {
+    # source: cmt
+    SERVICE <http://192.168.100.44:3030/cmt/sparql> {
+      ?s <http://cmt#memberOfConference> ?o .
+    }
+  }
+  UNION
+  {
+    # source: edas
+    SERVICE <http://192.168.100.44:3030/edas/sparql> {
+      ?s <http://edas#isMemberOf> ?o .
+    }
+  }
+}

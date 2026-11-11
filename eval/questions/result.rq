@@ -1,0 +1,31 @@
+#retrieve list of early registered participants
+
+PREFIX ekaw: <http://ekaw#>
+PREFIX conference: <http://conference#>
+PREFIX confof: <http://confOf#>
+
+SELECT
+DISTINCT ?early_registered_participant
+WHERE {
+    {
+
+        SERVICE <http://192.168.100.44:3030/ekaw/sparql> {
+            ?early_registered_participant a ekaw:Early-Registered_Participant .
+        }
+    }
+    UNION {
+
+        SERVICE <http://192.168.100.44:3030/conference/sparql> {
+            ?conference_early_registered_participant <http://www.w3.org/2002/07/owl#sameAs> ?early_registered_participant .
+            ?conference_early_registered_participant a conference:Early_paid_applicant .
+        }
+    }
+    UNION {
+
+        SERVICE <http://192.168.100.44:3030/confof/sparql> {
+            ?confof_early_registered_participant <http://www.w3.org/2002/07/owl#sameAs> ?early_registered_participant .
+            ?confof_early_registered_participant a confof:Participant .
+            ?confof_early_registered_participant confof:earlyRegistration \"true\" .
+        }
+    }
+}

@@ -1,0 +1,6 @@
+SELECT distinct ?s WHERE {  
+?o3 <http://ekaw#reviewWrittenBy> ?s.
+MINUS{
+?s <http://ekaw#reviewerOfPaper> ?o2.
+}
+ }

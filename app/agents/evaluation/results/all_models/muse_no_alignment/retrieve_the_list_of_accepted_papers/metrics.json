@@ -1,0 +1,213 @@
+{
+  "format_version": 1,
+  "question_folder": "retrieve_the_list_of_accepted_papers",
+  "calculated_at": "2026-09-12T19:49:15.834702+00:00",
+  "selected_runs": [
+    1,
+    2,
+    3
+  ],
+  "policy": {
+    "answer_comparison": "distinct complete value tuples; best global column assignment",
+    "extra_columns": "ignored after assignment; duplicate projected rows removed",
+    "split_union_columns": "not coalesced",
+    "rdf_identity": "saved value strings; ignore type, datatype, and language; instance URIs <source>-instances#<id> merged by <id> (one thing held by several sources); answer_raw_uri keeps every URI distinct",
+    "source_comparison": "distinct SERVICE endpoint IRIs in query text, not coordinator or runtime contacts",
+    "failures": "execution errors score answer F1=0 and exact_match=0; a query that neither parses nor executes scores source F1=0",
+    "unreachable_endpoint": "never judged, so unscored; aggregate withheld until executed again",
+    "missing_or_stale_artifacts": "unscored; aggregate withheld until repaired"
+  },
+  "runs": [
+    {
+      "run": 1,
+      "status": "scored",
+      "execution_success": 1,
+      "query_sha256": "5b4480d23c629a6172826b5de4da662668f9d8fd6d45001758cb0cbf7fc61b3c",
+      "result_count": 2742,
+      "source_selection": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666,
+        "exact_match": 0,
+        "endpoints": [
+          "http://192.168.100.45:3030/edas/sparql",
+          "http://192.168.100.45:3030/ekaw/sparql"
+        ],
+        "missing_endpoints": [
+          "http://192.168.100.45:3030/cmt/sparql",
+          "http://192.168.100.45:3030/conference/sparql"
+        ],
+        "extra_endpoints": []
+      },
+      "answer": {
+        "true_positive": 1871,
+        "false_positive": 0,
+        "false_negative": 1000,
+        "precision": 1.0,
+        "recall": 0.6516893068617207,
+        "f1": 0.7891185153943484,
+        "exact_match": 0,
+        "column_mapping": {
+          "paper": "acceptedpaper"
+        },
+        "ignored_generated_columns": [],
+        "generated_unique_rows": 1871,
+        "reference_unique_rows": 2871
+      },
+      "answer_raw_uri": {
+        "true_positive": 2742,
+        "false_positive": 0,
+        "false_negative": 2742,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666,
+        "exact_match": 0,
+        "column_mapping": {
+          "paper": "acceptedpaper"
+        },
+        "ignored_generated_columns": [],
+        "generated_unique_rows": 2742,
+        "reference_unique_rows": 5484
+      }
+    },
+    {
+      "run": 2,
+      "status": "scored",
+      "execution_success": 1,
+      "query_sha256": "725e3306eecbc9c995236185467f3e0f9df821355bb89d29acbf4ec9a3853963",
+      "result_count": 2742,
+      "source_selection": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666,
+        "exact_match": 0,
+        "endpoints": [
+          "http://192.168.100.45:3030/edas/sparql",
+          "http://192.168.100.45:3030/ekaw/sparql"
+        ],
+        "missing_endpoints": [
+          "http://192.168.100.45:3030/cmt/sparql",
+          "http://192.168.100.45:3030/conference/sparql"
+        ],
+        "extra_endpoints": []
+      },
+      "answer": {
+        "true_positive": 1871,
+        "false_positive": 0,
+        "false_negative": 1000,
+        "precision": 1.0,
+        "recall": 0.6516893068617207,
+        "f1": 0.7891185153943484,
+        "exact_match": 0,
+        "column_mapping": {
+          "paper": "acceptedpaper"
+        },
+        "ignored_generated_columns": [],
+        "generated_unique_rows": 1871,
+        "reference_unique_rows": 2871
+      },
+      "answer_raw_uri": {
+        "true_positive": 2742,
+        "false_positive": 0,
+        "false_negative": 2742,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666,
+        "exact_match": 0,
+        "column_mapping": {
+          "paper": "acceptedpaper"
+        },
+        "ignored_generated_columns": [],
+        "generated_unique_rows": 2742,
+        "reference_unique_rows": 5484
+      }
+    },
+    {
+      "run": 3,
+      "status": "scored",
+      "execution_success": 1,
+      "query_sha256": "7d0a9a4c1e281dd7342bd48be4bc7f32cf589cad0a718f6efecd55ccd5014c11",
+      "result_count": 2742,
+      "source_selection": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666,
+        "exact_match": 0,
+        "endpoints": [
+          "http://192.168.100.45:3030/edas/sparql",
+          "http://192.168.100.45:3030/ekaw/sparql"
+        ],
+        "missing_endpoints": [
+          "http://192.168.100.45:3030/cmt/sparql",
+          "http://192.168.100.45:3030/conference/sparql"
+        ],
+        "extra_endpoints": []
+      },
+      "answer": {
+        "true_positive": 1871,
+        "false_positive": 0,
+        "false_negative": 1000,
+        "precision": 1.0,
+        "recall": 0.6516893068617207,
+        "f1": 0.7891185153943484,
+        "exact_match": 0,
+        "column_mapping": {
+          "paper": "acceptedpaper"
+        },
+        "ignored_generated_columns": [],
+        "generated_unique_rows": 1871,
+        "reference_unique_rows": 2871
+      },
+      "answer_raw_uri": {
+        "true_positive": 2742,
+        "false_positive": 0,
+        "false_negative": 2742,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666,
+        "exact_match": 0,
+        "column_mapping": {
+          "paper": "acceptedpaper"
+        },
+        "ignored_generated_columns": [],
+        "generated_unique_rows": 2742,
+        "reference_unique_rows": 5484
+      }
+    }
+  ],
+  "question": "retrieve the list of accepted papers",
+  "reference": {
+    "folder": "C:\\Users\\beldi\\Desktop\\Generation_SPARQL\\sparrql-llm\\app\\agents\\evaluation\\results\\retrieve_the_list_of_accepted_papers",
+    "query_sha256": "df3b0080e9a4ce031ff30418459a1fa8acc71b83727fb28667e57acb217a9c33",
+    "result_count": 5484,
+    "variables": [
+      "paper"
+    ],
+    "endpoints": [
+      "http://192.168.100.45:3030/cmt/sparql",
+      "http://192.168.100.45:3030/conference/sparql",
+      "http://192.168.100.45:3030/edas/sparql",
+      "http://192.168.100.45:3030/ekaw/sparql"
+    ]
+  },
+  "status": "complete",
+  "aggregate": {
+    "run_count": 3,
+    "answer_precision_mean": 1.0,
+    "answer_recall_mean": 0.6516893068617207,
+    "answer_f1_mean": 0.7891185153943484,
+    "answer_f1_raw_uri_mean": 0.6666666666666666,
+    "exact_match_accuracy": 0,
+    "source_selection_f1_mean": 0.6666666666666666,
+    "execution_success_rate": 1
+  }
+}

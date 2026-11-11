@@ -1,0 +1,37 @@
+
+PREFIX edas: <http://edas#>
+PREFIX ekaw: <http://ekaw#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+SELECT
+DISTINCT ?workshop ?submissionDeadline
+WHERE {
+    {
+
+        SERVICE <http://192.168.100.45:3030/edas/sparql> {
+            ?workshop a edas:Workshop .
+            ?workshop edas:hasCall ?call .
+            ?call edas:hasSubmissionDeadline ?submissionDeadline .
+        }
+        SERVICE <http://192.168.100.45:3030/ekaw/sparql> {
+            ?workshopEkaw owl:sameAs ?workshop .
+            ?workshopEkaw a ekaw:Workshop .
+            ?workshopEkaw ekaw:partOfEvent ?conference .
+            ?conference a ekaw:Conference .
+        }
+    }
+    UNION {
+
+        SERVICE <http://192.168.100.45:3030/ekaw/sparql> {
+            ?workshop a ekaw:Workshop .
+            ?workshop ekaw:partOfEvent ?conference2 .
+            ?conference2 a ekaw:Conference .
+        }
+        SERVICE <http://192.168.100.45:3030/edas/sparql> {
+            ?workshopEdas owl:sameAs ?workshop .
+            ?workshopEdas a edas:Workshop .
+            ?workshopEdas edas:hasCall ?call2 .
+            ?call2 edas:hasSubmissionDeadline ?submissionDeadline .
+        }
+    }
+}

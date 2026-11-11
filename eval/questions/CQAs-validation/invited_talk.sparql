@@ -1,0 +1,21 @@
+#question: Which invited talks are scheduled?
+# CQA: invited_talk
+
+# federation: UNION of complete alternative answers from each source
+
+SELECT DISTINCT ?s
+WHERE {
+  {
+    # source: conference
+    SERVICE <http://192.168.100.44:3030/conference/sparql> {
+      ?s a <http://conference#Invited_talk> .
+    }
+  }
+  UNION
+  {
+    # source: ekaw
+    SERVICE <http://192.168.100.44:3030/ekaw/sparql> {
+      ?s a <http://ekaw#Invited_Talk> .
+    }
+  }
+}

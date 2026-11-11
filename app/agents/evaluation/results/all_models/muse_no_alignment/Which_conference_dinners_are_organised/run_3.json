@@ -1,0 +1,861 @@
+{
+  "question": "Which conference dinners are organised",
+  "run": 3,
+  "status": "generated",
+  "endpoint": "http://127.0.0.1:8999/query",
+  "parallel_requests": 1,
+  "server_diagnostics_note": "Server token counters and debug files are shared across requests; do not use them for per-run measurements during concurrent requests.",
+  "started_at": "2026-09-12T15:40:29.173724+00:00",
+  "http_status": 200,
+  "response": {
+    "question": "Which conference dinners are organised",
+    "alignments_enabled": false,
+    "extracted": {
+      "classes": [
+        "Organised Conference Dinner"
+      ],
+      "objectProperties": [],
+      "dataTypeProperties": [],
+      "literals": []
+    },
+    "matches": {
+      "Organised Conference Dinner": [
+        {
+          "label": "ConferenceDinner",
+          "uri": "http://edas#ConferenceDinner",
+          "type": "Class",
+          "name": "ConferenceDinner",
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#ConferenceDinner",
+            "name": "ConferenceDinner",
+            "label": "ConferenceDinner",
+            "source": "edas"
+          },
+          "score": 0.8626185
+        },
+        {
+          "label": "Conference_Banquet",
+          "uri": "http://ekaw#Conference_Banquet",
+          "type": "Class",
+          "name": "Conference_Banquet",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Conference_Banquet",
+            "name": "Conference_Banquet",
+            "label": "Conference_Banquet",
+            "source": "ekaw"
+          },
+          "score": 0.82370436
+        },
+        {
+          "label": "OrganizationalMeeting",
+          "uri": "http://edas#OrganizationalMeeting",
+          "type": "Class",
+          "name": "OrganizationalMeeting",
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#OrganizationalMeeting",
+            "name": "OrganizationalMeeting",
+            "label": "OrganizationalMeeting",
+            "source": "edas"
+          },
+          "score": 0.7313745
+        },
+        {
+          "label": "ConferenceEvent",
+          "uri": "http://edas#ConferenceEvent",
+          "type": "Class",
+          "name": "ConferenceEvent",
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#ConferenceEvent",
+            "name": "ConferenceEvent",
+            "label": "ConferenceEvent",
+            "source": "edas"
+          },
+          "score": 0.7241573
+        },
+        {
+          "label": "Conference",
+          "uri": "http://cmt#Conference",
+          "type": "Class",
+          "name": "Conference",
+          "payload": {
+            "type": "Class",
+            "uri": "http://cmt#Conference",
+            "name": "Conference",
+            "label": "Conference",
+            "source": "cmt"
+          },
+          "score": 0.7095401
+        },
+        {
+          "label": "Conference",
+          "uri": "http://edas#Conference",
+          "type": "Class",
+          "name": "Conference",
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#Conference",
+            "name": "Conference",
+            "label": "Conference",
+            "source": "edas"
+          },
+          "score": 0.7095401
+        },
+        {
+          "label": "Conference",
+          "uri": "http://confOf#Conference",
+          "type": "Class",
+          "name": "Conference",
+          "payload": {
+            "type": "Class",
+            "uri": "http://confOf#Conference",
+            "name": "Conference",
+            "label": "Conference",
+            "source": "confof"
+          },
+          "score": 0.7095401
+        },
+        {
+          "label": "Conference",
+          "uri": "http://ekaw#Conference",
+          "type": "Class",
+          "name": "Conference",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Conference",
+            "name": "Conference",
+            "label": "Conference",
+            "source": "ekaw"
+          },
+          "score": 0.7095401
+        },
+        {
+          "label": "Conference",
+          "uri": "http://conference#Conference",
+          "type": "Class",
+          "name": "Conference",
+          "payload": {
+            "type": "Class",
+            "uri": "http://conference#Conference",
+            "name": "Conference",
+            "label": "Conference",
+            "source": "conference"
+          },
+          "score": 0.70920897
+        }
+      ]
+    },
+    "context_filtered_matches": {
+      "Organised Conference Dinner": [
+        {
+          "label": "ConferenceDinner",
+          "uri": "http://edas#ConferenceDinner",
+          "type": "Class",
+          "name": "ConferenceDinner",
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#ConferenceDinner",
+            "name": "ConferenceDinner",
+            "label": "ConferenceDinner",
+            "source": "edas"
+          },
+          "score": 0.8626185
+        },
+        {
+          "label": "Conference_Banquet",
+          "uri": "http://ekaw#Conference_Banquet",
+          "type": "Class",
+          "name": "Conference_Banquet",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Conference_Banquet",
+            "name": "Conference_Banquet",
+            "label": "Conference_Banquet",
+            "source": "ekaw"
+          },
+          "score": 0.82370436
+        }
+      ]
+    },
+    "context_removed_matches": {
+      "Organised Conference Dinner": [
+        {
+          "label": "OrganizationalMeeting",
+          "uri": "http://edas#OrganizationalMeeting",
+          "type": "Class",
+          "name": "OrganizationalMeeting",
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#OrganizationalMeeting",
+            "name": "OrganizationalMeeting",
+            "label": "OrganizationalMeeting",
+            "source": "edas"
+          },
+          "score": 0.7313745
+        },
+        {
+          "label": "ConferenceEvent",
+          "uri": "http://edas#ConferenceEvent",
+          "type": "Class",
+          "name": "ConferenceEvent",
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#ConferenceEvent",
+            "name": "ConferenceEvent",
+            "label": "ConferenceEvent",
+            "source": "edas"
+          },
+          "score": 0.7241573
+        },
+        {
+          "label": "Conference",
+          "uri": "http://cmt#Conference",
+          "type": "Class",
+          "name": "Conference",
+          "payload": {
+            "type": "Class",
+            "uri": "http://cmt#Conference",
+            "name": "Conference",
+            "label": "Conference",
+            "source": "cmt"
+          },
+          "score": 0.7095401
+        },
+        {
+          "label": "Conference",
+          "uri": "http://edas#Conference",
+          "type": "Class",
+          "name": "Conference",
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#Conference",
+            "name": "Conference",
+            "label": "Conference",
+            "source": "edas"
+          },
+          "score": 0.7095401
+        },
+        {
+          "label": "Conference",
+          "uri": "http://confOf#Conference",
+          "type": "Class",
+          "name": "Conference",
+          "payload": {
+            "type": "Class",
+            "uri": "http://confOf#Conference",
+            "name": "Conference",
+            "label": "Conference",
+            "source": "confof"
+          },
+          "score": 0.7095401
+        },
+        {
+          "label": "Conference",
+          "uri": "http://ekaw#Conference",
+          "type": "Class",
+          "name": "Conference",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Conference",
+            "name": "Conference",
+            "label": "Conference",
+            "source": "ekaw"
+          },
+          "score": 0.7095401
+        },
+        {
+          "label": "Conference",
+          "uri": "http://conference#Conference",
+          "type": "Class",
+          "name": "Conference",
+          "payload": {
+            "type": "Class",
+            "uri": "http://conference#Conference",
+            "name": "Conference",
+            "label": "Conference",
+            "source": "conference"
+          },
+          "score": 0.70920897
+        }
+      ]
+    },
+    "top_sources": {
+      "edas": 0.8626185,
+      "ekaw": 0.82370436
+    },
+    "base_source": "ekaw",
+    "class_paths": [
+      {
+        "class": "http://edas#ConferenceDinner",
+        "source": "edas",
+        "outgoing": [
+          [
+            [
+              "http://edas#ConferenceDinner",
+              "http://edas#hasProgramme",
+              "http://edas#Programme"
+            ]
+          ],
+          [
+            [
+              "http://edas#ConferenceDinner",
+              "http://edas#hasAttendee",
+              "http://edas#Person"
+            ]
+          ],
+          [
+            [
+              "http://edas#ConferenceDinner",
+              "http://edas#hasLocation",
+              "http://edas#Place"
+            ]
+          ],
+          [
+            [
+              "http://edas#ConferenceDinner",
+              "http://edas#hasMenu",
+              "http://edas#MealMenu"
+            ]
+          ]
+        ],
+        "incoming": [
+          [
+            [
+              "http://edas#Programme",
+              "http://edas#belongsToEvent",
+              "http://edas#ConferenceDinner"
+            ]
+          ],
+          [
+            [
+              "http://edas#Person",
+              "http://edas#attendeeAt",
+              "http://edas#ConferenceDinner"
+            ]
+          ],
+          [
+            [
+              "http://edas#Place",
+              "http://edas#isLocationOf",
+              "http://edas#ConferenceDinner"
+            ]
+          ],
+          [
+            [
+              "http://edas#MealMenu",
+              "http://edas#isMenuOf",
+              "http://edas#ConferenceDinner"
+            ]
+          ]
+        ],
+        "values": [
+          [
+            "http://edas#ConferenceDinner",
+            "http://edas#hasStartDateTime",
+            "http://www.w3.org/2001/XMLSchema#dateTime"
+          ],
+          [
+            "http://edas#ConferenceDinner",
+            "http://edas#hasEndDateTime",
+            "http://www.w3.org/2001/XMLSchema#dateTime"
+          ]
+        ]
+      },
+      {
+        "class": "http://ekaw#Conference_Banquet",
+        "source": "ekaw",
+        "outgoing": [
+          [
+            [
+              "http://ekaw#Conference_Banquet",
+              "http://ekaw#partOfEvent",
+              "http://ekaw#Event"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Conference_Banquet",
+              "http://ekaw#hasEvent",
+              "http://ekaw#Event"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Conference_Banquet",
+              "http://ekaw#heldIn",
+              "http://ekaw#Location"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Conference_Banquet",
+              "http://ekaw#coversTopic",
+              "http://ekaw#Research_Topic"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Conference_Banquet",
+              "http://ekaw#eventOnList",
+              "http://ekaw#Programme_Brochure"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Conference_Banquet",
+              "http://ekaw#eventOnList",
+              "http://ekaw#Web_Site"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Conference_Banquet",
+              "http://ekaw#organisedBy",
+              "http://ekaw#Organisation"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Conference_Banquet",
+              "http://ekaw#organisedBy",
+              "http://ekaw#Person"
+            ]
+          ]
+        ],
+        "incoming": [
+          [
+            [
+              "http://ekaw#Event",
+              "http://ekaw#partOfEvent",
+              "http://ekaw#Conference_Banquet"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Event",
+              "http://ekaw#hasEvent",
+              "http://ekaw#Conference_Banquet"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Location",
+              "http://ekaw#locationOf",
+              "http://ekaw#Conference_Banquet"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Programme_Brochure",
+              "http://ekaw#listsEvent",
+              "http://ekaw#Conference_Banquet"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Web_Site",
+              "http://ekaw#listsEvent",
+              "http://ekaw#Conference_Banquet"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Organisation",
+              "http://ekaw#organises",
+              "http://ekaw#Conference_Banquet"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Person",
+              "http://ekaw#organises",
+              "http://ekaw#Conference_Banquet"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Research_Topic",
+              "http://ekaw#topicCoveredBy",
+              "http://ekaw#Conference_Banquet"
+            ]
+          ]
+        ],
+        "values": []
+      }
+    ],
+    "summarize_class_paths": [
+      {
+        "label": "ConferenceDinner",
+        "class": "http://edas#ConferenceDinner",
+        "source": "edas",
+        "outgoing": [
+          "ConferenceDinner -[hasProgramme]-> Programme",
+          "ConferenceDinner -[hasAttendee]-> Person",
+          "ConferenceDinner -[hasLocation]-> Place",
+          "ConferenceDinner -[hasMenu]-> MealMenu"
+        ],
+        "incoming": [
+          "Programme -[belongsToEvent]-> ConferenceDinner",
+          "Person -[attendeeAt]-> ConferenceDinner",
+          "Place -[isLocationOf]-> ConferenceDinner",
+          "MealMenu -[isMenuOf]-> ConferenceDinner"
+        ],
+        "values": [
+          [
+            "http://edas#ConferenceDinner",
+            "http://edas#hasStartDateTime",
+            "http://www.w3.org/2001/XMLSchema#dateTime"
+          ],
+          [
+            "http://edas#ConferenceDinner",
+            "http://edas#hasEndDateTime",
+            "http://www.w3.org/2001/XMLSchema#dateTime"
+          ]
+        ]
+      },
+      {
+        "label": "Conference_Banquet",
+        "class": "http://ekaw#Conference_Banquet",
+        "source": "ekaw",
+        "outgoing": [
+          "Conference_Banquet -[partOfEvent]-> Event",
+          "Conference_Banquet -[hasEvent]-> Event",
+          "Conference_Banquet -[heldIn]-> Location",
+          "Conference_Banquet -[coversTopic]-> Research_Topic",
+          "Conference_Banquet -[eventOnList]-> Programme_Brochure",
+          "Conference_Banquet -[eventOnList]-> Web_Site",
+          "Conference_Banquet -[organisedBy]-> Organisation",
+          "Conference_Banquet -[organisedBy]-> Person"
+        ],
+        "incoming": [
+          "Event -[partOfEvent]-> Conference_Banquet",
+          "Event -[hasEvent]-> Conference_Banquet",
+          "Location -[locationOf]-> Conference_Banquet",
+          "Programme_Brochure -[listsEvent]-> Conference_Banquet",
+          "Web_Site -[listsEvent]-> Conference_Banquet",
+          "Organisation -[organises]-> Conference_Banquet",
+          "Person -[organises]-> Conference_Banquet",
+          "Research_Topic -[topicCoveredBy]-> Conference_Banquet"
+        ],
+        "values": []
+      },
+      {
+        "label": "Person",
+        "class": "http://edas#Person",
+        "source": "edas",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://edas#Person",
+            "http://edas#hasBiography",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://edas#Person",
+            "http://edas#hasEmail",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://edas#Person",
+            "http://edas#hasFirstName",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://edas#Person",
+            "http://edas#hasLastName",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "label": "Programme",
+        "class": "http://edas#Programme",
+        "source": "edas",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "label": "Place",
+        "class": "http://edas#Place",
+        "source": "edas",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "label": "MealMenu",
+        "class": "http://edas#MealMenu",
+        "source": "edas",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "label": "Location",
+        "class": "http://ekaw#Location",
+        "source": "ekaw",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "label": "Person",
+        "class": "http://ekaw#Person",
+        "source": "ekaw",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "label": "Event",
+        "class": "http://ekaw#Event",
+        "source": "ekaw",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "label": "Web_Site",
+        "class": "http://ekaw#Web_Site",
+        "source": "ekaw",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "label": "Programme_Brochure",
+        "class": "http://ekaw#Programme_Brochure",
+        "source": "ekaw",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "label": "Organisation",
+        "class": "http://ekaw#Organisation",
+        "source": "ekaw",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "label": "Research_Topic",
+        "class": "http://ekaw#Research_Topic",
+        "source": "ekaw",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      }
+    ],
+    "summarize_contextual_class_paths": [
+      {
+        "class": "http://edas#ConferenceDinner",
+        "source": "edas",
+        "label": "ConferenceDinner",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://edas#ConferenceDinner",
+            "http://edas#hasStartDateTime",
+            "http://www.w3.org/2001/XMLSchema#dateTime"
+          ],
+          [
+            "http://edas#ConferenceDinner",
+            "http://edas#hasEndDateTime",
+            "http://www.w3.org/2001/XMLSchema#dateTime"
+          ]
+        ],
+        "answers_question": true
+      },
+      {
+        "class": "http://ekaw#Conference_Banquet",
+        "source": "ekaw",
+        "label": "Conference_Banquet",
+        "outgoing": [
+          "Conference_Banquet -[organisedBy]-> Organisation",
+          "Conference_Banquet -[organisedBy]-> Person"
+        ],
+        "incoming": [],
+        "values": [],
+        "answers_question": true
+      }
+    ],
+    "selected_class_paths": [
+      {
+        "class": "http://ekaw#Conference_Banquet",
+        "source": "ekaw",
+        "label": "Conference_Banquet",
+        "outgoing": [
+          "Conference_Banquet -[organisedBy]-> Organisation",
+          "Conference_Banquet -[organisedBy]-> Person"
+        ],
+        "incoming": [],
+        "values": [],
+        "answers_question": true,
+        "complete_answer_branch": false,
+        "source_complete_answer_branch": false
+      }
+    ],
+    "validated_class_paths": [
+      {
+        "class": "http://edas#ConferenceDinner",
+        "source": "edas",
+        "label": "ConferenceDinner",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://edas#ConferenceDinner",
+            "http://edas#hasStartDateTime",
+            "http://www.w3.org/2001/XMLSchema#dateTime"
+          ],
+          [
+            "http://edas#ConferenceDinner",
+            "http://edas#hasEndDateTime",
+            "http://www.w3.org/2001/XMLSchema#dateTime"
+          ]
+        ],
+        "answers_question": true,
+        "complete_answer_branch": false,
+        "source_complete_answer_branch": false
+      },
+      {
+        "class": "http://ekaw#Conference_Banquet",
+        "source": "ekaw",
+        "label": "Conference_Banquet",
+        "outgoing": [
+          "Conference_Banquet -[organisedBy]-> Organisation",
+          "Conference_Banquet -[organisedBy]-> Person"
+        ],
+        "incoming": [],
+        "values": [],
+        "answers_question": true,
+        "complete_answer_branch": false,
+        "source_complete_answer_branch": false
+      }
+    ],
+    "path_scores": [
+      {
+        "source": "ekaw",
+        "chain": "Conference_Banquet -[organisedBy]-> Organisation",
+        "full": 0.7348972249994494,
+        "classes": 0.5792706371545002,
+        "relations": 0.5532220920206773,
+        "total": 0.6518742220502103,
+        "complete": false,
+        "kept": true,
+        "reason": "at or above tier threshold"
+      },
+      {
+        "source": "edas",
+        "chain": "",
+        "full": 0.7302471776130992,
+        "classes": 0.7663751678146209,
+        "relations": 0.2721173510832312,
+        "total": 0.6494596093675822,
+        "complete": false,
+        "kept": true,
+        "reason": "at or above tier threshold"
+      },
+      {
+        "source": "ekaw",
+        "chain": "Conference_Banquet -[organisedBy]-> Person",
+        "full": 0.6682456497572851,
+        "classes": 0.5162330019880171,
+        "relations": 0.5532220920206773,
+        "total": 0.5996371438791832,
+        "complete": false,
+        "kept": true,
+        "reason": "at or above tier threshold"
+      }
+    ],
+    "source_scores": {
+      "edas": 0.6494596093675822,
+      "ekaw": 0.6518742220502103
+    },
+    "provider_plan": [],
+    "cut_sources": [
+      "edas"
+    ],
+    "alignment": [],
+    "query": "PREFIX ekaw: <http://ekaw#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nSELECT DISTINCT ?conference_banquet WHERE { SERVICE <http://192.168.100.45:3030/ekaw/sparql> { ?conference_banquet a ekaw:Conference_Banquet . ?conference_banquet ekaw:organisedBy ?organisation . } }",
+    "token_usage": {
+      "by_agent": [
+        {
+          "agent": "agent4_match_relevance",
+          "provider": "vercel",
+          "model": "meta/muse-spark-1.3",
+          "calls": 5,
+          "prompt_tokens": 4064,
+          "completion_tokens": 10021,
+          "total_tokens": 14085,
+          "max_prompt_tokens": 853,
+          "avg_prompt_tokens": 813,
+          "calls_without_usage": 0
+        },
+        {
+          "agent": "agent7_sparql_generator",
+          "provider": "vercel",
+          "model": "meta/muse-spark-1.3",
+          "calls": 1,
+          "prompt_tokens": 2839,
+          "completion_tokens": 4364,
+          "total_tokens": 7203,
+          "max_prompt_tokens": 2839,
+          "avg_prompt_tokens": 2839,
+          "calls_without_usage": 0
+        },
+        {
+          "agent": "agent6_path_filter",
+          "provider": "vercel",
+          "model": "meta/muse-spark-1.3",
+          "calls": 2,
+          "prompt_tokens": 2546,
+          "completion_tokens": 4160,
+          "total_tokens": 6706,
+          "max_prompt_tokens": 1313,
+          "avg_prompt_tokens": 1273,
+          "calls_without_usage": 0
+        },
+        {
+          "agent": "agent8_source_selector",
+          "provider": "vercel",
+          "model": "meta/muse-spark-1.3",
+          "calls": 1,
+          "prompt_tokens": 1203,
+          "completion_tokens": 4035,
+          "total_tokens": 5238,
+          "max_prompt_tokens": 1203,
+          "avg_prompt_tokens": 1203,
+          "calls_without_usage": 0
+        },
+        {
+          "agent": "agent1_extractor",
+          "provider": "vercel",
+          "model": "meta/muse-spark-1.3",
+          "calls": 1,
+          "prompt_tokens": 1187,
+          "completion_tokens": 3127,
+          "total_tokens": 4314,
+          "max_prompt_tokens": 1187,
+          "avg_prompt_tokens": 1187,
+          "calls_without_usage": 0
+        }
+      ],
+      "totals": {
+        "calls": 10,
+        "prompt_tokens": 11839,
+        "completion_tokens": 25707,
+        "total_tokens": 37546
+      }
+    }
+  },
+  "elapsed_seconds": 166.269,
+  "finished_at": "2026-09-12T15:43:15.443059+00:00"
+}

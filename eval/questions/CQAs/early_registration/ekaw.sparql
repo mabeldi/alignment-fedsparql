@@ -1,0 +1,8 @@
+SELECT distinct ?s ?o 
+WHERE {
+?s a <http://ekaw#Conference_Participant>.
+  
+  bind( if (exists {?s a <http://ekaw#Early-Registered_Participant>}, "true"^^<http://www.w3.org/2001/XMLSchema#boolean>, 
+      if (exists {?s a <http://ekaw#Late-Registered_Participant>}, "false"^^<http://www.w3.org/2001/XMLSchema#boolean>,"")) as ?o)
+filter(?o!="")
+}

@@ -1,0 +1,106 @@
+{
+  "fixture": "source-coverage-v1",
+  "base_url": "http://192.168.100.45:3030",
+  "metrics_scanned": 30,
+  "cases": {
+    "locations": {
+      "folder": "Retrieve_a_list_of_conferences_including_their_locations_and_registration_deadlines",
+      "sources": [
+        "conference",
+        "edas"
+      ],
+      "shape": "join",
+      "prefix": "conference-location",
+      "path": "app\\agents\\evaluation\\results\\Retrieve_a_list_of_conferences_including_their_locations_and_registration_deadlines",
+      "qualifying_runs": [
+        1,
+        2,
+        3
+      ],
+      "saved_baseline_normalized_rows": 5,
+      "count": 20,
+      "reference": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX edas: <http://edas#>\nPREFIX conference: <http://conference#>\n\n# question: Retrieve a list of conferences, including their locations and registration deadlines.\n# sources: Conference supplies the location text; EDAS supplies the registration deadline.\n# federation: join aligned conference individuals with owl:sameAs.\n# note: both location and registration deadline are required.\n\nSELECT DISTINCT ?conference ?location ?deadline\nWHERE {\n  SERVICE <http://192.168.100.45:3030/conference/sparql> {\n    ?conference rdf:type conference:Conference_volume .\n    ?conference conference:has_a_location ?location .\n  }\n  SERVICE <http://192.168.100.45:3030/edas/sparql> {\n    ?conferenceEdas owl:sameAs ?conference .\n    ?conferenceEdas edas:registrationDueOn ?deadline .\n  }\n}\n\n",
+      "reference_sha256": "3e9713f594bc935493c27322daf1e7254a76d4c79832ef57644f72d214558295"
+    },
+    "start_dates": {
+      "folder": "What_is_the_start_date_of_each_conference",
+      "sources": [
+        "conference",
+        "confof",
+        "edas"
+      ],
+      "shape": "union",
+      "prefix": "conference-start",
+      "path": "app\\agents\\evaluation\\results\\What_is_the_start_date_of_each_conference",
+      "qualifying_runs": [
+        1,
+        2,
+        3
+      ],
+      "saved_baseline_normalized_rows": 5,
+      "count": 20,
+      "reference": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX cmt: <http://cmt#>\nPREFIX conference: <http://conference#>\nPREFIX confof: <http://confOf#>\nPREFIX edas: <http://edas#>\n\n# question: What is the start date of each conference?\n# CQA: conference_start_date\n# federation: UNION of complete alternative answers from each source.\n# caveat: cmt:date is schema-valid for Conference but is named only as a generic date.\n\nSELECT DISTINCT ?conference ?startDate\nWHERE {\n  {\n    # source: conference\n    SERVICE <http://192.168.100.45:3030/conference/sparql> {\n      ?conference rdf:type conference:Conference_volume .\n      ?conference conference:has_important_dates ?importantDates .\n      ?importantDates conference:is_a_starting_date ?startDate .\n    }\n  }\n  UNION\n  {\n    # source: confof\n    SERVICE <http://192.168.100.45:3030/confof/sparql> {\n      ?conference rdf:type confof:Conference .\n      ?conference confof:starts_on ?startDate .\n    }\n  }\n  UNION\n  {\n    # source: edas\n    SERVICE <http://192.168.100.45:3030/edas/sparql> {\n      ?conference rdf:type edas:Conference .\n      ?conference edas:startDate ?startDate .\n    }\n  }\n}\n",
+      "reference_sha256": "43f6dc35b3804b1441e8d6121d4d1c01cb658bb446302433e78d679458e6c2a0"
+    },
+    "dinners": {
+      "folder": "Which_conference_dinners_are_organised",
+      "sources": [
+        "confof",
+        "edas",
+        "ekaw"
+      ],
+      "shape": "union",
+      "prefix": "dinner",
+      "path": "app\\agents\\evaluation\\results\\Which_conference_dinners_are_organised",
+      "qualifying_runs": [
+        2
+      ],
+      "saved_baseline_normalized_rows": 5,
+      "count": 20,
+      "reference": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX confof: <http://confOf#>\nPREFIX edas: <http://edas#>\nPREFIX ekaw: <http://ekaw#>\n\n# question: Which conference dinners are organised?\n# CQA: gala_dinner\n# federation: UNION of complete alternative class answers from each source.\n\nSELECT DISTINCT ?conferenceDinner\nWHERE {\n  {\n    # source: confof\n    SERVICE <http://192.168.100.45:3030/confof/sparql> {\n      ?conferenceDinner rdf:type confof:Banquet .\n    }\n  }\n  UNION\n  {\n    # source: edas\n    SERVICE <http://192.168.100.45:3030/edas/sparql> {\n      ?conferenceDinner rdf:type edas:ConferenceDinner .\n    }\n  }\n  UNION\n  {\n    # source: ekaw\n    SERVICE <http://192.168.100.45:3030/ekaw/sparql> {\n      ?conferenceDinner rdf:type ekaw:Conference_Banquet .\n    }\n  }\n}\n",
+      "reference_sha256": "39f0a676938a13a9f8efa22affc29cd347edfca37dea481f832dacd5ebe4b08e"
+    },
+    "early_registration": {
+      "folder": "Which_participants_registered_early",
+      "sources": [
+        "conference",
+        "confof",
+        "ekaw"
+      ],
+      "shape": "union",
+      "prefix": "participant-early",
+      "path": "app\\agents\\evaluation\\results\\Which_participants_registered_early",
+      "qualifying_runs": [
+        1,
+        2,
+        3
+      ],
+      "saved_baseline_normalized_rows": 2155,
+      "count": 400,
+      "reference": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nPREFIX conference: <http://conference#>\nPREFIX confof: <http://confOf#>\nPREFIX ekaw: <http://ekaw#>\n\n# question: Which participants registered early?\n# CQA: early_registered_participant\n# federation: UNION of complete alternative answers from each source.\n\nSELECT DISTINCT ?participant\nWHERE {\n  {\n    # source: conference\n    SERVICE <http://192.168.100.45:3030/conference/sparql> {\n      ?participant rdf:type conference:Conference_participant .\n      ?participant rdf:type conference:Early_paid_applicant .\n    }\n  }\n  UNION\n  {\n    # source: confof\n    SERVICE <http://192.168.100.45:3030/confof/sparql> {\n      ?participant confof:earlyRegistration true .\n    }\n  }\n  UNION\n  {\n    # source: ekaw\n    SERVICE <http://192.168.100.45:3030/ekaw/sparql> {\n      ?participant rdf:type ekaw:Early-Registered_Participant .\n    }\n  }\n}\n",
+      "reference_sha256": "b33839a47772d4ecbb1f0d8049436ebdbaae454e00df1c77c8c007c858d358a8"
+    },
+    "topics": {
+      "folder": "Which_topics_are_listed",
+      "sources": [
+        "cmt",
+        "conference",
+        "edas",
+        "ekaw",
+        "confof"
+      ],
+      "shape": "union",
+      "prefix": "topic",
+      "path": "app\\agents\\evaluation\\results\\Which_topics_are_listed",
+      "qualifying_runs": [
+        1,
+        2,
+        3
+      ],
+      "saved_baseline_normalized_rows": 3563,
+      "count": 800,
+      "reference": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX cmt: <http://cmt#>\nPREFIX conference: <http://conference#>\nPREFIX confof: <http://confOf#>\nPREFIX edas: <http://edas#>\nPREFIX ekaw: <http://ekaw#>\n\n# question: Which topics are listed?\n# sources: gold MC-03 and CQA topic\n# federation: UNION of complete alternative answers from each source\n\nSELECT DISTINCT ?topic\nWHERE {\n  {\n    # source: cmt\n    SERVICE <http://192.168.100.45:3030/cmt/sparql> {\n      ?topic rdf:type cmt:SubjectArea .\n    }\n  }\n  UNION\n  {\n    # source: conference\n    SERVICE <http://192.168.100.45:3030/conference/sparql> {\n      ?topic rdf:type conference:Topic .\n    }\n  }\n  UNION\n  {\n    # source: confof\n    SERVICE <http://192.168.100.45:3030/confof/sparql> {\n      ?topic rdf:type confof:Topic .\n    }\n  }\n  UNION\n  {\n    # source: edas\n    SERVICE <http://192.168.100.45:3030/edas/sparql> {\n      ?topic rdf:type edas:Topic .\n    }\n  }\n  UNION\n  {\n    # source: ekaw\n    SERVICE <http://192.168.100.45:3030/ekaw/sparql> {\n      ?topic rdf:type ekaw:Research_Topic .\n    }\n  }\n}\n",
+      "reference_sha256": "dbd3875bb5d90de0e95f8e9627513c39c7371d6461615ddb3001a4c7567d9915"
+    }
+  }
+}

@@ -1,0 +1,546 @@
+{
+  "format_version": 1,
+  "question": "What is the start date of each conference?",
+  "query_file": "run_1.rq",
+  "query_sha256": "d32cbfef3cb0396ade66a09b2b409917fad0b39b30a16fffef1eb5bee23579ce",
+  "started_at": "2026-09-12T19:49:33.848904+00:00",
+  "status": "success",
+  "query_kind": "generated",
+  "run": 1,
+  "generation_metadata_file": "run_1.json",
+  "coordinator_endpoint": "http://192.168.100.45:3030/confof/sparql",
+  "variables": [
+    "conference",
+    "startDate"
+  ],
+  "result_count": 50,
+  "bindings": [
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://confOf-instances#conference-104081973"
+      },
+      "startDate": {
+        "type": "literal",
+        "value": "2012-10-18T09:00:00"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://confOf-instances#conference-1409861683"
+      },
+      "startDate": {
+        "type": "literal",
+        "value": "2011-09-22T09:00:00"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://confOf-instances#conference-start-081-aug"
+      },
+      "startDate": {
+        "type": "literal",
+        "value": "2027-01-01"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://confOf-instances#conference-start-082-aug"
+      },
+      "startDate": {
+        "type": "literal",
+        "value": "2027-01-02"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://confOf-instances#conference-start-083-aug"
+      },
+      "startDate": {
+        "type": "literal",
+        "value": "2027-01-03"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://confOf-instances#conference-start-084-aug"
+      },
+      "startDate": {
+        "type": "literal",
+        "value": "2027-01-04"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://confOf-instances#conference-start-085-aug"
+      },
+      "startDate": {
+        "type": "literal",
+        "value": "2027-01-05"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://confOf-instances#conference-start-086-aug"
+      },
+      "startDate": {
+        "type": "literal",
+        "value": "2027-01-06"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://confOf-instances#conference-start-087-aug"
+      },
+      "startDate": {
+        "type": "literal",
+        "value": "2027-01-07"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://confOf-instances#conference-start-088-aug"
+      },
+      "startDate": {
+        "type": "literal",
+        "value": "2027-01-08"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://confOf-instances#conference-start-089-aug"
+      },
+      "startDate": {
+        "type": "literal",
+        "value": "2027-01-09"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://confOf-instances#conference-start-090-aug"
+      },
+      "startDate": {
+        "type": "literal",
+        "value": "2027-01-10"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://confOf-instances#conference-start-091-aug"
+      },
+      "startDate": {
+        "type": "literal",
+        "value": "2027-01-11"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://confOf-instances#conference-start-092-aug"
+      },
+      "startDate": {
+        "type": "literal",
+        "value": "2027-01-12"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://confOf-instances#conference-start-093-aug"
+      },
+      "startDate": {
+        "type": "literal",
+        "value": "2027-01-13"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://confOf-instances#conference-start-094-aug"
+      },
+      "startDate": {
+        "type": "literal",
+        "value": "2027-01-14"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://confOf-instances#conference-start-095-aug"
+      },
+      "startDate": {
+        "type": "literal",
+        "value": "2027-01-15"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://confOf-instances#conference-start-096-aug"
+      },
+      "startDate": {
+        "type": "literal",
+        "value": "2027-01-16"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://confOf-instances#conference-start-097-aug"
+      },
+      "startDate": {
+        "type": "literal",
+        "value": "2027-01-17"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://confOf-instances#conference-start-098-aug"
+      },
+      "startDate": {
+        "type": "literal",
+        "value": "2027-01-18"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://confOf-instances#conference-start-099-aug"
+      },
+      "startDate": {
+        "type": "literal",
+        "value": "2027-01-19"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://confOf-instances#conference-start-100-aug"
+      },
+      "startDate": {
+        "type": "literal",
+        "value": "2027-01-20"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://confOf-instances#conference1428971814"
+      },
+      "startDate": {
+        "type": "literal",
+        "value": "2008-04-06T09:00:00"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://confOf-instances#conference69622803"
+      },
+      "startDate": {
+        "type": "literal",
+        "value": "1990-11-08T09:00:00"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://confOf-instances#conference943277065"
+      },
+      "startDate": {
+        "type": "literal",
+        "value": "2005-05-11T09:00:00"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://edas-instances#conference-104081973"
+      },
+      "startDate": {
+        "type": "literal",
+        "value": "2012-10-18T09:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://edas-instances#conference-1409861683"
+      },
+      "startDate": {
+        "type": "literal",
+        "value": "2011-09-22T09:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://edas-instances#conference-start-041-aug"
+      },
+      "startDate": {
+        "type": "literal",
+        "value": "2027-01-01T09:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://edas-instances#conference-start-042-aug"
+      },
+      "startDate": {
+        "type": "literal",
+        "value": "2027-01-02T09:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://edas-instances#conference-start-043-aug"
+      },
+      "startDate": {
+        "type": "literal",
+        "value": "2027-01-03T09:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://edas-instances#conference-start-044-aug"
+      },
+      "startDate": {
+        "type": "literal",
+        "value": "2027-01-04T09:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://edas-instances#conference-start-045-aug"
+      },
+      "startDate": {
+        "type": "literal",
+        "value": "2027-01-05T09:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://edas-instances#conference-start-046-aug"
+      },
+      "startDate": {
+        "type": "literal",
+        "value": "2027-01-06T09:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://edas-instances#conference-start-047-aug"
+      },
+      "startDate": {
+        "type": "literal",
+        "value": "2027-01-07T09:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://edas-instances#conference-start-048-aug"
+      },
+      "startDate": {
+        "type": "literal",
+        "value": "2027-01-08T09:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://edas-instances#conference-start-049-aug"
+      },
+      "startDate": {
+        "type": "literal",
+        "value": "2027-01-09T09:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://edas-instances#conference-start-050-aug"
+      },
+      "startDate": {
+        "type": "literal",
+        "value": "2027-01-10T09:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://edas-instances#conference-start-051-aug"
+      },
+      "startDate": {
+        "type": "literal",
+        "value": "2027-01-11T09:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://edas-instances#conference-start-052-aug"
+      },
+      "startDate": {
+        "type": "literal",
+        "value": "2027-01-12T09:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://edas-instances#conference-start-053-aug"
+      },
+      "startDate": {
+        "type": "literal",
+        "value": "2027-01-13T09:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://edas-instances#conference-start-054-aug"
+      },
+      "startDate": {
+        "type": "literal",
+        "value": "2027-01-14T09:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://edas-instances#conference-start-055-aug"
+      },
+      "startDate": {
+        "type": "literal",
+        "value": "2027-01-15T09:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://edas-instances#conference-start-056-aug"
+      },
+      "startDate": {
+        "type": "literal",
+        "value": "2027-01-16T09:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://edas-instances#conference-start-057-aug"
+      },
+      "startDate": {
+        "type": "literal",
+        "value": "2027-01-17T09:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://edas-instances#conference-start-058-aug"
+      },
+      "startDate": {
+        "type": "literal",
+        "value": "2027-01-18T09:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://edas-instances#conference-start-059-aug"
+      },
+      "startDate": {
+        "type": "literal",
+        "value": "2027-01-19T09:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://edas-instances#conference-start-060-aug"
+      },
+      "startDate": {
+        "type": "literal",
+        "value": "2027-01-20T09:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://edas-instances#conference1428971814"
+      },
+      "startDate": {
+        "type": "literal",
+        "value": "2008-04-06T09:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://edas-instances#conference69622803"
+      },
+      "startDate": {
+        "type": "literal",
+        "value": "1990-11-08T09:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://edas-instances#conference943277065"
+      },
+      "startDate": {
+        "type": "literal",
+        "value": "2005-05-11T09:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    }
+  ],
+  "elapsed_seconds": 0.026,
+  "finished_at": "2026-09-12T19:49:33.874789+00:00"
+}

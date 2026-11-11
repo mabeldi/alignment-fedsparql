@@ -1,0 +1,8 @@
+PREFIX :<http://conference#>
+
+SELECT distinct ?s ?o WHERE{
+?s :has_important_dates ?o2 .
+?o2 a :Important_dates.
+?o2 :is_a_date_of_acceptance_announcement ?o.
+
+}

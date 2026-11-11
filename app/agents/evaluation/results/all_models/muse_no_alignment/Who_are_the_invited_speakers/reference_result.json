@@ -1,0 +1,270 @@
+{
+  "format_version": 1,
+  "question": "Who are the invited speakers?",
+  "query_file": "reference.rq",
+  "query_sha256": "d5dcbf1b2a7efdf28b0cda2941a7c367e43196101be805fa3a0583f967b2a45c",
+  "started_at": "2026-09-12T19:49:40.050444+00:00",
+  "status": "success",
+  "query_kind": "reference",
+  "coordinator_endpoint": "http://192.168.100.45:3030/conference/sparql",
+  "variables": [
+    "s"
+  ],
+  "result_count": 42,
+  "bindings": [
+    {
+      "s": {
+        "type": "uri",
+        "value": "http://conference-instances#person-1341302983"
+      }
+    },
+    {
+      "s": {
+        "type": "uri",
+        "value": "http://conference-instances#person-1774580366"
+      }
+    },
+    {
+      "s": {
+        "type": "uri",
+        "value": "http://conference-instances#person-1829738435"
+      }
+    },
+    {
+      "s": {
+        "type": "uri",
+        "value": "http://conference-instances#person-192530895"
+      }
+    },
+    {
+      "s": {
+        "type": "uri",
+        "value": "http://conference-instances#person-1929654775"
+      }
+    },
+    {
+      "s": {
+        "type": "uri",
+        "value": "http://conference-instances#person-1963090395"
+      }
+    },
+    {
+      "s": {
+        "type": "uri",
+        "value": "http://conference-instances#person-265991146"
+      }
+    },
+    {
+      "s": {
+        "type": "uri",
+        "value": "http://conference-instances#person-309461065"
+      }
+    },
+    {
+      "s": {
+        "type": "uri",
+        "value": "http://conference-instances#person-406496095"
+      }
+    },
+    {
+      "s": {
+        "type": "uri",
+        "value": "http://conference-instances#person-450950162"
+      }
+    },
+    {
+      "s": {
+        "type": "uri",
+        "value": "http://conference-instances#person-951609492"
+      }
+    },
+    {
+      "s": {
+        "type": "uri",
+        "value": "http://conference-instances#person-978415955"
+      }
+    },
+    {
+      "s": {
+        "type": "uri",
+        "value": "http://conference-instances#person1411809058"
+      }
+    },
+    {
+      "s": {
+        "type": "uri",
+        "value": "http://conference-instances#person1467614616"
+      }
+    },
+    {
+      "s": {
+        "type": "uri",
+        "value": "http://conference-instances#person1538868257"
+      }
+    },
+    {
+      "s": {
+        "type": "uri",
+        "value": "http://conference-instances#person1565413030"
+      }
+    },
+    {
+      "s": {
+        "type": "uri",
+        "value": "http://conference-instances#person1810548801"
+      }
+    },
+    {
+      "s": {
+        "type": "uri",
+        "value": "http://conference-instances#person507601721"
+      }
+    },
+    {
+      "s": {
+        "type": "uri",
+        "value": "http://conference-instances#person532518369"
+      }
+    },
+    {
+      "s": {
+        "type": "uri",
+        "value": "http://conference-instances#person684770799"
+      }
+    },
+    {
+      "s": {
+        "type": "uri",
+        "value": "http://conference-instances#person735322579"
+      }
+    },
+    {
+      "s": {
+        "type": "uri",
+        "value": "http://ekaw-instances#person-1341302983"
+      }
+    },
+    {
+      "s": {
+        "type": "uri",
+        "value": "http://ekaw-instances#person-1774580366"
+      }
+    },
+    {
+      "s": {
+        "type": "uri",
+        "value": "http://ekaw-instances#person-1829738435"
+      }
+    },
+    {
+      "s": {
+        "type": "uri",
+        "value": "http://ekaw-instances#person-192530895"
+      }
+    },
+    {
+      "s": {
+        "type": "uri",
+        "value": "http://ekaw-instances#person-1929654775"
+      }
+    },
+    {
+      "s": {
+        "type": "uri",
+        "value": "http://ekaw-instances#person-1963090395"
+      }
+    },
+    {
+      "s": {
+        "type": "uri",
+        "value": "http://ekaw-instances#person-265991146"
+      }
+    },
+    {
+      "s": {
+        "type": "uri",
+        "value": "http://ekaw-instances#person-309461065"
+      }
+    },
+    {
+      "s": {
+        "type": "uri",
+        "value": "http://ekaw-instances#person-406496095"
+      }
+    },
+    {
+      "s": {
+        "type": "uri",
+        "value": "http://ekaw-instances#person-450950162"
+      }
+    },
+    {
+      "s": {
+        "type": "uri",
+        "value": "http://ekaw-instances#person-951609492"
+      }
+    },
+    {
+      "s": {
+        "type": "uri",
+        "value": "http://ekaw-instances#person-978415955"
+      }
+    },
+    {
+      "s": {
+        "type": "uri",
+        "value": "http://ekaw-instances#person1411809058"
+      }
+    },
+    {
+      "s": {
+        "type": "uri",
+        "value": "http://ekaw-instances#person1467614616"
+      }
+    },
+    {
+      "s": {
+        "type": "uri",
+        "value": "http://ekaw-instances#person1538868257"
+      }
+    },
+    {
+      "s": {
+        "type": "uri",
+        "value": "http://ekaw-instances#person1565413030"
+      }
+    },
+    {
+      "s": {
+        "type": "uri",
+        "value": "http://ekaw-instances#person1810548801"
+      }
+    },
+    {
+      "s": {
+        "type": "uri",
+        "value": "http://ekaw-instances#person507601721"
+      }
+    },
+    {
+      "s": {
+        "type": "uri",
+        "value": "http://ekaw-instances#person532518369"
+      }
+    },
+    {
+      "s": {
+        "type": "uri",
+        "value": "http://ekaw-instances#person684770799"
+      }
+    },
+    {
+      "s": {
+        "type": "uri",
+        "value": "http://ekaw-instances#person735322579"
+      }
+    }
+  ],
+  "elapsed_seconds": 0.038,
+  "finished_at": "2026-09-12T19:49:40.088742+00:00"
+}

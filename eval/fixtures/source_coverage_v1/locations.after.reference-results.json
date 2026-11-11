@@ -1,0 +1,384 @@
+{
+  "variables": [
+    "conference",
+    "location",
+    "deadline"
+  ],
+  "bindings": [
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://conference-instances#conference-104081973"
+      },
+      "location": {
+        "type": "literal",
+        "value": "4769 Castalia"
+      },
+      "deadline": {
+        "type": "literal",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "value": "2012-10-11T18:00:00"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://conference-instances#conference1428971814"
+      },
+      "location": {
+        "type": "literal",
+        "value": "Almohad Caliphate"
+      },
+      "deadline": {
+        "type": "literal",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "value": "2008-03-29T06:00:00"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://conference-instances#conference943277065"
+      },
+      "location": {
+        "type": "literal",
+        "value": "Bernese Alps"
+      },
+      "deadline": {
+        "type": "literal",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "value": "2005-05-04T20:00:00"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://conference-instances#conference-1409861683"
+      },
+      "location": {
+        "type": "literal",
+        "value": "Cottian Alps"
+      },
+      "deadline": {
+        "type": "literal",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "value": "2011-09-15T04:00:00"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://conference-instances#conference69622803"
+      },
+      "location": {
+        "type": "literal",
+        "value": "Cape Colony"
+      },
+      "deadline": {
+        "type": "literal",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "value": "1990-11-01T18:00:00"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://conference-instances#conference-location-001-aug"
+      },
+      "location": {
+        "type": "literal",
+        "value": "Augmented location 001"
+      },
+      "deadline": {
+        "type": "literal",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "value": "2027-01-01T17:00:00"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://conference-instances#conference-location-002-aug"
+      },
+      "location": {
+        "type": "literal",
+        "value": "Augmented location 002"
+      },
+      "deadline": {
+        "type": "literal",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "value": "2027-01-02T17:00:00"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://conference-instances#conference-location-003-aug"
+      },
+      "location": {
+        "type": "literal",
+        "value": "Augmented location 003"
+      },
+      "deadline": {
+        "type": "literal",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "value": "2027-01-03T17:00:00"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://conference-instances#conference-location-004-aug"
+      },
+      "location": {
+        "type": "literal",
+        "value": "Augmented location 004"
+      },
+      "deadline": {
+        "type": "literal",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "value": "2027-01-04T17:00:00"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://conference-instances#conference-location-005-aug"
+      },
+      "location": {
+        "type": "literal",
+        "value": "Augmented location 005"
+      },
+      "deadline": {
+        "type": "literal",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "value": "2027-01-05T17:00:00"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://conference-instances#conference-location-006-aug"
+      },
+      "location": {
+        "type": "literal",
+        "value": "Augmented location 006"
+      },
+      "deadline": {
+        "type": "literal",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "value": "2027-01-06T17:00:00"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://conference-instances#conference-location-007-aug"
+      },
+      "location": {
+        "type": "literal",
+        "value": "Augmented location 007"
+      },
+      "deadline": {
+        "type": "literal",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "value": "2027-01-07T17:00:00"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://conference-instances#conference-location-008-aug"
+      },
+      "location": {
+        "type": "literal",
+        "value": "Augmented location 008"
+      },
+      "deadline": {
+        "type": "literal",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "value": "2027-01-08T17:00:00"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://conference-instances#conference-location-009-aug"
+      },
+      "location": {
+        "type": "literal",
+        "value": "Augmented location 009"
+      },
+      "deadline": {
+        "type": "literal",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "value": "2027-01-09T17:00:00"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://conference-instances#conference-location-010-aug"
+      },
+      "location": {
+        "type": "literal",
+        "value": "Augmented location 010"
+      },
+      "deadline": {
+        "type": "literal",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "value": "2027-01-10T17:00:00"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://conference-instances#conference-location-011-aug"
+      },
+      "location": {
+        "type": "literal",
+        "value": "Augmented location 011"
+      },
+      "deadline": {
+        "type": "literal",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "value": "2027-01-11T17:00:00"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://conference-instances#conference-location-012-aug"
+      },
+      "location": {
+        "type": "literal",
+        "value": "Augmented location 012"
+      },
+      "deadline": {
+        "type": "literal",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "value": "2027-01-12T17:00:00"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://conference-instances#conference-location-013-aug"
+      },
+      "location": {
+        "type": "literal",
+        "value": "Augmented location 013"
+      },
+      "deadline": {
+        "type": "literal",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "value": "2027-01-13T17:00:00"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://conference-instances#conference-location-014-aug"
+      },
+      "location": {
+        "type": "literal",
+        "value": "Augmented location 014"
+      },
+      "deadline": {
+        "type": "literal",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "value": "2027-01-14T17:00:00"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://conference-instances#conference-location-015-aug"
+      },
+      "location": {
+        "type": "literal",
+        "value": "Augmented location 015"
+      },
+      "deadline": {
+        "type": "literal",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "value": "2027-01-15T17:00:00"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://conference-instances#conference-location-016-aug"
+      },
+      "location": {
+        "type": "literal",
+        "value": "Augmented location 016"
+      },
+      "deadline": {
+        "type": "literal",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "value": "2027-01-16T17:00:00"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://conference-instances#conference-location-017-aug"
+      },
+      "location": {
+        "type": "literal",
+        "value": "Augmented location 017"
+      },
+      "deadline": {
+        "type": "literal",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "value": "2027-01-17T17:00:00"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://conference-instances#conference-location-018-aug"
+      },
+      "location": {
+        "type": "literal",
+        "value": "Augmented location 018"
+      },
+      "deadline": {
+        "type": "literal",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "value": "2027-01-18T17:00:00"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://conference-instances#conference-location-019-aug"
+      },
+      "location": {
+        "type": "literal",
+        "value": "Augmented location 019"
+      },
+      "deadline": {
+        "type": "literal",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "value": "2027-01-19T17:00:00"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://conference-instances#conference-location-020-aug"
+      },
+      "location": {
+        "type": "literal",
+        "value": "Augmented location 020"
+      },
+      "deadline": {
+        "type": "literal",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "value": "2027-01-20T17:00:00"
+      }
+    }
+  ]
+}

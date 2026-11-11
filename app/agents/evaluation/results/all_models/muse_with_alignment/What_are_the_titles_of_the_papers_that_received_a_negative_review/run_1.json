@@ -1,0 +1,3925 @@
+{
+  "question": "What are the titles of the papers that received a negative review?",
+  "run": 1,
+  "status": "generated",
+  "endpoint": "http://127.0.0.1:8999/query",
+  "parallel_requests": 1,
+  "server_diagnostics_note": "Server token counters and debug files are shared across requests; do not use them for per-run measurements during concurrent requests.",
+  "started_at": "2026-09-12T01:37:47.759078+00:00",
+  "http_status": 200,
+  "response": {
+    "question": "What are the titles of the papers that received a negative review?",
+    "alignments_enabled": true,
+    "extracted": {
+      "classes": [
+        "Paper",
+        "Negative Review"
+      ],
+      "objectProperties": [
+        "received"
+      ],
+      "dataTypeProperties": [
+        "title"
+      ],
+      "literals": []
+    },
+    "matches": {
+      "received": [
+        {
+          "label": "acceptedBy",
+          "uri": "http://cmt#acceptedBy",
+          "type": "ObjectProperty",
+          "name": "acceptedBy",
+          "payload": {
+            "type": "ObjectProperty",
+            "name": "acceptedBy",
+            "uri": "http://cmt#acceptedBy",
+            "label": "acceptedBy",
+            "domain": "Paper",
+            "range": "Administrator",
+            "domainUri": "http://cmt#Paper",
+            "rangeUri": "http://cmt#Administrator",
+            "domains": [
+              "Paper"
+            ],
+            "ranges": [
+              "Administrator"
+            ],
+            "domainUris": [
+              "http://cmt#Paper"
+            ],
+            "rangeUris": [
+              "http://cmt#Administrator"
+            ],
+            "source": "cmt"
+          },
+          "score": 0.7734058
+        },
+        {
+          "label": "Reception",
+          "uri": "http://confOf#Reception",
+          "type": "Class",
+          "name": "Reception",
+          "payload": {
+            "type": "Class",
+            "uri": "http://confOf#Reception",
+            "name": "Reception",
+            "label": "Reception",
+            "source": "confof"
+          },
+          "score": 0.75347584
+        },
+        {
+          "label": "Reception",
+          "uri": "http://edas#Reception",
+          "type": "Class",
+          "name": "Reception",
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#Reception",
+            "name": "Reception",
+            "label": "Reception",
+            "source": "edas"
+          },
+          "score": 0.75347584
+        },
+        {
+          "label": "rejectedBy",
+          "uri": "http://cmt#rejectedBy",
+          "type": "ObjectProperty",
+          "name": "rejectedBy",
+          "payload": {
+            "type": "ObjectProperty",
+            "name": "rejectedBy",
+            "uri": "http://cmt#rejectedBy",
+            "label": "rejectedBy",
+            "domain": "Paper",
+            "range": "Administrator",
+            "domainUri": "http://cmt#Paper",
+            "rangeUri": "http://cmt#Administrator",
+            "domains": [
+              "Paper"
+            ],
+            "ranges": [
+              "Administrator"
+            ],
+            "domainUris": [
+              "http://cmt#Paper"
+            ],
+            "rangeUris": [
+              "http://cmt#Administrator"
+            ],
+            "source": "cmt"
+          },
+          "score": 0.73631096,
+          "selected_ends": {
+            "domain": [
+              "http://cmt#Paper"
+            ],
+            "range": [
+              "http://cmt#Administrator"
+            ]
+          }
+        },
+        {
+          "label": "Acceptance",
+          "uri": "http://cmt#Acceptance",
+          "type": "Class",
+          "name": "Acceptance",
+          "payload": {
+            "type": "Class",
+            "uri": "http://cmt#Acceptance",
+            "name": "Acceptance",
+            "label": "Acceptance",
+            "source": "cmt"
+          },
+          "score": 0.7324215
+        },
+        {
+          "label": "remark",
+          "uri": "http://confOf#remark",
+          "type": "DatatypeProperty",
+          "name": "remark",
+          "payload": {
+            "type": "DatatypeProperty",
+            "name": "remark",
+            "uri": "http://confOf#remark",
+            "label": "remark",
+            "domain": "Contribution",
+            "range": "http://www.w3.org/2001/XMLSchema#string",
+            "domainUri": "http://confOf#Contribution",
+            "rangeUri": "http://www.w3.org/2001/XMLSchema#string",
+            "domains": [
+              "Contribution"
+            ],
+            "ranges": [
+              "http://www.w3.org/2001/XMLSchema#string"
+            ],
+            "domainUris": [
+              "http://confOf#Contribution"
+            ],
+            "rangeUris": [
+              "http://www.w3.org/2001/XMLSchema#string"
+            ],
+            "source": "confof"
+          },
+          "score": 0.7051086
+        },
+        {
+          "label": "AcceptRating",
+          "uri": "http://edas#AcceptRating",
+          "type": "Class",
+          "name": "AcceptRating",
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#AcceptRating",
+            "name": "AcceptRating",
+            "label": "AcceptRating",
+            "source": "edas"
+          },
+          "score": 0.70347476
+        }
+      ],
+      "Paper": [
+        {
+          "label": "Paper",
+          "uri": "http://conference#Paper",
+          "type": "Class",
+          "name": "Paper",
+          "payload": {
+            "type": "Class",
+            "uri": "http://conference#Paper",
+            "name": "Paper",
+            "label": "Paper",
+            "source": "conference"
+          },
+          "score": 0.9999996
+        },
+        {
+          "label": "Paper",
+          "uri": "http://confOf#Paper",
+          "type": "Class",
+          "name": "Paper",
+          "payload": {
+            "type": "Class",
+            "uri": "http://confOf#Paper",
+            "name": "Paper",
+            "label": "Paper",
+            "source": "confof"
+          },
+          "score": 0.9999996
+        },
+        {
+          "label": "Paper",
+          "uri": "http://edas#Paper",
+          "type": "Class",
+          "name": "Paper",
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#Paper",
+            "name": "Paper",
+            "label": "Paper",
+            "source": "edas"
+          },
+          "score": 0.9999996
+        },
+        {
+          "label": "Paper",
+          "uri": "http://ekaw#Paper",
+          "type": "Class",
+          "name": "Paper",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Paper",
+            "name": "Paper",
+            "label": "Paper",
+            "source": "ekaw"
+          },
+          "score": 0.9999996
+        },
+        {
+          "label": "Paper",
+          "uri": "http://cmt#Paper",
+          "type": "Class",
+          "name": "Paper",
+          "payload": {
+            "type": "Class",
+            "uri": "http://cmt#Paper",
+            "name": "Paper",
+            "label": "Paper",
+            "source": "cmt"
+          },
+          "score": 0.9999996
+        },
+        {
+          "label": "Regular_Paper",
+          "uri": "http://ekaw#Regular_Paper",
+          "type": "Class",
+          "name": "Regular_Paper",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Regular_Paper",
+            "name": "Regular_Paper",
+            "label": "Regular_Paper",
+            "source": "ekaw"
+          },
+          "score": 0.8450576
+        },
+        {
+          "label": "PaperAbstract",
+          "uri": "http://cmt#PaperAbstract",
+          "type": "Class",
+          "name": "PaperAbstract",
+          "payload": {
+            "type": "Class",
+            "uri": "http://cmt#PaperAbstract",
+            "name": "PaperAbstract",
+            "label": "PaperAbstract",
+            "source": "cmt"
+          },
+          "score": 0.8175445
+        },
+        {
+          "label": "Industrial_Paper",
+          "uri": "http://ekaw#Industrial_Paper",
+          "type": "Class",
+          "name": "Industrial_Paper",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Industrial_Paper",
+            "name": "Industrial_Paper",
+            "label": "Industrial_Paper",
+            "source": "ekaw"
+          },
+          "score": 0.8065748
+        },
+        {
+          "label": "Demo_Paper",
+          "uri": "http://ekaw#Demo_Paper",
+          "type": "Class",
+          "name": "Demo_Paper",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Demo_Paper",
+            "name": "Demo_Paper",
+            "label": "Demo_Paper",
+            "source": "ekaw"
+          },
+          "score": 0.77472675
+        },
+        {
+          "label": "Poster",
+          "uri": "http://conference#Poster",
+          "type": "Class",
+          "name": "Poster",
+          "payload": {
+            "type": "Class",
+            "uri": "http://conference#Poster",
+            "name": "Poster",
+            "label": "Poster",
+            "source": "conference"
+          },
+          "score": 0.7630463
+        },
+        {
+          "label": "Poster",
+          "uri": "http://confOf#Poster",
+          "type": "Class",
+          "name": "Poster",
+          "payload": {
+            "type": "Class",
+            "uri": "http://confOf#Poster",
+            "name": "Poster",
+            "label": "Poster",
+            "source": "confof"
+          },
+          "score": 0.7630463
+        },
+        {
+          "label": "paperPresentedAs",
+          "uri": "http://ekaw#paperPresentedAs",
+          "type": "ObjectProperty",
+          "name": "paperPresentedAs",
+          "payload": {
+            "type": "ObjectProperty",
+            "name": "paperPresentedAs",
+            "uri": "http://ekaw#paperPresentedAs",
+            "label": "paperPresentedAs",
+            "domain": "Abstract",
+            "range": "Individual_Presentation",
+            "domainUri": "http://ekaw#Abstract",
+            "rangeUri": "http://ekaw#Individual_Presentation",
+            "domains": [
+              "Abstract",
+              "Paper"
+            ],
+            "ranges": [
+              "Individual_Presentation"
+            ],
+            "domainUris": [
+              "http://ekaw#Abstract",
+              "http://ekaw#Paper"
+            ],
+            "rangeUris": [
+              "http://ekaw#Individual_Presentation"
+            ],
+            "source": "ekaw"
+          },
+          "score": 0.7623924
+        },
+        {
+          "label": "paperID",
+          "uri": "http://cmt#paperID",
+          "type": "DatatypeProperty",
+          "name": "paperID",
+          "payload": {
+            "type": "DatatypeProperty",
+            "name": "paperID",
+            "uri": "http://cmt#paperID",
+            "label": "paperID",
+            "domain": "Paper",
+            "range": "http://www.w3.org/2001/XMLSchema#unsignedLong",
+            "domainUri": "http://cmt#Paper",
+            "rangeUri": "http://www.w3.org/2001/XMLSchema#unsignedLong",
+            "domains": [
+              "Paper"
+            ],
+            "ranges": [
+              "http://www.w3.org/2001/XMLSchema#unsignedLong"
+            ],
+            "domainUris": [
+              "http://cmt#Paper"
+            ],
+            "rangeUris": [
+              "http://www.w3.org/2001/XMLSchema#unsignedLong"
+            ],
+            "source": "cmt"
+          },
+          "score": 0.75807214
+        },
+        {
+          "label": "PublishedPaper",
+          "uri": "http://edas#PublishedPaper",
+          "type": "Class",
+          "name": "PublishedPaper",
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#PublishedPaper",
+            "name": "PublishedPaper",
+            "label": "PublishedPaper",
+            "source": "edas"
+          },
+          "score": 0.75616693
+        },
+        {
+          "label": "PendingPaper",
+          "uri": "http://edas#PendingPaper",
+          "type": "Class",
+          "name": "PendingPaper",
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#PendingPaper",
+            "name": "PendingPaper",
+            "label": "PendingPaper",
+            "source": "edas"
+          },
+          "score": 0.7372266
+        },
+        {
+          "label": "Poster_Paper",
+          "uri": "http://ekaw#Poster_Paper",
+          "type": "Class",
+          "name": "Poster_Paper",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Poster_Paper",
+            "name": "Poster_Paper",
+            "label": "Poster_Paper",
+            "source": "ekaw"
+          },
+          "score": 0.7360496
+        },
+        {
+          "label": "PaperFullVersion",
+          "uri": "http://cmt#PaperFullVersion",
+          "type": "Class",
+          "name": "PaperFullVersion",
+          "payload": {
+            "type": "Class",
+            "uri": "http://cmt#PaperFullVersion",
+            "name": "PaperFullVersion",
+            "label": "PaperFullVersion",
+            "source": "cmt"
+          },
+          "score": 0.7320732
+        },
+        {
+          "label": "writePaper",
+          "uri": "http://cmt#writePaper",
+          "type": "ObjectProperty",
+          "name": "writePaper",
+          "payload": {
+            "type": "ObjectProperty",
+            "name": "writePaper",
+            "uri": "http://cmt#writePaper",
+            "label": "writePaper",
+            "domain": "Author",
+            "range": "Paper",
+            "domainUri": "http://cmt#Author",
+            "rangeUri": "http://cmt#Paper",
+            "domains": [
+              "Author"
+            ],
+            "ranges": [
+              "Paper"
+            ],
+            "domainUris": [
+              "http://cmt#Author"
+            ],
+            "rangeUris": [
+              "http://cmt#Paper"
+            ],
+            "source": "cmt"
+          },
+          "score": 0.7298053
+        },
+        {
+          "label": "Document",
+          "uri": "http://cmt#Document",
+          "type": "Class",
+          "name": "Document",
+          "payload": {
+            "type": "Class",
+            "uri": "http://cmt#Document",
+            "name": "Document",
+            "label": "Document",
+            "source": "cmt"
+          },
+          "score": 0.72376823
+        },
+        {
+          "label": "Document",
+          "uri": "http://edas#Document",
+          "type": "Class",
+          "name": "Document",
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#Document",
+            "name": "Document",
+            "label": "Document",
+            "source": "edas"
+          },
+          "score": 0.72376823
+        },
+        {
+          "label": "Document",
+          "uri": "http://ekaw#Document",
+          "type": "Class",
+          "name": "Document",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Document",
+            "name": "Document",
+            "label": "Document",
+            "source": "ekaw"
+          },
+          "score": 0.72376823
+        },
+        {
+          "label": "Camera_Ready_Paper",
+          "uri": "http://ekaw#Camera_Ready_Paper",
+          "type": "Class",
+          "name": "Camera_Ready_Paper",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Camera_Ready_Paper",
+            "name": "Camera_Ready_Paper",
+            "label": "Camera_Ready_Paper",
+            "source": "ekaw"
+          },
+          "score": 0.71092945
+        },
+        {
+          "label": "Flyer",
+          "uri": "http://ekaw#Flyer",
+          "type": "Class",
+          "name": "Flyer",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Flyer",
+            "name": "Flyer",
+            "label": "Flyer",
+            "source": "ekaw"
+          },
+          "score": 0.7025719
+        },
+        {
+          "label": "PaperPresentation",
+          "uri": "http://edas#PaperPresentation",
+          "type": "Class",
+          "name": "PaperPresentation",
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#PaperPresentation",
+            "name": "PaperPresentation",
+            "label": "PaperPresentation",
+            "source": "edas"
+          },
+          "score": 0.7019278
+        },
+        {
+          "label": "presentationOfPaper",
+          "uri": "http://ekaw#presentationOfPaper",
+          "type": "ObjectProperty",
+          "name": "presentationOfPaper",
+          "payload": {
+            "type": "ObjectProperty",
+            "name": "presentationOfPaper",
+            "uri": "http://ekaw#presentationOfPaper",
+            "label": "presentationOfPaper",
+            "domain": "Individual_Presentation",
+            "range": "Abstract",
+            "domainUri": "http://ekaw#Individual_Presentation",
+            "rangeUri": "http://ekaw#Abstract",
+            "domains": [
+              "Individual_Presentation"
+            ],
+            "ranges": [
+              "Abstract",
+              "Paper"
+            ],
+            "domainUris": [
+              "http://ekaw#Individual_Presentation"
+            ],
+            "rangeUris": [
+              "http://ekaw#Abstract",
+              "http://ekaw#Paper"
+            ],
+            "source": "ekaw"
+          },
+          "score": 0.70033544
+        }
+      ],
+      "Negative Review": [
+        {
+          "label": "Negative_Review",
+          "uri": "http://ekaw#Negative_Review",
+          "type": "Class",
+          "name": "Negative_Review",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Negative_Review",
+            "name": "Negative_Review",
+            "label": "Negative_Review",
+            "source": "ekaw"
+          },
+          "score": 0.9396949
+        },
+        {
+          "label": "Neutral_Review",
+          "uri": "http://ekaw#Neutral_Review",
+          "type": "Class",
+          "name": "Neutral_Review",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Neutral_Review",
+            "name": "Neutral_Review",
+            "label": "Neutral_Review",
+            "source": "ekaw"
+          },
+          "score": 0.7003993
+        }
+      ],
+      "title": [
+        {
+          "label": "title",
+          "uri": "http://cmt#title",
+          "type": "DatatypeProperty",
+          "name": "title",
+          "payload": {
+            "type": "DatatypeProperty",
+            "name": "title",
+            "uri": "http://cmt#title",
+            "label": "title",
+            "domain": "Paper",
+            "range": "http://www.w3.org/2001/XMLSchema#string",
+            "domainUri": "http://cmt#Paper",
+            "rangeUri": "http://www.w3.org/2001/XMLSchema#string",
+            "domains": [
+              "Paper"
+            ],
+            "ranges": [
+              "http://www.w3.org/2001/XMLSchema#string"
+            ],
+            "domainUris": [
+              "http://cmt#Paper"
+            ],
+            "rangeUris": [
+              "http://www.w3.org/2001/XMLSchema#string"
+            ],
+            "source": "cmt"
+          },
+          "score": 0.99999905,
+          "selected_ends": {
+            "domain": [
+              "http://cmt#Paper"
+            ],
+            "range": []
+          }
+        },
+        {
+          "label": "has_title",
+          "uri": "http://confOf#has_title",
+          "type": "DatatypeProperty",
+          "name": "has_title",
+          "payload": {
+            "type": "DatatypeProperty",
+            "name": "has_title",
+            "uri": "http://confOf#has_title",
+            "label": "has_title",
+            "domain": "Social_event",
+            "range": "http://www.w3.org/2001/XMLSchema#string",
+            "domainUri": "http://confOf#Social_event",
+            "rangeUri": "http://www.w3.org/2001/XMLSchema#string",
+            "domains": [
+              "Social_event",
+              "Working_event"
+            ],
+            "ranges": [
+              "http://www.w3.org/2001/XMLSchema#string"
+            ],
+            "domainUris": [
+              "http://confOf#Social_event",
+              "http://confOf#Working_event"
+            ],
+            "rangeUris": [
+              "http://www.w3.org/2001/XMLSchema#string"
+            ],
+            "source": "confof"
+          },
+          "score": 0.851557
+        },
+        {
+          "label": "hasTitle",
+          "uri": "http://confOf#hasTitle",
+          "type": "DatatypeProperty",
+          "name": "hasTitle",
+          "payload": {
+            "type": "DatatypeProperty",
+            "name": "hasTitle",
+            "uri": "http://confOf#hasTitle",
+            "label": "hasTitle",
+            "domain": "Paper",
+            "range": "http://www.w3.org/2001/XMLSchema#string",
+            "domainUri": "http://confOf#Paper",
+            "rangeUri": "http://www.w3.org/2001/XMLSchema#string",
+            "domains": [
+              "Contribution"
+            ],
+            "ranges": [
+              "http://www.w3.org/2001/XMLSchema#string"
+            ],
+            "domainUris": [
+              "http://confOf#Contribution"
+            ],
+            "rangeUris": [
+              "http://www.w3.org/2001/XMLSchema#string"
+            ],
+            "source": "confof"
+          },
+          "score": 0.79100513,
+          "selected_ends": {
+            "domain": [
+              "http://confOf#Paper"
+            ],
+            "range": []
+          }
+        },
+        {
+          "label": "has_short_title",
+          "uri": "http://confOf#has_short_title",
+          "type": "DatatypeProperty",
+          "name": "has_short_title",
+          "payload": {
+            "type": "DatatypeProperty",
+            "name": "has_short_title",
+            "uri": "http://confOf#has_short_title",
+            "label": "has_short_title",
+            "domain": "Social_event",
+            "range": "http://www.w3.org/2001/XMLSchema#string",
+            "domainUri": "http://confOf#Social_event",
+            "rangeUri": "http://www.w3.org/2001/XMLSchema#string",
+            "domains": [
+              "Social_event",
+              "Working_event"
+            ],
+            "ranges": [
+              "http://www.w3.org/2001/XMLSchema#string"
+            ],
+            "domainUris": [
+              "http://confOf#Social_event",
+              "http://confOf#Working_event"
+            ],
+            "rangeUris": [
+              "http://www.w3.org/2001/XMLSchema#string"
+            ],
+            "source": "confof"
+          },
+          "score": 0.7310772
+        },
+        {
+          "label": "name",
+          "uri": "http://cmt#name",
+          "type": "DatatypeProperty",
+          "name": "name",
+          "payload": {
+            "type": "DatatypeProperty",
+            "name": "name",
+            "uri": "http://cmt#name",
+            "label": "name",
+            "domain": "Conference",
+            "range": "http://www.w3.org/2001/XMLSchema#string",
+            "domainUri": "http://cmt#Conference",
+            "rangeUri": "http://www.w3.org/2001/XMLSchema#string",
+            "domains": [
+              "Conference",
+              "Person"
+            ],
+            "ranges": [
+              "http://www.w3.org/2001/XMLSchema#string"
+            ],
+            "domainUris": [
+              "http://cmt#Conference",
+              "http://cmt#Person"
+            ],
+            "rangeUris": [
+              "http://www.w3.org/2001/XMLSchema#string"
+            ],
+            "source": "cmt"
+          },
+          "score": 0.7231107
+        },
+        {
+          "label": "abstract",
+          "uri": "http://confOf#abstract",
+          "type": "DatatypeProperty",
+          "name": "abstract",
+          "payload": {
+            "type": "DatatypeProperty",
+            "name": "abstract",
+            "uri": "http://confOf#abstract",
+            "label": "abstract",
+            "domain": "Contribution",
+            "range": "http://www.w3.org/2001/XMLSchema#string",
+            "domainUri": "http://confOf#Contribution",
+            "rangeUri": "http://www.w3.org/2001/XMLSchema#string",
+            "domains": [
+              "Contribution"
+            ],
+            "ranges": [
+              "http://www.w3.org/2001/XMLSchema#string"
+            ],
+            "domainUris": [
+              "http://confOf#Contribution"
+            ],
+            "rangeUris": [
+              "http://www.w3.org/2001/XMLSchema#string"
+            ],
+            "source": "confof"
+          },
+          "score": 0.70012206
+        }
+      ]
+    },
+    "context_filtered_matches": {
+      "received": [
+        {
+          "label": "rejectedBy",
+          "uri": "http://cmt#rejectedBy",
+          "type": "ObjectProperty",
+          "name": "rejectedBy",
+          "payload": {
+            "type": "ObjectProperty",
+            "name": "rejectedBy",
+            "uri": "http://cmt#rejectedBy",
+            "label": "rejectedBy",
+            "domain": "Paper",
+            "range": "Administrator",
+            "domainUri": "http://cmt#Paper",
+            "rangeUri": "http://cmt#Administrator",
+            "domains": [
+              "Paper"
+            ],
+            "ranges": [
+              "Administrator"
+            ],
+            "domainUris": [
+              "http://cmt#Paper"
+            ],
+            "rangeUris": [
+              "http://cmt#Administrator"
+            ],
+            "source": "cmt"
+          },
+          "score": 0.73631096,
+          "selected_ends": {
+            "domain": [
+              "http://cmt#Paper"
+            ],
+            "range": [
+              "http://cmt#Administrator"
+            ]
+          }
+        },
+        {
+          "label": "Administrator",
+          "uri": "http://cmt#Administrator",
+          "type": "Class",
+          "score": 0.0,
+          "payload": {
+            "type": "Class",
+            "uri": "http://cmt#Administrator",
+            "label": "Administrator",
+            "source": "cmt"
+          },
+          "derived_from": "http://cmt#rejectedBy"
+        },
+        {
+          "label": "Administrator",
+          "uri": "http://confOf#Administrator",
+          "type": "Class",
+          "score": 0.0,
+          "payload": {
+            "type": "Class",
+            "uri": "http://confOf#Administrator",
+            "label": "Administrator",
+            "source": "confof"
+          },
+          "expanded_from": "http://cmt#Administrator",
+          "via_alignment": "cmt:Administrator = confof:Administrator"
+        }
+      ],
+      "Paper": [
+        {
+          "label": "Paper",
+          "uri": "http://cmt#Paper",
+          "type": "Class",
+          "name": "Paper",
+          "payload": {
+            "type": "Class",
+            "uri": "http://cmt#Paper",
+            "name": "Paper",
+            "label": "Paper",
+            "source": "cmt"
+          },
+          "score": 0.9999996
+        },
+        {
+          "label": "Paper",
+          "uri": "http://confOf#Paper",
+          "type": "Class",
+          "name": "Paper",
+          "payload": {
+            "type": "Class",
+            "uri": "http://confOf#Paper",
+            "name": "Paper",
+            "label": "Paper",
+            "source": "confof"
+          },
+          "score": 0.9999996
+        },
+        {
+          "label": "Paper",
+          "uri": "http://edas#Paper",
+          "type": "Class",
+          "name": "Paper",
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#Paper",
+            "name": "Paper",
+            "label": "Paper",
+            "source": "edas"
+          },
+          "score": 0.9999996
+        },
+        {
+          "label": "Paper",
+          "uri": "http://conference#Paper",
+          "type": "Class",
+          "name": "Paper",
+          "payload": {
+            "type": "Class",
+            "uri": "http://conference#Paper",
+            "name": "Paper",
+            "label": "Paper",
+            "source": "conference"
+          },
+          "score": 0.9999996
+        },
+        {
+          "label": "Paper",
+          "uri": "http://ekaw#Paper",
+          "type": "Class",
+          "name": "Paper",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Paper",
+            "name": "Paper",
+            "label": "Paper",
+            "source": "ekaw"
+          },
+          "score": 0.9999996
+        },
+        {
+          "label": "Contribution",
+          "uri": "http://confOf#Contribution",
+          "type": "Class",
+          "score": 0.0,
+          "payload": {
+            "type": "Class",
+            "uri": "http://confOf#Contribution",
+            "label": "Contribution",
+            "source": "confof"
+          },
+          "expanded_from": "http://cmt#Paper",
+          "via_alignment": "cmt:Paper = confof:Contribution"
+        },
+        {
+          "label": "PaperFullVersion",
+          "uri": "http://cmt#PaperFullVersion",
+          "type": "Class",
+          "score": 0.0,
+          "payload": {
+            "type": "Class",
+            "uri": "http://cmt#PaperFullVersion",
+            "label": "PaperFullVersion",
+            "source": "cmt"
+          },
+          "expanded_from": "http://confOf#Paper",
+          "via_alignment": "cmt:PaperFullVersion = confof:Paper"
+        }
+      ],
+      "Negative Review": [
+        {
+          "label": "Negative_Review",
+          "uri": "http://ekaw#Negative_Review",
+          "type": "Class",
+          "name": "Negative_Review",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Negative_Review",
+            "name": "Negative_Review",
+            "label": "Negative_Review",
+            "source": "ekaw"
+          },
+          "score": 0.9396949
+        }
+      ],
+      "title": [
+        {
+          "label": "title",
+          "uri": "http://cmt#title",
+          "type": "DatatypeProperty",
+          "name": "title",
+          "payload": {
+            "type": "DatatypeProperty",
+            "name": "title",
+            "uri": "http://cmt#title",
+            "label": "title",
+            "domain": "Paper",
+            "range": "http://www.w3.org/2001/XMLSchema#string",
+            "domainUri": "http://cmt#Paper",
+            "rangeUri": "http://www.w3.org/2001/XMLSchema#string",
+            "domains": [
+              "Paper"
+            ],
+            "ranges": [
+              "http://www.w3.org/2001/XMLSchema#string"
+            ],
+            "domainUris": [
+              "http://cmt#Paper"
+            ],
+            "rangeUris": [
+              "http://www.w3.org/2001/XMLSchema#string"
+            ],
+            "source": "cmt"
+          },
+          "score": 0.99999905,
+          "selected_ends": {
+            "domain": [
+              "http://cmt#Paper"
+            ],
+            "range": []
+          }
+        },
+        {
+          "label": "hasTitle",
+          "uri": "http://confOf#hasTitle",
+          "type": "DatatypeProperty",
+          "name": "hasTitle",
+          "payload": {
+            "type": "DatatypeProperty",
+            "name": "hasTitle",
+            "uri": "http://confOf#hasTitle",
+            "label": "hasTitle",
+            "domain": "Paper",
+            "range": "http://www.w3.org/2001/XMLSchema#string",
+            "domainUri": "http://confOf#Paper",
+            "rangeUri": "http://www.w3.org/2001/XMLSchema#string",
+            "domains": [
+              "Contribution"
+            ],
+            "ranges": [
+              "http://www.w3.org/2001/XMLSchema#string"
+            ],
+            "domainUris": [
+              "http://confOf#Contribution"
+            ],
+            "rangeUris": [
+              "http://www.w3.org/2001/XMLSchema#string"
+            ],
+            "source": "confof"
+          },
+          "score": 0.79100513,
+          "selected_ends": {
+            "domain": [
+              "http://confOf#Paper"
+            ],
+            "range": []
+          }
+        }
+      ]
+    },
+    "context_removed_matches": {
+      "received": [
+        {
+          "label": "acceptedBy",
+          "uri": "http://cmt#acceptedBy",
+          "type": "ObjectProperty",
+          "name": "acceptedBy",
+          "payload": {
+            "type": "ObjectProperty",
+            "name": "acceptedBy",
+            "uri": "http://cmt#acceptedBy",
+            "label": "acceptedBy",
+            "domain": "Paper",
+            "range": "Administrator",
+            "domainUri": "http://cmt#Paper",
+            "rangeUri": "http://cmt#Administrator",
+            "domains": [
+              "Paper"
+            ],
+            "ranges": [
+              "Administrator"
+            ],
+            "domainUris": [
+              "http://cmt#Paper"
+            ],
+            "rangeUris": [
+              "http://cmt#Administrator"
+            ],
+            "source": "cmt"
+          },
+          "score": 0.7734058
+        },
+        {
+          "label": "Reception",
+          "uri": "http://confOf#Reception",
+          "type": "Class",
+          "name": "Reception",
+          "payload": {
+            "type": "Class",
+            "uri": "http://confOf#Reception",
+            "name": "Reception",
+            "label": "Reception",
+            "source": "confof"
+          },
+          "score": 0.75347584
+        },
+        {
+          "label": "Reception",
+          "uri": "http://edas#Reception",
+          "type": "Class",
+          "name": "Reception",
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#Reception",
+            "name": "Reception",
+            "label": "Reception",
+            "source": "edas"
+          },
+          "score": 0.75347584
+        },
+        {
+          "label": "Acceptance",
+          "uri": "http://cmt#Acceptance",
+          "type": "Class",
+          "name": "Acceptance",
+          "payload": {
+            "type": "Class",
+            "uri": "http://cmt#Acceptance",
+            "name": "Acceptance",
+            "label": "Acceptance",
+            "source": "cmt"
+          },
+          "score": 0.7324215
+        },
+        {
+          "label": "remark",
+          "uri": "http://confOf#remark",
+          "type": "DatatypeProperty",
+          "name": "remark",
+          "payload": {
+            "type": "DatatypeProperty",
+            "name": "remark",
+            "uri": "http://confOf#remark",
+            "label": "remark",
+            "domain": "Contribution",
+            "range": "http://www.w3.org/2001/XMLSchema#string",
+            "domainUri": "http://confOf#Contribution",
+            "rangeUri": "http://www.w3.org/2001/XMLSchema#string",
+            "domains": [
+              "Contribution"
+            ],
+            "ranges": [
+              "http://www.w3.org/2001/XMLSchema#string"
+            ],
+            "domainUris": [
+              "http://confOf#Contribution"
+            ],
+            "rangeUris": [
+              "http://www.w3.org/2001/XMLSchema#string"
+            ],
+            "source": "confof"
+          },
+          "score": 0.7051086
+        },
+        {
+          "label": "AcceptRating",
+          "uri": "http://edas#AcceptRating",
+          "type": "Class",
+          "name": "AcceptRating",
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#AcceptRating",
+            "name": "AcceptRating",
+            "label": "AcceptRating",
+            "source": "edas"
+          },
+          "score": 0.70347476
+        }
+      ],
+      "Paper": [
+        {
+          "label": "Regular_Paper",
+          "uri": "http://ekaw#Regular_Paper",
+          "type": "Class",
+          "name": "Regular_Paper",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Regular_Paper",
+            "name": "Regular_Paper",
+            "label": "Regular_Paper",
+            "source": "ekaw"
+          },
+          "score": 0.8450576
+        },
+        {
+          "label": "PaperAbstract",
+          "uri": "http://cmt#PaperAbstract",
+          "type": "Class",
+          "name": "PaperAbstract",
+          "payload": {
+            "type": "Class",
+            "uri": "http://cmt#PaperAbstract",
+            "name": "PaperAbstract",
+            "label": "PaperAbstract",
+            "source": "cmt"
+          },
+          "score": 0.8175445
+        },
+        {
+          "label": "Industrial_Paper",
+          "uri": "http://ekaw#Industrial_Paper",
+          "type": "Class",
+          "name": "Industrial_Paper",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Industrial_Paper",
+            "name": "Industrial_Paper",
+            "label": "Industrial_Paper",
+            "source": "ekaw"
+          },
+          "score": 0.8065748
+        },
+        {
+          "label": "Demo_Paper",
+          "uri": "http://ekaw#Demo_Paper",
+          "type": "Class",
+          "name": "Demo_Paper",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Demo_Paper",
+            "name": "Demo_Paper",
+            "label": "Demo_Paper",
+            "source": "ekaw"
+          },
+          "score": 0.77472675
+        },
+        {
+          "label": "Poster",
+          "uri": "http://conference#Poster",
+          "type": "Class",
+          "name": "Poster",
+          "payload": {
+            "type": "Class",
+            "uri": "http://conference#Poster",
+            "name": "Poster",
+            "label": "Poster",
+            "source": "conference"
+          },
+          "score": 0.7630463
+        },
+        {
+          "label": "Poster",
+          "uri": "http://confOf#Poster",
+          "type": "Class",
+          "name": "Poster",
+          "payload": {
+            "type": "Class",
+            "uri": "http://confOf#Poster",
+            "name": "Poster",
+            "label": "Poster",
+            "source": "confof"
+          },
+          "score": 0.7630463
+        },
+        {
+          "label": "paperPresentedAs",
+          "uri": "http://ekaw#paperPresentedAs",
+          "type": "ObjectProperty",
+          "name": "paperPresentedAs",
+          "payload": {
+            "type": "ObjectProperty",
+            "name": "paperPresentedAs",
+            "uri": "http://ekaw#paperPresentedAs",
+            "label": "paperPresentedAs",
+            "domain": "Abstract",
+            "range": "Individual_Presentation",
+            "domainUri": "http://ekaw#Abstract",
+            "rangeUri": "http://ekaw#Individual_Presentation",
+            "domains": [
+              "Abstract",
+              "Paper"
+            ],
+            "ranges": [
+              "Individual_Presentation"
+            ],
+            "domainUris": [
+              "http://ekaw#Abstract",
+              "http://ekaw#Paper"
+            ],
+            "rangeUris": [
+              "http://ekaw#Individual_Presentation"
+            ],
+            "source": "ekaw"
+          },
+          "score": 0.7623924
+        },
+        {
+          "label": "paperID",
+          "uri": "http://cmt#paperID",
+          "type": "DatatypeProperty",
+          "name": "paperID",
+          "payload": {
+            "type": "DatatypeProperty",
+            "name": "paperID",
+            "uri": "http://cmt#paperID",
+            "label": "paperID",
+            "domain": "Paper",
+            "range": "http://www.w3.org/2001/XMLSchema#unsignedLong",
+            "domainUri": "http://cmt#Paper",
+            "rangeUri": "http://www.w3.org/2001/XMLSchema#unsignedLong",
+            "domains": [
+              "Paper"
+            ],
+            "ranges": [
+              "http://www.w3.org/2001/XMLSchema#unsignedLong"
+            ],
+            "domainUris": [
+              "http://cmt#Paper"
+            ],
+            "rangeUris": [
+              "http://www.w3.org/2001/XMLSchema#unsignedLong"
+            ],
+            "source": "cmt"
+          },
+          "score": 0.75807214
+        },
+        {
+          "label": "PublishedPaper",
+          "uri": "http://edas#PublishedPaper",
+          "type": "Class",
+          "name": "PublishedPaper",
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#PublishedPaper",
+            "name": "PublishedPaper",
+            "label": "PublishedPaper",
+            "source": "edas"
+          },
+          "score": 0.75616693
+        },
+        {
+          "label": "PendingPaper",
+          "uri": "http://edas#PendingPaper",
+          "type": "Class",
+          "name": "PendingPaper",
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#PendingPaper",
+            "name": "PendingPaper",
+            "label": "PendingPaper",
+            "source": "edas"
+          },
+          "score": 0.7372266
+        },
+        {
+          "label": "Poster_Paper",
+          "uri": "http://ekaw#Poster_Paper",
+          "type": "Class",
+          "name": "Poster_Paper",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Poster_Paper",
+            "name": "Poster_Paper",
+            "label": "Poster_Paper",
+            "source": "ekaw"
+          },
+          "score": 0.7360496
+        },
+        {
+          "label": "PaperFullVersion",
+          "uri": "http://cmt#PaperFullVersion",
+          "type": "Class",
+          "name": "PaperFullVersion",
+          "payload": {
+            "type": "Class",
+            "uri": "http://cmt#PaperFullVersion",
+            "name": "PaperFullVersion",
+            "label": "PaperFullVersion",
+            "source": "cmt"
+          },
+          "score": 0.7320732
+        },
+        {
+          "label": "writePaper",
+          "uri": "http://cmt#writePaper",
+          "type": "ObjectProperty",
+          "name": "writePaper",
+          "payload": {
+            "type": "ObjectProperty",
+            "name": "writePaper",
+            "uri": "http://cmt#writePaper",
+            "label": "writePaper",
+            "domain": "Author",
+            "range": "Paper",
+            "domainUri": "http://cmt#Author",
+            "rangeUri": "http://cmt#Paper",
+            "domains": [
+              "Author"
+            ],
+            "ranges": [
+              "Paper"
+            ],
+            "domainUris": [
+              "http://cmt#Author"
+            ],
+            "rangeUris": [
+              "http://cmt#Paper"
+            ],
+            "source": "cmt"
+          },
+          "score": 0.7298053
+        },
+        {
+          "label": "Document",
+          "uri": "http://cmt#Document",
+          "type": "Class",
+          "name": "Document",
+          "payload": {
+            "type": "Class",
+            "uri": "http://cmt#Document",
+            "name": "Document",
+            "label": "Document",
+            "source": "cmt"
+          },
+          "score": 0.72376823
+        },
+        {
+          "label": "Document",
+          "uri": "http://edas#Document",
+          "type": "Class",
+          "name": "Document",
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#Document",
+            "name": "Document",
+            "label": "Document",
+            "source": "edas"
+          },
+          "score": 0.72376823
+        },
+        {
+          "label": "Document",
+          "uri": "http://ekaw#Document",
+          "type": "Class",
+          "name": "Document",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Document",
+            "name": "Document",
+            "label": "Document",
+            "source": "ekaw"
+          },
+          "score": 0.72376823
+        },
+        {
+          "label": "Camera_Ready_Paper",
+          "uri": "http://ekaw#Camera_Ready_Paper",
+          "type": "Class",
+          "name": "Camera_Ready_Paper",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Camera_Ready_Paper",
+            "name": "Camera_Ready_Paper",
+            "label": "Camera_Ready_Paper",
+            "source": "ekaw"
+          },
+          "score": 0.71092945
+        },
+        {
+          "label": "Flyer",
+          "uri": "http://ekaw#Flyer",
+          "type": "Class",
+          "name": "Flyer",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Flyer",
+            "name": "Flyer",
+            "label": "Flyer",
+            "source": "ekaw"
+          },
+          "score": 0.7025719
+        },
+        {
+          "label": "PaperPresentation",
+          "uri": "http://edas#PaperPresentation",
+          "type": "Class",
+          "name": "PaperPresentation",
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#PaperPresentation",
+            "name": "PaperPresentation",
+            "label": "PaperPresentation",
+            "source": "edas"
+          },
+          "score": 0.7019278
+        },
+        {
+          "label": "presentationOfPaper",
+          "uri": "http://ekaw#presentationOfPaper",
+          "type": "ObjectProperty",
+          "name": "presentationOfPaper",
+          "payload": {
+            "type": "ObjectProperty",
+            "name": "presentationOfPaper",
+            "uri": "http://ekaw#presentationOfPaper",
+            "label": "presentationOfPaper",
+            "domain": "Individual_Presentation",
+            "range": "Abstract",
+            "domainUri": "http://ekaw#Individual_Presentation",
+            "rangeUri": "http://ekaw#Abstract",
+            "domains": [
+              "Individual_Presentation"
+            ],
+            "ranges": [
+              "Abstract",
+              "Paper"
+            ],
+            "domainUris": [
+              "http://ekaw#Individual_Presentation"
+            ],
+            "rangeUris": [
+              "http://ekaw#Abstract",
+              "http://ekaw#Paper"
+            ],
+            "source": "ekaw"
+          },
+          "score": 0.70033544
+        }
+      ],
+      "Negative Review": [
+        {
+          "label": "Neutral_Review",
+          "uri": "http://ekaw#Neutral_Review",
+          "type": "Class",
+          "name": "Neutral_Review",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Neutral_Review",
+            "name": "Neutral_Review",
+            "label": "Neutral_Review",
+            "source": "ekaw"
+          },
+          "score": 0.7003993
+        }
+      ],
+      "title": [
+        {
+          "label": "has_title",
+          "uri": "http://confOf#has_title",
+          "type": "DatatypeProperty",
+          "name": "has_title",
+          "payload": {
+            "type": "DatatypeProperty",
+            "name": "has_title",
+            "uri": "http://confOf#has_title",
+            "label": "has_title",
+            "domain": "Social_event",
+            "range": "http://www.w3.org/2001/XMLSchema#string",
+            "domainUri": "http://confOf#Social_event",
+            "rangeUri": "http://www.w3.org/2001/XMLSchema#string",
+            "domains": [
+              "Social_event",
+              "Working_event"
+            ],
+            "ranges": [
+              "http://www.w3.org/2001/XMLSchema#string"
+            ],
+            "domainUris": [
+              "http://confOf#Social_event",
+              "http://confOf#Working_event"
+            ],
+            "rangeUris": [
+              "http://www.w3.org/2001/XMLSchema#string"
+            ],
+            "source": "confof"
+          },
+          "score": 0.851557
+        },
+        {
+          "label": "has_short_title",
+          "uri": "http://confOf#has_short_title",
+          "type": "DatatypeProperty",
+          "name": "has_short_title",
+          "payload": {
+            "type": "DatatypeProperty",
+            "name": "has_short_title",
+            "uri": "http://confOf#has_short_title",
+            "label": "has_short_title",
+            "domain": "Social_event",
+            "range": "http://www.w3.org/2001/XMLSchema#string",
+            "domainUri": "http://confOf#Social_event",
+            "rangeUri": "http://www.w3.org/2001/XMLSchema#string",
+            "domains": [
+              "Social_event",
+              "Working_event"
+            ],
+            "ranges": [
+              "http://www.w3.org/2001/XMLSchema#string"
+            ],
+            "domainUris": [
+              "http://confOf#Social_event",
+              "http://confOf#Working_event"
+            ],
+            "rangeUris": [
+              "http://www.w3.org/2001/XMLSchema#string"
+            ],
+            "source": "confof"
+          },
+          "score": 0.7310772
+        },
+        {
+          "label": "name",
+          "uri": "http://cmt#name",
+          "type": "DatatypeProperty",
+          "name": "name",
+          "payload": {
+            "type": "DatatypeProperty",
+            "name": "name",
+            "uri": "http://cmt#name",
+            "label": "name",
+            "domain": "Conference",
+            "range": "http://www.w3.org/2001/XMLSchema#string",
+            "domainUri": "http://cmt#Conference",
+            "rangeUri": "http://www.w3.org/2001/XMLSchema#string",
+            "domains": [
+              "Conference",
+              "Person"
+            ],
+            "ranges": [
+              "http://www.w3.org/2001/XMLSchema#string"
+            ],
+            "domainUris": [
+              "http://cmt#Conference",
+              "http://cmt#Person"
+            ],
+            "rangeUris": [
+              "http://www.w3.org/2001/XMLSchema#string"
+            ],
+            "source": "cmt"
+          },
+          "score": 0.7231107
+        },
+        {
+          "label": "abstract",
+          "uri": "http://confOf#abstract",
+          "type": "DatatypeProperty",
+          "name": "abstract",
+          "payload": {
+            "type": "DatatypeProperty",
+            "name": "abstract",
+            "uri": "http://confOf#abstract",
+            "label": "abstract",
+            "domain": "Contribution",
+            "range": "http://www.w3.org/2001/XMLSchema#string",
+            "domainUri": "http://confOf#Contribution",
+            "rangeUri": "http://www.w3.org/2001/XMLSchema#string",
+            "domains": [
+              "Contribution"
+            ],
+            "ranges": [
+              "http://www.w3.org/2001/XMLSchema#string"
+            ],
+            "domainUris": [
+              "http://confOf#Contribution"
+            ],
+            "rangeUris": [
+              "http://www.w3.org/2001/XMLSchema#string"
+            ],
+            "source": "confof"
+          },
+          "score": 0.70012206
+        }
+      ]
+    },
+    "top_sources": {
+      "cmt": 2.73630961,
+      "confof": 1.79100473,
+      "edas": 0.9999996,
+      "conference": 0.9999996,
+      "ekaw": 1.9396944999999999
+    },
+    "base_source": "ekaw",
+    "class_paths": [
+      {
+        "class": "http://cmt#Administrator",
+        "source": "cmt",
+        "outgoing": [
+          [
+            [
+              "http://cmt#Administrator",
+              "http://cmt#rejectPaper",
+              "http://cmt#Paper"
+            ]
+          ],
+          [
+            [
+              "http://cmt#Administrator",
+              "http://cmt#acceptPaper",
+              "http://cmt#Paper"
+            ]
+          ],
+          [
+            [
+              "http://cmt#Administrator",
+              "http://cmt#hasConflictOfInterest",
+              "http://cmt#Paper"
+            ]
+          ],
+          [
+            [
+              "http://cmt#Administrator",
+              "http://cmt#rejectPaper",
+              "http://cmt#PaperFullVersion"
+            ]
+          ],
+          [
+            [
+              "http://cmt#Administrator",
+              "http://cmt#acceptPaper",
+              "http://cmt#PaperFullVersion"
+            ]
+          ],
+          [
+            [
+              "http://cmt#Administrator",
+              "http://cmt#hasConflictOfInterest",
+              "http://cmt#PaperFullVersion"
+            ]
+          ]
+        ],
+        "incoming": [
+          [
+            [
+              "http://cmt#Paper",
+              "http://cmt#rejectedBy",
+              "http://cmt#Administrator"
+            ]
+          ],
+          [
+            [
+              "http://cmt#Paper",
+              "http://cmt#acceptedBy",
+              "http://cmt#Administrator"
+            ]
+          ],
+          [
+            [
+              "http://cmt#PaperFullVersion",
+              "http://cmt#acceptedBy",
+              "http://cmt#Administrator"
+            ]
+          ],
+          [
+            [
+              "http://cmt#PaperFullVersion",
+              "http://cmt#rejectedBy",
+              "http://cmt#Administrator"
+            ]
+          ]
+        ],
+        "values": [
+          [
+            "http://cmt#Administrator",
+            "http://cmt#email",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://cmt#Administrator",
+            "http://cmt#name",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "class": "http://cmt#Paper",
+        "source": "cmt",
+        "outgoing": [
+          [
+            [
+              "http://cmt#Paper",
+              "http://cmt#rejectedBy",
+              "http://cmt#Administrator"
+            ]
+          ],
+          [
+            [
+              "http://cmt#Paper",
+              "http://cmt#acceptedBy",
+              "http://cmt#Administrator"
+            ]
+          ],
+          [
+            [
+              "http://cmt#Paper",
+              "http://cmt#readByReviewer",
+              "http://cmt#Reviewer"
+            ],
+            [
+              "http://cmt#Reviewer",
+              "http://cmt#hasConflictOfInterest",
+              "http://cmt#PaperFullVersion"
+            ]
+          ],
+          [
+            [
+              "http://cmt#Paper",
+              "http://cmt#hasCo-author",
+              "http://cmt#Co-author"
+            ],
+            [
+              "http://cmt#Co-author",
+              "http://cmt#hasConflictOfInterest",
+              "http://cmt#PaperFullVersion"
+            ]
+          ],
+          [
+            [
+              "http://cmt#Paper",
+              "http://cmt#assignedTo",
+              "http://cmt#Reviewer"
+            ],
+            [
+              "http://cmt#Reviewer",
+              "http://cmt#hasConflictOfInterest",
+              "http://cmt#PaperFullVersion"
+            ]
+          ],
+          [
+            [
+              "http://cmt#Paper",
+              "http://cmt#hasAuthor",
+              "http://cmt#Author"
+            ],
+            [
+              "http://cmt#Author",
+              "http://cmt#hasConflictOfInterest",
+              "http://cmt#PaperFullVersion"
+            ]
+          ],
+          [
+            [
+              "http://cmt#Paper",
+              "http://cmt#readByMeta-Reviewer",
+              "http://cmt#Meta-Reviewer"
+            ],
+            [
+              "http://cmt#Meta-Reviewer",
+              "http://cmt#hasConflictOfInterest",
+              "http://cmt#PaperFullVersion"
+            ]
+          ]
+        ],
+        "incoming": [
+          [
+            [
+              "http://cmt#Administrator",
+              "http://cmt#rejectPaper",
+              "http://cmt#Paper"
+            ]
+          ],
+          [
+            [
+              "http://cmt#Administrator",
+              "http://cmt#acceptPaper",
+              "http://cmt#Paper"
+            ]
+          ],
+          [
+            [
+              "http://cmt#Administrator",
+              "http://cmt#hasConflictOfInterest",
+              "http://cmt#Paper"
+            ]
+          ],
+          [
+            [
+              "http://cmt#Co-author",
+              "http://cmt#co-writePaper",
+              "http://cmt#Paper"
+            ],
+            [
+              "http://cmt#Co-author",
+              "http://cmt#hasConflictOfInterest",
+              "http://cmt#PaperFullVersion"
+            ]
+          ],
+          [
+            [
+              "http://cmt#Reviewer",
+              "http://cmt#readPaper",
+              "http://cmt#Paper"
+            ],
+            [
+              "http://cmt#Reviewer",
+              "http://cmt#hasConflictOfInterest",
+              "http://cmt#PaperFullVersion"
+            ]
+          ],
+          [
+            [
+              "http://cmt#Reviewer",
+              "http://cmt#hasBeenAssigned",
+              "http://cmt#Paper"
+            ],
+            [
+              "http://cmt#Reviewer",
+              "http://cmt#hasConflictOfInterest",
+              "http://cmt#PaperFullVersion"
+            ]
+          ]
+        ],
+        "values": [
+          [
+            "http://cmt#Paper",
+            "http://cmt#title",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://cmt#Paper",
+            "http://cmt#paperID",
+            "http://www.w3.org/2001/XMLSchema#unsignedLong"
+          ]
+        ]
+      },
+      {
+        "class": "http://cmt#PaperFullVersion",
+        "source": "cmt",
+        "outgoing": [
+          [
+            [
+              "http://cmt#PaperFullVersion",
+              "http://cmt#acceptedBy",
+              "http://cmt#Administrator"
+            ]
+          ],
+          [
+            [
+              "http://cmt#PaperFullVersion",
+              "http://cmt#rejectedBy",
+              "http://cmt#Administrator"
+            ]
+          ]
+        ],
+        "incoming": [
+          [
+            [
+              "http://cmt#Administrator",
+              "http://cmt#rejectPaper",
+              "http://cmt#PaperFullVersion"
+            ]
+          ],
+          [
+            [
+              "http://cmt#Administrator",
+              "http://cmt#acceptPaper",
+              "http://cmt#PaperFullVersion"
+            ]
+          ],
+          [
+            [
+              "http://cmt#Administrator",
+              "http://cmt#hasConflictOfInterest",
+              "http://cmt#PaperFullVersion"
+            ]
+          ],
+          [
+            [
+              "http://cmt#Reviewer",
+              "http://cmt#hasConflictOfInterest",
+              "http://cmt#PaperFullVersion"
+            ],
+            [
+              "http://cmt#Paper",
+              "http://cmt#readByReviewer",
+              "http://cmt#Reviewer"
+            ]
+          ],
+          [
+            [
+              "http://cmt#Co-author",
+              "http://cmt#hasConflictOfInterest",
+              "http://cmt#PaperFullVersion"
+            ],
+            [
+              "http://cmt#Paper",
+              "http://cmt#hasCo-author",
+              "http://cmt#Co-author"
+            ]
+          ],
+          [
+            [
+              "http://cmt#Reviewer",
+              "http://cmt#hasConflictOfInterest",
+              "http://cmt#PaperFullVersion"
+            ],
+            [
+              "http://cmt#Paper",
+              "http://cmt#assignedTo",
+              "http://cmt#Reviewer"
+            ]
+          ],
+          [
+            [
+              "http://cmt#Author",
+              "http://cmt#hasConflictOfInterest",
+              "http://cmt#PaperFullVersion"
+            ],
+            [
+              "http://cmt#Paper",
+              "http://cmt#hasAuthor",
+              "http://cmt#Author"
+            ]
+          ],
+          [
+            [
+              "http://cmt#Meta-Reviewer",
+              "http://cmt#hasConflictOfInterest",
+              "http://cmt#PaperFullVersion"
+            ],
+            [
+              "http://cmt#Paper",
+              "http://cmt#readByMeta-Reviewer",
+              "http://cmt#Meta-Reviewer"
+            ]
+          ],
+          [
+            [
+              "http://cmt#Co-author",
+              "http://cmt#hasConflictOfInterest",
+              "http://cmt#PaperFullVersion"
+            ],
+            [
+              "http://cmt#Co-author",
+              "http://cmt#co-writePaper",
+              "http://cmt#Paper"
+            ]
+          ],
+          [
+            [
+              "http://cmt#Reviewer",
+              "http://cmt#hasConflictOfInterest",
+              "http://cmt#PaperFullVersion"
+            ],
+            [
+              "http://cmt#Reviewer",
+              "http://cmt#readPaper",
+              "http://cmt#Paper"
+            ]
+          ],
+          [
+            [
+              "http://cmt#Reviewer",
+              "http://cmt#hasConflictOfInterest",
+              "http://cmt#PaperFullVersion"
+            ],
+            [
+              "http://cmt#Reviewer",
+              "http://cmt#hasBeenAssigned",
+              "http://cmt#Paper"
+            ]
+          ]
+        ],
+        "values": [
+          [
+            "http://cmt#PaperFullVersion",
+            "http://cmt#title",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://cmt#PaperFullVersion",
+            "http://cmt#paperID",
+            "http://www.w3.org/2001/XMLSchema#unsignedLong"
+          ]
+        ]
+      },
+      {
+        "class": "http://confOf#Administrator",
+        "source": "confof",
+        "outgoing": [
+          [
+            [
+              "http://confOf#Administrator",
+              "http://confOf#employedBy",
+              "http://confOf#Organization"
+            ]
+          ],
+          [
+            [
+              "http://confOf#Administrator",
+              "http://confOf#hasCity",
+              "http://confOf#City"
+            ]
+          ],
+          [
+            [
+              "http://confOf#Administrator",
+              "http://confOf#hasCountry",
+              "http://confOf#Country"
+            ]
+          ]
+        ],
+        "incoming": [],
+        "values": [
+          [
+            "http://confOf#Administrator",
+            "http://confOf#hasHomePage",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Administrator",
+            "http://confOf#hasFax",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Administrator",
+            "http://confOf#hasPhone",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Administrator",
+            "http://confOf#hasSurname",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Administrator",
+            "http://confOf#hasStreet",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Administrator",
+            "http://confOf#hasPostalCode",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Administrator",
+            "http://confOf#hasFirstName",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Administrator",
+            "http://confOf#hasEmail",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "class": "http://confOf#Paper",
+        "source": "confof",
+        "outgoing": [
+          [
+            [
+              "http://confOf#Paper",
+              "http://confOf#dealsWith",
+              "http://confOf#Topic"
+            ],
+            [
+              "http://confOf#Contribution",
+              "http://confOf#dealsWith",
+              "http://confOf#Topic"
+            ]
+          ],
+          [
+            [
+              "http://confOf#Paper",
+              "http://confOf#writtenBy",
+              "http://confOf#Author"
+            ],
+            [
+              "http://confOf#Author",
+              "http://confOf#writes",
+              "http://confOf#Contribution"
+            ]
+          ],
+          [
+            [
+              "http://confOf#Paper",
+              "http://confOf#writtenBy",
+              "http://confOf#Author"
+            ],
+            [
+              "http://confOf#Contribution",
+              "http://confOf#writtenBy",
+              "http://confOf#Author"
+            ]
+          ]
+        ],
+        "incoming": [
+          [
+            [
+              "http://confOf#Member_PC",
+              "http://confOf#reviewes",
+              "http://confOf#Paper"
+            ],
+            [
+              "http://confOf#Member_PC",
+              "http://confOf#reviewes",
+              "http://confOf#Contribution"
+            ]
+          ],
+          [
+            [
+              "http://confOf#Author",
+              "http://confOf#writes",
+              "http://confOf#Paper"
+            ],
+            [
+              "http://confOf#Author",
+              "http://confOf#writes",
+              "http://confOf#Contribution"
+            ]
+          ],
+          [
+            [
+              "http://confOf#Author",
+              "http://confOf#writes",
+              "http://confOf#Paper"
+            ],
+            [
+              "http://confOf#Contribution",
+              "http://confOf#writtenBy",
+              "http://confOf#Author"
+            ]
+          ]
+        ],
+        "values": [
+          [
+            "http://confOf#Paper",
+            "http://confOf#hasTitle",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Paper",
+            "http://confOf#contactEmail",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Paper",
+            "http://confOf#hasKeyword",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Paper",
+            "http://confOf#remark",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Paper",
+            "http://confOf#abstract",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "class": "http://confOf#Contribution",
+        "source": "confof",
+        "outgoing": [
+          [
+            [
+              "http://confOf#Contribution",
+              "http://confOf#dealsWith",
+              "http://confOf#Topic"
+            ],
+            [
+              "http://confOf#Paper",
+              "http://confOf#dealsWith",
+              "http://confOf#Topic"
+            ]
+          ],
+          [
+            [
+              "http://confOf#Contribution",
+              "http://confOf#writtenBy",
+              "http://confOf#Author"
+            ],
+            [
+              "http://confOf#Paper",
+              "http://confOf#writtenBy",
+              "http://confOf#Author"
+            ]
+          ],
+          [
+            [
+              "http://confOf#Contribution",
+              "http://confOf#writtenBy",
+              "http://confOf#Author"
+            ],
+            [
+              "http://confOf#Author",
+              "http://confOf#writes",
+              "http://confOf#Paper"
+            ]
+          ]
+        ],
+        "incoming": [
+          [
+            [
+              "http://confOf#Author",
+              "http://confOf#writes",
+              "http://confOf#Contribution"
+            ],
+            [
+              "http://confOf#Paper",
+              "http://confOf#writtenBy",
+              "http://confOf#Author"
+            ]
+          ],
+          [
+            [
+              "http://confOf#Member_PC",
+              "http://confOf#reviewes",
+              "http://confOf#Contribution"
+            ],
+            [
+              "http://confOf#Member_PC",
+              "http://confOf#reviewes",
+              "http://confOf#Paper"
+            ]
+          ],
+          [
+            [
+              "http://confOf#Author",
+              "http://confOf#writes",
+              "http://confOf#Contribution"
+            ],
+            [
+              "http://confOf#Author",
+              "http://confOf#writes",
+              "http://confOf#Paper"
+            ]
+          ]
+        ],
+        "values": [
+          [
+            "http://confOf#Contribution",
+            "http://confOf#hasTitle",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Contribution",
+            "http://confOf#contactEmail",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Contribution",
+            "http://confOf#hasKeyword",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Contribution",
+            "http://confOf#remark",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Contribution",
+            "http://confOf#abstract",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "class": "http://edas#Paper",
+        "source": "edas",
+        "outgoing": [
+          [
+            [
+              "http://edas#Paper",
+              "http://edas#isWrittenBy",
+              "http://edas#Author"
+            ]
+          ],
+          [
+            [
+              "http://edas#Paper",
+              "http://edas#hasTopic",
+              "http://edas#Topic"
+            ]
+          ],
+          [
+            [
+              "http://edas#Paper",
+              "http://edas#isReviewedBy",
+              "http://edas#SessionChair"
+            ]
+          ],
+          [
+            [
+              "http://edas#Paper",
+              "http://edas#isReviewedBy",
+              "http://edas#Reviewer"
+            ]
+          ],
+          [
+            [
+              "http://edas#Paper",
+              "http://edas#isReviewedBy",
+              "http://edas#TPCMember"
+            ]
+          ],
+          [
+            [
+              "http://edas#Paper",
+              "http://edas#isReviewedBy",
+              "http://edas#ConferenceChair"
+            ]
+          ],
+          [
+            [
+              "http://edas#Paper",
+              "http://edas#relatesTo",
+              "http://edas#AcademicEvent"
+            ]
+          ],
+          [
+            [
+              "http://edas#Paper",
+              "http://edas#relatesTo",
+              "http://edas#Conference"
+            ]
+          ],
+          [
+            [
+              "http://edas#Paper",
+              "http://edas#relatesTo",
+              "http://edas#Person"
+            ]
+          ],
+          [
+            [
+              "http://edas#Paper",
+              "http://edas#relatesTo",
+              "http://edas#ConferenceSession"
+            ]
+          ]
+        ],
+        "incoming": [
+          [
+            [
+              "http://edas#Author",
+              "http://edas#hasRelatedPaper",
+              "http://edas#Paper"
+            ]
+          ],
+          [
+            [
+              "http://edas#Reviewer",
+              "http://edas#isReviewing",
+              "http://edas#Paper"
+            ]
+          ],
+          [
+            [
+              "http://edas#SessionChair",
+              "http://edas#isReviewing",
+              "http://edas#Paper"
+            ]
+          ],
+          [
+            [
+              "http://edas#TPCMember",
+              "http://edas#isReviewing",
+              "http://edas#Paper"
+            ]
+          ],
+          [
+            [
+              "http://edas#ConferenceChair",
+              "http://edas#isReviewing",
+              "http://edas#Paper"
+            ]
+          ],
+          [
+            [
+              "http://edas#Topic",
+              "http://edas#isTopicOf",
+              "http://edas#Paper"
+            ]
+          ],
+          [
+            [
+              "http://edas#AcademicEvent",
+              "http://edas#hasRelatedDocument",
+              "http://edas#Paper"
+            ]
+          ],
+          [
+            [
+              "http://edas#Conference",
+              "http://edas#hasRelatedDocument",
+              "http://edas#Paper"
+            ]
+          ],
+          [
+            [
+              "http://edas#Person",
+              "http://edas#hasRelatedDocument",
+              "http://edas#Paper"
+            ]
+          ],
+          [
+            [
+              "http://edas#ConferenceSession",
+              "http://edas#hasRelatedDocument",
+              "http://edas#Paper"
+            ]
+          ]
+        ],
+        "values": []
+      },
+      {
+        "class": "http://conference#Paper",
+        "source": "conference",
+        "outgoing": [
+          [
+            [
+              "http://conference#Paper",
+              "http://conference#has_an_abstract",
+              "http://conference#Abstract"
+            ]
+          ],
+          [
+            [
+              "http://conference#Paper",
+              "http://conference#is_submitted_at",
+              "http://conference#Conference_volume"
+            ]
+          ],
+          [
+            [
+              "http://conference#Paper",
+              "http://conference#has_authors",
+              "http://conference#Person"
+            ]
+          ]
+        ],
+        "incoming": [
+          [
+            [
+              "http://conference#Abstract",
+              "http://conference#is_the_1th_part_of",
+              "http://conference#Paper"
+            ]
+          ],
+          [
+            [
+              "http://conference#Conference_volume",
+              "http://conference#has_contributions",
+              "http://conference#Paper"
+            ]
+          ],
+          [
+            [
+              "http://conference#Person",
+              "http://conference#contributes",
+              "http://conference#Paper"
+            ]
+          ]
+        ],
+        "values": [
+          [
+            "http://conference#Paper",
+            "http://conference#has_a_date_of_issue",
+            "http://www.w3.org/2001/XMLSchema#date"
+          ]
+        ]
+      },
+      {
+        "class": "http://ekaw#Paper",
+        "source": "ekaw",
+        "outgoing": [
+          [
+            [
+              "http://ekaw#Paper",
+              "http://ekaw#hasReview",
+              "http://ekaw#Negative_Review"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Paper",
+              "http://ekaw#updatedVersionOf",
+              "http://ekaw#Negative_Review"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Paper",
+              "http://ekaw#hasUpdatedVersion",
+              "http://ekaw#Negative_Review"
+            ]
+          ]
+        ],
+        "incoming": [
+          [
+            [
+              "http://ekaw#Negative_Review",
+              "http://ekaw#reviewOfPaper",
+              "http://ekaw#Paper"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Negative_Review",
+              "http://ekaw#updatedVersionOf",
+              "http://ekaw#Paper"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Negative_Review",
+              "http://ekaw#hasUpdatedVersion",
+              "http://ekaw#Paper"
+            ]
+          ]
+        ],
+        "values": []
+      },
+      {
+        "class": "http://ekaw#Negative_Review",
+        "source": "ekaw",
+        "outgoing": [
+          [
+            [
+              "http://ekaw#Negative_Review",
+              "http://ekaw#reviewOfPaper",
+              "http://ekaw#Paper"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Negative_Review",
+              "http://ekaw#updatedVersionOf",
+              "http://ekaw#Paper"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Negative_Review",
+              "http://ekaw#hasUpdatedVersion",
+              "http://ekaw#Paper"
+            ]
+          ]
+        ],
+        "incoming": [
+          [
+            [
+              "http://ekaw#Paper",
+              "http://ekaw#hasReview",
+              "http://ekaw#Negative_Review"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Paper",
+              "http://ekaw#updatedVersionOf",
+              "http://ekaw#Negative_Review"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Paper",
+              "http://ekaw#hasUpdatedVersion",
+              "http://ekaw#Negative_Review"
+            ]
+          ]
+        ],
+        "values": []
+      }
+    ],
+    "summarize_class_paths": [
+      {
+        "label": "Administrator",
+        "class": "http://cmt#Administrator",
+        "source": "cmt",
+        "outgoing": [
+          "Administrator -[rejectPaper]-> Paper",
+          "Administrator -[acceptPaper]-> Paper",
+          "Administrator -[hasConflictOfInterest]-> Paper",
+          "Administrator -[rejectPaper]-> PaperFullVersion",
+          "Administrator -[acceptPaper]-> PaperFullVersion",
+          "Administrator -[hasConflictOfInterest]-> PaperFullVersion"
+        ],
+        "incoming": [
+          "Paper -[rejectedBy]-> Administrator",
+          "Paper -[acceptedBy]-> Administrator",
+          "PaperFullVersion -[acceptedBy]-> Administrator",
+          "PaperFullVersion -[rejectedBy]-> Administrator"
+        ],
+        "values": [
+          [
+            "http://cmt#Administrator",
+            "http://cmt#email",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://cmt#Administrator",
+            "http://cmt#name",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "label": "Paper",
+        "class": "http://cmt#Paper",
+        "source": "cmt",
+        "outgoing": [
+          "Paper -[readByReviewer]-> Reviewer",
+          "Paper -[hasCo-author]-> Co-author",
+          "Paper -[assignedTo]-> Reviewer",
+          "Paper -[hasAuthor]-> Author",
+          "Paper -[readByMeta-Reviewer]-> Meta-Reviewer",
+          "Paper -[rejectedBy]-> Administrator",
+          "Paper -[acceptedBy]-> Administrator",
+          "Paper -[readByReviewer]-> Reviewer -[hasConflictOfInterest]-> PaperFullVersion",
+          "Paper -[hasCo-author]-> Co-author -[hasConflictOfInterest]-> PaperFullVersion",
+          "Paper -[assignedTo]-> Reviewer -[hasConflictOfInterest]-> PaperFullVersion",
+          "Paper -[hasAuthor]-> Author -[hasConflictOfInterest]-> PaperFullVersion",
+          "Paper -[readByMeta-Reviewer]-> Meta-Reviewer -[hasConflictOfInterest]-> PaperFullVersion"
+        ],
+        "incoming": [
+          "Co-author -[co-writePaper]-> Paper",
+          "Reviewer -[readPaper]-> Paper",
+          "Reviewer -[hasBeenAssigned]-> Paper",
+          "Administrator -[rejectPaper]-> Paper",
+          "Administrator -[acceptPaper]-> Paper",
+          "Administrator -[hasConflictOfInterest]-> Paper",
+          "Paper <-[co-writePaper]- Co-author -[hasConflictOfInterest]-> PaperFullVersion",
+          "Paper <-[readPaper]- Reviewer -[hasConflictOfInterest]-> PaperFullVersion",
+          "Paper <-[hasBeenAssigned]- Reviewer -[hasConflictOfInterest]-> PaperFullVersion"
+        ],
+        "values": [
+          [
+            "http://cmt#Paper",
+            "http://cmt#title",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://cmt#Paper",
+            "http://cmt#paperID",
+            "http://www.w3.org/2001/XMLSchema#unsignedLong"
+          ]
+        ]
+      },
+      {
+        "label": "PaperFullVersion",
+        "class": "http://cmt#PaperFullVersion",
+        "source": "cmt",
+        "outgoing": [
+          "PaperFullVersion -[acceptedBy]-> Administrator",
+          "PaperFullVersion -[rejectedBy]-> Administrator"
+        ],
+        "incoming": [
+          "Reviewer -[hasConflictOfInterest]-> PaperFullVersion",
+          "Co-author -[hasConflictOfInterest]-> PaperFullVersion",
+          "Author -[hasConflictOfInterest]-> PaperFullVersion",
+          "Meta-Reviewer -[hasConflictOfInterest]-> PaperFullVersion",
+          "Administrator -[rejectPaper]-> PaperFullVersion",
+          "Administrator -[acceptPaper]-> PaperFullVersion",
+          "Administrator -[hasConflictOfInterest]-> PaperFullVersion",
+          "PaperFullVersion <-[hasConflictOfInterest]- Reviewer <-[readByReviewer]- Paper",
+          "PaperFullVersion <-[hasConflictOfInterest]- Co-author <-[hasCo-author]- Paper",
+          "PaperFullVersion <-[hasConflictOfInterest]- Reviewer <-[assignedTo]- Paper",
+          "PaperFullVersion <-[hasConflictOfInterest]- Author <-[hasAuthor]- Paper",
+          "PaperFullVersion <-[hasConflictOfInterest]- Meta-Reviewer <-[readByMeta-Reviewer]- Paper",
+          "PaperFullVersion <-[hasConflictOfInterest]- Co-author -[co-writePaper]-> Paper",
+          "PaperFullVersion <-[hasConflictOfInterest]- Reviewer -[readPaper]-> Paper",
+          "PaperFullVersion <-[hasConflictOfInterest]- Reviewer -[hasBeenAssigned]-> Paper"
+        ],
+        "values": [
+          [
+            "http://cmt#PaperFullVersion",
+            "http://cmt#title",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://cmt#PaperFullVersion",
+            "http://cmt#paperID",
+            "http://www.w3.org/2001/XMLSchema#unsignedLong"
+          ]
+        ]
+      },
+      {
+        "label": "Administrator",
+        "class": "http://confOf#Administrator",
+        "source": "confof",
+        "outgoing": [
+          "Administrator -[employedBy]-> Organization",
+          "Administrator -[hasCity]-> City",
+          "Administrator -[hasCountry]-> Country"
+        ],
+        "incoming": [],
+        "values": [
+          [
+            "http://confOf#Administrator",
+            "http://confOf#hasHomePage",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Administrator",
+            "http://confOf#hasFax",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Administrator",
+            "http://confOf#hasPhone",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Administrator",
+            "http://confOf#hasSurname",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Administrator",
+            "http://confOf#hasStreet",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Administrator",
+            "http://confOf#hasPostalCode",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Administrator",
+            "http://confOf#hasFirstName",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Administrator",
+            "http://confOf#hasEmail",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "label": "Paper",
+        "class": "http://confOf#Paper",
+        "source": "confof",
+        "outgoing": [
+          "Paper -[dealsWith]-> Topic",
+          "Paper -[writtenBy]-> Author",
+          "Paper -[dealsWith]-> Topic <-[dealsWith]- Contribution",
+          "Paper -[writtenBy]-> Author -[writes]-> Contribution",
+          "Paper -[writtenBy]-> Author <-[writtenBy]- Contribution"
+        ],
+        "incoming": [
+          "Member_PC -[reviewes]-> Paper",
+          "Author -[writes]-> Paper",
+          "Paper <-[reviewes]- Member_PC -[reviewes]-> Contribution",
+          "Paper <-[writes]- Author -[writes]-> Contribution",
+          "Paper <-[writes]- Author <-[writtenBy]- Contribution"
+        ],
+        "values": [
+          [
+            "http://confOf#Paper",
+            "http://confOf#hasTitle",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Paper",
+            "http://confOf#contactEmail",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Paper",
+            "http://confOf#hasKeyword",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Paper",
+            "http://confOf#remark",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Paper",
+            "http://confOf#abstract",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "label": "Contribution",
+        "class": "http://confOf#Contribution",
+        "source": "confof",
+        "outgoing": [
+          "Contribution -[dealsWith]-> Topic",
+          "Contribution -[writtenBy]-> Author",
+          "Contribution -[dealsWith]-> Topic <-[dealsWith]- Paper",
+          "Contribution -[writtenBy]-> Author <-[writtenBy]- Paper",
+          "Contribution -[writtenBy]-> Author -[writes]-> Paper"
+        ],
+        "incoming": [
+          "Author -[writes]-> Contribution",
+          "Member_PC -[reviewes]-> Contribution",
+          "Contribution <-[writes]- Author <-[writtenBy]- Paper",
+          "Contribution <-[reviewes]- Member_PC -[reviewes]-> Paper",
+          "Contribution <-[writes]- Author -[writes]-> Paper"
+        ],
+        "values": [
+          [
+            "http://confOf#Contribution",
+            "http://confOf#hasTitle",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Contribution",
+            "http://confOf#contactEmail",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Contribution",
+            "http://confOf#hasKeyword",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Contribution",
+            "http://confOf#remark",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Contribution",
+            "http://confOf#abstract",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "label": "Paper",
+        "class": "http://edas#Paper",
+        "source": "edas",
+        "outgoing": [
+          "Paper -[isWrittenBy]-> Author",
+          "Paper -[hasTopic]-> Topic",
+          "Paper -[isReviewedBy]-> SessionChair",
+          "Paper -[isReviewedBy]-> Reviewer",
+          "Paper -[isReviewedBy]-> TPCMember",
+          "Paper -[isReviewedBy]-> ConferenceChair",
+          "Paper -[relatesTo]-> AcademicEvent",
+          "Paper -[relatesTo]-> Conference",
+          "Paper -[relatesTo]-> Person",
+          "Paper -[relatesTo]-> ConferenceSession"
+        ],
+        "incoming": [
+          "Author -[hasRelatedPaper]-> Paper",
+          "Reviewer -[isReviewing]-> Paper",
+          "SessionChair -[isReviewing]-> Paper",
+          "TPCMember -[isReviewing]-> Paper",
+          "ConferenceChair -[isReviewing]-> Paper",
+          "Topic -[isTopicOf]-> Paper",
+          "AcademicEvent -[hasRelatedDocument]-> Paper",
+          "Conference -[hasRelatedDocument]-> Paper",
+          "Person -[hasRelatedDocument]-> Paper",
+          "ConferenceSession -[hasRelatedDocument]-> Paper"
+        ],
+        "values": []
+      },
+      {
+        "label": "Paper",
+        "class": "http://conference#Paper",
+        "source": "conference",
+        "outgoing": [
+          "Paper -[has_an_abstract]-> Abstract",
+          "Paper -[is_submitted_at]-> Conference_volume",
+          "Paper -[has_authors]-> Person"
+        ],
+        "incoming": [
+          "Abstract -[is_the_1th_part_of]-> Paper",
+          "Conference_volume -[has_contributions]-> Paper",
+          "Person -[contributes]-> Paper"
+        ],
+        "values": [
+          [
+            "http://conference#Paper",
+            "http://conference#has_a_date_of_issue",
+            "http://www.w3.org/2001/XMLSchema#date"
+          ]
+        ]
+      },
+      {
+        "label": "Paper",
+        "class": "http://ekaw#Paper",
+        "source": "ekaw",
+        "outgoing": [
+          "Paper -[hasReview]-> Negative_Review",
+          "Paper -[updatedVersionOf]-> Negative_Review",
+          "Paper -[hasUpdatedVersion]-> Negative_Review"
+        ],
+        "incoming": [
+          "Negative_Review -[reviewOfPaper]-> Paper",
+          "Negative_Review -[updatedVersionOf]-> Paper",
+          "Negative_Review -[hasUpdatedVersion]-> Paper"
+        ],
+        "values": []
+      },
+      {
+        "label": "Negative_Review",
+        "class": "http://ekaw#Negative_Review",
+        "source": "ekaw",
+        "outgoing": [
+          "Negative_Review -[reviewOfPaper]-> Paper",
+          "Negative_Review -[updatedVersionOf]-> Paper",
+          "Negative_Review -[hasUpdatedVersion]-> Paper"
+        ],
+        "incoming": [
+          "Paper -[hasReview]-> Negative_Review",
+          "Paper -[updatedVersionOf]-> Negative_Review",
+          "Paper -[hasUpdatedVersion]-> Negative_Review"
+        ],
+        "values": []
+      },
+      {
+        "label": "Author",
+        "class": "http://cmt#Author",
+        "source": "cmt",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://cmt#Author",
+            "http://cmt#email",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://cmt#Author",
+            "http://cmt#name",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "label": "Meta-Reviewer",
+        "class": "http://cmt#Meta-Reviewer",
+        "source": "cmt",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://cmt#Meta-Reviewer",
+            "http://cmt#email",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://cmt#Meta-Reviewer",
+            "http://cmt#name",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "label": "Reviewer",
+        "class": "http://cmt#Reviewer",
+        "source": "cmt",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://cmt#Reviewer",
+            "http://cmt#email",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://cmt#Reviewer",
+            "http://cmt#name",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "label": "Co-author",
+        "class": "http://cmt#Co-author",
+        "source": "cmt",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://cmt#Co-author",
+            "http://cmt#email",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://cmt#Co-author",
+            "http://cmt#name",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "label": "City",
+        "class": "http://confOf#City",
+        "source": "confof",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "label": "Country",
+        "class": "http://confOf#Country",
+        "source": "confof",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "label": "Organization",
+        "class": "http://confOf#Organization",
+        "source": "confof",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://confOf#Organization",
+            "http://confOf#hasStreet",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Organization",
+            "http://confOf#hasPostalCode",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "label": "Author",
+        "class": "http://confOf#Author",
+        "source": "confof",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://confOf#Author",
+            "http://confOf#hasHomePage",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Author",
+            "http://confOf#hasFax",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Author",
+            "http://confOf#hasPhone",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Author",
+            "http://confOf#hasSurname",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Author",
+            "http://confOf#hasStreet",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Author",
+            "http://confOf#hasPostalCode",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Author",
+            "http://confOf#hasFirstName",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Author",
+            "http://confOf#hasEmail",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "label": "Member_PC",
+        "class": "http://confOf#Member_PC",
+        "source": "confof",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://confOf#Member_PC",
+            "http://confOf#hasHomePage",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Member_PC",
+            "http://confOf#hasFax",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Member_PC",
+            "http://confOf#hasPhone",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Member_PC",
+            "http://confOf#hasSurname",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Member_PC",
+            "http://confOf#hasStreet",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Member_PC",
+            "http://confOf#hasPostalCode",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Member_PC",
+            "http://confOf#hasFirstName",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Member_PC",
+            "http://confOf#hasEmail",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "label": "Topic",
+        "class": "http://confOf#Topic",
+        "source": "confof",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "label": "Author",
+        "class": "http://edas#Author",
+        "source": "edas",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "label": "Topic",
+        "class": "http://edas#Topic",
+        "source": "edas",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "label": "ConferenceSession",
+        "class": "http://edas#ConferenceSession",
+        "source": "edas",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "label": "Reviewer",
+        "class": "http://edas#Reviewer",
+        "source": "edas",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "label": "Conference",
+        "class": "http://edas#Conference",
+        "source": "edas",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://edas#Conference",
+            "http://edas#paperDueOn",
+            "http://www.w3.org/2001/XMLSchema#dateTime"
+          ],
+          [
+            "http://edas#Conference",
+            "http://edas#startDate",
+            "http://www.w3.org/2001/XMLSchema#dateTime"
+          ],
+          [
+            "http://edas#Conference",
+            "http://edas#registrationDueOn",
+            "http://www.w3.org/2001/XMLSchema#dateTime"
+          ],
+          [
+            "http://edas#Conference",
+            "http://edas#manuscriptDueOn",
+            "http://www.w3.org/2001/XMLSchema#dateTime"
+          ],
+          [
+            "http://edas#Conference",
+            "http://edas#hasName",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://edas#Conference",
+            "http://edas#endDate",
+            "http://www.w3.org/2001/XMLSchema#dateTime"
+          ]
+        ]
+      },
+      {
+        "label": "Person",
+        "class": "http://edas#Person",
+        "source": "edas",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://edas#Person",
+            "http://edas#hasEmail",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://edas#Person",
+            "http://edas#hasFirstName",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://edas#Person",
+            "http://edas#hasBiography",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://edas#Person",
+            "http://edas#hasLastName",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "label": "SessionChair",
+        "class": "http://edas#SessionChair",
+        "source": "edas",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://edas#SessionChair",
+            "http://edas#hasEmail",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://edas#SessionChair",
+            "http://edas#hasFirstName",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://edas#SessionChair",
+            "http://edas#hasBiography",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://edas#SessionChair",
+            "http://edas#hasLastName",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "label": "ConferenceChair",
+        "class": "http://edas#ConferenceChair",
+        "source": "edas",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://edas#ConferenceChair",
+            "http://edas#hasEmail",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://edas#ConferenceChair",
+            "http://edas#hasFirstName",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://edas#ConferenceChair",
+            "http://edas#hasBiography",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://edas#ConferenceChair",
+            "http://edas#hasLastName",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "label": "AcademicEvent",
+        "class": "http://edas#AcademicEvent",
+        "source": "edas",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://edas#AcademicEvent",
+            "http://edas#hasEndDateTime",
+            "http://www.w3.org/2001/XMLSchema#dateTime"
+          ],
+          [
+            "http://edas#AcademicEvent",
+            "http://edas#hasStartDateTime",
+            "http://www.w3.org/2001/XMLSchema#dateTime"
+          ]
+        ]
+      },
+      {
+        "label": "TPCMember",
+        "class": "http://edas#TPCMember",
+        "source": "edas",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://edas#TPCMember",
+            "http://edas#hasEmail",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://edas#TPCMember",
+            "http://edas#hasFirstName",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://edas#TPCMember",
+            "http://edas#hasBiography",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://edas#TPCMember",
+            "http://edas#hasLastName",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "label": "Conference_volume",
+        "class": "http://conference#Conference_volume",
+        "source": "conference",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://conference#Conference_volume",
+            "http://conference#has_a_name",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://conference#Conference_volume",
+            "http://conference#has_a_location",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "label": "Abstract",
+        "class": "http://conference#Abstract",
+        "source": "conference",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://conference#Abstract",
+            "http://conference#has_a_date_of_issue",
+            "http://www.w3.org/2001/XMLSchema#date"
+          ]
+        ]
+      },
+      {
+        "label": "Person",
+        "class": "http://conference#Person",
+        "source": "conference",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://conference#Person",
+            "http://conference#has_an_email",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://conference#Person",
+            "http://conference#has_the_last_name",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://conference#Person",
+            "http://conference#has_gender",
+            null
+          ],
+          [
+            "http://conference#Person",
+            "http://conference#has_the_first_name",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      }
+    ],
+    "summarize_contextual_class_paths": [
+      {
+        "class": "http://cmt#Paper",
+        "source": "cmt",
+        "label": "Paper",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://cmt#Paper",
+            "http://cmt#title",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://cmt#Paper",
+            "http://cmt#paperID",
+            "http://www.w3.org/2001/XMLSchema#unsignedLong"
+          ]
+        ],
+        "answers_question": false
+      },
+      {
+        "class": "http://confOf#Paper",
+        "source": "confof",
+        "label": "Paper",
+        "outgoing": [],
+        "incoming": [
+          "Member_PC -[reviewes]-> Paper"
+        ],
+        "values": [
+          [
+            "http://confOf#Paper",
+            "http://confOf#hasTitle",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Paper",
+            "http://confOf#contactEmail",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Paper",
+            "http://confOf#hasKeyword",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Paper",
+            "http://confOf#remark",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Paper",
+            "http://confOf#abstract",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ],
+        "answers_question": false
+      },
+      {
+        "class": "http://edas#Paper",
+        "source": "edas",
+        "label": "Paper",
+        "outgoing": [
+          "Paper -[isReviewedBy]-> Reviewer"
+        ],
+        "incoming": [],
+        "values": [],
+        "answers_question": false
+      },
+      {
+        "class": "http://ekaw#Paper",
+        "source": "ekaw",
+        "label": "Paper",
+        "outgoing": [
+          "Paper -[hasReview]-> Negative_Review"
+        ],
+        "incoming": [],
+        "values": [],
+        "answers_question": false
+      },
+      {
+        "class": "http://ekaw#Negative_Review",
+        "source": "ekaw",
+        "label": "Negative_Review",
+        "outgoing": [],
+        "incoming": [
+          "Paper -[hasReview]-> Negative_Review"
+        ],
+        "values": [],
+        "answers_question": false
+      }
+    ],
+    "selected_class_paths": [
+      {
+        "class": "http://cmt#Paper",
+        "source": "cmt",
+        "label": "Paper",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://cmt#Paper",
+            "http://cmt#title",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://cmt#Paper",
+            "http://cmt#paperID",
+            "http://www.w3.org/2001/XMLSchema#unsignedLong"
+          ]
+        ],
+        "answers_question": false,
+        "complete_answer_branch": false,
+        "source_complete_answer_branch": false
+      },
+      {
+        "class": "http://ekaw#Paper",
+        "source": "ekaw",
+        "label": "Paper",
+        "outgoing": [
+          "Paper -[hasReview]-> Negative_Review"
+        ],
+        "incoming": [],
+        "values": [],
+        "answers_question": false,
+        "complete_answer_branch": false,
+        "source_complete_answer_branch": false
+      },
+      {
+        "class": "http://ekaw#Negative_Review",
+        "source": "ekaw",
+        "label": "Negative_Review",
+        "outgoing": [],
+        "incoming": [
+          "Paper -[hasReview]-> Negative_Review"
+        ],
+        "values": [],
+        "answers_question": false,
+        "complete_answer_branch": false,
+        "source_complete_answer_branch": false
+      }
+    ],
+    "validated_class_paths": [
+      {
+        "class": "http://cmt#Paper",
+        "source": "cmt",
+        "label": "Paper",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://cmt#Paper",
+            "http://cmt#title",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://cmt#Paper",
+            "http://cmt#paperID",
+            "http://www.w3.org/2001/XMLSchema#unsignedLong"
+          ]
+        ],
+        "answers_question": false,
+        "complete_answer_branch": false,
+        "source_complete_answer_branch": false
+      },
+      {
+        "class": "http://confOf#Paper",
+        "source": "confof",
+        "label": "Paper",
+        "outgoing": [],
+        "incoming": [
+          "Member_PC -[reviewes]-> Paper"
+        ],
+        "values": [
+          [
+            "http://confOf#Paper",
+            "http://confOf#hasTitle",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Paper",
+            "http://confOf#contactEmail",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Paper",
+            "http://confOf#hasKeyword",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Paper",
+            "http://confOf#remark",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Paper",
+            "http://confOf#abstract",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ],
+        "answers_question": false,
+        "complete_answer_branch": false,
+        "source_complete_answer_branch": false
+      },
+      {
+        "class": "http://edas#Paper",
+        "source": "edas",
+        "label": "Paper",
+        "outgoing": [
+          "Paper -[isReviewedBy]-> Reviewer"
+        ],
+        "incoming": [],
+        "values": [],
+        "answers_question": false,
+        "complete_answer_branch": false,
+        "source_complete_answer_branch": false
+      },
+      {
+        "class": "http://ekaw#Paper",
+        "source": "ekaw",
+        "label": "Paper",
+        "outgoing": [
+          "Paper -[hasReview]-> Negative_Review"
+        ],
+        "incoming": [],
+        "values": [],
+        "answers_question": false,
+        "complete_answer_branch": false,
+        "source_complete_answer_branch": false
+      },
+      {
+        "class": "http://ekaw#Negative_Review",
+        "source": "ekaw",
+        "label": "Negative_Review",
+        "outgoing": [],
+        "incoming": [
+          "Paper -[hasReview]-> Negative_Review"
+        ],
+        "values": [],
+        "answers_question": false,
+        "complete_answer_branch": false,
+        "source_complete_answer_branch": false
+      }
+    ],
+    "path_scores": [
+      {
+        "source": "ekaw",
+        "chain": "Paper -[hasReview]-> Negative_Review",
+        "full": 0.7366097617505699,
+        "classes": 0.5507384087698262,
+        "relations": 0.53039599621186,
+        "total": 0.6396056027486048,
+        "complete": false,
+        "kept": true,
+        "reason": "at or above tier threshold"
+      },
+      {
+        "source": "ekaw",
+        "chain": "Paper -[hasReview]-> Negative_Review",
+        "full": 0.7366097617505699,
+        "classes": 0.5507384087698262,
+        "relations": 0.53039599621186,
+        "total": 0.6396056027486048,
+        "complete": false,
+        "kept": true,
+        "reason": "at or above tier threshold"
+      },
+      {
+        "source": "edas",
+        "chain": "Paper -[isReviewedBy]-> Reviewer",
+        "full": 0.6173903626456188,
+        "classes": 0.49056762704781476,
+        "relations": 0.5577695830922863,
+        "total": 0.567419386055611,
+        "complete": false,
+        "kept": true,
+        "reason": "at or above tier threshold"
+      },
+      {
+        "source": "cmt",
+        "chain": "",
+        "full": 0.6136212362365766,
+        "classes": 0.4754581845013673,
+        "relations": 0.5422339042538966,
+        "total": 0.5578948543194778,
+        "complete": false,
+        "kept": true,
+        "reason": "at or above tier threshold"
+      },
+      {
+        "source": "confof",
+        "chain": "Member_PC -[reviewes]-> Paper",
+        "full": 0.5658634862137254,
+        "classes": 0.4027498087809595,
+        "relations": 0.5876083325485879,
+        "total": 0.5212783522508682,
+        "complete": false,
+        "kept": true,
+        "reason": "at or above tier threshold"
+      }
+    ],
+    "source_scores": {
+      "cmt": 0.5578948543194778,
+      "confof": 0.5212783522508682,
+      "edas": 0.567419386055611,
+      "ekaw": 0.6396056027486048
+    },
+    "provider_plan": [],
+    "cut_sources": [
+      "confof",
+      "edas"
+    ],
+    "alignment": [
+      "<http://cmt#Paper> = <http://confOf#Contribution>",
+      "<http://ekaw#Rejected_Paper> = <http://cmt#Paper> AND (<http://cmt#hasDecision> -> <http://cmt#Rejection>)",
+      "<http://ekaw#Accepted_Paper> = <http://cmt#Paper> AND (<http://cmt#hasDecision> -> <http://cmt#Acceptance>)",
+      "<http://cmt#Paper> = <http://ekaw#Paper>",
+      "<http://conference#Rejected_contribution> = <http://cmt#Paper> AND (<http://cmt#hasDecision> -> <http://cmt#Rejection>)",
+      "<http://conference#Accepted_contribution> = <http://cmt#Paper> AND (<http://cmt#hasDecision> -> <http://cmt#Acceptance>)",
+      "<http://cmt#Paper> = <http://edas#Paper>",
+      "<http://confOf#Contribution> = <http://ekaw#Paper>",
+      "<http://edas#Paper> = <http://ekaw#Paper>"
+    ],
+    "query": "PREFIX cmt: <http://cmt#>\nPREFIX ekaw: <http://ekaw#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nSELECT DISTINCT ?title WHERE {\nSERVICE <http://192.168.100.45:3030/ekaw/sparql> { ?paper a ekaw:Paper . ?paper ekaw:hasReview ?negative_review . ?negative_review a ekaw:Negative_Review . }\nSERVICE <http://192.168.100.45:3030/cmt/sparql> { ?cmt_paper owl:sameAs ?paper . ?cmt_paper a cmt:Paper . ?cmt_paper cmt:title ?title . }\n}",
+    "token_usage": {
+      "by_agent": [
+        {
+          "agent": "agent6_path_filter",
+          "provider": "vercel",
+          "model": "meta/muse-spark-1.3",
+          "calls": 5,
+          "prompt_tokens": 6920,
+          "completion_tokens": 12007,
+          "total_tokens": 18927,
+          "max_prompt_tokens": 1579,
+          "avg_prompt_tokens": 1384,
+          "calls_without_usage": 0
+        },
+        {
+          "agent": "agent4_match_relevance",
+          "provider": "vercel",
+          "model": "meta/muse-spark-1.3",
+          "calls": 5,
+          "prompt_tokens": 5110,
+          "completion_tokens": 13290,
+          "total_tokens": 18400,
+          "max_prompt_tokens": 1155,
+          "avg_prompt_tokens": 1022,
+          "calls_without_usage": 0
+        },
+        {
+          "agent": "agent7_sparql_generator",
+          "provider": "vercel",
+          "model": "meta/muse-spark-1.3",
+          "calls": 1,
+          "prompt_tokens": 4169,
+          "completion_tokens": 5482,
+          "total_tokens": 9651,
+          "max_prompt_tokens": 4169,
+          "avg_prompt_tokens": 4169,
+          "calls_without_usage": 0
+        },
+        {
+          "agent": "agent8_source_selector",
+          "provider": "vercel",
+          "model": "meta/muse-spark-1.3",
+          "calls": 1,
+          "prompt_tokens": 1379,
+          "completion_tokens": 5319,
+          "total_tokens": 6698,
+          "max_prompt_tokens": 1379,
+          "avg_prompt_tokens": 1379,
+          "calls_without_usage": 0
+        },
+        {
+          "agent": "agent1_extractor",
+          "provider": "vercel",
+          "model": "meta/muse-spark-1.3",
+          "calls": 1,
+          "prompt_tokens": 1194,
+          "completion_tokens": 2094,
+          "total_tokens": 3288,
+          "max_prompt_tokens": 1194,
+          "avg_prompt_tokens": 1194,
+          "calls_without_usage": 0
+        }
+      ],
+      "totals": {
+        "calls": 13,
+        "prompt_tokens": 18772,
+        "completion_tokens": 38192,
+        "total_tokens": 56964
+      }
+    }
+  },
+  "elapsed_seconds": 189.681,
+  "finished_at": "2026-09-12T01:40:57.440430+00:00"
+}

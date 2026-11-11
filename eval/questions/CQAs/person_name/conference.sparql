@@ -1,0 +1,8 @@
+SELECT distinct ?s ?o WHERE {  
+
+?s <http://conference#has_the_first_name> ?o1 . 
+?s <http://conference#has_the_last_name> ?o2 .
+  BIND( concat(STR(?o1)," ", STR(?o2)) as ?o)
+
+
+ }

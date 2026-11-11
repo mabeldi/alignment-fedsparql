@@ -1,0 +1,1040 @@
+{
+  "format_version": 1,
+  "created_at": "2026-09-12T19:56:43.699350+00:00",
+  "configuration": {
+    "model": "muse-spark-1.3",
+    "alignments_enabled": true,
+    "label_source": "user-declared command arguments"
+  },
+  "selected_runs": [
+    1,
+    2,
+    3
+  ],
+  "aggregation": "mean across runs within each question, then equal-weight mean across questions",
+  "spread": "per_run_overall averages each run over all questions; run_spread gives their min, max and sample standard deviation",
+  "score_scale": "0 to 1",
+  "questions": [
+    {
+      "folder": "list_all_papers",
+      "question": "list all papers",
+      "metrics_sha256": "d8a8328a530ebb07fb217f2cc0aa305efcf2f787f43b8666a3135e8b92b1d1b3",
+      "reference_query_sha256": "ae14600ebca40ff07dfbf326a2f564439b56b7bd4e2e3d655a6d6b22ff86dd2d",
+      "reference_result_sha256": "fe871996b946ba63c8f62ef7f30e3f7c2524b107bee0fa0cf6b785888e69068f",
+      "scores": {
+        "answer_macro_f1": 1.0,
+        "answer_macro_f1_raw_uri": 1.0,
+        "exact_match_accuracy": 1,
+        "source_selection_macro_f1": 1.0,
+        "execution_success_rate": 1
+      },
+      "run_scores": {
+        "answer_macro_f1": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "answer_macro_f1_raw_uri": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "exact_match_accuracy": [
+          1,
+          1,
+          1
+        ],
+        "source_selection_macro_f1": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "execution_success_rate": [
+          1,
+          1,
+          1
+        ]
+      },
+      "run_range": {
+        "answer_macro_f1": [
+          1.0,
+          1.0
+        ],
+        "answer_macro_f1_raw_uri": [
+          1.0,
+          1.0
+        ],
+        "exact_match_accuracy": [
+          1,
+          1
+        ],
+        "source_selection_macro_f1": [
+          1.0,
+          1.0
+        ],
+        "execution_success_rate": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "folder": "retreive_the_list_of_authors",
+      "question": "retreive the list of authors",
+      "metrics_sha256": "a73ac4738f7ebe95372669352ff7b703acd49a23aa62b39756d1781d25a0860d",
+      "reference_query_sha256": "c9fe38f848b9430af98370e1b2b9631ebefca4b65306077b43809949ed89860a",
+      "reference_result_sha256": "fce497e166dfaa586cb1e4859699c5710b6708a75ff1d580dbfd5ea46f6eb68e",
+      "scores": {
+        "answer_macro_f1": 1.0,
+        "answer_macro_f1_raw_uri": 1.0,
+        "exact_match_accuracy": 1,
+        "source_selection_macro_f1": 1.0,
+        "execution_success_rate": 1
+      },
+      "run_scores": {
+        "answer_macro_f1": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "answer_macro_f1_raw_uri": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "exact_match_accuracy": [
+          1,
+          1,
+          1
+        ],
+        "source_selection_macro_f1": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "execution_success_rate": [
+          1,
+          1,
+          1
+        ]
+      },
+      "run_range": {
+        "answer_macro_f1": [
+          1.0,
+          1.0
+        ],
+        "answer_macro_f1_raw_uri": [
+          1.0,
+          1.0
+        ],
+        "exact_match_accuracy": [
+          1,
+          1
+        ],
+        "source_selection_macro_f1": [
+          1.0,
+          1.0
+        ],
+        "execution_success_rate": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "folder": "retrieve_the_list_of_accepted_papers",
+      "question": "retrieve the list of accepted papers",
+      "metrics_sha256": "38673fd7d5886384bc877f57b2bbc2f500c44356e60c367b69d3a00ce69a51b2",
+      "reference_query_sha256": "df3b0080e9a4ce031ff30418459a1fa8acc71b83727fb28667e57acb217a9c33",
+      "reference_result_sha256": "608720a6ecb65f8261cc4e7826d5285a526a44d633adfe7f947ee7f6ff90e5e7",
+      "scores": {
+        "answer_macro_f1": 1.0,
+        "answer_macro_f1_raw_uri": 1.0,
+        "exact_match_accuracy": 1,
+        "source_selection_macro_f1": 1.0,
+        "execution_success_rate": 1
+      },
+      "run_scores": {
+        "answer_macro_f1": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "answer_macro_f1_raw_uri": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "exact_match_accuracy": [
+          1,
+          1,
+          1
+        ],
+        "source_selection_macro_f1": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "execution_success_rate": [
+          1,
+          1,
+          1
+        ]
+      },
+      "run_range": {
+        "answer_macro_f1": [
+          1.0,
+          1.0
+        ],
+        "answer_macro_f1_raw_uri": [
+          1.0,
+          1.0
+        ],
+        "exact_match_accuracy": [
+          1,
+          1
+        ],
+        "source_selection_macro_f1": [
+          1.0,
+          1.0
+        ],
+        "execution_success_rate": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "folder": "Retrieve_the_list_of_camera_ready_events",
+      "question": "Retrieve the list of camera-ready events.",
+      "metrics_sha256": "a6558951d4dc32049b06acee6fe7a29f9c15d2eae882aecc32877de8863974fe",
+      "reference_query_sha256": "ca47ed0a43dadde024303a4fd6084b3d3ff16a85066ed7522ea78b1dd0c21e7e",
+      "reference_result_sha256": "e5bf55174079c94c621b7e499fbacacfec53025acd8424cb2919b13b128ec521",
+      "scores": {
+        "answer_macro_f1": 1.0,
+        "answer_macro_f1_raw_uri": 1.0,
+        "exact_match_accuracy": 1,
+        "source_selection_macro_f1": 1.0,
+        "execution_success_rate": 1
+      },
+      "run_scores": {
+        "answer_macro_f1": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "answer_macro_f1_raw_uri": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "exact_match_accuracy": [
+          1,
+          1,
+          1
+        ],
+        "source_selection_macro_f1": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "execution_success_rate": [
+          1,
+          1,
+          1
+        ]
+      },
+      "run_range": {
+        "answer_macro_f1": [
+          1.0,
+          1.0
+        ],
+        "answer_macro_f1_raw_uri": [
+          1.0,
+          1.0
+        ],
+        "exact_match_accuracy": [
+          1,
+          1
+        ],
+        "source_selection_macro_f1": [
+          1.0,
+          1.0
+        ],
+        "execution_success_rate": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "folder": "What_are_the_titles_of_the_papers_that_received_a_negative_review",
+      "question": "What are the titles of the papers that received a negative review?",
+      "metrics_sha256": "55aea7a3018a44be72ae58e17b88db8f2bb7aff4972370a6e2536cc6ce729ddb",
+      "reference_query_sha256": "2859000631d738ddbd9024d50955c9bcae3d5d357aaae0598b9695fc4de7c99c",
+      "reference_result_sha256": "71c1a4b7bf7c6b0bc6c46fad863168f199bd416fd323c2e538fa30890720a33c",
+      "scores": {
+        "answer_macro_f1": 1.0,
+        "answer_macro_f1_raw_uri": 1.0,
+        "exact_match_accuracy": 1,
+        "source_selection_macro_f1": 1.0,
+        "execution_success_rate": 1
+      },
+      "run_scores": {
+        "answer_macro_f1": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "answer_macro_f1_raw_uri": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "exact_match_accuracy": [
+          1,
+          1,
+          1
+        ],
+        "source_selection_macro_f1": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "execution_success_rate": [
+          1,
+          1,
+          1
+        ]
+      },
+      "run_range": {
+        "answer_macro_f1": [
+          1.0,
+          1.0
+        ],
+        "answer_macro_f1_raw_uri": [
+          1.0,
+          1.0
+        ],
+        "exact_match_accuracy": [
+          1,
+          1
+        ],
+        "source_selection_macro_f1": [
+          1.0,
+          1.0
+        ],
+        "execution_success_rate": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "folder": "What_is_the_start_date_of_each_conference",
+      "question": "What is the start date of each conference?",
+      "metrics_sha256": "a8b64b114dcdea1ace4c8e17153ffd85cd57e5c5770f8965001daf0ee6039577",
+      "reference_query_sha256": "43f6dc35b3804b1441e8d6121d4d1c01cb658bb446302433e78d679458e6c2a0",
+      "reference_result_sha256": "913c2ac03a73f88a72bffc0d9800750008ab3ce4fbf3dd78bd6033243bc5723a",
+      "scores": {
+        "answer_macro_f1": 1.0,
+        "answer_macro_f1_raw_uri": 1.0,
+        "exact_match_accuracy": 1,
+        "source_selection_macro_f1": 1.0,
+        "execution_success_rate": 1
+      },
+      "run_scores": {
+        "answer_macro_f1": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "answer_macro_f1_raw_uri": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "exact_match_accuracy": [
+          1,
+          1,
+          1
+        ],
+        "source_selection_macro_f1": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "execution_success_rate": [
+          1,
+          1,
+          1
+        ]
+      },
+      "run_range": {
+        "answer_macro_f1": [
+          1.0,
+          1.0
+        ],
+        "answer_macro_f1_raw_uri": [
+          1.0,
+          1.0
+        ],
+        "exact_match_accuracy": [
+          1,
+          1
+        ],
+        "source_selection_macro_f1": [
+          1.0,
+          1.0
+        ],
+        "execution_success_rate": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "folder": "Which_abstract_belongs_to_each_invited_talk",
+      "question": "Which abstract belongs to each invited talk?",
+      "metrics_sha256": "8cbd7a82f57d9ed531140d2b30b8ed46fb48a2ee204d42442acda9eef459c0e0",
+      "reference_query_sha256": "fd87cfcfb5bc694918b7bc8d3a5f28565362693374707b070a2d994d091c9832",
+      "reference_result_sha256": "e8b1c8b4252e2fe5f861441edd8026bd6995a3836941d1605f42f60e247e1bc6",
+      "scores": {
+        "answer_macro_f1": 1.0,
+        "answer_macro_f1_raw_uri": 1.0,
+        "exact_match_accuracy": 1,
+        "source_selection_macro_f1": 1.0,
+        "execution_success_rate": 1
+      },
+      "run_scores": {
+        "answer_macro_f1": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "answer_macro_f1_raw_uri": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "exact_match_accuracy": [
+          1,
+          1,
+          1
+        ],
+        "source_selection_macro_f1": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "execution_success_rate": [
+          1,
+          1,
+          1
+        ]
+      },
+      "run_range": {
+        "answer_macro_f1": [
+          1.0,
+          1.0
+        ],
+        "answer_macro_f1_raw_uri": [
+          1.0,
+          1.0
+        ],
+        "exact_match_accuracy": [
+          1,
+          1
+        ],
+        "source_selection_macro_f1": [
+          1.0,
+          1.0
+        ],
+        "execution_success_rate": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "folder": "Which_conference_dinners_are_organised",
+      "question": "Which_conference_dinners_are_organised",
+      "metrics_sha256": "5680d88d8bf5c084327a3e7c4bff3e1833b8479cb31cdf5324b07a9e8b504e23",
+      "reference_query_sha256": "39f0a676938a13a9f8efa22affc29cd347edfca37dea481f832dacd5ebe4b08e",
+      "reference_result_sha256": "4ae29936e89eb7445afc74bd6a35889a90be1583fe0b584f5771afdbb43531e7",
+      "scores": {
+        "answer_macro_f1": 1.0,
+        "answer_macro_f1_raw_uri": 1.0,
+        "exact_match_accuracy": 1,
+        "source_selection_macro_f1": 1.0,
+        "execution_success_rate": 1
+      },
+      "run_scores": {
+        "answer_macro_f1": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "answer_macro_f1_raw_uri": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "exact_match_accuracy": [
+          1,
+          1,
+          1
+        ],
+        "source_selection_macro_f1": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "execution_success_rate": [
+          1,
+          1,
+          1
+        ]
+      },
+      "run_range": {
+        "answer_macro_f1": [
+          1.0,
+          1.0
+        ],
+        "answer_macro_f1_raw_uri": [
+          1.0,
+          1.0
+        ],
+        "exact_match_accuracy": [
+          1,
+          1
+        ],
+        "source_selection_macro_f1": [
+          1.0,
+          1.0
+        ],
+        "execution_success_rate": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "folder": "Which_papers_were_withdrawn",
+      "question": "Which papers were withdrawn?",
+      "metrics_sha256": "1f34cdda883574cc16f1e883951e00d58c049d6d3072efec738eedac134eb799",
+      "reference_query_sha256": "77e9248b59ed05ef8384bd41a6ec215911017b8631fcfcbf26e81083536928ba",
+      "reference_result_sha256": "161b2d74a0216a099e83d0ad2eb83846615af4ddbae005a37fc5f14d53a42b4d",
+      "scores": {
+        "answer_macro_f1": 1.0,
+        "answer_macro_f1_raw_uri": 1.0,
+        "exact_match_accuracy": 1,
+        "source_selection_macro_f1": 1.0,
+        "execution_success_rate": 1
+      },
+      "run_scores": {
+        "answer_macro_f1": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "answer_macro_f1_raw_uri": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "exact_match_accuracy": [
+          1,
+          1,
+          1
+        ],
+        "source_selection_macro_f1": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "execution_success_rate": [
+          1,
+          1,
+          1
+        ]
+      },
+      "run_range": {
+        "answer_macro_f1": [
+          1.0,
+          1.0
+        ],
+        "answer_macro_f1_raw_uri": [
+          1.0,
+          1.0
+        ],
+        "exact_match_accuracy": [
+          1,
+          1
+        ],
+        "source_selection_macro_f1": [
+          1.0,
+          1.0
+        ],
+        "execution_success_rate": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "folder": "Which_participants_registered_early",
+      "question": "Which participants registered early?",
+      "metrics_sha256": "a55a2772f8ab6ca57bb43103a49be58252f84aaa20de737b0fd81cb8c05c50ae",
+      "reference_query_sha256": "2148f160df182457248f8fb95f6acecde4f95d7f144ad3df932c1cf5ed868cb5",
+      "reference_result_sha256": "b66a697a0b4e8970f528b332e4e2ede82021c76d563a49da778f0babc5c07b48",
+      "scores": {
+        "answer_macro_f1": 1.0,
+        "answer_macro_f1_raw_uri": 1.0,
+        "exact_match_accuracy": 1,
+        "source_selection_macro_f1": 1.0,
+        "execution_success_rate": 1
+      },
+      "run_scores": {
+        "answer_macro_f1": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "answer_macro_f1_raw_uri": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "exact_match_accuracy": [
+          1,
+          1,
+          1
+        ],
+        "source_selection_macro_f1": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "execution_success_rate": [
+          1,
+          1,
+          1
+        ]
+      },
+      "run_range": {
+        "answer_macro_f1": [
+          1.0,
+          1.0
+        ],
+        "answer_macro_f1_raw_uri": [
+          1.0,
+          1.0
+        ],
+        "exact_match_accuracy": [
+          1,
+          1
+        ],
+        "source_selection_macro_f1": [
+          1.0,
+          1.0
+        ],
+        "execution_success_rate": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "folder": "Which_reviews_were_positive",
+      "question": "Which reviews were positive?",
+      "metrics_sha256": "e9920be813e5e432625b2ddc02998cf449b8ae9eaf3661fe44534a01e5d77098",
+      "reference_query_sha256": "13634ac92cdadccec3e840c591c967c62794a18188972bb86dd9cda983dc4380",
+      "reference_result_sha256": "a699630dd1c124fcdc3bf8ee05ff763602e23f4683a26f46415444bc8ab6b80f",
+      "scores": {
+        "answer_macro_f1": 1.0,
+        "answer_macro_f1_raw_uri": 1.0,
+        "exact_match_accuracy": 1,
+        "source_selection_macro_f1": 1.0,
+        "execution_success_rate": 1
+      },
+      "run_scores": {
+        "answer_macro_f1": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "answer_macro_f1_raw_uri": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "exact_match_accuracy": [
+          1,
+          1,
+          1
+        ],
+        "source_selection_macro_f1": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "execution_success_rate": [
+          1,
+          1,
+          1
+        ]
+      },
+      "run_range": {
+        "answer_macro_f1": [
+          1.0,
+          1.0
+        ],
+        "answer_macro_f1_raw_uri": [
+          1.0,
+          1.0
+        ],
+        "exact_match_accuracy": [
+          1,
+          1
+        ],
+        "source_selection_macro_f1": [
+          1.0,
+          1.0
+        ],
+        "execution_success_rate": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "folder": "Which_topics_are_listed",
+      "question": "Which topics are listed?",
+      "metrics_sha256": "4e20f53cdddc0b0fb4b96ea759c512347cb8ffb4a90d0c5196548b73efefd42b",
+      "reference_query_sha256": "dbd3875bb5d90de0e95f8e9627513c39c7371d6461615ddb3001a4c7567d9915",
+      "reference_result_sha256": "e8eab6fd1d9ec410ce38787dff9bb06668cf0a93ee327e085265bf88b651124f",
+      "scores": {
+        "answer_macro_f1": 1.0,
+        "answer_macro_f1_raw_uri": 1.0,
+        "exact_match_accuracy": 1,
+        "source_selection_macro_f1": 1.0,
+        "execution_success_rate": 1
+      },
+      "run_scores": {
+        "answer_macro_f1": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "answer_macro_f1_raw_uri": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "exact_match_accuracy": [
+          1,
+          1,
+          1
+        ],
+        "source_selection_macro_f1": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "execution_success_rate": [
+          1,
+          1,
+          1
+        ]
+      },
+      "run_range": {
+        "answer_macro_f1": [
+          1.0,
+          1.0
+        ],
+        "answer_macro_f1_raw_uri": [
+          1.0,
+          1.0
+        ],
+        "exact_match_accuracy": [
+          1,
+          1
+        ],
+        "source_selection_macro_f1": [
+          1.0,
+          1.0
+        ],
+        "execution_success_rate": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "folder": "Which_workshops_belong_to_a_conference_and_what_are_their_submission_deadlines",
+      "question": "Which workshops belong to a conference, and what are their submission deadlines?",
+      "metrics_sha256": "c9f25cd58be11b64da7e40fcd1e00ea9d2d1fc30d9b91150da213de35b90d723",
+      "reference_query_sha256": "292c737fe1e6c7a576c24f0619046c5004f78acea8830f7d75709d922d7b6db7",
+      "reference_result_sha256": "15d12c432a941f5ad4deddaf2fbeeeeb8fbf80e8afe7be1c2d0981754665229b",
+      "scores": {
+        "answer_macro_f1": 1.0,
+        "answer_macro_f1_raw_uri": 0.4444444444444444,
+        "exact_match_accuracy": 1,
+        "source_selection_macro_f1": 1.0,
+        "execution_success_rate": 1
+      },
+      "run_scores": {
+        "answer_macro_f1": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "answer_macro_f1_raw_uri": [
+          0.6666666666666666,
+          0.6666666666666666,
+          0.0
+        ],
+        "exact_match_accuracy": [
+          1,
+          1,
+          1
+        ],
+        "source_selection_macro_f1": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "execution_success_rate": [
+          1,
+          1,
+          1
+        ]
+      },
+      "run_range": {
+        "answer_macro_f1": [
+          1.0,
+          1.0
+        ],
+        "answer_macro_f1_raw_uri": [
+          0.0,
+          0.6666666666666666
+        ],
+        "exact_match_accuracy": [
+          1,
+          1
+        ],
+        "source_selection_macro_f1": [
+          1.0,
+          1.0
+        ],
+        "execution_success_rate": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "folder": "Who_are_the_conference_chairs",
+      "question": "Who are the conference chairs?",
+      "metrics_sha256": "908dc1bb34723d19bb2986ebca5f79d0a439649deac4af930589cd3bd134c860",
+      "reference_query_sha256": "b14b08ccae2ecb9b4759fd3658d19f9293925b76279f19afafd12a07745769d3",
+      "reference_result_sha256": "d034fd92e9264926c042dc74e85d69f141ccd921d2b2c9baf8b9f9926692f804",
+      "scores": {
+        "answer_macro_f1": 1.0,
+        "answer_macro_f1_raw_uri": 1.0,
+        "exact_match_accuracy": 1,
+        "source_selection_macro_f1": 1.0,
+        "execution_success_rate": 1
+      },
+      "run_scores": {
+        "answer_macro_f1": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "answer_macro_f1_raw_uri": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "exact_match_accuracy": [
+          1,
+          1,
+          1
+        ],
+        "source_selection_macro_f1": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "execution_success_rate": [
+          1,
+          1,
+          1
+        ]
+      },
+      "run_range": {
+        "answer_macro_f1": [
+          1.0,
+          1.0
+        ],
+        "answer_macro_f1_raw_uri": [
+          1.0,
+          1.0
+        ],
+        "exact_match_accuracy": [
+          1,
+          1
+        ],
+        "source_selection_macro_f1": [
+          1.0,
+          1.0
+        ],
+        "execution_success_rate": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "folder": "Who_are_the_invited_speakers",
+      "question": "Who are the invited speakers?",
+      "metrics_sha256": "453a8a09186fb797911010c01e0c5077ce93ab56809047f43c200c7b67fa4e15",
+      "reference_query_sha256": "d5dcbf1b2a7efdf28b0cda2941a7c367e43196101be805fa3a0583f967b2a45c",
+      "reference_result_sha256": "8635a0f88eae83eccd7879922e2599a4dec58066c75581f9a0cd93fbaceef1b6",
+      "scores": {
+        "answer_macro_f1": 1.0,
+        "answer_macro_f1_raw_uri": 1.0,
+        "exact_match_accuracy": 1,
+        "source_selection_macro_f1": 1.0,
+        "execution_success_rate": 1
+      },
+      "run_scores": {
+        "answer_macro_f1": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "answer_macro_f1_raw_uri": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "exact_match_accuracy": [
+          1,
+          1,
+          1
+        ],
+        "source_selection_macro_f1": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "execution_success_rate": [
+          1,
+          1,
+          1
+        ]
+      },
+      "run_range": {
+        "answer_macro_f1": [
+          1.0,
+          1.0
+        ],
+        "answer_macro_f1_raw_uri": [
+          1.0,
+          1.0
+        ],
+        "exact_match_accuracy": [
+          1,
+          1
+        ],
+        "source_selection_macro_f1": [
+          1.0,
+          1.0
+        ],
+        "execution_success_rate": [
+          1,
+          1
+        ]
+      }
+    }
+  ],
+  "errors": [],
+  "overall": {
+    "answer_macro_f1": 1.0,
+    "answer_macro_f1_raw_uri": 0.9629629629629629,
+    "exact_match_accuracy": 1,
+    "source_selection_macro_f1": 1.0,
+    "execution_success_rate": 1
+  },
+  "question_count": 15,
+  "attempt_count": 45,
+  "policy": {
+    "answer_comparison": "distinct complete value tuples; best global column assignment",
+    "extra_columns": "ignored after assignment; duplicate projected rows removed",
+    "split_union_columns": "not coalesced",
+    "rdf_identity": "saved value strings; ignore type, datatype, and language; instance URIs <source>-instances#<id> merged by <id> (one thing held by several sources); answer_raw_uri keeps every URI distinct",
+    "source_comparison": "distinct SERVICE endpoint IRIs in query text, not coordinator or runtime contacts",
+    "failures": "execution errors score answer F1=0 and exact_match=0; a query that neither parses nor executes scores source F1=0",
+    "unreachable_endpoint": "never judged, so unscored; aggregate withheld until executed again",
+    "missing_or_stale_artifacts": "unscored; aggregate withheld until repaired"
+  },
+  "status": "complete",
+  "per_run_overall": {
+    "1": {
+      "answer_macro_f1": 1.0,
+      "answer_macro_f1_raw_uri": 0.9777777777777777,
+      "exact_match_accuracy": 1,
+      "source_selection_macro_f1": 1.0,
+      "execution_success_rate": 1
+    },
+    "2": {
+      "answer_macro_f1": 1.0,
+      "answer_macro_f1_raw_uri": 0.9777777777777777,
+      "exact_match_accuracy": 1,
+      "source_selection_macro_f1": 1.0,
+      "execution_success_rate": 1
+    },
+    "3": {
+      "answer_macro_f1": 1.0,
+      "answer_macro_f1_raw_uri": 0.9333333333333333,
+      "exact_match_accuracy": 1,
+      "source_selection_macro_f1": 1.0,
+      "execution_success_rate": 1
+    }
+  },
+  "run_spread": {
+    "answer_macro_f1": {
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "answer_macro_f1_raw_uri": {
+      "min": 0.9333333333333333,
+      "max": 0.9777777777777777,
+      "stdev": 0.02566001196398334
+    },
+    "exact_match_accuracy": {
+      "min": 1,
+      "max": 1,
+      "stdev": 0.0
+    },
+    "source_selection_macro_f1": {
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "execution_success_rate": {
+      "min": 1,
+      "max": 1,
+      "stdev": 0.0
+    }
+  },
+  "stability": {
+    "question_count": 15,
+    "exact_in_every_run": 15,
+    "exact_in_at_least_one_run": 15
+  }
+}

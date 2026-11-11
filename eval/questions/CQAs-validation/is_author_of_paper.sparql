@@ -1,0 +1,51 @@
+#question: Which author wrote which paper?
+# CQA: is_author_of_paper
+
+# federation: UNION of complete alternative answers from each source
+
+SELECT DISTINCT ?s ?o
+WHERE {
+  {
+    # source: cmt
+    SERVICE <http://192.168.100.44:3030/cmt/sparql> {
+      ?o <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://cmt#PaperFullVersion> .
+      {
+      ?s <http://cmt#writePaper> ?o .
+      }
+      union{
+      ?s <http://cmt#co-writePaper> ?o .
+      }
+    }
+  }
+  UNION
+  {
+    # source: conference
+    SERVICE <http://192.168.100.44:3030/conference/sparql> {
+      ?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://conference#Regular_author> . ?s <http://conference#contributes> ?o . ?o <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://conference#Written_contribution> .
+      minus{
+      ?o <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://conference#Abstract> .
+      }
+    }
+  }
+  UNION
+  {
+    # source: confof
+    SERVICE <http://192.168.100.44:3030/confof/sparql> {
+      ?s <http://confOf#writes> ?o .
+    }
+  }
+  UNION
+  {
+    # source: edas
+    SERVICE <http://192.168.100.44:3030/edas/sparql> {
+      ?s <http://edas#hasRelatedPaper> ?o .
+    }
+  }
+  UNION
+  {
+    # source: ekaw
+    SERVICE <http://192.168.100.44:3030/ekaw/sparql> {
+      ?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ekaw#Paper_Author> . ?s <http://ekaw#authorOf> ?o . ?o <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ekaw#Paper> .
+    }
+  }
+}

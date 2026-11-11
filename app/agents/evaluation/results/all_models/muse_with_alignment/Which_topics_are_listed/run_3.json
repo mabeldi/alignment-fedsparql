@@ -1,0 +1,2316 @@
+{
+  "question": "Which topics are listed?",
+  "run": 3,
+  "status": "generated",
+  "endpoint": "http://127.0.0.1:8999/query",
+  "parallel_requests": 1,
+  "server_diagnostics_note": "Server token counters and debug files are shared across requests; do not use them for per-run measurements during concurrent requests.",
+  "started_at": "2026-09-11T23:46:00.216855+00:00",
+  "http_status": 200,
+  "response": {
+    "question": "Which topics are listed?",
+    "alignments_enabled": true,
+    "extracted": {
+      "classes": [
+        "Topic"
+      ],
+      "objectProperties": [],
+      "dataTypeProperties": [],
+      "literals": []
+    },
+    "matches": {
+      "Topic": [
+        {
+          "label": "Topic",
+          "uri": "http://confOf#Topic",
+          "type": "Class",
+          "name": "Topic",
+          "payload": {
+            "type": "Class",
+            "uri": "http://confOf#Topic",
+            "name": "Topic",
+            "label": "Topic",
+            "source": "confof"
+          },
+          "score": 1.0000002
+        },
+        {
+          "label": "Topic",
+          "uri": "http://edas#Topic",
+          "type": "Class",
+          "name": "Topic",
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#Topic",
+            "name": "Topic",
+            "label": "Topic",
+            "source": "edas"
+          },
+          "score": 1.0000002
+        },
+        {
+          "label": "Topic",
+          "uri": "http://conference#Topic",
+          "type": "Class",
+          "name": "Topic",
+          "payload": {
+            "type": "Class",
+            "uri": "http://conference#Topic",
+            "name": "Topic",
+            "label": "Topic",
+            "source": "conference"
+          },
+          "score": 1.0000002
+        },
+        {
+          "label": "coversTopic",
+          "uri": "http://ekaw#coversTopic",
+          "type": "ObjectProperty",
+          "name": "coversTopic",
+          "payload": {
+            "type": "ObjectProperty",
+            "name": "coversTopic",
+            "uri": "http://ekaw#coversTopic",
+            "label": "coversTopic",
+            "domain": "Event",
+            "range": "Research_Topic",
+            "domainUri": "http://ekaw#Event",
+            "rangeUri": "http://ekaw#Research_Topic",
+            "domains": [
+              "Paper",
+              "Event"
+            ],
+            "ranges": [
+              "Research_Topic"
+            ],
+            "domainUris": [
+              "http://ekaw#Paper",
+              "http://ekaw#Event"
+            ],
+            "rangeUris": [
+              "http://ekaw#Research_Topic"
+            ],
+            "source": "ekaw"
+          },
+          "score": 0.79635614,
+          "selected_ends": {
+            "domain": [
+              "http://ekaw#Event"
+            ],
+            "range": [
+              "http://ekaw#Research_Topic"
+            ]
+          }
+        },
+        {
+          "label": "isTopicOf",
+          "uri": "http://edas#isTopicOf",
+          "type": "ObjectProperty",
+          "name": "isTopicOf",
+          "payload": {
+            "type": "ObjectProperty",
+            "name": "isTopicOf",
+            "uri": "http://edas#isTopicOf",
+            "label": "isTopicOf",
+            "domain": "Topic",
+            "range": "Paper",
+            "domainUri": "http://edas#Topic",
+            "rangeUri": "http://edas#Paper",
+            "domains": [
+              "Topic"
+            ],
+            "ranges": [
+              "Paper",
+              "Conference"
+            ],
+            "domainUris": [
+              "http://edas#Topic"
+            ],
+            "rangeUris": [
+              "http://edas#Paper",
+              "http://edas#Conference"
+            ],
+            "source": "edas"
+          },
+          "score": 0.7876021
+        },
+        {
+          "label": "CommunicationsTopic",
+          "uri": "http://edas#CommunicationsTopic",
+          "type": "Class",
+          "name": "CommunicationsTopic",
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#CommunicationsTopic",
+            "name": "CommunicationsTopic",
+            "label": "CommunicationsTopic",
+            "source": "edas"
+          },
+          "score": 0.7680659
+        },
+        {
+          "label": "Research_Topic",
+          "uri": "http://ekaw#Research_Topic",
+          "type": "Class",
+          "name": "Research_Topic",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Research_Topic",
+            "name": "Research_Topic",
+            "label": "Research_Topic",
+            "source": "ekaw"
+          },
+          "score": 0.7498445
+        },
+        {
+          "label": "topicCoveredBy",
+          "uri": "http://ekaw#topicCoveredBy",
+          "type": "ObjectProperty",
+          "name": "topicCoveredBy",
+          "payload": {
+            "type": "ObjectProperty",
+            "name": "topicCoveredBy",
+            "uri": "http://ekaw#topicCoveredBy",
+            "label": "topicCoveredBy",
+            "domain": "Research_Topic",
+            "range": "Event",
+            "domainUri": "http://ekaw#Research_Topic",
+            "rangeUri": "http://ekaw#Event",
+            "domains": [
+              "Research_Topic"
+            ],
+            "ranges": [
+              "Paper",
+              "Event"
+            ],
+            "domainUris": [
+              "http://ekaw#Research_Topic"
+            ],
+            "rangeUris": [
+              "http://ekaw#Paper",
+              "http://ekaw#Event"
+            ],
+            "source": "ekaw"
+          },
+          "score": 0.73388517,
+          "selected_ends": {
+            "domain": [
+              "http://ekaw#Research_Topic"
+            ],
+            "range": [
+              "http://ekaw#Event"
+            ]
+          }
+        }
+      ]
+    },
+    "context_filtered_matches": {
+      "Topic": [
+        {
+          "label": "Topic",
+          "uri": "http://confOf#Topic",
+          "type": "Class",
+          "name": "Topic",
+          "payload": {
+            "type": "Class",
+            "uri": "http://confOf#Topic",
+            "name": "Topic",
+            "label": "Topic",
+            "source": "confof"
+          },
+          "score": 1.0000002
+        },
+        {
+          "label": "Topic",
+          "uri": "http://edas#Topic",
+          "type": "Class",
+          "name": "Topic",
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#Topic",
+            "name": "Topic",
+            "label": "Topic",
+            "source": "edas"
+          },
+          "score": 1.0000002
+        },
+        {
+          "label": "Topic",
+          "uri": "http://conference#Topic",
+          "type": "Class",
+          "name": "Topic",
+          "payload": {
+            "type": "Class",
+            "uri": "http://conference#Topic",
+            "name": "Topic",
+            "label": "Topic",
+            "source": "conference"
+          },
+          "score": 1.0000002
+        },
+        {
+          "label": "coversTopic",
+          "uri": "http://ekaw#coversTopic",
+          "type": "ObjectProperty",
+          "name": "coversTopic",
+          "payload": {
+            "type": "ObjectProperty",
+            "name": "coversTopic",
+            "uri": "http://ekaw#coversTopic",
+            "label": "coversTopic",
+            "domain": "Event",
+            "range": "Research_Topic",
+            "domainUri": "http://ekaw#Event",
+            "rangeUri": "http://ekaw#Research_Topic",
+            "domains": [
+              "Paper",
+              "Event"
+            ],
+            "ranges": [
+              "Research_Topic"
+            ],
+            "domainUris": [
+              "http://ekaw#Paper",
+              "http://ekaw#Event"
+            ],
+            "rangeUris": [
+              "http://ekaw#Research_Topic"
+            ],
+            "source": "ekaw"
+          },
+          "score": 0.79635614,
+          "selected_ends": {
+            "domain": [
+              "http://ekaw#Event"
+            ],
+            "range": [
+              "http://ekaw#Research_Topic"
+            ]
+          }
+        },
+        {
+          "label": "Research_Topic",
+          "uri": "http://ekaw#Research_Topic",
+          "type": "Class",
+          "name": "Research_Topic",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Research_Topic",
+            "name": "Research_Topic",
+            "label": "Research_Topic",
+            "source": "ekaw"
+          },
+          "score": 0.7498445
+        },
+        {
+          "label": "topicCoveredBy",
+          "uri": "http://ekaw#topicCoveredBy",
+          "type": "ObjectProperty",
+          "name": "topicCoveredBy",
+          "payload": {
+            "type": "ObjectProperty",
+            "name": "topicCoveredBy",
+            "uri": "http://ekaw#topicCoveredBy",
+            "label": "topicCoveredBy",
+            "domain": "Research_Topic",
+            "range": "Event",
+            "domainUri": "http://ekaw#Research_Topic",
+            "rangeUri": "http://ekaw#Event",
+            "domains": [
+              "Research_Topic"
+            ],
+            "ranges": [
+              "Paper",
+              "Event"
+            ],
+            "domainUris": [
+              "http://ekaw#Research_Topic"
+            ],
+            "rangeUris": [
+              "http://ekaw#Paper",
+              "http://ekaw#Event"
+            ],
+            "source": "ekaw"
+          },
+          "score": 0.73388517,
+          "selected_ends": {
+            "domain": [
+              "http://ekaw#Research_Topic"
+            ],
+            "range": [
+              "http://ekaw#Event"
+            ]
+          }
+        },
+        {
+          "label": "Event",
+          "uri": "http://ekaw#Event",
+          "type": "Class",
+          "score": 0.0,
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Event",
+            "label": "Event",
+            "source": "ekaw"
+          },
+          "derived_from": "http://ekaw#coversTopic"
+        },
+        {
+          "label": "SubjectArea",
+          "uri": "http://cmt#SubjectArea",
+          "type": "Class",
+          "score": 0.0,
+          "payload": {
+            "type": "Class",
+            "uri": "http://cmt#SubjectArea",
+            "label": "SubjectArea",
+            "source": "cmt"
+          },
+          "expanded_from": "http://confOf#Topic",
+          "via_alignment": "cmt:SubjectArea = confof:Topic"
+        },
+        {
+          "label": "Event",
+          "uri": "http://confOf#Event",
+          "type": "Class",
+          "score": 0.0,
+          "payload": {
+            "type": "Class",
+            "uri": "http://confOf#Event",
+            "label": "Event",
+            "source": "confof"
+          },
+          "expanded_from": "http://ekaw#Event",
+          "via_alignment": "ekaw:Event = confof:Event"
+        },
+        {
+          "label": "Conference",
+          "uri": "http://edas#Conference",
+          "type": "Class",
+          "score": 0.0,
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#Conference",
+            "label": "Conference",
+            "source": "edas"
+          },
+          "expanded_from": "http://ekaw#Event",
+          "via_alignment": "ekaw:Event = edas:Conference OR edas:ConferenceEvent OR edas:ConferenceSession"
+        },
+        {
+          "label": "ConferenceEvent",
+          "uri": "http://edas#ConferenceEvent",
+          "type": "Class",
+          "score": 0.0,
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#ConferenceEvent",
+            "label": "ConferenceEvent",
+            "source": "edas"
+          },
+          "expanded_from": "http://ekaw#Event",
+          "via_alignment": "ekaw:Event = edas:Conference OR edas:ConferenceEvent OR edas:ConferenceSession"
+        },
+        {
+          "label": "ConferenceSession",
+          "uri": "http://edas#ConferenceSession",
+          "type": "Class",
+          "score": 0.0,
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#ConferenceSession",
+            "label": "ConferenceSession",
+            "source": "edas"
+          },
+          "expanded_from": "http://ekaw#Event",
+          "via_alignment": "ekaw:Event = edas:Conference OR edas:ConferenceEvent OR edas:ConferenceSession"
+        }
+      ]
+    },
+    "context_removed_matches": {
+      "Topic": [
+        {
+          "label": "isTopicOf",
+          "uri": "http://edas#isTopicOf",
+          "type": "ObjectProperty",
+          "name": "isTopicOf",
+          "payload": {
+            "type": "ObjectProperty",
+            "name": "isTopicOf",
+            "uri": "http://edas#isTopicOf",
+            "label": "isTopicOf",
+            "domain": "Topic",
+            "range": "Paper",
+            "domainUri": "http://edas#Topic",
+            "rangeUri": "http://edas#Paper",
+            "domains": [
+              "Topic"
+            ],
+            "ranges": [
+              "Paper",
+              "Conference"
+            ],
+            "domainUris": [
+              "http://edas#Topic"
+            ],
+            "rangeUris": [
+              "http://edas#Paper",
+              "http://edas#Conference"
+            ],
+            "source": "edas"
+          },
+          "score": 0.7876021
+        },
+        {
+          "label": "CommunicationsTopic",
+          "uri": "http://edas#CommunicationsTopic",
+          "type": "Class",
+          "name": "CommunicationsTopic",
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#CommunicationsTopic",
+            "name": "CommunicationsTopic",
+            "label": "CommunicationsTopic",
+            "source": "edas"
+          },
+          "score": 0.7680659
+        }
+      ]
+    },
+    "top_sources": {
+      "confof": 1.0000002,
+      "edas": 1.0000002,
+      "conference": 1.0000002,
+      "ekaw": 0.7498445
+    },
+    "base_source": "confof",
+    "class_paths": [
+      {
+        "class": "http://confOf#Topic",
+        "source": "confof",
+        "outgoing": [],
+        "incoming": [
+          [
+            [
+              "http://confOf#Contribution",
+              "http://confOf#dealsWith",
+              "http://confOf#Topic"
+            ]
+          ],
+          [
+            [
+              "http://confOf#Member_PC",
+              "http://confOf#expertOn",
+              "http://confOf#Topic"
+            ]
+          ],
+          [
+            [
+              "http://confOf#Working_event",
+              "http://confOf#hasTopic",
+              "http://confOf#Topic"
+            ]
+          ]
+        ],
+        "values": []
+      },
+      {
+        "class": "http://confOf#Event",
+        "source": "confof",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://confOf#Event",
+            "http://confOf#starts_on",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Event",
+            "http://confOf#ends_on",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "class": "http://edas#Topic",
+        "source": "edas",
+        "outgoing": [
+          [
+            [
+              "http://edas#Topic",
+              "http://edas#isTopicOf",
+              "http://edas#Conference"
+            ]
+          ],
+          [
+            [
+              "http://edas#Topic",
+              "http://edas#isTopicOf",
+              "http://edas#Paper"
+            ],
+            [
+              "http://edas#Paper",
+              "http://edas#relatesTo",
+              "http://edas#Person"
+            ],
+            [
+              "http://edas#Person",
+              "http://edas#attendeeAt",
+              "http://edas#ConferenceEvent"
+            ]
+          ],
+          [
+            [
+              "http://edas#Topic",
+              "http://edas#isTopicOf",
+              "http://edas#Paper"
+            ],
+            [
+              "http://edas#Paper",
+              "http://edas#relatesTo",
+              "http://edas#Person"
+            ],
+            [
+              "http://edas#ConferenceEvent",
+              "http://edas#hasAttendee",
+              "http://edas#Person"
+            ]
+          ],
+          [
+            [
+              "http://edas#Topic",
+              "http://edas#isTopicOf",
+              "http://edas#Paper"
+            ],
+            [
+              "http://edas#Paper",
+              "http://edas#isReviewedBy",
+              "http://edas#SessionChair"
+            ],
+            [
+              "http://edas#SessionChair",
+              "http://edas#attendeeAt",
+              "http://edas#ConferenceEvent"
+            ]
+          ],
+          [
+            [
+              "http://edas#Topic",
+              "http://edas#isTopicOf",
+              "http://edas#Paper"
+            ],
+            [
+              "http://edas#Paper",
+              "http://edas#isReviewedBy",
+              "http://edas#SessionChair"
+            ],
+            [
+              "http://edas#ConferenceEvent",
+              "http://edas#hasAttendee",
+              "http://edas#SessionChair"
+            ]
+          ],
+          [
+            [
+              "http://edas#Topic",
+              "http://edas#isTopicOf",
+              "http://edas#Paper"
+            ],
+            [
+              "http://edas#Paper",
+              "http://edas#isReviewedBy",
+              "http://edas#TPCMember"
+            ],
+            [
+              "http://edas#TPCMember",
+              "http://edas#attendeeAt",
+              "http://edas#ConferenceEvent"
+            ]
+          ],
+          [
+            [
+              "http://edas#Topic",
+              "http://edas#isTopicOf",
+              "http://edas#Paper"
+            ],
+            [
+              "http://edas#Paper",
+              "http://edas#isReviewedBy",
+              "http://edas#TPCMember"
+            ],
+            [
+              "http://edas#ConferenceEvent",
+              "http://edas#hasAttendee",
+              "http://edas#TPCMember"
+            ]
+          ],
+          [
+            [
+              "http://edas#Topic",
+              "http://edas#isTopicOf",
+              "http://edas#Paper"
+            ],
+            [
+              "http://edas#Paper",
+              "http://edas#isReviewedBy",
+              "http://edas#ConferenceChair"
+            ],
+            [
+              "http://edas#ConferenceChair",
+              "http://edas#attendeeAt",
+              "http://edas#ConferenceEvent"
+            ]
+          ],
+          [
+            [
+              "http://edas#Topic",
+              "http://edas#isTopicOf",
+              "http://edas#Paper"
+            ],
+            [
+              "http://edas#Paper",
+              "http://edas#isReviewedBy",
+              "http://edas#ConferenceChair"
+            ],
+            [
+              "http://edas#ConferenceEvent",
+              "http://edas#hasAttendee",
+              "http://edas#ConferenceChair"
+            ]
+          ],
+          [
+            [
+              "http://edas#Topic",
+              "http://edas#isTopicOf",
+              "http://edas#Paper"
+            ],
+            [
+              "http://edas#Paper",
+              "http://edas#relatesTo",
+              "http://edas#ConferenceSession"
+            ]
+          ],
+          [
+            [
+              "http://edas#Topic",
+              "http://edas#isTopicOf",
+              "http://edas#Paper"
+            ],
+            [
+              "http://edas#ConferenceSession",
+              "http://edas#hasRelatedDocument",
+              "http://edas#Paper"
+            ]
+          ]
+        ],
+        "incoming": [
+          [
+            [
+              "http://edas#Conference",
+              "http://edas#hasTopic",
+              "http://edas#Topic"
+            ]
+          ],
+          [
+            [
+              "http://edas#Paper",
+              "http://edas#hasTopic",
+              "http://edas#Topic"
+            ],
+            [
+              "http://edas#Paper",
+              "http://edas#relatesTo",
+              "http://edas#ConferenceSession"
+            ]
+          ],
+          [
+            [
+              "http://edas#Paper",
+              "http://edas#hasTopic",
+              "http://edas#Topic"
+            ],
+            [
+              "http://edas#ConferenceSession",
+              "http://edas#hasRelatedDocument",
+              "http://edas#Paper"
+            ]
+          ]
+        ],
+        "values": []
+      },
+      {
+        "class": "http://edas#Conference",
+        "source": "edas",
+        "outgoing": [
+          [
+            [
+              "http://edas#Conference",
+              "http://edas#hasTopic",
+              "http://edas#Topic"
+            ]
+          ],
+          [
+            [
+              "http://edas#Conference",
+              "http://edas#hasMember",
+              "http://edas#Person"
+            ],
+            [
+              "http://edas#Person",
+              "http://edas#attendeeAt",
+              "http://edas#ConferenceEvent"
+            ]
+          ],
+          [
+            [
+              "http://edas#Conference",
+              "http://edas#hasMember",
+              "http://edas#Person"
+            ],
+            [
+              "http://edas#ConferenceEvent",
+              "http://edas#hasAttendee",
+              "http://edas#Person"
+            ]
+          ],
+          [
+            [
+              "http://edas#Conference",
+              "http://edas#hasRelatedDocument",
+              "http://edas#Document"
+            ],
+            [
+              "http://edas#Document",
+              "http://edas#relatesTo",
+              "http://edas#ConferenceSession"
+            ]
+          ],
+          [
+            [
+              "http://edas#Conference",
+              "http://edas#hasRelatedDocument",
+              "http://edas#Document"
+            ],
+            [
+              "http://edas#ConferenceSession",
+              "http://edas#hasRelatedDocument",
+              "http://edas#Document"
+            ]
+          ]
+        ],
+        "incoming": [
+          [
+            [
+              "http://edas#Topic",
+              "http://edas#isTopicOf",
+              "http://edas#Conference"
+            ]
+          ],
+          [
+            [
+              "http://edas#Person",
+              "http://edas#isMemberOf",
+              "http://edas#Conference"
+            ],
+            [
+              "http://edas#Person",
+              "http://edas#attendeeAt",
+              "http://edas#ConferenceEvent"
+            ]
+          ],
+          [
+            [
+              "http://edas#Person",
+              "http://edas#isMemberOf",
+              "http://edas#Conference"
+            ],
+            [
+              "http://edas#ConferenceEvent",
+              "http://edas#hasAttendee",
+              "http://edas#Person"
+            ]
+          ],
+          [
+            [
+              "http://edas#Document",
+              "http://edas#relatesTo",
+              "http://edas#Conference"
+            ],
+            [
+              "http://edas#Document",
+              "http://edas#relatesTo",
+              "http://edas#ConferenceSession"
+            ]
+          ],
+          [
+            [
+              "http://edas#Document",
+              "http://edas#relatesTo",
+              "http://edas#Conference"
+            ],
+            [
+              "http://edas#ConferenceSession",
+              "http://edas#hasRelatedDocument",
+              "http://edas#Document"
+            ]
+          ]
+        ],
+        "values": [
+          [
+            "http://edas#Conference",
+            "http://edas#manuscriptDueOn",
+            "http://www.w3.org/2001/XMLSchema#dateTime"
+          ],
+          [
+            "http://edas#Conference",
+            "http://edas#startDate",
+            "http://www.w3.org/2001/XMLSchema#dateTime"
+          ],
+          [
+            "http://edas#Conference",
+            "http://edas#endDate",
+            "http://www.w3.org/2001/XMLSchema#dateTime"
+          ],
+          [
+            "http://edas#Conference",
+            "http://edas#registrationDueOn",
+            "http://www.w3.org/2001/XMLSchema#dateTime"
+          ],
+          [
+            "http://edas#Conference",
+            "http://edas#paperDueOn",
+            "http://www.w3.org/2001/XMLSchema#dateTime"
+          ],
+          [
+            "http://edas#Conference",
+            "http://edas#hasName",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "class": "http://edas#ConferenceEvent",
+        "source": "edas",
+        "outgoing": [
+          [
+            [
+              "http://edas#ConferenceEvent",
+              "http://edas#hasAttendee",
+              "http://edas#Person"
+            ],
+            [
+              "http://edas#Paper",
+              "http://edas#relatesTo",
+              "http://edas#Person"
+            ],
+            [
+              "http://edas#Topic",
+              "http://edas#isTopicOf",
+              "http://edas#Paper"
+            ]
+          ],
+          [
+            [
+              "http://edas#ConferenceEvent",
+              "http://edas#hasAttendee",
+              "http://edas#SessionChair"
+            ],
+            [
+              "http://edas#Paper",
+              "http://edas#isReviewedBy",
+              "http://edas#SessionChair"
+            ],
+            [
+              "http://edas#Topic",
+              "http://edas#isTopicOf",
+              "http://edas#Paper"
+            ]
+          ],
+          [
+            [
+              "http://edas#ConferenceEvent",
+              "http://edas#hasAttendee",
+              "http://edas#TPCMember"
+            ],
+            [
+              "http://edas#Paper",
+              "http://edas#isReviewedBy",
+              "http://edas#TPCMember"
+            ],
+            [
+              "http://edas#Topic",
+              "http://edas#isTopicOf",
+              "http://edas#Paper"
+            ]
+          ],
+          [
+            [
+              "http://edas#ConferenceEvent",
+              "http://edas#hasAttendee",
+              "http://edas#ConferenceChair"
+            ],
+            [
+              "http://edas#Paper",
+              "http://edas#isReviewedBy",
+              "http://edas#ConferenceChair"
+            ],
+            [
+              "http://edas#Topic",
+              "http://edas#isTopicOf",
+              "http://edas#Paper"
+            ]
+          ],
+          [
+            [
+              "http://edas#ConferenceEvent",
+              "http://edas#hasAttendee",
+              "http://edas#Person"
+            ],
+            [
+              "http://edas#Conference",
+              "http://edas#hasMember",
+              "http://edas#Person"
+            ]
+          ],
+          [
+            [
+              "http://edas#ConferenceEvent",
+              "http://edas#hasAttendee",
+              "http://edas#Person"
+            ],
+            [
+              "http://edas#Person",
+              "http://edas#isMemberOf",
+              "http://edas#Conference"
+            ]
+          ],
+          [
+            [
+              "http://edas#ConferenceEvent",
+              "http://edas#hasProgramme",
+              "http://edas#Programme"
+            ],
+            [
+              "http://edas#Programme",
+              "http://edas#relatesTo",
+              "http://edas#ConferenceSession"
+            ]
+          ],
+          [
+            [
+              "http://edas#ConferenceEvent",
+              "http://edas#hasProgramme",
+              "http://edas#Programme"
+            ],
+            [
+              "http://edas#ConferenceSession",
+              "http://edas#hasRelatedDocument",
+              "http://edas#Programme"
+            ]
+          ]
+        ],
+        "incoming": [
+          [
+            [
+              "http://edas#Person",
+              "http://edas#attendeeAt",
+              "http://edas#ConferenceEvent"
+            ],
+            [
+              "http://edas#Paper",
+              "http://edas#relatesTo",
+              "http://edas#Person"
+            ],
+            [
+              "http://edas#Topic",
+              "http://edas#isTopicOf",
+              "http://edas#Paper"
+            ]
+          ],
+          [
+            [
+              "http://edas#SessionChair",
+              "http://edas#attendeeAt",
+              "http://edas#ConferenceEvent"
+            ],
+            [
+              "http://edas#Paper",
+              "http://edas#isReviewedBy",
+              "http://edas#SessionChair"
+            ],
+            [
+              "http://edas#Topic",
+              "http://edas#isTopicOf",
+              "http://edas#Paper"
+            ]
+          ],
+          [
+            [
+              "http://edas#TPCMember",
+              "http://edas#attendeeAt",
+              "http://edas#ConferenceEvent"
+            ],
+            [
+              "http://edas#Paper",
+              "http://edas#isReviewedBy",
+              "http://edas#TPCMember"
+            ],
+            [
+              "http://edas#Topic",
+              "http://edas#isTopicOf",
+              "http://edas#Paper"
+            ]
+          ],
+          [
+            [
+              "http://edas#ConferenceChair",
+              "http://edas#attendeeAt",
+              "http://edas#ConferenceEvent"
+            ],
+            [
+              "http://edas#Paper",
+              "http://edas#isReviewedBy",
+              "http://edas#ConferenceChair"
+            ],
+            [
+              "http://edas#Topic",
+              "http://edas#isTopicOf",
+              "http://edas#Paper"
+            ]
+          ],
+          [
+            [
+              "http://edas#Person",
+              "http://edas#attendeeAt",
+              "http://edas#ConferenceEvent"
+            ],
+            [
+              "http://edas#Conference",
+              "http://edas#hasMember",
+              "http://edas#Person"
+            ]
+          ],
+          [
+            [
+              "http://edas#Person",
+              "http://edas#attendeeAt",
+              "http://edas#ConferenceEvent"
+            ],
+            [
+              "http://edas#Person",
+              "http://edas#isMemberOf",
+              "http://edas#Conference"
+            ]
+          ],
+          [
+            [
+              "http://edas#Programme",
+              "http://edas#belongsToEvent",
+              "http://edas#ConferenceEvent"
+            ],
+            [
+              "http://edas#Programme",
+              "http://edas#relatesTo",
+              "http://edas#ConferenceSession"
+            ]
+          ],
+          [
+            [
+              "http://edas#Programme",
+              "http://edas#belongsToEvent",
+              "http://edas#ConferenceEvent"
+            ],
+            [
+              "http://edas#ConferenceSession",
+              "http://edas#hasRelatedDocument",
+              "http://edas#Programme"
+            ]
+          ]
+        ],
+        "values": [
+          [
+            "http://edas#ConferenceEvent",
+            "http://edas#hasStartDateTime",
+            "http://www.w3.org/2001/XMLSchema#dateTime"
+          ],
+          [
+            "http://edas#ConferenceEvent",
+            "http://edas#hasEndDateTime",
+            "http://www.w3.org/2001/XMLSchema#dateTime"
+          ]
+        ]
+      },
+      {
+        "class": "http://edas#ConferenceSession",
+        "source": "edas",
+        "outgoing": [
+          [
+            [
+              "http://edas#ConferenceSession",
+              "http://edas#hasRelatedDocument",
+              "http://edas#Paper"
+            ],
+            [
+              "http://edas#Topic",
+              "http://edas#isTopicOf",
+              "http://edas#Paper"
+            ]
+          ],
+          [
+            [
+              "http://edas#ConferenceSession",
+              "http://edas#hasRelatedDocument",
+              "http://edas#Paper"
+            ],
+            [
+              "http://edas#Paper",
+              "http://edas#hasTopic",
+              "http://edas#Topic"
+            ]
+          ],
+          [
+            [
+              "http://edas#ConferenceSession",
+              "http://edas#hasRelatedDocument",
+              "http://edas#Document"
+            ],
+            [
+              "http://edas#Conference",
+              "http://edas#hasRelatedDocument",
+              "http://edas#Document"
+            ]
+          ],
+          [
+            [
+              "http://edas#ConferenceSession",
+              "http://edas#hasRelatedDocument",
+              "http://edas#Document"
+            ],
+            [
+              "http://edas#Document",
+              "http://edas#relatesTo",
+              "http://edas#Conference"
+            ]
+          ],
+          [
+            [
+              "http://edas#ConferenceSession",
+              "http://edas#hasRelatedDocument",
+              "http://edas#Programme"
+            ],
+            [
+              "http://edas#ConferenceEvent",
+              "http://edas#hasProgramme",
+              "http://edas#Programme"
+            ]
+          ],
+          [
+            [
+              "http://edas#ConferenceSession",
+              "http://edas#hasRelatedDocument",
+              "http://edas#Programme"
+            ],
+            [
+              "http://edas#Programme",
+              "http://edas#belongsToEvent",
+              "http://edas#ConferenceEvent"
+            ]
+          ]
+        ],
+        "incoming": [
+          [
+            [
+              "http://edas#Paper",
+              "http://edas#relatesTo",
+              "http://edas#ConferenceSession"
+            ],
+            [
+              "http://edas#Topic",
+              "http://edas#isTopicOf",
+              "http://edas#Paper"
+            ]
+          ],
+          [
+            [
+              "http://edas#Paper",
+              "http://edas#relatesTo",
+              "http://edas#ConferenceSession"
+            ],
+            [
+              "http://edas#Paper",
+              "http://edas#hasTopic",
+              "http://edas#Topic"
+            ]
+          ],
+          [
+            [
+              "http://edas#Document",
+              "http://edas#relatesTo",
+              "http://edas#ConferenceSession"
+            ],
+            [
+              "http://edas#Conference",
+              "http://edas#hasRelatedDocument",
+              "http://edas#Document"
+            ]
+          ],
+          [
+            [
+              "http://edas#Document",
+              "http://edas#relatesTo",
+              "http://edas#ConferenceSession"
+            ],
+            [
+              "http://edas#Document",
+              "http://edas#relatesTo",
+              "http://edas#Conference"
+            ]
+          ],
+          [
+            [
+              "http://edas#Programme",
+              "http://edas#relatesTo",
+              "http://edas#ConferenceSession"
+            ],
+            [
+              "http://edas#ConferenceEvent",
+              "http://edas#hasProgramme",
+              "http://edas#Programme"
+            ]
+          ],
+          [
+            [
+              "http://edas#Programme",
+              "http://edas#relatesTo",
+              "http://edas#ConferenceSession"
+            ],
+            [
+              "http://edas#Programme",
+              "http://edas#belongsToEvent",
+              "http://edas#ConferenceEvent"
+            ]
+          ]
+        ],
+        "values": []
+      },
+      {
+        "class": "http://conference#Topic",
+        "source": "conference",
+        "outgoing": [
+          [
+            [
+              "http://conference#Topic",
+              "http://conference#belongs_to_a_review_reference",
+              "http://conference#Review_preference"
+            ]
+          ],
+          [
+            [
+              "http://conference#Topic",
+              "http://conference#is_a_topis_of_conference_parts",
+              "http://conference#Conference_part"
+            ]
+          ],
+          [
+            [
+              "http://conference#Topic",
+              "http://conference#has_been_assigned_a_review_reference",
+              "http://conference#Review_preference"
+            ]
+          ]
+        ],
+        "incoming": [
+          [
+            [
+              "http://conference#Conference_part",
+              "http://conference#has_a_track-workshop-tutorial_topic",
+              "http://conference#Topic"
+            ]
+          ],
+          [
+            [
+              "http://conference#Review_preference",
+              "http://conference#has_a_topic_or_a_submission_contribution",
+              "http://conference#Topic"
+            ]
+          ]
+        ],
+        "values": [
+          [
+            "http://conference#Topic",
+            "http://conference#has_a_name",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "class": "http://ekaw#Research_Topic",
+        "source": "ekaw",
+        "outgoing": [
+          [
+            [
+              "http://ekaw#Research_Topic",
+              "http://ekaw#topicCoveredBy",
+              "http://ekaw#Event"
+            ]
+          ]
+        ],
+        "incoming": [
+          [
+            [
+              "http://ekaw#Event",
+              "http://ekaw#coversTopic",
+              "http://ekaw#Research_Topic"
+            ]
+          ]
+        ],
+        "values": []
+      },
+      {
+        "class": "http://ekaw#Event",
+        "source": "ekaw",
+        "outgoing": [
+          [
+            [
+              "http://ekaw#Event",
+              "http://ekaw#coversTopic",
+              "http://ekaw#Research_Topic"
+            ]
+          ]
+        ],
+        "incoming": [
+          [
+            [
+              "http://ekaw#Research_Topic",
+              "http://ekaw#topicCoveredBy",
+              "http://ekaw#Event"
+            ]
+          ]
+        ],
+        "values": []
+      },
+      {
+        "class": "http://cmt#SubjectArea",
+        "source": "cmt",
+        "outgoing": [],
+        "incoming": [
+          [
+            [
+              "http://cmt#Paper",
+              "http://cmt#hasSubjectArea",
+              "http://cmt#SubjectArea"
+            ]
+          ]
+        ],
+        "values": []
+      }
+    ],
+    "summarize_class_paths": [
+      {
+        "label": "Topic",
+        "class": "http://confOf#Topic",
+        "source": "confof",
+        "outgoing": [],
+        "incoming": [
+          "Contribution -[dealsWith]-> Topic",
+          "Member_PC -[expertOn]-> Topic",
+          "Working_event -[hasTopic]-> Topic"
+        ],
+        "values": []
+      },
+      {
+        "label": "Event",
+        "class": "http://confOf#Event",
+        "source": "confof",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://confOf#Event",
+            "http://confOf#starts_on",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Event",
+            "http://confOf#ends_on",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "label": "Topic",
+        "class": "http://edas#Topic",
+        "source": "edas",
+        "outgoing": [
+          "Topic -[isTopicOf]-> Paper",
+          "Topic -[isTopicOf]-> Paper -[relatesTo]-> Person",
+          "Topic -[isTopicOf]-> Paper -[isReviewedBy]-> SessionChair",
+          "Topic -[isTopicOf]-> Paper -[isReviewedBy]-> TPCMember",
+          "Topic -[isTopicOf]-> Paper -[isReviewedBy]-> ConferenceChair",
+          "Topic -[isTopicOf]-> Conference",
+          "Topic -[isTopicOf]-> Paper -[relatesTo]-> Person -[attendeeAt]-> ConferenceEvent",
+          "Topic -[isTopicOf]-> Paper -[relatesTo]-> Person <-[hasAttendee]- ConferenceEvent",
+          "Topic -[isTopicOf]-> Paper -[isReviewedBy]-> SessionChair -[attendeeAt]-> ConferenceEvent",
+          "Topic -[isTopicOf]-> Paper -[isReviewedBy]-> SessionChair <-[hasAttendee]- ConferenceEvent",
+          "Topic -[isTopicOf]-> Paper -[isReviewedBy]-> TPCMember -[attendeeAt]-> ConferenceEvent",
+          "Topic -[isTopicOf]-> Paper -[isReviewedBy]-> TPCMember <-[hasAttendee]- ConferenceEvent",
+          "Topic -[isTopicOf]-> Paper -[isReviewedBy]-> ConferenceChair -[attendeeAt]-> ConferenceEvent",
+          "Topic -[isTopicOf]-> Paper -[isReviewedBy]-> ConferenceChair <-[hasAttendee]- ConferenceEvent",
+          "Topic -[isTopicOf]-> Paper -[relatesTo]-> ConferenceSession",
+          "Topic -[isTopicOf]-> Paper <-[hasRelatedDocument]- ConferenceSession"
+        ],
+        "incoming": [
+          "Paper -[hasTopic]-> Topic",
+          "Conference -[hasTopic]-> Topic",
+          "Topic <-[hasTopic]- Paper -[relatesTo]-> ConferenceSession",
+          "Topic <-[hasTopic]- Paper <-[hasRelatedDocument]- ConferenceSession"
+        ],
+        "values": []
+      },
+      {
+        "label": "Conference",
+        "class": "http://edas#Conference",
+        "source": "edas",
+        "outgoing": [
+          "Conference -[hasMember]-> Person",
+          "Conference -[hasRelatedDocument]-> Document",
+          "Conference -[hasTopic]-> Topic",
+          "Conference -[hasMember]-> Person -[attendeeAt]-> ConferenceEvent",
+          "Conference -[hasMember]-> Person <-[hasAttendee]- ConferenceEvent",
+          "Conference -[hasRelatedDocument]-> Document -[relatesTo]-> ConferenceSession",
+          "Conference -[hasRelatedDocument]-> Document <-[hasRelatedDocument]- ConferenceSession"
+        ],
+        "incoming": [
+          "Person -[isMemberOf]-> Conference",
+          "Document -[relatesTo]-> Conference",
+          "Topic -[isTopicOf]-> Conference",
+          "Conference <-[isMemberOf]- Person -[attendeeAt]-> ConferenceEvent",
+          "Conference <-[isMemberOf]- Person <-[hasAttendee]- ConferenceEvent",
+          "Conference <-[relatesTo]- Document -[relatesTo]-> ConferenceSession",
+          "Conference <-[relatesTo]- Document <-[hasRelatedDocument]- ConferenceSession"
+        ],
+        "values": [
+          [
+            "http://edas#Conference",
+            "http://edas#manuscriptDueOn",
+            "http://www.w3.org/2001/XMLSchema#dateTime"
+          ],
+          [
+            "http://edas#Conference",
+            "http://edas#startDate",
+            "http://www.w3.org/2001/XMLSchema#dateTime"
+          ],
+          [
+            "http://edas#Conference",
+            "http://edas#endDate",
+            "http://www.w3.org/2001/XMLSchema#dateTime"
+          ],
+          [
+            "http://edas#Conference",
+            "http://edas#registrationDueOn",
+            "http://www.w3.org/2001/XMLSchema#dateTime"
+          ],
+          [
+            "http://edas#Conference",
+            "http://edas#paperDueOn",
+            "http://www.w3.org/2001/XMLSchema#dateTime"
+          ],
+          [
+            "http://edas#Conference",
+            "http://edas#hasName",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "label": "ConferenceEvent",
+        "class": "http://edas#ConferenceEvent",
+        "source": "edas",
+        "outgoing": [
+          "ConferenceEvent -[hasAttendee]-> Person",
+          "ConferenceEvent -[hasAttendee]-> SessionChair",
+          "ConferenceEvent -[hasAttendee]-> TPCMember",
+          "ConferenceEvent -[hasAttendee]-> ConferenceChair",
+          "ConferenceEvent -[hasProgramme]-> Programme",
+          "ConferenceEvent -[hasAttendee]-> Person <-[relatesTo]- Paper",
+          "ConferenceEvent -[hasAttendee]-> SessionChair <-[isReviewedBy]- Paper",
+          "ConferenceEvent -[hasAttendee]-> TPCMember <-[isReviewedBy]- Paper",
+          "ConferenceEvent -[hasAttendee]-> ConferenceChair <-[isReviewedBy]- Paper",
+          "ConferenceEvent -[hasAttendee]-> Person <-[relatesTo]- Paper <-[isTopicOf]- Topic",
+          "ConferenceEvent -[hasAttendee]-> SessionChair <-[isReviewedBy]- Paper <-[isTopicOf]- Topic",
+          "ConferenceEvent -[hasAttendee]-> TPCMember <-[isReviewedBy]- Paper <-[isTopicOf]- Topic",
+          "ConferenceEvent -[hasAttendee]-> ConferenceChair <-[isReviewedBy]- Paper <-[isTopicOf]- Topic",
+          "ConferenceEvent -[hasAttendee]-> Person <-[hasMember]- Conference",
+          "ConferenceEvent -[hasAttendee]-> Person -[isMemberOf]-> Conference",
+          "ConferenceEvent -[hasProgramme]-> Programme -[relatesTo]-> ConferenceSession",
+          "ConferenceEvent -[hasProgramme]-> Programme <-[hasRelatedDocument]- ConferenceSession"
+        ],
+        "incoming": [
+          "Person -[attendeeAt]-> ConferenceEvent",
+          "SessionChair -[attendeeAt]-> ConferenceEvent",
+          "TPCMember -[attendeeAt]-> ConferenceEvent",
+          "ConferenceChair -[attendeeAt]-> ConferenceEvent",
+          "Programme -[belongsToEvent]-> ConferenceEvent",
+          "ConferenceEvent <-[attendeeAt]- Person <-[relatesTo]- Paper",
+          "ConferenceEvent <-[attendeeAt]- SessionChair <-[isReviewedBy]- Paper",
+          "ConferenceEvent <-[attendeeAt]- TPCMember <-[isReviewedBy]- Paper",
+          "ConferenceEvent <-[attendeeAt]- ConferenceChair <-[isReviewedBy]- Paper",
+          "ConferenceEvent <-[attendeeAt]- Person <-[relatesTo]- Paper <-[isTopicOf]- Topic",
+          "ConferenceEvent <-[attendeeAt]- SessionChair <-[isReviewedBy]- Paper <-[isTopicOf]- Topic",
+          "ConferenceEvent <-[attendeeAt]- TPCMember <-[isReviewedBy]- Paper <-[isTopicOf]- Topic",
+          "ConferenceEvent <-[attendeeAt]- ConferenceChair <-[isReviewedBy]- Paper <-[isTopicOf]- Topic",
+          "ConferenceEvent <-[attendeeAt]- Person <-[hasMember]- Conference",
+          "ConferenceEvent <-[attendeeAt]- Person -[isMemberOf]-> Conference",
+          "ConferenceEvent <-[belongsToEvent]- Programme -[relatesTo]-> ConferenceSession",
+          "ConferenceEvent <-[belongsToEvent]- Programme <-[hasRelatedDocument]- ConferenceSession"
+        ],
+        "values": [
+          [
+            "http://edas#ConferenceEvent",
+            "http://edas#hasStartDateTime",
+            "http://www.w3.org/2001/XMLSchema#dateTime"
+          ],
+          [
+            "http://edas#ConferenceEvent",
+            "http://edas#hasEndDateTime",
+            "http://www.w3.org/2001/XMLSchema#dateTime"
+          ]
+        ]
+      },
+      {
+        "label": "ConferenceSession",
+        "class": "http://edas#ConferenceSession",
+        "source": "edas",
+        "outgoing": [
+          "ConferenceSession -[hasRelatedDocument]-> Paper",
+          "ConferenceSession -[hasRelatedDocument]-> Document",
+          "ConferenceSession -[hasRelatedDocument]-> Programme",
+          "ConferenceSession -[hasRelatedDocument]-> Paper <-[isTopicOf]- Topic",
+          "ConferenceSession -[hasRelatedDocument]-> Paper -[hasTopic]-> Topic",
+          "ConferenceSession -[hasRelatedDocument]-> Document <-[hasRelatedDocument]- Conference",
+          "ConferenceSession -[hasRelatedDocument]-> Document -[relatesTo]-> Conference",
+          "ConferenceSession -[hasRelatedDocument]-> Programme <-[hasProgramme]- ConferenceEvent",
+          "ConferenceSession -[hasRelatedDocument]-> Programme -[belongsToEvent]-> ConferenceEvent"
+        ],
+        "incoming": [
+          "Paper -[relatesTo]-> ConferenceSession",
+          "Document -[relatesTo]-> ConferenceSession",
+          "Programme -[relatesTo]-> ConferenceSession",
+          "ConferenceSession <-[relatesTo]- Paper <-[isTopicOf]- Topic",
+          "ConferenceSession <-[relatesTo]- Paper -[hasTopic]-> Topic",
+          "ConferenceSession <-[relatesTo]- Document <-[hasRelatedDocument]- Conference",
+          "ConferenceSession <-[relatesTo]- Document -[relatesTo]-> Conference",
+          "ConferenceSession <-[relatesTo]- Programme <-[hasProgramme]- ConferenceEvent",
+          "ConferenceSession <-[relatesTo]- Programme -[belongsToEvent]-> ConferenceEvent"
+        ],
+        "values": []
+      },
+      {
+        "label": "Topic",
+        "class": "http://conference#Topic",
+        "source": "conference",
+        "outgoing": [
+          "Topic -[belongs_to_a_review_reference]-> Review_preference",
+          "Topic -[is_a_topis_of_conference_parts]-> Conference_part",
+          "Topic -[has_been_assigned_a_review_reference]-> Review_preference"
+        ],
+        "incoming": [
+          "Conference_part -[has_a_track-workshop-tutorial_topic]-> Topic",
+          "Review_preference -[has_a_topic_or_a_submission_contribution]-> Topic"
+        ],
+        "values": [
+          [
+            "http://conference#Topic",
+            "http://conference#has_a_name",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "label": "Research_Topic",
+        "class": "http://ekaw#Research_Topic",
+        "source": "ekaw",
+        "outgoing": [
+          "Research_Topic -[topicCoveredBy]-> Event"
+        ],
+        "incoming": [
+          "Event -[coversTopic]-> Research_Topic"
+        ],
+        "values": []
+      },
+      {
+        "label": "Event",
+        "class": "http://ekaw#Event",
+        "source": "ekaw",
+        "outgoing": [
+          "Event -[coversTopic]-> Research_Topic"
+        ],
+        "incoming": [
+          "Research_Topic -[topicCoveredBy]-> Event"
+        ],
+        "values": []
+      },
+      {
+        "label": "SubjectArea",
+        "class": "http://cmt#SubjectArea",
+        "source": "cmt",
+        "outgoing": [],
+        "incoming": [
+          "Paper -[hasSubjectArea]-> SubjectArea"
+        ],
+        "values": []
+      },
+      {
+        "label": "Working_event",
+        "class": "http://confOf#Working_event",
+        "source": "confof",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://confOf#Working_event",
+            "http://confOf#starts_on",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Working_event",
+            "http://confOf#ends_on",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Working_event",
+            "http://confOf#hasVAT",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Working_event",
+            "http://confOf#defaultChoice",
+            "http://www.w3.org/2001/XMLSchema#positiveInteger"
+          ],
+          [
+            "http://confOf#Working_event",
+            "http://confOf#minChoice",
+            "http://www.w3.org/2001/XMLSchema#positiveInteger"
+          ],
+          [
+            "http://confOf#Working_event",
+            "http://confOf#has_short_title",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Working_event",
+            "http://confOf#maxChoice",
+            "http://www.w3.org/2001/XMLSchema#positiveInteger"
+          ],
+          [
+            "http://confOf#Working_event",
+            "http://confOf#has_title",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Working_event",
+            "http://confOf#location",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "label": "Contribution",
+        "class": "http://confOf#Contribution",
+        "source": "confof",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://confOf#Contribution",
+            "http://confOf#hasTitle",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Contribution",
+            "http://confOf#contactEmail",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Contribution",
+            "http://confOf#abstract",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Contribution",
+            "http://confOf#remark",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Contribution",
+            "http://confOf#hasKeyword",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "label": "Member_PC",
+        "class": "http://confOf#Member_PC",
+        "source": "confof",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://confOf#Member_PC",
+            "http://confOf#hasStreet",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Member_PC",
+            "http://confOf#hasEmail",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Member_PC",
+            "http://confOf#hasPostalCode",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Member_PC",
+            "http://confOf#hasHomePage",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Member_PC",
+            "http://confOf#hasSurname",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Member_PC",
+            "http://confOf#hasFax",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Member_PC",
+            "http://confOf#hasPhone",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Member_PC",
+            "http://confOf#hasFirstName",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "label": "ConferenceChair",
+        "class": "http://edas#ConferenceChair",
+        "source": "edas",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://edas#ConferenceChair",
+            "http://edas#hasBiography",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://edas#ConferenceChair",
+            "http://edas#hasLastName",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://edas#ConferenceChair",
+            "http://edas#hasEmail",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://edas#ConferenceChair",
+            "http://edas#hasFirstName",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "label": "Person",
+        "class": "http://edas#Person",
+        "source": "edas",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://edas#Person",
+            "http://edas#hasBiography",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://edas#Person",
+            "http://edas#hasLastName",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://edas#Person",
+            "http://edas#hasEmail",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://edas#Person",
+            "http://edas#hasFirstName",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "label": "SessionChair",
+        "class": "http://edas#SessionChair",
+        "source": "edas",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://edas#SessionChair",
+            "http://edas#hasBiography",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://edas#SessionChair",
+            "http://edas#hasLastName",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://edas#SessionChair",
+            "http://edas#hasEmail",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://edas#SessionChair",
+            "http://edas#hasFirstName",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "label": "Paper",
+        "class": "http://edas#Paper",
+        "source": "edas",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "label": "TPCMember",
+        "class": "http://edas#TPCMember",
+        "source": "edas",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://edas#TPCMember",
+            "http://edas#hasBiography",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://edas#TPCMember",
+            "http://edas#hasLastName",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://edas#TPCMember",
+            "http://edas#hasEmail",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://edas#TPCMember",
+            "http://edas#hasFirstName",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "label": "Document",
+        "class": "http://edas#Document",
+        "source": "edas",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "label": "Programme",
+        "class": "http://edas#Programme",
+        "source": "edas",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "label": "Conference_part",
+        "class": "http://conference#Conference_part",
+        "source": "conference",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://conference#Conference_part",
+            "http://conference#has_a_name",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "label": "Review_preference",
+        "class": "http://conference#Review_preference",
+        "source": "conference",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://conference#Review_preference",
+            "http://conference#has_a_degree",
+            "http://www.w3.org/2001/XMLSchema#int"
+          ]
+        ]
+      },
+      {
+        "label": "Paper",
+        "class": "http://cmt#Paper",
+        "source": "cmt",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://cmt#Paper",
+            "http://cmt#title",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://cmt#Paper",
+            "http://cmt#paperID",
+            "http://www.w3.org/2001/XMLSchema#unsignedLong"
+          ]
+        ]
+      }
+    ],
+    "summarize_contextual_class_paths": [
+      {
+        "class": "http://confOf#Topic",
+        "source": "confof",
+        "label": "Topic",
+        "outgoing": [],
+        "incoming": [],
+        "values": [],
+        "answers_question": true
+      },
+      {
+        "class": "http://edas#Topic",
+        "source": "edas",
+        "label": "Topic",
+        "outgoing": [],
+        "incoming": [],
+        "values": [],
+        "answers_question": true
+      },
+      {
+        "class": "http://conference#Topic",
+        "source": "conference",
+        "label": "Topic",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://conference#Topic",
+            "http://conference#has_a_name",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ],
+        "answers_question": true
+      },
+      {
+        "class": "http://ekaw#Research_Topic",
+        "source": "ekaw",
+        "label": "Research_Topic",
+        "outgoing": [],
+        "incoming": [],
+        "values": [],
+        "answers_question": true
+      },
+      {
+        "class": "http://cmt#SubjectArea",
+        "source": "cmt",
+        "label": "SubjectArea",
+        "outgoing": [],
+        "incoming": [],
+        "values": [],
+        "answers_question": true
+      }
+    ],
+    "selected_class_paths": [
+      {
+        "class": "http://confOf#Topic",
+        "source": "confof",
+        "label": "Topic",
+        "outgoing": [],
+        "incoming": [],
+        "values": [],
+        "answers_question": true,
+        "complete_answer_branch": true,
+        "source_complete_answer_branch": true
+      },
+      {
+        "class": "http://edas#Topic",
+        "source": "edas",
+        "label": "Topic",
+        "outgoing": [],
+        "incoming": [],
+        "values": [],
+        "answers_question": true,
+        "complete_answer_branch": true,
+        "source_complete_answer_branch": true
+      },
+      {
+        "class": "http://conference#Topic",
+        "source": "conference",
+        "label": "Topic",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://conference#Topic",
+            "http://conference#has_a_name",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ],
+        "answers_question": true,
+        "complete_answer_branch": true,
+        "source_complete_answer_branch": true
+      },
+      {
+        "class": "http://ekaw#Research_Topic",
+        "source": "ekaw",
+        "label": "Research_Topic",
+        "outgoing": [],
+        "incoming": [],
+        "values": [],
+        "answers_question": true,
+        "complete_answer_branch": true,
+        "source_complete_answer_branch": true
+      },
+      {
+        "class": "http://cmt#SubjectArea",
+        "source": "cmt",
+        "label": "SubjectArea",
+        "outgoing": [],
+        "incoming": [],
+        "values": [],
+        "answers_question": true,
+        "complete_answer_branch": false,
+        "source_complete_answer_branch": true
+      }
+    ],
+    "validated_class_paths": [
+      {
+        "class": "http://confOf#Topic",
+        "source": "confof",
+        "label": "Topic",
+        "outgoing": [],
+        "incoming": [],
+        "values": [],
+        "answers_question": true,
+        "complete_answer_branch": true,
+        "source_complete_answer_branch": true
+      },
+      {
+        "class": "http://edas#Topic",
+        "source": "edas",
+        "label": "Topic",
+        "outgoing": [],
+        "incoming": [],
+        "values": [],
+        "answers_question": true,
+        "complete_answer_branch": true,
+        "source_complete_answer_branch": true
+      },
+      {
+        "class": "http://conference#Topic",
+        "source": "conference",
+        "label": "Topic",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://conference#Topic",
+            "http://conference#has_a_name",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ],
+        "answers_question": true,
+        "complete_answer_branch": true,
+        "source_complete_answer_branch": true
+      },
+      {
+        "class": "http://ekaw#Research_Topic",
+        "source": "ekaw",
+        "label": "Research_Topic",
+        "outgoing": [],
+        "incoming": [],
+        "values": [],
+        "answers_question": true,
+        "complete_answer_branch": true,
+        "source_complete_answer_branch": true
+      },
+      {
+        "class": "http://cmt#SubjectArea",
+        "source": "cmt",
+        "label": "SubjectArea",
+        "outgoing": [],
+        "incoming": [],
+        "values": [],
+        "answers_question": true,
+        "complete_answer_branch": false,
+        "source_complete_answer_branch": true
+      }
+    ],
+    "path_scores": [
+      {
+        "source": "confof",
+        "chain": "",
+        "full": 0.6564496513835936,
+        "classes": 0.656800930065292,
+        "relations": 0.656800930065292,
+        "total": 0.6566252907244429,
+        "complete": true,
+        "kept": true,
+        "reason": "at or above tier threshold"
+      },
+      {
+        "source": "edas",
+        "chain": "",
+        "full": 0.6564496513835936,
+        "classes": 0.6564496513835936,
+        "relations": 0.6564496513835936,
+        "total": 0.6564496513835936,
+        "complete": true,
+        "kept": true,
+        "reason": "at or above tier threshold"
+      },
+      {
+        "source": "ekaw",
+        "chain": "",
+        "full": 0.6126210235099461,
+        "classes": 0.6121228757103994,
+        "relations": 0.6121228757103994,
+        "total": 0.6123719496101727,
+        "complete": true,
+        "kept": true,
+        "reason": "at or above tier threshold"
+      },
+      {
+        "source": "conference",
+        "chain": "",
+        "full": 0.5658181887114693,
+        "classes": 0.6564496513835936,
+        "relations": 0.4334891498717751,
+        "total": 0.5665418197451677,
+        "complete": true,
+        "kept": true,
+        "reason": "at or above tier threshold"
+      },
+      {
+        "source": "cmt",
+        "chain": "",
+        "full": 0.5693520212099792,
+        "classes": 0.5698924955896238,
+        "relations": 0.5698924955896238,
+        "total": 0.5696222583998015,
+        "complete": false,
+        "kept": true,
+        "reason": "at or above tier threshold"
+      }
+    ],
+    "source_scores": {
+      "confof": 0.6566252907244429,
+      "edas": 0.6564496513835936,
+      "conference": 0.5665418197451677,
+      "ekaw": 0.6123719496101727
+    },
+    "provider_plan": [],
+    "cut_sources": [],
+    "alignment": [
+      "<http://cmt#SubjectArea> = <http://conference#Topic>",
+      "<http://conference#Topic> = <http://ekaw#Research_Topic>",
+      "<http://conference#Topic> = <http://edas#Topic>",
+      "<http://confOf#Topic> = <http://edas#Topic>",
+      "<http://edas#Topic> = <http://ekaw#Research_Topic>",
+      "<http://cmt#SubjectArea> = <http://confOf#Topic>",
+      "<http://confOf#Topic> = <http://ekaw#Research_Topic>"
+    ],
+    "query": "PREFIX cmt: <http://cmt#>\nPREFIX conference: <http://conference#>\nPREFIX confof: <http://confOf#>\nPREFIX edas: <http://edas#>\nPREFIX ekaw: <http://ekaw#>\nSELECT DISTINCT ?topic WHERE { { SERVICE <http://192.168.100.45:3030/confof/sparql> { ?topic a confof:Topic . } } UNION { SERVICE <http://192.168.100.45:3030/cmt/sparql> { ?topic a cmt:SubjectArea . } } UNION { SERVICE <http://192.168.100.45:3030/conference/sparql> { ?topic a conference:Topic . } } UNION { SERVICE <http://192.168.100.45:3030/edas/sparql> { ?topic a edas:Topic . } } UNION { SERVICE <http://192.168.100.45:3030/ekaw/sparql> { ?topic a ekaw:Research_Topic . } } }",
+    "token_usage": {
+      "by_agent": [
+        {
+          "agent": "agent6_path_filter",
+          "provider": "vercel",
+          "model": "meta/muse-spark-1.3",
+          "calls": 5,
+          "prompt_tokens": 6777,
+          "completion_tokens": 4655,
+          "total_tokens": 11432,
+          "max_prompt_tokens": 2101,
+          "avg_prompt_tokens": 1355,
+          "calls_without_usage": 0
+        },
+        {
+          "agent": "agent7_sparql_generator",
+          "provider": "vercel",
+          "model": "meta/muse-spark-1.3",
+          "calls": 1,
+          "prompt_tokens": 4451,
+          "completion_tokens": 1114,
+          "total_tokens": 5565,
+          "max_prompt_tokens": 4451,
+          "avg_prompt_tokens": 4451,
+          "calls_without_usage": 0
+        },
+        {
+          "agent": "agent4_match_relevance",
+          "provider": "vercel",
+          "model": "meta/muse-spark-1.3",
+          "calls": 4,
+          "prompt_tokens": 3349,
+          "completion_tokens": 7347,
+          "total_tokens": 10696,
+          "max_prompt_tokens": 904,
+          "avg_prompt_tokens": 837,
+          "calls_without_usage": 0
+        },
+        {
+          "agent": "agent8_source_selector",
+          "provider": "vercel",
+          "model": "meta/muse-spark-1.3",
+          "calls": 1,
+          "prompt_tokens": 1216,
+          "completion_tokens": 1292,
+          "total_tokens": 2508,
+          "max_prompt_tokens": 1216,
+          "avg_prompt_tokens": 1216,
+          "calls_without_usage": 0
+        },
+        {
+          "agent": "agent1_extractor",
+          "provider": "vercel",
+          "model": "meta/muse-spark-1.3",
+          "calls": 1,
+          "prompt_tokens": 1186,
+          "completion_tokens": 1819,
+          "total_tokens": 3005,
+          "max_prompt_tokens": 1186,
+          "avg_prompt_tokens": 1186,
+          "calls_without_usage": 0
+        }
+      ],
+      "totals": {
+        "calls": 12,
+        "prompt_tokens": 16979,
+        "completion_tokens": 16227,
+        "total_tokens": 33206
+      }
+    }
+  },
+  "elapsed_seconds": 91.239,
+  "finished_at": "2026-09-11T23:47:31.455880+00:00"
+}

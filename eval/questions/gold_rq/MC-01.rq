@@ -1,0 +1,40 @@
+
+#List all the papers
+
+PREFIX cmt: <http://cmt#>
+PREFIX conference: <http://conference#>
+PREFIX confof: <http://confOf#>
+PREFIX edas: <http://edas#>
+PREFIX ekaw: <http://ekaw#>
+
+SELECT DISTINCT ?paper WHERE {
+    {
+        SERVICE <http://192.168.100.44:3030/cmt/sparql> {
+            ?paper a cmt:Paper .
+        }
+    }
+    UNION {
+
+        SERVICE <http://192.168.100.44:3030/confof/sparql> {
+            ?paper a confof:Paper .
+        }
+    }
+    UNION {
+
+        SERVICE <http://192.168.100.44:3030/edas/sparql> {
+            ?paper a edas:Paper .
+        }
+    }
+    UNION {
+
+        SERVICE <http://192.168.100.44:3030/ekaw/sparql> {
+            ?paper a ekaw:Paper .
+        }
+    }
+    UNION {
+
+        SERVICE <http://192.168.100.44:3030/conference/sparql> {
+            ?paper a conference:Paper .
+        }
+    }
+}

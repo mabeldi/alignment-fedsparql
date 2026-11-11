@@ -1,0 +1,320 @@
+{
+  "format_version": 1,
+  "question": "Retrieve the list of camera-ready events.",
+  "query_file": "run_2.rq",
+  "query_sha256": "4f2f201b51109a104e3a036bb91ceed605504d2d3c174c0d760e39800d23353e",
+  "started_at": "2026-09-12T19:49:16.306467+00:00",
+  "status": "success",
+  "query_kind": "generated",
+  "run": 2,
+  "generation_metadata_file": "run_2.json",
+  "coordinator_endpoint": "http://192.168.100.45:3030/confof/sparql",
+  "variables": [
+    "camera_ready_event"
+  ],
+  "result_count": 50,
+  "bindings": [
+    {
+      "camera_ready_event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt-1015565448"
+      }
+    },
+    {
+      "camera_ready_event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt-104081973"
+      }
+    },
+    {
+      "camera_ready_event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt-1124309768"
+      }
+    },
+    {
+      "camera_ready_event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt-1148263533"
+      }
+    },
+    {
+      "camera_ready_event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt-1172457915"
+      }
+    },
+    {
+      "camera_ready_event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt-1406424965"
+      }
+    },
+    {
+      "camera_ready_event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt-1409861683"
+      }
+    },
+    {
+      "camera_ready_event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt-147842296"
+      }
+    },
+    {
+      "camera_ready_event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt-1493254443"
+      }
+    },
+    {
+      "camera_ready_event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt-1503329724"
+      }
+    },
+    {
+      "camera_ready_event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt-1628246333"
+      }
+    },
+    {
+      "camera_ready_event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt-1640015237"
+      }
+    },
+    {
+      "camera_ready_event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt-165628313"
+      }
+    },
+    {
+      "camera_ready_event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt-169034248"
+      }
+    },
+    {
+      "camera_ready_event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt-1828802822"
+      }
+    },
+    {
+      "camera_ready_event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt-1837124011"
+      }
+    },
+    {
+      "camera_ready_event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt-2111076817"
+      }
+    },
+    {
+      "camera_ready_event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt-229105075"
+      }
+    },
+    {
+      "camera_ready_event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt-292819272"
+      }
+    },
+    {
+      "camera_ready_event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt-39352928"
+      }
+    },
+    {
+      "camera_ready_event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt-450026137"
+      }
+    },
+    {
+      "camera_ready_event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt-546410694"
+      }
+    },
+    {
+      "camera_ready_event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt-677739588"
+      }
+    },
+    {
+      "camera_ready_event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt-684273803"
+      }
+    },
+    {
+      "camera_ready_event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt-743781487"
+      }
+    },
+    {
+      "camera_ready_event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt1148041327"
+      }
+    },
+    {
+      "camera_ready_event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt1212945492"
+      }
+    },
+    {
+      "camera_ready_event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt1284626608"
+      }
+    },
+    {
+      "camera_ready_event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt1299770676"
+      }
+    },
+    {
+      "camera_ready_event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt1363654922"
+      }
+    },
+    {
+      "camera_ready_event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt1428971814"
+      }
+    },
+    {
+      "camera_ready_event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt1547038773"
+      }
+    },
+    {
+      "camera_ready_event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt16403672"
+      }
+    },
+    {
+      "camera_ready_event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt1728232209"
+      }
+    },
+    {
+      "camera_ready_event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt1740347374"
+      }
+    },
+    {
+      "camera_ready_event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt191249194"
+      }
+    },
+    {
+      "camera_ready_event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt1951362132"
+      }
+    },
+    {
+      "camera_ready_event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt1980477004"
+      }
+    },
+    {
+      "camera_ready_event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt214658277"
+      }
+    },
+    {
+      "camera_ready_event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt362072479"
+      }
+    },
+    {
+      "camera_ready_event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt492476701"
+      }
+    },
+    {
+      "camera_ready_event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt517009024"
+      }
+    },
+    {
+      "camera_ready_event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt534385640"
+      }
+    },
+    {
+      "camera_ready_event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt69622803"
+      }
+    },
+    {
+      "camera_ready_event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt70044726"
+      }
+    },
+    {
+      "camera_ready_event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt717895308"
+      }
+    },
+    {
+      "camera_ready_event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt760592706"
+      }
+    },
+    {
+      "camera_ready_event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt800399354"
+      }
+    },
+    {
+      "camera_ready_event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt81231077"
+      }
+    },
+    {
+      "camera_ready_event": {
+        "type": "uri",
+        "value": "http://confOf-instances#camEvt943277065"
+      }
+    }
+  ],
+  "elapsed_seconds": 0.018,
+  "finished_at": "2026-09-12T19:49:16.324579+00:00"
+}

@@ -1,0 +1,5 @@
+SELECT distinct ?s ?o WHERE {  
+?s <http://confOf#starts_on> ?o .  
+?s a <http://confOf#Conference> .
+
+ }

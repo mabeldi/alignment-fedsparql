@@ -1,0 +1,140 @@
+{
+  "format_version": 1,
+  "question": "Which conference dinners are organised",
+  "query_file": "run_3.rq",
+  "query_sha256": "1f6ed2546fac5389c8546abe94a6afbc0f86c7f3114270513322198dd17a7890",
+  "started_at": "2026-09-12T19:49:34.573754+00:00",
+  "status": "success",
+  "query_kind": "generated",
+  "run": 3,
+  "generation_metadata_file": "run_3.json",
+  "coordinator_endpoint": "http://192.168.100.45:3030/ekaw/sparql",
+  "variables": [
+    "conference_banquet"
+  ],
+  "result_count": 20,
+  "bindings": [
+    {
+      "conference_banquet": {
+        "type": "uri",
+        "value": "http://ekaw-instances#dinner-061-aug"
+      }
+    },
+    {
+      "conference_banquet": {
+        "type": "uri",
+        "value": "http://ekaw-instances#dinner-062-aug"
+      }
+    },
+    {
+      "conference_banquet": {
+        "type": "uri",
+        "value": "http://ekaw-instances#dinner-063-aug"
+      }
+    },
+    {
+      "conference_banquet": {
+        "type": "uri",
+        "value": "http://ekaw-instances#dinner-064-aug"
+      }
+    },
+    {
+      "conference_banquet": {
+        "type": "uri",
+        "value": "http://ekaw-instances#dinner-065-aug"
+      }
+    },
+    {
+      "conference_banquet": {
+        "type": "uri",
+        "value": "http://ekaw-instances#dinner-066-aug"
+      }
+    },
+    {
+      "conference_banquet": {
+        "type": "uri",
+        "value": "http://ekaw-instances#dinner-067-aug"
+      }
+    },
+    {
+      "conference_banquet": {
+        "type": "uri",
+        "value": "http://ekaw-instances#dinner-068-aug"
+      }
+    },
+    {
+      "conference_banquet": {
+        "type": "uri",
+        "value": "http://ekaw-instances#dinner-069-aug"
+      }
+    },
+    {
+      "conference_banquet": {
+        "type": "uri",
+        "value": "http://ekaw-instances#dinner-070-aug"
+      }
+    },
+    {
+      "conference_banquet": {
+        "type": "uri",
+        "value": "http://ekaw-instances#dinner-071-aug"
+      }
+    },
+    {
+      "conference_banquet": {
+        "type": "uri",
+        "value": "http://ekaw-instances#dinner-072-aug"
+      }
+    },
+    {
+      "conference_banquet": {
+        "type": "uri",
+        "value": "http://ekaw-instances#dinner-073-aug"
+      }
+    },
+    {
+      "conference_banquet": {
+        "type": "uri",
+        "value": "http://ekaw-instances#dinner-074-aug"
+      }
+    },
+    {
+      "conference_banquet": {
+        "type": "uri",
+        "value": "http://ekaw-instances#dinner-075-aug"
+      }
+    },
+    {
+      "conference_banquet": {
+        "type": "uri",
+        "value": "http://ekaw-instances#dinner-076-aug"
+      }
+    },
+    {
+      "conference_banquet": {
+        "type": "uri",
+        "value": "http://ekaw-instances#dinner-077-aug"
+      }
+    },
+    {
+      "conference_banquet": {
+        "type": "uri",
+        "value": "http://ekaw-instances#dinner-078-aug"
+      }
+    },
+    {
+      "conference_banquet": {
+        "type": "uri",
+        "value": "http://ekaw-instances#dinner-079-aug"
+      }
+    },
+    {
+      "conference_banquet": {
+        "type": "uri",
+        "value": "http://ekaw-instances#dinner-080-aug"
+      }
+    }
+  ],
+  "elapsed_seconds": 0.018,
+  "finished_at": "2026-09-12T19:49:34.591131+00:00"
+}

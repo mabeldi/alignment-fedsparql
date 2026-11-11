@@ -1,0 +1,4 @@
+SELECT distinct ?s ?o WHERE {  
+?s <http://cmt#name> ?o .  
+?s a <http://cmt#Person> . 
+ }

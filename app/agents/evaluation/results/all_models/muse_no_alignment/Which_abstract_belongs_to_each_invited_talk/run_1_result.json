@@ -1,0 +1,441 @@
+{
+  "format_version": 1,
+  "question": "Which abstract belongs to each invited talk?",
+  "query_file": "run_1.rq",
+  "query_sha256": "6fb6fe7e8149b44fe8650627802329ef8bb8bbc76ee3d53c1f9ffae8070d4286",
+  "started_at": "2026-09-12T19:49:34.188864+00:00",
+  "status": "success",
+  "query_kind": "generated",
+  "run": 1,
+  "generation_metadata_file": "run_1.json",
+  "coordinator_endpoint": "http://192.168.100.45:3030/conference/sparql",
+  "variables": [
+    "abstract",
+    "invited_talk"
+  ],
+  "result_count": 42,
+  "bindings": [
+    {
+      "abstract": {
+        "type": "uri",
+        "value": "http://conference-instances#invAbstr-1043828172"
+      },
+      "invited_talk": {
+        "type": "uri",
+        "value": "http://conference-instances#invTalk-1043828172"
+      }
+    },
+    {
+      "abstract": {
+        "type": "uri",
+        "value": "http://conference-instances#invAbstr-1869202753"
+      },
+      "invited_talk": {
+        "type": "uri",
+        "value": "http://conference-instances#invTalk-1869202753"
+      }
+    },
+    {
+      "abstract": {
+        "type": "uri",
+        "value": "http://conference-instances#invAbstr-1938352188"
+      },
+      "invited_talk": {
+        "type": "uri",
+        "value": "http://conference-instances#invTalk-1938352188"
+      }
+    },
+    {
+      "abstract": {
+        "type": "uri",
+        "value": "http://conference-instances#invAbstr-200505948"
+      },
+      "invited_talk": {
+        "type": "uri",
+        "value": "http://conference-instances#invTalk-200505948"
+      }
+    },
+    {
+      "abstract": {
+        "type": "uri",
+        "value": "http://conference-instances#invAbstr-2049401968"
+      },
+      "invited_talk": {
+        "type": "uri",
+        "value": "http://conference-instances#invTalk-2049401968"
+      }
+    },
+    {
+      "abstract": {
+        "type": "uri",
+        "value": "http://conference-instances#invAbstr-409120663"
+      },
+      "invited_talk": {
+        "type": "uri",
+        "value": "http://conference-instances#invTalk-409120663"
+      }
+    },
+    {
+      "abstract": {
+        "type": "uri",
+        "value": "http://conference-instances#invAbstr-433154129"
+      },
+      "invited_talk": {
+        "type": "uri",
+        "value": "http://conference-instances#invTalk-433154129"
+      }
+    },
+    {
+      "abstract": {
+        "type": "uri",
+        "value": "http://conference-instances#invAbstr-546246590"
+      },
+      "invited_talk": {
+        "type": "uri",
+        "value": "http://conference-instances#invTalk-546246590"
+      }
+    },
+    {
+      "abstract": {
+        "type": "uri",
+        "value": "http://conference-instances#invAbstr-576864592"
+      },
+      "invited_talk": {
+        "type": "uri",
+        "value": "http://conference-instances#invTalk-576864592"
+      }
+    },
+    {
+      "abstract": {
+        "type": "uri",
+        "value": "http://conference-instances#invAbstr109342539"
+      },
+      "invited_talk": {
+        "type": "uri",
+        "value": "http://conference-instances#invTalk109342539"
+      }
+    },
+    {
+      "abstract": {
+        "type": "uri",
+        "value": "http://conference-instances#invAbstr1210249696"
+      },
+      "invited_talk": {
+        "type": "uri",
+        "value": "http://conference-instances#invTalk1210249696"
+      }
+    },
+    {
+      "abstract": {
+        "type": "uri",
+        "value": "http://conference-instances#invAbstr1412086185"
+      },
+      "invited_talk": {
+        "type": "uri",
+        "value": "http://conference-instances#invTalk1412086185"
+      }
+    },
+    {
+      "abstract": {
+        "type": "uri",
+        "value": "http://conference-instances#invAbstr1481535104"
+      },
+      "invited_talk": {
+        "type": "uri",
+        "value": "http://conference-instances#invTalk1481535104"
+      }
+    },
+    {
+      "abstract": {
+        "type": "uri",
+        "value": "http://conference-instances#invAbstr1490270990"
+      },
+      "invited_talk": {
+        "type": "uri",
+        "value": "http://conference-instances#invTalk1490270990"
+      }
+    },
+    {
+      "abstract": {
+        "type": "uri",
+        "value": "http://conference-instances#invAbstr2049114258"
+      },
+      "invited_talk": {
+        "type": "uri",
+        "value": "http://conference-instances#invTalk2049114258"
+      }
+    },
+    {
+      "abstract": {
+        "type": "uri",
+        "value": "http://conference-instances#invAbstr2059588138"
+      },
+      "invited_talk": {
+        "type": "uri",
+        "value": "http://conference-instances#invTalk2059588138"
+      }
+    },
+    {
+      "abstract": {
+        "type": "uri",
+        "value": "http://conference-instances#invAbstr2121623315"
+      },
+      "invited_talk": {
+        "type": "uri",
+        "value": "http://conference-instances#invTalk2121623315"
+      }
+    },
+    {
+      "abstract": {
+        "type": "uri",
+        "value": "http://conference-instances#invAbstr372075649"
+      },
+      "invited_talk": {
+        "type": "uri",
+        "value": "http://conference-instances#invTalk372075649"
+      }
+    },
+    {
+      "abstract": {
+        "type": "uri",
+        "value": "http://conference-instances#invAbstr53412415"
+      },
+      "invited_talk": {
+        "type": "uri",
+        "value": "http://conference-instances#invTalk53412415"
+      }
+    },
+    {
+      "abstract": {
+        "type": "uri",
+        "value": "http://conference-instances#invAbstr97794536"
+      },
+      "invited_talk": {
+        "type": "uri",
+        "value": "http://conference-instances#invTalk97794536"
+      }
+    },
+    {
+      "abstract": {
+        "type": "uri",
+        "value": "http://conference-instances#invAbstr990061433"
+      },
+      "invited_talk": {
+        "type": "uri",
+        "value": "http://conference-instances#invTalk990061433"
+      }
+    },
+    {
+      "abstract": {
+        "type": "uri",
+        "value": "http://ekaw-instances#invAbstr-1043828172"
+      },
+      "invited_talk": {
+        "type": "uri",
+        "value": "http://ekaw-instances#invTalk-1043828172"
+      }
+    },
+    {
+      "abstract": {
+        "type": "uri",
+        "value": "http://ekaw-instances#invAbstr-1869202753"
+      },
+      "invited_talk": {
+        "type": "uri",
+        "value": "http://ekaw-instances#invTalk-1869202753"
+      }
+    },
+    {
+      "abstract": {
+        "type": "uri",
+        "value": "http://ekaw-instances#invAbstr-1938352188"
+      },
+      "invited_talk": {
+        "type": "uri",
+        "value": "http://ekaw-instances#invTalk-1938352188"
+      }
+    },
+    {
+      "abstract": {
+        "type": "uri",
+        "value": "http://ekaw-instances#invAbstr-200505948"
+      },
+      "invited_talk": {
+        "type": "uri",
+        "value": "http://ekaw-instances#invTalk-200505948"
+      }
+    },
+    {
+      "abstract": {
+        "type": "uri",
+        "value": "http://ekaw-instances#invAbstr-2049401968"
+      },
+      "invited_talk": {
+        "type": "uri",
+        "value": "http://ekaw-instances#invTalk-2049401968"
+      }
+    },
+    {
+      "abstract": {
+        "type": "uri",
+        "value": "http://ekaw-instances#invAbstr-409120663"
+      },
+      "invited_talk": {
+        "type": "uri",
+        "value": "http://ekaw-instances#invTalk-409120663"
+      }
+    },
+    {
+      "abstract": {
+        "type": "uri",
+        "value": "http://ekaw-instances#invAbstr-433154129"
+      },
+      "invited_talk": {
+        "type": "uri",
+        "value": "http://ekaw-instances#invTalk-433154129"
+      }
+    },
+    {
+      "abstract": {
+        "type": "uri",
+        "value": "http://ekaw-instances#invAbstr-546246590"
+      },
+      "invited_talk": {
+        "type": "uri",
+        "value": "http://ekaw-instances#invTalk-546246590"
+      }
+    },
+    {
+      "abstract": {
+        "type": "uri",
+        "value": "http://ekaw-instances#invAbstr-576864592"
+      },
+      "invited_talk": {
+        "type": "uri",
+        "value": "http://ekaw-instances#invTalk-576864592"
+      }
+    },
+    {
+      "abstract": {
+        "type": "uri",
+        "value": "http://ekaw-instances#invAbstr109342539"
+      },
+      "invited_talk": {
+        "type": "uri",
+        "value": "http://ekaw-instances#invTalk109342539"
+      }
+    },
+    {
+      "abstract": {
+        "type": "uri",
+        "value": "http://ekaw-instances#invAbstr1210249696"
+      },
+      "invited_talk": {
+        "type": "uri",
+        "value": "http://ekaw-instances#invTalk1210249696"
+      }
+    },
+    {
+      "abstract": {
+        "type": "uri",
+        "value": "http://ekaw-instances#invAbstr1412086185"
+      },
+      "invited_talk": {
+        "type": "uri",
+        "value": "http://ekaw-instances#invTalk1412086185"
+      }
+    },
+    {
+      "abstract": {
+        "type": "uri",
+        "value": "http://ekaw-instances#invAbstr1481535104"
+      },
+      "invited_talk": {
+        "type": "uri",
+        "value": "http://ekaw-instances#invTalk1481535104"
+      }
+    },
+    {
+      "abstract": {
+        "type": "uri",
+        "value": "http://ekaw-instances#invAbstr1490270990"
+      },
+      "invited_talk": {
+        "type": "uri",
+        "value": "http://ekaw-instances#invTalk1490270990"
+      }
+    },
+    {
+      "abstract": {
+        "type": "uri",
+        "value": "http://ekaw-instances#invAbstr2049114258"
+      },
+      "invited_talk": {
+        "type": "uri",
+        "value": "http://ekaw-instances#invTalk2049114258"
+      }
+    },
+    {
+      "abstract": {
+        "type": "uri",
+        "value": "http://ekaw-instances#invAbstr2059588138"
+      },
+      "invited_talk": {
+        "type": "uri",
+        "value": "http://ekaw-instances#invTalk2059588138"
+      }
+    },
+    {
+      "abstract": {
+        "type": "uri",
+        "value": "http://ekaw-instances#invAbstr2121623315"
+      },
+      "invited_talk": {
+        "type": "uri",
+        "value": "http://ekaw-instances#invTalk2121623315"
+      }
+    },
+    {
+      "abstract": {
+        "type": "uri",
+        "value": "http://ekaw-instances#invAbstr372075649"
+      },
+      "invited_talk": {
+        "type": "uri",
+        "value": "http://ekaw-instances#invTalk372075649"
+      }
+    },
+    {
+      "abstract": {
+        "type": "uri",
+        "value": "http://ekaw-instances#invAbstr53412415"
+      },
+      "invited_talk": {
+        "type": "uri",
+        "value": "http://ekaw-instances#invTalk53412415"
+      }
+    },
+    {
+      "abstract": {
+        "type": "uri",
+        "value": "http://ekaw-instances#invAbstr97794536"
+      },
+      "invited_talk": {
+        "type": "uri",
+        "value": "http://ekaw-instances#invTalk97794536"
+      }
+    },
+    {
+      "abstract": {
+        "type": "uri",
+        "value": "http://ekaw-instances#invAbstr990061433"
+      },
+      "invited_talk": {
+        "type": "uri",
+        "value": "http://ekaw-instances#invTalk990061433"
+      }
+    }
+  ],
+  "elapsed_seconds": 0.027,
+  "finished_at": "2026-09-12T19:49:34.216194+00:00"
+}

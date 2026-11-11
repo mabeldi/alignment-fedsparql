@@ -1,0 +1,25 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX edas: <http://edas#>
+PREFIX ekaw: <http://ekaw#>
+
+# question: Which workshops belong to a conference, and what are their submission deadlines?
+# sources: EKAW supplies conference membership; EDAS supplies the submission deadline.
+# federation: join aligned workshop individuals with owl:sameAs.
+# note: belonging to a conference is a CONDITION, not a returned column, so the
+#       projection is workshop + deadline only.
+
+SELECT DISTINCT ?workshop ?deadline
+WHERE {
+  SERVICE <http://192.168.100.45:3030/ekaw/sparql> {
+      ?workshop a ekaw:Workshop ;
+           ekaw:partOfEvent ?conference .
+      ?conference a ekaw:Conference .
+    }
+    SERVICE <http://192.168.100.45:3030/edas/sparql> {
+      ?workshopEdas <http://www.w3.org/2002/07/owl#sameAs> ?workshop .
+      ?workshopEdas a edas:Workshop ;
+               edas:hasCall ?call .
+      ?call edas:hasSubmissionDeadline ?deadline .
+    }
+}

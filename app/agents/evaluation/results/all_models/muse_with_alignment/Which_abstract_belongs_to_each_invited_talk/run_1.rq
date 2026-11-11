@@ -1,0 +1,25 @@
+
+PREFIX conference: <http://conference#>
+PREFIX ekaw: <http://ekaw#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT
+DISTINCT ?abstract ?invited_talk
+WHERE {
+    {
+
+        SERVICE <http://192.168.100.45:3030/conference/sparql> {
+            ?abstract a conference:Abstract .
+            ?invited_talk a conference:Invited_talk .
+            ?invited_talk conference:has_an_abstract ?abstract .
+        }
+    }
+    UNION {
+
+        SERVICE <http://192.168.100.45:3030/ekaw/sparql> {
+            ?abstract a ekaw:Abstract .
+            ?invited_talk a ekaw:Invited_Talk .
+            ?invited_talk ekaw:presentationOfPaper ?abstract .
+        }
+    }
+}

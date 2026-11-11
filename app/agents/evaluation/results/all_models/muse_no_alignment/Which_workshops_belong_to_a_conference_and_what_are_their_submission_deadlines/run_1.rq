@@ -1,0 +1,2 @@
+PREFIX conference: <http://conference#>
+SELECT DISTINCT ?workshop ?conference_volume ?a_full_paper_submission_date WHERE { SERVICE <http://192.168.100.45:3030/conference/sparql> { ?workshop a conference:Workshop . ?workshop conference:is_part_of_conference_volumes ?conference_volume . ?conference_volume a conference:Conference_volume . ?conference_volume conference:has_important_dates ?important_dates . ?important_dates a conference:Important_dates . ?important_dates conference:is_a_full_paper_submission_date ?a_full_paper_submission_date . } }

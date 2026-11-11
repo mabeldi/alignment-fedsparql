@@ -1,0 +1,26 @@
+#What are the conference dinners?
+
+PREFIX edas: <http://edas#>
+PREFIX ekaw: <http://ekaw#>
+PREFIX confof: <http://confOf#>
+
+SELECT
+DISTINCT ?conferencedinner
+WHERE {
+    {
+        SERVICE <http://192.168.100.44:3030/edas/sparql> {
+            ?conferencedinner a edas:ConferenceDinner .
+        }
+    }
+    UNION {
+        SERVICE <http://192.168.100.44:3030/ekaw/sparql> {
+            ?conferencedinner a ekaw:Conference_Banquet .
+        }
+    }
+    UNION {
+
+        SERVICE <http://192.168.100.44:3030/confof/sparql> {
+            ?conferencedinner a confof:Banquet .
+        }
+    }
+}

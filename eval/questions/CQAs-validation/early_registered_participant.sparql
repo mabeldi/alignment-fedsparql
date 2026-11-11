@@ -1,0 +1,29 @@
+#question: Which participants registered early?
+# CQA: early_registered_participant
+
+# federation: UNION of complete alternative answers from each source
+
+SELECT DISTINCT ?s
+WHERE {
+  {
+    # source: conference
+    SERVICE <http://192.168.100.44:3030/conference/sparql> {
+      ?s a <http://conference#Conference_participant> .
+      ?s a <http://conference#Early_paid_applicant> .
+    }
+  }
+  UNION
+  {
+    # source: confof
+    SERVICE <http://192.168.100.44:3030/confof/sparql> {
+      ?s <http://confOf#earlyRegistration> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+    }
+  }
+  UNION
+  {
+    # source: ekaw
+    SERVICE <http://192.168.100.44:3030/ekaw/sparql> {
+      ?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ekaw#Early-Registered_Participant> .
+    }
+  }
+}

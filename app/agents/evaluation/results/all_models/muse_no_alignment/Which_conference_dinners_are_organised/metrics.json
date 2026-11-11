@@ -1,0 +1,209 @@
+{
+  "format_version": 1,
+  "question_folder": "Which_conference_dinners_are_organised",
+  "calculated_at": "2026-09-12T19:49:34.593647+00:00",
+  "selected_runs": [
+    1,
+    2,
+    3
+  ],
+  "policy": {
+    "answer_comparison": "distinct complete value tuples; best global column assignment",
+    "extra_columns": "ignored after assignment; duplicate projected rows removed",
+    "split_union_columns": "not coalesced",
+    "rdf_identity": "saved value strings; ignore type, datatype, and language; instance URIs <source>-instances#<id> merged by <id> (one thing held by several sources); answer_raw_uri keeps every URI distinct",
+    "source_comparison": "distinct SERVICE endpoint IRIs in query text, not coordinator or runtime contacts",
+    "failures": "execution errors score answer F1=0 and exact_match=0; a query that neither parses nor executes scores source F1=0",
+    "unreachable_endpoint": "never judged, so unscored; aggregate withheld until executed again",
+    "missing_or_stale_artifacts": "unscored; aggregate withheld until repaired"
+  },
+  "runs": [
+    {
+      "run": 1,
+      "status": "scored",
+      "execution_success": 1,
+      "query_sha256": "70a81eaac22bee895982eafe32020875d8a1dc4e6ef2553e3361d85ef9d0c5e4",
+      "result_count": 20,
+      "source_selection": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.3333333333333333,
+        "f1": 0.5,
+        "exact_match": 0,
+        "endpoints": [
+          "http://192.168.100.45:3030/ekaw/sparql"
+        ],
+        "missing_endpoints": [
+          "http://192.168.100.45:3030/confof/sparql",
+          "http://192.168.100.45:3030/edas/sparql"
+        ],
+        "extra_endpoints": []
+      },
+      "answer": {
+        "true_positive": 20,
+        "false_positive": 0,
+        "false_negative": 45,
+        "precision": 1.0,
+        "recall": 0.3076923076923077,
+        "f1": 0.47058823529411764,
+        "exact_match": 0,
+        "column_mapping": {
+          "conferenceDinner": "conference_banquet"
+        },
+        "ignored_generated_columns": [],
+        "generated_unique_rows": 20,
+        "reference_unique_rows": 65
+      },
+      "answer_raw_uri": {
+        "true_positive": 20,
+        "false_positive": 0,
+        "false_negative": 55,
+        "precision": 1.0,
+        "recall": 0.26666666666666666,
+        "f1": 0.42105263157894735,
+        "exact_match": 0,
+        "column_mapping": {
+          "conferenceDinner": "conference_banquet"
+        },
+        "ignored_generated_columns": [],
+        "generated_unique_rows": 20,
+        "reference_unique_rows": 75
+      }
+    },
+    {
+      "run": 2,
+      "status": "scored",
+      "execution_success": 1,
+      "query_sha256": "89d22c6ba954dcbc7245ac22a805202bb3f931b74856990d6e88852477947904",
+      "result_count": 45,
+      "source_selection": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "f1": 0.8,
+        "exact_match": 0,
+        "endpoints": [
+          "http://192.168.100.45:3030/edas/sparql",
+          "http://192.168.100.45:3030/ekaw/sparql"
+        ],
+        "missing_endpoints": [
+          "http://192.168.100.45:3030/confof/sparql"
+        ],
+        "extra_endpoints": []
+      },
+      "answer": {
+        "true_positive": 45,
+        "false_positive": 0,
+        "false_negative": 20,
+        "precision": 1.0,
+        "recall": 0.6923076923076923,
+        "f1": 0.8181818181818182,
+        "exact_match": 0,
+        "column_mapping": {
+          "conferenceDinner": "conferencedinner"
+        },
+        "ignored_generated_columns": [],
+        "generated_unique_rows": 45,
+        "reference_unique_rows": 65
+      },
+      "answer_raw_uri": {
+        "true_positive": 45,
+        "false_positive": 0,
+        "false_negative": 30,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75,
+        "exact_match": 0,
+        "column_mapping": {
+          "conferenceDinner": "conferencedinner"
+        },
+        "ignored_generated_columns": [],
+        "generated_unique_rows": 45,
+        "reference_unique_rows": 75
+      }
+    },
+    {
+      "run": 3,
+      "status": "scored",
+      "execution_success": 1,
+      "query_sha256": "1f6ed2546fac5389c8546abe94a6afbc0f86c7f3114270513322198dd17a7890",
+      "result_count": 20,
+      "source_selection": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.3333333333333333,
+        "f1": 0.5,
+        "exact_match": 0,
+        "endpoints": [
+          "http://192.168.100.45:3030/ekaw/sparql"
+        ],
+        "missing_endpoints": [
+          "http://192.168.100.45:3030/confof/sparql",
+          "http://192.168.100.45:3030/edas/sparql"
+        ],
+        "extra_endpoints": []
+      },
+      "answer": {
+        "true_positive": 20,
+        "false_positive": 0,
+        "false_negative": 45,
+        "precision": 1.0,
+        "recall": 0.3076923076923077,
+        "f1": 0.47058823529411764,
+        "exact_match": 0,
+        "column_mapping": {
+          "conferenceDinner": "conference_banquet"
+        },
+        "ignored_generated_columns": [],
+        "generated_unique_rows": 20,
+        "reference_unique_rows": 65
+      },
+      "answer_raw_uri": {
+        "true_positive": 20,
+        "false_positive": 0,
+        "false_negative": 55,
+        "precision": 1.0,
+        "recall": 0.26666666666666666,
+        "f1": 0.42105263157894735,
+        "exact_match": 0,
+        "column_mapping": {
+          "conferenceDinner": "conference_banquet"
+        },
+        "ignored_generated_columns": [],
+        "generated_unique_rows": 20,
+        "reference_unique_rows": 75
+      }
+    }
+  ],
+  "question": "Which conference dinners are organised",
+  "reference": {
+    "folder": "C:\\Users\\beldi\\Desktop\\Generation_SPARQL\\sparrql-llm\\app\\agents\\evaluation\\results\\Which_conference_dinners_are_organised",
+    "query_sha256": "39f0a676938a13a9f8efa22affc29cd347edfca37dea481f832dacd5ebe4b08e",
+    "result_count": 75,
+    "variables": [
+      "conferenceDinner"
+    ],
+    "endpoints": [
+      "http://192.168.100.45:3030/confof/sparql",
+      "http://192.168.100.45:3030/edas/sparql",
+      "http://192.168.100.45:3030/ekaw/sparql"
+    ]
+  },
+  "status": "complete",
+  "aggregate": {
+    "run_count": 3,
+    "answer_precision_mean": 1.0,
+    "answer_recall_mean": 0.4358974358974359,
+    "answer_f1_mean": 0.5864527629233511,
+    "answer_f1_raw_uri_mean": 0.5307017543859649,
+    "exact_match_accuracy": 0,
+    "source_selection_f1_mean": 0.6,
+    "execution_success_rate": 1
+  }
+}

@@ -1,0 +1,30 @@
+#question: Which reviewers authored which reviews?
+# CQA: all_reviewer_author_of_review
+
+# federation: UNION of complete alternative answers from each source
+
+SELECT DISTINCT ?s ?o
+WHERE {
+  {
+    # source: conference
+    SERVICE <http://192.168.100.44:3030/conference/sparql> {
+      ?o <http://conference#has_authors> ?s . ?o <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://conference#Review> .
+    }
+  }
+  UNION
+  {
+    # source: edas
+    SERVICE <http://192.168.100.44:3030/edas/sparql> {
+      ?s <http://edas#hasRelatedDocument> ?o .
+      ?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://edas#Reviewer> .
+      ?o <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://edas#Review> .
+    }
+  }
+  UNION
+  {
+    # source: ekaw
+    SERVICE <http://192.168.100.44:3030/ekaw/sparql> {
+      ?o <http://ekaw#reviewWrittenBy> ?s .
+    }
+  }
+}

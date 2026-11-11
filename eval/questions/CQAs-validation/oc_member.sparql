@@ -1,0 +1,21 @@
+#question: Who are the organizing-committee members?
+# CQA: oc_member
+
+# federation: UNION of complete alternative answers from each source
+
+SELECT DISTINCT ?s
+WHERE {
+  {
+    # source: conference
+    SERVICE <http://192.168.100.44:3030/conference/sparql> {
+      ?s <http://conference#was_a_member_of> ?conference_o2 . ?conference_o2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://conference#Organizing_committee> .
+    }
+  }
+  UNION
+  {
+    # source: ekaw
+    SERVICE <http://192.168.100.44:3030/ekaw/sparql> {
+      ?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ekaw#OC_Member> .
+    }
+  }
+}

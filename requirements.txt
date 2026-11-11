@@ -1,0 +1,16 @@
+openai
+requests
+python-dotenv
+qdrant-client
+rdflib
+uvicorn[standard]
+gunicorn
+fastapi
+anthropic
+pydantic
+huggingface_hub
+networkx
+torch
+torch_geometric
+sentence-transformers
+scikit-learn

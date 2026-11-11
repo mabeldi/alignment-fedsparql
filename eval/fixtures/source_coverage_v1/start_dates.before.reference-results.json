@@ -1,0 +1,168 @@
+{
+  "variables": [
+    "conference",
+    "startDate"
+  ],
+  "bindings": [
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://conference-instances#conference-104081973"
+      },
+      "startDate": {
+        "type": "literal",
+        "datatype": "http://www.w3.org/2001/XMLSchema#date",
+        "value": "2012-10-18T09:00:00"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://conference-instances#conference1428971814"
+      },
+      "startDate": {
+        "type": "literal",
+        "datatype": "http://www.w3.org/2001/XMLSchema#date",
+        "value": "2008-04-06T09:00:00"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://conference-instances#conference943277065"
+      },
+      "startDate": {
+        "type": "literal",
+        "datatype": "http://www.w3.org/2001/XMLSchema#date",
+        "value": "2005-05-11T09:00:00"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://conference-instances#conference-1409861683"
+      },
+      "startDate": {
+        "type": "literal",
+        "datatype": "http://www.w3.org/2001/XMLSchema#date",
+        "value": "2011-09-22T09:00:00"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://conference-instances#conference69622803"
+      },
+      "startDate": {
+        "type": "literal",
+        "datatype": "http://www.w3.org/2001/XMLSchema#date",
+        "value": "1990-11-08T09:00:00"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://confOf-instances#conference-104081973"
+      },
+      "startDate": {
+        "type": "literal",
+        "value": "2012-10-18T09:00:00"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://confOf-instances#conference1428971814"
+      },
+      "startDate": {
+        "type": "literal",
+        "value": "2008-04-06T09:00:00"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://confOf-instances#conference943277065"
+      },
+      "startDate": {
+        "type": "literal",
+        "value": "2005-05-11T09:00:00"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://confOf-instances#conference-1409861683"
+      },
+      "startDate": {
+        "type": "literal",
+        "value": "2011-09-22T09:00:00"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://confOf-instances#conference69622803"
+      },
+      "startDate": {
+        "type": "literal",
+        "value": "1990-11-08T09:00:00"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://edas-instances#conference1428971814"
+      },
+      "startDate": {
+        "type": "literal",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "value": "2008-04-06T09:00:00"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://edas-instances#conference-104081973"
+      },
+      "startDate": {
+        "type": "literal",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "value": "2012-10-18T09:00:00"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://edas-instances#conference943277065"
+      },
+      "startDate": {
+        "type": "literal",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "value": "2005-05-11T09:00:00"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://edas-instances#conference-1409861683"
+      },
+      "startDate": {
+        "type": "literal",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "value": "2011-09-22T09:00:00"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://edas-instances#conference69622803"
+      },
+      "startDate": {
+        "type": "literal",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "value": "1990-11-08T09:00:00"
+      }
+    }
+  ]
+}

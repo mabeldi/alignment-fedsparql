@@ -1,0 +1,1504 @@
+{
+  "format_version": 1,
+  "question": "Which workshops belong to a conference, and what are their submission deadlines?",
+  "query_file": "reference.rq",
+  "query_sha256": "292c737fe1e6c7a576c24f0619046c5004f78acea8830f7d75709d922d7b6db7",
+  "started_at": "2026-09-12T19:49:38.418099+00:00",
+  "status": "success",
+  "query_kind": "reference",
+  "coordinator_endpoint": "http://192.168.100.45:3030/ekaw/sparql",
+  "variables": [
+    "workshop",
+    "deadline"
+  ],
+  "result_count": 135,
+  "bindings": [
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-147842296"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "1990-07-28T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-147842296"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "1990-10-06T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-147842296"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "1990-10-21T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-292819272"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2005-01-21T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-1628246333"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2005-02-13T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop534385640"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2005-02-16T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop81231077"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2005-02-17T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-292819272"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2005-04-09T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop81231077"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2005-04-09T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-1628246333"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2005-04-10T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop534385640"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2005-04-10T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop534385640"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2005-04-24T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-292819272"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2005-04-25T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop81231077"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2005-04-26T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-1628246333"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2005-04-28T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop1951362132"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2007-12-16T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop1284626608"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2007-12-17T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop214658277"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2007-12-21T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop16403672"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2007-12-24T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop70044726"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2007-12-24T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-1503329724"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2007-12-26T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-229105075"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2007-12-26T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-677739588"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2007-12-29T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-1837124011"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2008-01-01T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-1493254443"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2008-01-02T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop362072479"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2008-01-02T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop1212945492"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2008-01-04T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop1728232209"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2008-01-04T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-1015565448"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2008-01-06T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop760592706"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2008-01-08T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-169034248"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2008-01-09T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-1148263533"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2008-01-12T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-1015565448"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2008-03-04T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-1493254443"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2008-03-04T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-1503329724"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2008-03-04T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-1837124011"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2008-03-04T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-229105075"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2008-03-04T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-677739588"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2008-03-04T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop16403672"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2008-03-04T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop1951362132"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2008-03-04T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop362072479"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2008-03-04T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop760592706"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2008-03-04T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-1148263533"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2008-03-05T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-169034248"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2008-03-05T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop1212945492"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2008-03-05T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop1284626608"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2008-03-05T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop1728232209"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2008-03-05T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop214658277"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2008-03-05T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop70044726"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2008-03-05T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-1837124011"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2008-03-15T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop1212945492"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2008-03-17T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop70044726"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2008-03-17T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop16403672"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2008-03-19T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop1728232209"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2008-03-19T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-1503329724"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2008-03-20T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-169034248"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2008-03-20T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-229105075"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2008-03-20T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop362072479"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2008-03-20T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop1284626608"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2008-03-21T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-1015565448"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2008-03-22T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-1148263533"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2008-03-23T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-1493254443"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2008-03-23T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-677739588"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2008-03-23T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop1951362132"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2008-03-23T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop760592706"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2008-03-23T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop214658277"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2008-03-25T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-743781487"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2011-06-02T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-546410694"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2011-06-03T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop1740347374"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2011-06-03T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop517009024"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2011-06-03T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-1640015237"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2011-06-07T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop1363654922"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2011-06-10T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-450026137"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2011-06-13T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop800399354"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2011-06-14T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-1406424965"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2011-06-19T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop1980477004"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2011-06-19T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop191249194"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2011-06-25T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-1172457915"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2011-06-27T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-684273803"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2011-06-27T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-165628313"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2011-06-28T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop1299770676"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2011-06-29T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop492476701"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2011-07-01T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop717895308"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2011-07-01T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-1640015237"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2011-08-20T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop1299770676"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2011-08-20T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop1363654922"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2011-08-20T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop1980477004"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2011-08-20T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop517009024"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2011-08-20T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop800399354"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2011-08-20T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-1172457915"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2011-08-21T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-1406424965"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2011-08-21T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-165628313"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2011-08-21T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-450026137"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2011-08-21T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-546410694"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2011-08-21T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-684273803"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2011-08-21T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-743781487"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2011-08-21T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop1740347374"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2011-08-21T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop191249194"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2011-08-21T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop492476701"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2011-08-21T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop717895308"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2011-08-21T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop1363654922"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2011-09-01T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop191249194"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2011-09-03T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop517009024"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2011-09-03T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-1640015237"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2011-09-07T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-165628313"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2011-09-07T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-684273803"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2011-09-07T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop1299770676"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2011-09-07T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-1172457915"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2011-09-08T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop492476701"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2011-09-08T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop800399354"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2011-09-08T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-450026137"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2011-09-09T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-743781487"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2011-09-09T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop1740347374"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2011-09-09T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop1980477004"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2011-09-09T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop717895308"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2011-09-10T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-1406424965"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2011-09-11T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-546410694"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2011-09-11T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-2111076817"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2012-06-28T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-1828802822"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2012-07-05T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop1148041327"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2012-07-07T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop1547038773"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2012-07-14T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-1124309768"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2012-07-18T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-39352928"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2012-07-26T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop1547038773"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2012-09-16T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-1124309768"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2012-09-17T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-1828802822"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2012-09-17T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-2111076817"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2012-09-17T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-39352928"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2012-09-17T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop1148041327"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2012-09-17T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop1547038773"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2012-09-27T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-1828802822"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2012-09-28T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop1148041327"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2012-09-29T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-2111076817"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2012-10-03T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-1124309768"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2012-10-04T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "workshop": {
+        "type": "uri",
+        "value": "http://ekaw-instances#workshop-39352928"
+      },
+      "deadline": {
+        "type": "literal",
+        "value": "2012-10-04T21:00:00",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    }
+  ],
+  "elapsed_seconds": 0.38,
+  "finished_at": "2026-09-12T19:49:38.797756+00:00"
+}

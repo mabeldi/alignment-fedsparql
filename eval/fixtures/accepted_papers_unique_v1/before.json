@@ -1,0 +1,15 @@
+{
+  "accepted_papers": {
+    "cmt": 871,
+    "conference": 871,
+    "edas": 871,
+    "ekaw": 871
+  },
+  "existing_fixture_triples": {
+    "cmt": 0,
+    "conference": 0,
+    "edas": 0,
+    "ekaw": 0,
+    "confof": 0
+  }
+}

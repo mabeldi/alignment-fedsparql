@@ -1,0 +1,32 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX confof: <http://confOf#>
+PREFIX edas: <http://edas#>
+PREFIX ekaw: <http://ekaw#>
+
+# question: Which conference dinners are organised?
+# CQA: gala_dinner
+# federation: UNION of complete alternative class answers from each source.
+
+SELECT DISTINCT ?conferenceDinner
+WHERE {
+  {
+    # source: confof
+    SERVICE <http://192.168.100.45:3030/confof/sparql> {
+      ?conferenceDinner rdf:type confof:Banquet .
+    }
+  }
+  UNION
+  {
+    # source: edas
+    SERVICE <http://192.168.100.45:3030/edas/sparql> {
+      ?conferenceDinner rdf:type edas:ConferenceDinner .
+    }
+  }
+  UNION
+  {
+    # source: ekaw
+    SERVICE <http://192.168.100.45:3030/ekaw/sparql> {
+      ?conferenceDinner rdf:type ekaw:Conference_Banquet .
+    }
+  }
+}

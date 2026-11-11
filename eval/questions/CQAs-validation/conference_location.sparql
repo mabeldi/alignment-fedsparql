@@ -1,0 +1,30 @@
+#question: Where is each conference located?
+# CQA: conference_location
+
+# federation: UNION of complete alternative answers from each source
+
+SELECT DISTINCT ?s ?o
+WHERE {
+  {
+    # source: conference
+    SERVICE <http://192.168.100.44:3030/conference/sparql> {
+      ?s <http://conference#has_a_location> ?o .
+    }
+  }
+  UNION
+  {
+    # source: confof
+    SERVICE <http://192.168.100.44:3030/confof/sparql> {
+      ?s <http://confOf#location> ?o .
+      ?s a <http://confOf#Conference> .
+    }
+  }
+  UNION
+  {
+    # source: ekaw
+    SERVICE <http://192.168.100.44:3030/ekaw/sparql> {
+      ?s a <http://ekaw#Conference> .
+      ?s <http://ekaw#heldIn> ?ekaw_o2 . ?ekaw_o2 <http://www.w3.org/2000/01/rdf-schema#label> ?o .
+    }
+  }
+}

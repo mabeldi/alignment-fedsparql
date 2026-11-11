@@ -1,0 +1,4 @@
+SELECT distinct ?s ?o WHERE {  
+?s a <http://conference#Written_contribution> .
+?s <http://conference#has_an_abstract> ?o .  
+ }

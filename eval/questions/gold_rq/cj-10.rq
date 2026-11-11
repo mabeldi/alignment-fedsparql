@@ -1,0 +1,15 @@
+#Retrieve list of conferences that have a location and a registration deadline
+
+SELECT
+DISTINCT ?conf ?place ?deadline
+WHERE {
+
+    SERVICE <http://192.168.100.44:3030/ekaw/sparql> {
+        ?conf a <http://ekaw#Conference> .
+        ?conf <http://ekaw#heldIn> ?place .
+    }
+    SERVICE <http://192.168.100.44:3030/edas/sparql> {
+        ?conf_edas <http://www.w3.org/2002/07/owl#sameAs> ?conf .
+        ?conf_edas <http://edas#registrationDueOn> ?deadline .
+    }
+}

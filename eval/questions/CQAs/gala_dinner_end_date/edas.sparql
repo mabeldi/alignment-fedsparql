@@ -1,0 +1,6 @@
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT distinct ?s ?o WHERE {  
+?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://edas#ConferenceDinner> .  
+?s <http://edas#hasEndDateTime> ?o .
+ }

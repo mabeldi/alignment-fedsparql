@@ -1,0 +1,40 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX cmt: <http://cmt#>
+PREFIX conference: <http://conference#>
+PREFIX edas: <http://edas#>
+PREFIX ekaw: <http://ekaw#>
+
+# question: retrieve the list of accepted papers
+# Gold source: accepted_paper / CC-01; source-local acceptance representations.
+
+SELECT DISTINCT ?paper
+WHERE {
+  {
+    # source: cmt (two complete alternative acceptance representations)
+    SERVICE <http://192.168.100.45:3030/cmt/sparql> {
+        ?paper cmt:hasDecision ?decision .
+        ?decision rdf:type cmt:Acceptance .
+    }
+  }
+  UNION
+  {
+    # source: conference
+    SERVICE <http://192.168.100.45:3030/conference/sparql> {
+      ?paper rdf:type conference:Accepted_contribution .
+    }
+  }
+  UNION
+  {
+    # source: edas
+    SERVICE <http://192.168.100.45:3030/edas/sparql> {
+      ?paper rdf:type edas:AcceptedPaper .
+    }
+  }
+  UNION
+  {
+    # source: ekaw
+    SERVICE <http://192.168.100.45:3030/ekaw/sparql> {
+      ?paper rdf:type ekaw:Accepted_Paper .
+    }
+  }
+}

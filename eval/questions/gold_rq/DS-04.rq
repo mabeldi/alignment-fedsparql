@@ -1,0 +1,10 @@
+#Retrieve list of Volunteers
+
+PREFIX confof: <http://confOf#> 
+SELECT ?volunteer WHERE {
+     
+    SERVICE <http://192.168.100.44:3030/confof/sparql> {
+          ?volunteer a confof:Volunteer .
+         
+    } 
+}

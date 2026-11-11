@@ -1,0 +1,216 @@
+{
+  "format_version": 1,
+  "question_folder": "What_is_the_start_date_of_each_conference",
+  "calculated_at": "2026-09-12T19:49:33.932494+00:00",
+  "selected_runs": [
+    1,
+    2,
+    3
+  ],
+  "policy": {
+    "answer_comparison": "distinct complete value tuples; best global column assignment",
+    "extra_columns": "ignored after assignment; duplicate projected rows removed",
+    "split_union_columns": "not coalesced",
+    "rdf_identity": "saved value strings; ignore type, datatype, and language; instance URIs <source>-instances#<id> merged by <id> (one thing held by several sources); answer_raw_uri keeps every URI distinct",
+    "source_comparison": "distinct SERVICE endpoint IRIs in query text, not coordinator or runtime contacts",
+    "failures": "execution errors score answer F1=0 and exact_match=0; a query that neither parses nor executes scores source F1=0",
+    "unreachable_endpoint": "never judged, so unscored; aggregate withheld until executed again",
+    "missing_or_stale_artifacts": "unscored; aggregate withheld until repaired"
+  },
+  "runs": [
+    {
+      "run": 1,
+      "status": "scored",
+      "execution_success": 1,
+      "query_sha256": "d32cbfef3cb0396ade66a09b2b409917fad0b39b30a16fffef1eb5bee23579ce",
+      "result_count": 50,
+      "source_selection": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "f1": 0.8,
+        "exact_match": 0,
+        "endpoints": [
+          "http://192.168.100.45:3030/confof/sparql",
+          "http://192.168.100.45:3030/edas/sparql"
+        ],
+        "missing_endpoints": [
+          "http://192.168.100.45:3030/conference/sparql"
+        ],
+        "extra_endpoints": []
+      },
+      "answer": {
+        "true_positive": 45,
+        "false_positive": 0,
+        "false_negative": 20,
+        "precision": 1.0,
+        "recall": 0.6923076923076923,
+        "f1": 0.8181818181818182,
+        "exact_match": 0,
+        "column_mapping": {
+          "conference": "conference",
+          "startDate": "startDate"
+        },
+        "ignored_generated_columns": [],
+        "generated_unique_rows": 45,
+        "reference_unique_rows": 65
+      },
+      "answer_raw_uri": {
+        "true_positive": 50,
+        "false_positive": 0,
+        "false_negative": 25,
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "f1": 0.8,
+        "exact_match": 0,
+        "column_mapping": {
+          "conference": "conference",
+          "startDate": "startDate"
+        },
+        "ignored_generated_columns": [],
+        "generated_unique_rows": 50,
+        "reference_unique_rows": 75
+      }
+    },
+    {
+      "run": 2,
+      "status": "scored",
+      "execution_success": 1,
+      "query_sha256": "df17ea6ccaa86d4b4a75b9e217eeaa020c446ebe94d498275c833603ae4655f2",
+      "result_count": 50,
+      "source_selection": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "f1": 0.8,
+        "exact_match": 0,
+        "endpoints": [
+          "http://192.168.100.45:3030/confof/sparql",
+          "http://192.168.100.45:3030/edas/sparql"
+        ],
+        "missing_endpoints": [
+          "http://192.168.100.45:3030/conference/sparql"
+        ],
+        "extra_endpoints": []
+      },
+      "answer": {
+        "true_positive": 45,
+        "false_positive": 0,
+        "false_negative": 20,
+        "precision": 1.0,
+        "recall": 0.6923076923076923,
+        "f1": 0.8181818181818182,
+        "exact_match": 0,
+        "column_mapping": {
+          "conference": "conference",
+          "startDate": "starts_on"
+        },
+        "ignored_generated_columns": [],
+        "generated_unique_rows": 45,
+        "reference_unique_rows": 65
+      },
+      "answer_raw_uri": {
+        "true_positive": 50,
+        "false_positive": 0,
+        "false_negative": 25,
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "f1": 0.8,
+        "exact_match": 0,
+        "column_mapping": {
+          "conference": "conference",
+          "startDate": "starts_on"
+        },
+        "ignored_generated_columns": [],
+        "generated_unique_rows": 50,
+        "reference_unique_rows": 75
+      }
+    },
+    {
+      "run": 3,
+      "status": "scored",
+      "execution_success": 1,
+      "query_sha256": "61bc9ccf873045537fd4a572e2043fd87d0df44ae610f63d128cd92040c22d2c",
+      "result_count": 50,
+      "source_selection": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "f1": 0.8,
+        "exact_match": 0,
+        "endpoints": [
+          "http://192.168.100.45:3030/confof/sparql",
+          "http://192.168.100.45:3030/edas/sparql"
+        ],
+        "missing_endpoints": [
+          "http://192.168.100.45:3030/conference/sparql"
+        ],
+        "extra_endpoints": []
+      },
+      "answer": {
+        "true_positive": 45,
+        "false_positive": 0,
+        "false_negative": 20,
+        "precision": 1.0,
+        "recall": 0.6923076923076923,
+        "f1": 0.8181818181818182,
+        "exact_match": 0,
+        "column_mapping": {
+          "conference": "conference",
+          "startDate": "startDate"
+        },
+        "ignored_generated_columns": [],
+        "generated_unique_rows": 45,
+        "reference_unique_rows": 65
+      },
+      "answer_raw_uri": {
+        "true_positive": 50,
+        "false_positive": 0,
+        "false_negative": 25,
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "f1": 0.8,
+        "exact_match": 0,
+        "column_mapping": {
+          "conference": "conference",
+          "startDate": "startDate"
+        },
+        "ignored_generated_columns": [],
+        "generated_unique_rows": 50,
+        "reference_unique_rows": 75
+      }
+    }
+  ],
+  "question": "What is the start date of each conference?",
+  "reference": {
+    "folder": "C:\\Users\\beldi\\Desktop\\Generation_SPARQL\\sparrql-llm\\app\\agents\\evaluation\\results\\What_is_the_start_date_of_each_conference",
+    "query_sha256": "43f6dc35b3804b1441e8d6121d4d1c01cb658bb446302433e78d679458e6c2a0",
+    "result_count": 75,
+    "variables": [
+      "conference",
+      "startDate"
+    ],
+    "endpoints": [
+      "http://192.168.100.45:3030/conference/sparql",
+      "http://192.168.100.45:3030/confof/sparql",
+      "http://192.168.100.45:3030/edas/sparql"
+    ]
+  },
+  "status": "complete",
+  "aggregate": {
+    "run_count": 3,
+    "answer_precision_mean": 1.0,
+    "answer_recall_mean": 0.6923076923076923,
+    "answer_f1_mean": 0.8181818181818182,
+    "answer_f1_raw_uri_mean": 0.8,
+    "exact_match_accuracy": 0,
+    "source_selection_f1_mean": 0.8,
+    "execution_success_rate": 1
+  }
+}

@@ -1,0 +1,28 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX conference: <http://conference#>
+PREFIX ekaw: <http://ekaw#>
+
+# question: Which abstract belongs to each invited talk?
+# source: CQA abstract_of_invited_talk
+# federation: UNION of complete alternative answers from each source
+
+SELECT DISTINCT ?abstract ?talk
+WHERE {
+  {
+    # source: conference
+    SERVICE <http://192.168.100.45:3030/conference/sparql> {
+      ?abstract rdf:type conference:Abstract .
+      ?talk conference:has_an_abstract ?abstract .
+      ?talk rdf:type conference:Invited_talk .
+    }
+  }
+  UNION
+  {
+    # source: ekaw
+    SERVICE <http://192.168.100.45:3030/ekaw/sparql> {
+      ?abstract rdf:type ekaw:Invited_Talk_Abstract .
+      ?abstract ekaw:paperPresentedAs ?talk .
+      ?talk rdf:type ekaw:Invited_Talk .
+    }
+  }
+}

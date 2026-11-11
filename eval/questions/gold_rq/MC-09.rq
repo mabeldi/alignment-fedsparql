@@ -1,0 +1,29 @@
+
+#Which higher-education institutions appear?
+
+PREFIX confof: <http://confOf#>
+PREFIX edas: <http://edas#>
+PREFIX ekaw: <http://ekaw#>
+
+SELECT
+DISTINCT ?university
+WHERE {
+    {
+
+        SERVICE <http://192.168.100.44:3030/ekaw/sparql> {
+            ?university a ekaw:University .
+        }
+    }
+    UNION {
+
+        SERVICE <http://192.168.100.44:3030/confof/sparql> {
+            ?university a confof:University .
+        }
+    }
+    UNION {
+
+        SERVICE <http://192.168.100.44:3030/edas/sparql> {
+            ?university a edas:AcademiaOrganization .
+        }
+    }
+}

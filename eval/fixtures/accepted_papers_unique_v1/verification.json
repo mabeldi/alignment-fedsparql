@@ -1,0 +1,98 @@
+{
+  "fixture": "eval-cc01-v1",
+  "verified_at": "2026-09-12T16:55:52.684857+00:00",
+  "base_url": "http://192.168.100.45:3030",
+  "reference_raw_rows": 3564,
+  "reference_normalized_rows": 951,
+  "synthetic_papers": 80,
+  "omitted_sources": {
+    "cmt": {
+      "missing_synthetic": 20,
+      "missing_total": 20,
+      "full_answer_scores": {
+        "true_positive": 931,
+        "false_positive": 0,
+        "false_negative": 20,
+        "precision": 1.0,
+        "recall": 0.9789695057833859,
+        "f1": 0.9893730074388948,
+        "exact_match": 0
+      },
+      "synthetic_answer_scores": {
+        "true_positive": 60,
+        "false_positive": 0,
+        "false_negative": 20,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571,
+        "exact_match": 0
+      }
+    },
+    "conference": {
+      "missing_synthetic": 20,
+      "missing_total": 20,
+      "full_answer_scores": {
+        "true_positive": 931,
+        "false_positive": 0,
+        "false_negative": 20,
+        "precision": 1.0,
+        "recall": 0.9789695057833859,
+        "f1": 0.9893730074388948,
+        "exact_match": 0
+      },
+      "synthetic_answer_scores": {
+        "true_positive": 60,
+        "false_positive": 0,
+        "false_negative": 20,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571,
+        "exact_match": 0
+      }
+    },
+    "edas": {
+      "missing_synthetic": 20,
+      "missing_total": 20,
+      "full_answer_scores": {
+        "true_positive": 931,
+        "false_positive": 0,
+        "false_negative": 20,
+        "precision": 1.0,
+        "recall": 0.9789695057833859,
+        "f1": 0.9893730074388948,
+        "exact_match": 0
+      },
+      "synthetic_answer_scores": {
+        "true_positive": 60,
+        "false_positive": 0,
+        "false_negative": 20,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571,
+        "exact_match": 0
+      }
+    },
+    "ekaw": {
+      "missing_synthetic": 20,
+      "missing_total": 20,
+      "full_answer_scores": {
+        "true_positive": 931,
+        "false_positive": 0,
+        "false_negative": 20,
+        "precision": 1.0,
+        "recall": 0.9789695057833859,
+        "f1": 0.9893730074388948,
+        "exact_match": 0
+      },
+      "synthetic_answer_scores": {
+        "true_positive": 60,
+        "false_positive": 0,
+        "false_negative": 20,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571,
+        "exact_match": 0
+      }
+    }
+  }
+}

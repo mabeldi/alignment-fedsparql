@@ -1,0 +1,1155 @@
+{
+  "question": "Who are the invited speakers?",
+  "run": 3,
+  "status": "generated",
+  "endpoint": "http://127.0.0.1:8999/query",
+  "parallel_requests": 1,
+  "server_diagnostics_note": "Server token counters and debug files are shared across requests; do not use them for per-run measurements during concurrent requests.",
+  "started_at": "2026-09-12T00:45:01.895870+00:00",
+  "http_status": 200,
+  "response": {
+    "question": "Who are the invited speakers?",
+    "alignments_enabled": true,
+    "extracted": {
+      "classes": [
+        "Invited Speaker"
+      ],
+      "objectProperties": [],
+      "dataTypeProperties": [],
+      "literals": []
+    },
+    "matches": {
+      "Invited Speaker": [
+        {
+          "label": "Invited_Speaker",
+          "uri": "http://ekaw#Invited_Speaker",
+          "type": "Class",
+          "name": "Invited_Speaker",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Invited_Speaker",
+            "name": "Invited_Speaker",
+            "label": "Invited_Speaker",
+            "source": "ekaw"
+          },
+          "score": 0.9566109
+        },
+        {
+          "label": "Invited_speaker",
+          "uri": "http://conference#Invited_speaker",
+          "type": "Class",
+          "name": "Invited_speaker",
+          "payload": {
+            "type": "Class",
+            "uri": "http://conference#Invited_speaker",
+            "name": "Invited_speaker",
+            "label": "Invited_speaker",
+            "source": "conference"
+          },
+          "score": 0.9513183
+        },
+        {
+          "label": "Invited_talk",
+          "uri": "http://conference#Invited_talk",
+          "type": "Class",
+          "name": "Invited_talk",
+          "payload": {
+            "type": "Class",
+            "uri": "http://conference#Invited_talk",
+            "name": "Invited_talk",
+            "label": "Invited_talk",
+            "source": "conference"
+          },
+          "score": 0.8232336
+        },
+        {
+          "label": "Invited_Talk",
+          "uri": "http://ekaw#Invited_Talk",
+          "type": "Class",
+          "name": "Invited_Talk",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Invited_Talk",
+            "name": "Invited_Talk",
+            "label": "Invited_Talk",
+            "source": "ekaw"
+          },
+          "score": 0.8128268
+        },
+        {
+          "label": "Conference_participant",
+          "uri": "http://conference#Conference_participant",
+          "type": "Class",
+          "name": "Conference_participant",
+          "payload": {
+            "type": "Class",
+            "uri": "http://conference#Conference_participant",
+            "name": "Conference_participant",
+            "label": "Conference_participant",
+            "source": "conference"
+          },
+          "score": 0.7741223
+        },
+        {
+          "label": "Attendee",
+          "uri": "http://edas#Attendee",
+          "type": "Class",
+          "name": "Attendee",
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#Attendee",
+            "name": "Attendee",
+            "label": "Attendee",
+            "source": "edas"
+          },
+          "score": 0.76614344
+        },
+        {
+          "label": "Conference_contributor",
+          "uri": "http://conference#Conference_contributor",
+          "type": "Class",
+          "name": "Conference_contributor",
+          "payload": {
+            "type": "Class",
+            "uri": "http://conference#Conference_contributor",
+            "name": "Conference_contributor",
+            "label": "Conference_contributor",
+            "source": "conference"
+          },
+          "score": 0.7654003
+        },
+        {
+          "label": "ConferenceChair",
+          "uri": "http://cmt#ConferenceChair",
+          "type": "Class",
+          "name": "ConferenceChair",
+          "payload": {
+            "type": "Class",
+            "uri": "http://cmt#ConferenceChair",
+            "name": "ConferenceChair",
+            "label": "ConferenceChair",
+            "source": "cmt"
+          },
+          "score": 0.7651833
+        },
+        {
+          "label": "ConferenceChair",
+          "uri": "http://edas#ConferenceChair",
+          "type": "Class",
+          "name": "ConferenceChair",
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#ConferenceChair",
+            "name": "ConferenceChair",
+            "label": "ConferenceChair",
+            "source": "edas"
+          },
+          "score": 0.76494
+        },
+        {
+          "label": "Conference_Participant",
+          "uri": "http://ekaw#Conference_Participant",
+          "type": "Class",
+          "name": "Conference_Participant",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Conference_Participant",
+            "name": "Conference_Participant",
+            "label": "Conference_Participant",
+            "source": "ekaw"
+          },
+          "score": 0.764937
+        },
+        {
+          "label": "Invited_Talk_Abstract",
+          "uri": "http://ekaw#Invited_Talk_Abstract",
+          "type": "Class",
+          "name": "Invited_Talk_Abstract",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Invited_Talk_Abstract",
+            "name": "Invited_Talk_Abstract",
+            "label": "Invited_Talk_Abstract",
+            "source": "ekaw"
+          },
+          "score": 0.75511235
+        },
+        {
+          "label": "ProgramCommitteeMember",
+          "uri": "http://cmt#ProgramCommitteeMember",
+          "type": "Class",
+          "name": "ProgramCommitteeMember",
+          "payload": {
+            "type": "Class",
+            "uri": "http://cmt#ProgramCommitteeMember",
+            "name": "ProgramCommitteeMember",
+            "label": "ProgramCommitteeMember",
+            "source": "cmt"
+          },
+          "score": 0.7489793
+        },
+        {
+          "label": "Session_Chair",
+          "uri": "http://ekaw#Session_Chair",
+          "type": "Class",
+          "name": "Session_Chair",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Session_Chair",
+            "name": "Session_Chair",
+            "label": "Session_Chair",
+            "source": "ekaw"
+          },
+          "score": 0.7409516
+        },
+        {
+          "label": "invited_by",
+          "uri": "http://conference#invited_by",
+          "type": "ObjectProperty",
+          "name": "invited_by",
+          "payload": {
+            "type": "ObjectProperty",
+            "name": "invited_by",
+            "uri": "http://conference#invited_by",
+            "label": "invited_by",
+            "domain": "Reviewer",
+            "range": "Reviewer",
+            "domainUri": "http://conference#Reviewer",
+            "rangeUri": "http://conference#Reviewer",
+            "domains": [
+              "Reviewer"
+            ],
+            "ranges": [
+              "Reviewer"
+            ],
+            "domainUris": [
+              "http://conference#Reviewer"
+            ],
+            "rangeUris": [
+              "http://conference#Reviewer"
+            ],
+            "source": "conference"
+          },
+          "score": 0.7391212
+        },
+        {
+          "label": "Workshop_Chair",
+          "uri": "http://ekaw#Workshop_Chair",
+          "type": "Class",
+          "name": "Workshop_Chair",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Workshop_Chair",
+            "name": "Workshop_Chair",
+            "label": "Workshop_Chair",
+            "source": "ekaw"
+          },
+          "score": 0.72541875
+        },
+        {
+          "label": "Presenter",
+          "uri": "http://ekaw#Presenter",
+          "type": "Class",
+          "name": "Presenter",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Presenter",
+            "name": "Presenter",
+            "label": "Presenter",
+            "source": "ekaw"
+          },
+          "score": 0.72207403
+        },
+        {
+          "label": "Presenter",
+          "uri": "http://edas#Presenter",
+          "type": "Class",
+          "name": "Presenter",
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#Presenter",
+            "name": "Presenter",
+            "label": "Presenter",
+            "source": "edas"
+          },
+          "score": 0.72207403
+        },
+        {
+          "label": "attendeeAt",
+          "uri": "http://edas#attendeeAt",
+          "type": "ObjectProperty",
+          "name": "attendeeAt",
+          "payload": {
+            "type": "ObjectProperty",
+            "name": "attendeeAt",
+            "uri": "http://edas#attendeeAt",
+            "label": "attendeeAt",
+            "domain": "Person",
+            "range": "ConferenceEvent",
+            "domainUri": "http://edas#Person",
+            "rangeUri": "http://edas#ConferenceEvent",
+            "domains": [
+              "Person"
+            ],
+            "ranges": [
+              "ConferenceEvent"
+            ],
+            "domainUris": [
+              "http://edas#Person"
+            ],
+            "rangeUris": [
+              "http://edas#ConferenceEvent"
+            ],
+            "source": "edas"
+          },
+          "score": 0.71866524
+        },
+        {
+          "label": "SessionChair",
+          "uri": "http://edas#SessionChair",
+          "type": "Class",
+          "name": "SessionChair",
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#SessionChair",
+            "name": "SessionChair",
+            "label": "SessionChair",
+            "source": "edas"
+          },
+          "score": 0.7139684
+        },
+        {
+          "label": "ConferenceMember",
+          "uri": "http://cmt#ConferenceMember",
+          "type": "Class",
+          "name": "ConferenceMember",
+          "payload": {
+            "type": "Class",
+            "uri": "http://cmt#ConferenceMember",
+            "name": "ConferenceMember",
+            "label": "ConferenceMember",
+            "source": "cmt"
+          },
+          "score": 0.7094444
+        }
+      ]
+    },
+    "context_filtered_matches": {
+      "Invited Speaker": [
+        {
+          "label": "Invited_Speaker",
+          "uri": "http://ekaw#Invited_Speaker",
+          "type": "Class",
+          "name": "Invited_Speaker",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Invited_Speaker",
+            "name": "Invited_Speaker",
+            "label": "Invited_Speaker",
+            "source": "ekaw"
+          },
+          "score": 0.9566109
+        },
+        {
+          "label": "Invited_speaker",
+          "uri": "http://conference#Invited_speaker",
+          "type": "Class",
+          "name": "Invited_speaker",
+          "payload": {
+            "type": "Class",
+            "uri": "http://conference#Invited_speaker",
+            "name": "Invited_speaker",
+            "label": "Invited_speaker",
+            "source": "conference"
+          },
+          "score": 0.9513183
+        },
+        {
+          "label": "Presenter",
+          "uri": "http://edas#Presenter",
+          "type": "Class",
+          "name": "Presenter",
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#Presenter",
+            "name": "Presenter",
+            "label": "Presenter",
+            "source": "edas"
+          },
+          "score": 0.72207403
+        }
+      ]
+    },
+    "context_removed_matches": {
+      "Invited Speaker": [
+        {
+          "label": "Invited_talk",
+          "uri": "http://conference#Invited_talk",
+          "type": "Class",
+          "name": "Invited_talk",
+          "payload": {
+            "type": "Class",
+            "uri": "http://conference#Invited_talk",
+            "name": "Invited_talk",
+            "label": "Invited_talk",
+            "source": "conference"
+          },
+          "score": 0.8232336
+        },
+        {
+          "label": "Invited_Talk",
+          "uri": "http://ekaw#Invited_Talk",
+          "type": "Class",
+          "name": "Invited_Talk",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Invited_Talk",
+            "name": "Invited_Talk",
+            "label": "Invited_Talk",
+            "source": "ekaw"
+          },
+          "score": 0.8128268
+        },
+        {
+          "label": "Conference_participant",
+          "uri": "http://conference#Conference_participant",
+          "type": "Class",
+          "name": "Conference_participant",
+          "payload": {
+            "type": "Class",
+            "uri": "http://conference#Conference_participant",
+            "name": "Conference_participant",
+            "label": "Conference_participant",
+            "source": "conference"
+          },
+          "score": 0.7741223
+        },
+        {
+          "label": "Attendee",
+          "uri": "http://edas#Attendee",
+          "type": "Class",
+          "name": "Attendee",
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#Attendee",
+            "name": "Attendee",
+            "label": "Attendee",
+            "source": "edas"
+          },
+          "score": 0.76614344
+        },
+        {
+          "label": "Conference_contributor",
+          "uri": "http://conference#Conference_contributor",
+          "type": "Class",
+          "name": "Conference_contributor",
+          "payload": {
+            "type": "Class",
+            "uri": "http://conference#Conference_contributor",
+            "name": "Conference_contributor",
+            "label": "Conference_contributor",
+            "source": "conference"
+          },
+          "score": 0.7654003
+        },
+        {
+          "label": "ConferenceChair",
+          "uri": "http://cmt#ConferenceChair",
+          "type": "Class",
+          "name": "ConferenceChair",
+          "payload": {
+            "type": "Class",
+            "uri": "http://cmt#ConferenceChair",
+            "name": "ConferenceChair",
+            "label": "ConferenceChair",
+            "source": "cmt"
+          },
+          "score": 0.7651833
+        },
+        {
+          "label": "ConferenceChair",
+          "uri": "http://edas#ConferenceChair",
+          "type": "Class",
+          "name": "ConferenceChair",
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#ConferenceChair",
+            "name": "ConferenceChair",
+            "label": "ConferenceChair",
+            "source": "edas"
+          },
+          "score": 0.76494
+        },
+        {
+          "label": "Conference_Participant",
+          "uri": "http://ekaw#Conference_Participant",
+          "type": "Class",
+          "name": "Conference_Participant",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Conference_Participant",
+            "name": "Conference_Participant",
+            "label": "Conference_Participant",
+            "source": "ekaw"
+          },
+          "score": 0.764937
+        },
+        {
+          "label": "Invited_Talk_Abstract",
+          "uri": "http://ekaw#Invited_Talk_Abstract",
+          "type": "Class",
+          "name": "Invited_Talk_Abstract",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Invited_Talk_Abstract",
+            "name": "Invited_Talk_Abstract",
+            "label": "Invited_Talk_Abstract",
+            "source": "ekaw"
+          },
+          "score": 0.75511235
+        },
+        {
+          "label": "ProgramCommitteeMember",
+          "uri": "http://cmt#ProgramCommitteeMember",
+          "type": "Class",
+          "name": "ProgramCommitteeMember",
+          "payload": {
+            "type": "Class",
+            "uri": "http://cmt#ProgramCommitteeMember",
+            "name": "ProgramCommitteeMember",
+            "label": "ProgramCommitteeMember",
+            "source": "cmt"
+          },
+          "score": 0.7489793
+        },
+        {
+          "label": "Session_Chair",
+          "uri": "http://ekaw#Session_Chair",
+          "type": "Class",
+          "name": "Session_Chair",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Session_Chair",
+            "name": "Session_Chair",
+            "label": "Session_Chair",
+            "source": "ekaw"
+          },
+          "score": 0.7409516
+        },
+        {
+          "label": "invited_by",
+          "uri": "http://conference#invited_by",
+          "type": "ObjectProperty",
+          "name": "invited_by",
+          "payload": {
+            "type": "ObjectProperty",
+            "name": "invited_by",
+            "uri": "http://conference#invited_by",
+            "label": "invited_by",
+            "domain": "Reviewer",
+            "range": "Reviewer",
+            "domainUri": "http://conference#Reviewer",
+            "rangeUri": "http://conference#Reviewer",
+            "domains": [
+              "Reviewer"
+            ],
+            "ranges": [
+              "Reviewer"
+            ],
+            "domainUris": [
+              "http://conference#Reviewer"
+            ],
+            "rangeUris": [
+              "http://conference#Reviewer"
+            ],
+            "source": "conference"
+          },
+          "score": 0.7391212
+        },
+        {
+          "label": "Workshop_Chair",
+          "uri": "http://ekaw#Workshop_Chair",
+          "type": "Class",
+          "name": "Workshop_Chair",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Workshop_Chair",
+            "name": "Workshop_Chair",
+            "label": "Workshop_Chair",
+            "source": "ekaw"
+          },
+          "score": 0.72541875
+        },
+        {
+          "label": "Presenter",
+          "uri": "http://ekaw#Presenter",
+          "type": "Class",
+          "name": "Presenter",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Presenter",
+            "name": "Presenter",
+            "label": "Presenter",
+            "source": "ekaw"
+          },
+          "score": 0.72207403
+        },
+        {
+          "label": "attendeeAt",
+          "uri": "http://edas#attendeeAt",
+          "type": "ObjectProperty",
+          "name": "attendeeAt",
+          "payload": {
+            "type": "ObjectProperty",
+            "name": "attendeeAt",
+            "uri": "http://edas#attendeeAt",
+            "label": "attendeeAt",
+            "domain": "Person",
+            "range": "ConferenceEvent",
+            "domainUri": "http://edas#Person",
+            "rangeUri": "http://edas#ConferenceEvent",
+            "domains": [
+              "Person"
+            ],
+            "ranges": [
+              "ConferenceEvent"
+            ],
+            "domainUris": [
+              "http://edas#Person"
+            ],
+            "rangeUris": [
+              "http://edas#ConferenceEvent"
+            ],
+            "source": "edas"
+          },
+          "score": 0.71866524
+        },
+        {
+          "label": "SessionChair",
+          "uri": "http://edas#SessionChair",
+          "type": "Class",
+          "name": "SessionChair",
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#SessionChair",
+            "name": "SessionChair",
+            "label": "SessionChair",
+            "source": "edas"
+          },
+          "score": 0.7139684
+        },
+        {
+          "label": "ConferenceMember",
+          "uri": "http://cmt#ConferenceMember",
+          "type": "Class",
+          "name": "ConferenceMember",
+          "payload": {
+            "type": "Class",
+            "uri": "http://cmt#ConferenceMember",
+            "name": "ConferenceMember",
+            "label": "ConferenceMember",
+            "source": "cmt"
+          },
+          "score": 0.7094444
+        }
+      ]
+    },
+    "top_sources": {
+      "ekaw": 0.9566109,
+      "conference": 0.9513183,
+      "edas": 0.72207403
+    },
+    "base_source": "ekaw",
+    "class_paths": [
+      {
+        "class": "http://ekaw#Invited_Speaker",
+        "source": "ekaw",
+        "outgoing": [
+          [
+            [
+              "http://ekaw#Invited_Speaker",
+              "http://ekaw#authorOf",
+              "http://ekaw#Document"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Invited_Speaker",
+              "http://ekaw#organises",
+              "http://ekaw#Event"
+            ]
+          ]
+        ],
+        "incoming": [
+          [
+            [
+              "http://ekaw#Document",
+              "http://ekaw#writtenBy",
+              "http://ekaw#Invited_Speaker"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Event",
+              "http://ekaw#organisedBy",
+              "http://ekaw#Invited_Speaker"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Camera_Ready_Paper",
+              "http://ekaw#writtenBy",
+              "http://ekaw#Invited_Speaker"
+            ]
+          ]
+        ],
+        "values": []
+      },
+      {
+        "class": "http://conference#Invited_speaker",
+        "source": "conference",
+        "outgoing": [
+          [
+            [
+              "http://conference#Invited_speaker",
+              "http://conference#contributes",
+              "http://conference#Conference_document"
+            ]
+          ]
+        ],
+        "incoming": [
+          [
+            [
+              "http://conference#Conference_document",
+              "http://conference#has_authors",
+              "http://conference#Invited_speaker"
+            ]
+          ]
+        ],
+        "values": [
+          [
+            "http://conference#Invited_speaker",
+            "http://conference#has_an_email",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://conference#Invited_speaker",
+            "http://conference#has_the_last_name",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://conference#Invited_speaker",
+            "http://conference#has_gender",
+            null
+          ],
+          [
+            "http://conference#Invited_speaker",
+            "http://conference#has_the_first_name",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "class": "http://edas#Presenter",
+        "source": "edas",
+        "outgoing": [
+          [
+            [
+              "http://edas#Presenter",
+              "http://edas#hasRelatedPaper",
+              "http://edas#Paper"
+            ]
+          ]
+        ],
+        "incoming": [
+          [
+            [
+              "http://edas#Paper",
+              "http://edas#isWrittenBy",
+              "http://edas#Presenter"
+            ]
+          ]
+        ],
+        "values": []
+      }
+    ],
+    "summarize_class_paths": [
+      {
+        "label": "Invited_Speaker",
+        "class": "http://ekaw#Invited_Speaker",
+        "source": "ekaw",
+        "outgoing": [
+          "Invited_Speaker -[authorOf]-> Document",
+          "Invited_Speaker -[organises]-> Event"
+        ],
+        "incoming": [
+          "Document -[writtenBy]-> Invited_Speaker",
+          "Event -[organisedBy]-> Invited_Speaker",
+          "Camera_Ready_Paper -[writtenBy]-> Invited_Speaker"
+        ],
+        "values": []
+      },
+      {
+        "label": "Invited_speaker",
+        "class": "http://conference#Invited_speaker",
+        "source": "conference",
+        "outgoing": [
+          "Invited_speaker -[contributes]-> Conference_document"
+        ],
+        "incoming": [
+          "Conference_document -[has_authors]-> Invited_speaker"
+        ],
+        "values": [
+          [
+            "http://conference#Invited_speaker",
+            "http://conference#has_an_email",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://conference#Invited_speaker",
+            "http://conference#has_the_last_name",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://conference#Invited_speaker",
+            "http://conference#has_gender",
+            null
+          ],
+          [
+            "http://conference#Invited_speaker",
+            "http://conference#has_the_first_name",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "label": "Presenter",
+        "class": "http://edas#Presenter",
+        "source": "edas",
+        "outgoing": [
+          "Presenter -[hasRelatedPaper]-> Paper"
+        ],
+        "incoming": [
+          "Paper -[isWrittenBy]-> Presenter"
+        ],
+        "values": []
+      },
+      {
+        "label": "Document",
+        "class": "http://ekaw#Document",
+        "source": "ekaw",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "label": "Event",
+        "class": "http://ekaw#Event",
+        "source": "ekaw",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "label": "Camera_Ready_Paper",
+        "class": "http://ekaw#Camera_Ready_Paper",
+        "source": "ekaw",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "label": "Conference_document",
+        "class": "http://conference#Conference_document",
+        "source": "conference",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://conference#Conference_document",
+            "http://conference#has_a_date_of_issue",
+            "http://www.w3.org/2001/XMLSchema#date"
+          ]
+        ]
+      },
+      {
+        "label": "Paper",
+        "class": "http://edas#Paper",
+        "source": "edas",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      }
+    ],
+    "summarize_contextual_class_paths": [
+      {
+        "class": "http://ekaw#Invited_Speaker",
+        "source": "ekaw",
+        "label": "Invited_Speaker",
+        "outgoing": [],
+        "incoming": [],
+        "values": [],
+        "answers_question": true
+      },
+      {
+        "class": "http://conference#Invited_speaker",
+        "source": "conference",
+        "label": "Invited_speaker",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://conference#Invited_speaker",
+            "http://conference#has_an_email",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://conference#Invited_speaker",
+            "http://conference#has_the_last_name",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://conference#Invited_speaker",
+            "http://conference#has_gender",
+            null
+          ],
+          [
+            "http://conference#Invited_speaker",
+            "http://conference#has_the_first_name",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ],
+        "answers_question": true
+      },
+      {
+        "class": "http://edas#Presenter",
+        "source": "edas",
+        "label": "Presenter",
+        "outgoing": [],
+        "incoming": [],
+        "values": [],
+        "answers_question": true
+      }
+    ],
+    "selected_class_paths": [
+      {
+        "class": "http://ekaw#Invited_Speaker",
+        "source": "ekaw",
+        "label": "Invited_Speaker",
+        "outgoing": [],
+        "incoming": [],
+        "values": [],
+        "answers_question": true,
+        "complete_answer_branch": true,
+        "source_complete_answer_branch": true
+      },
+      {
+        "class": "http://conference#Invited_speaker",
+        "source": "conference",
+        "label": "Invited_speaker",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://conference#Invited_speaker",
+            "http://conference#has_an_email",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://conference#Invited_speaker",
+            "http://conference#has_the_last_name",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://conference#Invited_speaker",
+            "http://conference#has_gender",
+            null
+          ],
+          [
+            "http://conference#Invited_speaker",
+            "http://conference#has_the_first_name",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ],
+        "answers_question": true,
+        "complete_answer_branch": true,
+        "source_complete_answer_branch": true
+      }
+    ],
+    "validated_class_paths": [
+      {
+        "class": "http://ekaw#Invited_Speaker",
+        "source": "ekaw",
+        "label": "Invited_Speaker",
+        "outgoing": [],
+        "incoming": [],
+        "values": [],
+        "answers_question": true,
+        "complete_answer_branch": true,
+        "source_complete_answer_branch": true
+      },
+      {
+        "class": "http://conference#Invited_speaker",
+        "source": "conference",
+        "label": "Invited_speaker",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://conference#Invited_speaker",
+            "http://conference#has_an_email",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://conference#Invited_speaker",
+            "http://conference#has_the_last_name",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://conference#Invited_speaker",
+            "http://conference#has_gender",
+            null
+          ],
+          [
+            "http://conference#Invited_speaker",
+            "http://conference#has_the_first_name",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ],
+        "answers_question": true,
+        "complete_answer_branch": true,
+        "source_complete_answer_branch": true
+      },
+      {
+        "class": "http://edas#Presenter",
+        "source": "edas",
+        "label": "Presenter",
+        "outgoing": [],
+        "incoming": [],
+        "values": [],
+        "answers_question": true,
+        "complete_answer_branch": false,
+        "source_complete_answer_branch": false
+      }
+    ],
+    "path_scores": [
+      {
+        "source": "ekaw",
+        "chain": "",
+        "full": 0.7924364304310932,
+        "classes": 0.7916650219250427,
+        "relations": 0.7916650219250427,
+        "total": 0.7920507261780679,
+        "complete": true,
+        "kept": true,
+        "reason": "at or above tier threshold"
+      },
+      {
+        "source": "conference",
+        "chain": "",
+        "full": 0.6487712109731674,
+        "classes": 0.7924364304310932,
+        "relations": 0.41457821154592084,
+        "total": 0.6450321769250957,
+        "complete": true,
+        "kept": true,
+        "reason": "at or above tier threshold"
+      },
+      {
+        "source": "edas",
+        "chain": "",
+        "full": 0.5213190055361677,
+        "classes": 0.5213706675654005,
+        "relations": 0.5213706675654005,
+        "total": 0.5213448365507841,
+        "complete": false,
+        "kept": true,
+        "reason": "at or above tier threshold"
+      }
+    ],
+    "source_scores": {
+      "ekaw": 0.7920507261780679,
+      "conference": 0.6450321769250957
+    },
+    "provider_plan": [],
+    "cut_sources": [
+      "edas"
+    ],
+    "alignment": [
+      "<http://conference#Invited_speaker> = <http://ekaw#Invited_Speaker>"
+    ],
+    "query": "PREFIX conference: <http://conference#>\nPREFIX ekaw: <http://ekaw#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nSELECT DISTINCT ?invited_speaker WHERE { { SERVICE <http://192.168.100.45:3030/ekaw/sparql> { ?invited_speaker a ekaw:Invited_Speaker . } } UNION { SERVICE <http://192.168.100.45:3030/conference/sparql> { ?invited_speaker a conference:Invited_speaker . } } }",
+    "token_usage": {
+      "by_agent": [
+        {
+          "agent": "agent4_match_relevance",
+          "provider": "vercel",
+          "model": "meta/muse-spark-1.3",
+          "calls": 4,
+          "prompt_tokens": 3599,
+          "completion_tokens": 6509,
+          "total_tokens": 10108,
+          "max_prompt_tokens": 942,
+          "avg_prompt_tokens": 900,
+          "calls_without_usage": 0
+        },
+        {
+          "agent": "agent6_path_filter",
+          "provider": "vercel",
+          "model": "meta/muse-spark-1.3",
+          "calls": 3,
+          "prompt_tokens": 3455,
+          "completion_tokens": 4522,
+          "total_tokens": 7977,
+          "max_prompt_tokens": 1179,
+          "avg_prompt_tokens": 1152,
+          "calls_without_usage": 0
+        },
+        {
+          "agent": "agent7_sparql_generator",
+          "provider": "vercel",
+          "model": "meta/muse-spark-1.3",
+          "calls": 1,
+          "prompt_tokens": 3001,
+          "completion_tokens": 1150,
+          "total_tokens": 4151,
+          "max_prompt_tokens": 3001,
+          "avg_prompt_tokens": 3001,
+          "calls_without_usage": 0
+        },
+        {
+          "agent": "agent1_extractor",
+          "provider": "vercel",
+          "model": "meta/muse-spark-1.3",
+          "calls": 1,
+          "prompt_tokens": 1187,
+          "completion_tokens": 548,
+          "total_tokens": 1735,
+          "max_prompt_tokens": 1187,
+          "avg_prompt_tokens": 1187,
+          "calls_without_usage": 0
+        },
+        {
+          "agent": "agent8_source_selector",
+          "provider": "vercel",
+          "model": "meta/muse-spark-1.3",
+          "calls": 1,
+          "prompt_tokens": 1055,
+          "completion_tokens": 581,
+          "total_tokens": 1636,
+          "max_prompt_tokens": 1055,
+          "avg_prompt_tokens": 1055,
+          "calls_without_usage": 0
+        }
+      ],
+      "totals": {
+        "calls": 10,
+        "prompt_tokens": 12297,
+        "completion_tokens": 13310,
+        "total_tokens": 25607
+      }
+    }
+  },
+  "elapsed_seconds": 63.801,
+  "finished_at": "2026-09-12T00:46:05.697351+00:00"
+}

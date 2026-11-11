@@ -1,0 +1,24 @@
+#question: Who are the paper presenters?
+# CQA: presenter
+
+# federation: UNION of complete alternative answers from each source
+
+SELECT DISTINCT ?s
+WHERE {
+  {
+    # source: conference
+    SERVICE <http://192.168.100.44:3030/conference/sparql> {
+      ?s <http://conference#gives_presentations> ?conference_o3.
+      ?conference_o3 <http://conference#has_an_abstract> ?conference_o2 .
+      ?conference_o4 <http://conference#has_an_abstract> ?conference_o2 .
+      ?conference_o4 a <http://conference#Written_contribution> .
+    }
+  }
+  UNION
+  {
+    # source: edas
+    SERVICE <http://192.168.100.44:3030/edas/sparql> {
+      ?s a <http://edas#Presenter> .
+    }
+  }
+}

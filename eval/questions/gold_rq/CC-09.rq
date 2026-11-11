@@ -1,0 +1,28 @@
+#List all events
+
+PREFIX confof: <http://confOf#>
+PREFIX edas: <http://edas#>
+PREFIX ekaw: <http://ekaw#>
+
+SELECT
+DISTINCT ?event
+WHERE {
+    {
+
+        SERVICE <http://192.168.100.44:3030/confof/sparql> {
+            ?event a confof:Event .
+        }
+    }
+    UNION {
+
+        SERVICE <http://192.168.100.44:3030/edas/sparql> {
+            ?event a edas:ConferenceEvent .
+        }
+    }
+    UNION {
+
+        SERVICE <http://192.168.100.44:3030/ekaw/sparql> {
+            ?event a ekaw:Event .
+        }
+    }
+}

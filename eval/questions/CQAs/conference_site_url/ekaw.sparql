@@ -1,0 +1,7 @@
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT distinct ?s WHERE {  
+?o2 a <http://ekaw#Web_Site>.
+?o2 rdfs:label ?s.
+filter(regex(?s,"^http"))
+ }

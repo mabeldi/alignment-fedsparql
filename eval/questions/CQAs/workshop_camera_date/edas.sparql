@@ -1,0 +1,8 @@
+PREFIX :<http://edas#>
+
+SELECT distinct ?s ?o WHERE {  
+?s a :Workshop .
+?s :hasCall ?o2 .
+?o2 a :CallForPapers.
+?o2 :hasSubmissionDeadline ?o .
+ }

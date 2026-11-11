@@ -1,0 +1,38 @@
+{
+  "format_version": 1,
+  "question": "Which papers were withdrawn?",
+  "query_file": "run_3.rq",
+  "query_sha256": "9720ca0e9174cfe3f310bde73b6fa1c6458a3839c21d432c90cfc6ed17ce1999",
+  "started_at": "2026-09-12T19:56:28.193153+00:00",
+  "status": "success",
+  "query_kind": "generated",
+  "run": 3,
+  "generation_metadata_file": "run_3.json",
+  "coordinator_endpoint": "http://192.168.100.45:3030/edas/sparql",
+  "variables": [
+    "withdrawnpaper"
+  ],
+  "result_count": 3,
+  "bindings": [
+    {
+      "withdrawnpaper": {
+        "type": "uri",
+        "value": "http://edas#evalWithdrawnPaper1"
+      }
+    },
+    {
+      "withdrawnpaper": {
+        "type": "uri",
+        "value": "http://edas#evalWithdrawnPaper2"
+      }
+    },
+    {
+      "withdrawnpaper": {
+        "type": "uri",
+        "value": "http://edas#evalWithdrawnPaper3"
+      }
+    }
+  ],
+  "elapsed_seconds": 0.022,
+  "finished_at": "2026-09-12T19:56:28.214308+00:00"
+}

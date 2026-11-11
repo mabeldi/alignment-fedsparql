@@ -1,0 +1,28 @@
+
+PREFIX confof: <http://confOf#>
+PREFIX edas: <http://edas#>
+PREFIX ekaw: <http://ekaw#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT
+DISTINCT ?conferencedinner
+WHERE {
+    {
+
+        SERVICE <http://192.168.100.45:3030/edas/sparql> {
+            ?conferencedinner a edas:ConferenceDinner .
+        }
+    }
+    UNION {
+
+        SERVICE <http://192.168.100.45:3030/confof/sparql> {
+            ?conferencedinner a confof:Banquet .
+        }
+    }
+    UNION {
+
+        SERVICE <http://192.168.100.45:3030/ekaw/sparql> {
+            ?conferencedinner a ekaw:Conference_Banquet .
+        }
+    }
+}

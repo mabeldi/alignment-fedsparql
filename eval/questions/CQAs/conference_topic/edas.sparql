@@ -1,0 +1,4 @@
+SELECT distinct ?s ?o WHERE {  
+?s <http://edas#hasTopic> ?o . 
+?s a <http://edas#Conference> .
+ }

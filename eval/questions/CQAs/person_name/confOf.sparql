@@ -1,0 +1,5 @@
+SELECT distinct ?s ?o WHERE {  
+?s <http://confOf#hasFirstName> ?o1 . 
+?s <http://confOf#hasSurname> ?o2 .
+  BIND( concat(STR(?o1)," ", STR(?o2)) as ?o)
+ }

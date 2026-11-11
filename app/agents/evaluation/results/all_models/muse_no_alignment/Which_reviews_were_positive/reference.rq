@@ -1,0 +1,13 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ekaw: <http://ekaw#>
+
+# question: Which reviews were positive?
+# Gold source: DS-02; only EKAW declares review polarity.
+
+SELECT DISTINCT ?review
+WHERE {
+  # source: ekaw
+  SERVICE <http://192.168.100.45:3030/ekaw/sparql> {
+    ?review rdf:type ekaw:Positive_Review .
+  }
+}

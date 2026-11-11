@@ -1,0 +1,9 @@
+#Who is registered as a user of the submission system?
+
+PREFIX cmt: <http://cmt#>
+
+SELECT DISTINCT ?user WHERE {
+    SERVICE <http://192.168.100.44:3030/cmt/sparql> {
+        ?user a cmt:User .
+    }
+}

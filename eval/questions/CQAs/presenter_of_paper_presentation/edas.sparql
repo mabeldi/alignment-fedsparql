@@ -1,0 +1,10 @@
+PREFIX :<http://edas#>
+
+SELECT distinct ?s ?o WHERE {  
+?o a :PaperPresentation.
+?o3 :relatesTo ?o .
+?o3 a :SlideSet .
+?o3 :relatesTo ?s .
+?s a :Presenter .
+
+}

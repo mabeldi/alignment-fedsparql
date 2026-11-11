@@ -1,0 +1,84 @@
+{
+  "variables": [
+    "conference",
+    "location",
+    "deadline"
+  ],
+  "bindings": [
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://conference-instances#conference-104081973"
+      },
+      "location": {
+        "type": "literal",
+        "value": "4769 Castalia"
+      },
+      "deadline": {
+        "type": "literal",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "value": "2012-10-11T18:00:00"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://conference-instances#conference1428971814"
+      },
+      "location": {
+        "type": "literal",
+        "value": "Almohad Caliphate"
+      },
+      "deadline": {
+        "type": "literal",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "value": "2008-03-29T06:00:00"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://conference-instances#conference943277065"
+      },
+      "location": {
+        "type": "literal",
+        "value": "Bernese Alps"
+      },
+      "deadline": {
+        "type": "literal",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "value": "2005-05-04T20:00:00"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://conference-instances#conference-1409861683"
+      },
+      "location": {
+        "type": "literal",
+        "value": "Cottian Alps"
+      },
+      "deadline": {
+        "type": "literal",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "value": "2011-09-15T04:00:00"
+      }
+    },
+    {
+      "conference": {
+        "type": "uri",
+        "value": "http://conference-instances#conference69622803"
+      },
+      "location": {
+        "type": "literal",
+        "value": "Cape Colony"
+      },
+      "deadline": {
+        "type": "literal",
+        "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "value": "1990-11-01T18:00:00"
+      }
+    }
+  ]
+}

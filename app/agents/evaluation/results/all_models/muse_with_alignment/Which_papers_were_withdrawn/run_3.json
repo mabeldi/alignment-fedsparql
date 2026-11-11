@@ -1,0 +1,2616 @@
+{
+  "metadata_correction": {
+    "field": "response.token_usage.by_agent[*].model",
+    "previous_value": "openai/gpt-5.6-luna",
+    "corrected_value": "meta/muse-spark-1.3",
+    "basis": "User confirmed that Muse generated this run and the original model metadata was incorrect."
+  },
+  "question": "Which papers were withdrawn?",
+  "run": 3,
+  "status": "generated",
+  "endpoint": "http://127.0.0.1:8999/query",
+  "parallel_requests": 1,
+  "server_diagnostics_note": "Server token counters and debug files are shared across requests; do not use them for per-run measurements during concurrent requests.",
+  "started_at": "2026-09-11T00:27:17.767132+00:00",
+  "http_status": 200,
+  "response": {
+    "question": "Which papers were withdrawn?",
+    "alignments_enabled": true,
+    "extracted": {
+      "classes": [
+        "Withdrawn Paper"
+      ],
+      "objectProperties": [],
+      "dataTypeProperties": [],
+      "literals": []
+    },
+    "matches": {
+      "Withdrawn Paper": [
+        {
+          "label": "WithdrawnPaper",
+          "uri": "http://edas#WithdrawnPaper",
+          "type": "Class",
+          "name": "WithdrawnPaper",
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#WithdrawnPaper",
+            "name": "WithdrawnPaper",
+            "label": "WithdrawnPaper",
+            "source": "edas"
+          },
+          "score": 0.976385
+        },
+        {
+          "label": "RejectedPaper",
+          "uri": "http://edas#RejectedPaper",
+          "type": "Class",
+          "name": "RejectedPaper",
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#RejectedPaper",
+            "name": "RejectedPaper",
+            "label": "RejectedPaper",
+            "source": "edas"
+          },
+          "score": 0.82934517
+        },
+        {
+          "label": "Rejected_Paper",
+          "uri": "http://ekaw#Rejected_Paper",
+          "type": "Class",
+          "name": "Rejected_Paper",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Rejected_Paper",
+            "name": "Rejected_Paper",
+            "label": "Rejected_Paper",
+            "source": "ekaw"
+          },
+          "score": 0.82096314
+        },
+        {
+          "label": "Submitted_Paper",
+          "uri": "http://ekaw#Submitted_Paper",
+          "type": "Class",
+          "name": "Submitted_Paper",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Submitted_Paper",
+            "name": "Submitted_Paper",
+            "label": "Submitted_Paper",
+            "source": "ekaw"
+          },
+          "score": 0.77481544
+        },
+        {
+          "label": "rejectPaper",
+          "uri": "http://cmt#rejectPaper",
+          "type": "ObjectProperty",
+          "name": "rejectPaper",
+          "payload": {
+            "type": "ObjectProperty",
+            "name": "rejectPaper",
+            "uri": "http://cmt#rejectPaper",
+            "label": "rejectPaper",
+            "domain": "Administrator",
+            "range": "Paper",
+            "domainUri": "http://cmt#Administrator",
+            "rangeUri": "http://cmt#Paper",
+            "domains": [
+              "Administrator"
+            ],
+            "ranges": [
+              "Paper"
+            ],
+            "domainUris": [
+              "http://cmt#Administrator"
+            ],
+            "rangeUris": [
+              "http://cmt#Paper"
+            ],
+            "source": "cmt"
+          },
+          "score": 0.77391046,
+          "selected_ends": {
+            "domain": [
+              "http://cmt#Administrator"
+            ],
+            "range": [
+              "http://cmt#Paper"
+            ]
+          }
+        },
+        {
+          "label": "AcceptedPaper",
+          "uri": "http://edas#AcceptedPaper",
+          "type": "Class",
+          "name": "AcceptedPaper",
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#AcceptedPaper",
+            "name": "AcceptedPaper",
+            "label": "AcceptedPaper",
+            "source": "edas"
+          },
+          "score": 0.7559991
+        },
+        {
+          "label": "Accepted_Paper",
+          "uri": "http://ekaw#Accepted_Paper",
+          "type": "Class",
+          "name": "Accepted_Paper",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Accepted_Paper",
+            "name": "Accepted_Paper",
+            "label": "Accepted_Paper",
+            "source": "ekaw"
+          },
+          "score": 0.7520186
+        },
+        {
+          "label": "PublishedPaper",
+          "uri": "http://edas#PublishedPaper",
+          "type": "Class",
+          "name": "PublishedPaper",
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#PublishedPaper",
+            "name": "PublishedPaper",
+            "label": "PublishedPaper",
+            "source": "edas"
+          },
+          "score": 0.752005
+        },
+        {
+          "label": "acceptPaper",
+          "uri": "http://cmt#acceptPaper",
+          "type": "ObjectProperty",
+          "name": "acceptPaper",
+          "payload": {
+            "type": "ObjectProperty",
+            "name": "acceptPaper",
+            "uri": "http://cmt#acceptPaper",
+            "label": "acceptPaper",
+            "domain": "Administrator",
+            "range": "Paper",
+            "domainUri": "http://cmt#Administrator",
+            "rangeUri": "http://cmt#Paper",
+            "domains": [
+              "Administrator"
+            ],
+            "ranges": [
+              "Paper"
+            ],
+            "domainUris": [
+              "http://cmt#Administrator"
+            ],
+            "rangeUris": [
+              "http://cmt#Paper"
+            ],
+            "source": "cmt"
+          },
+          "score": 0.74180454
+        },
+        {
+          "label": "submitPaper",
+          "uri": "http://cmt#submitPaper",
+          "type": "ObjectProperty",
+          "name": "submitPaper",
+          "payload": {
+            "type": "ObjectProperty",
+            "name": "submitPaper",
+            "uri": "http://cmt#submitPaper",
+            "label": "submitPaper",
+            "domain": "Author",
+            "range": "Paper",
+            "domainUri": "http://cmt#Author",
+            "rangeUri": "http://cmt#Paper",
+            "domains": [
+              "Author"
+            ],
+            "ranges": [
+              "Paper"
+            ],
+            "domainUris": [
+              "http://cmt#Author"
+            ],
+            "rangeUris": [
+              "http://cmt#Paper"
+            ],
+            "source": "cmt"
+          },
+          "score": 0.7319639
+        },
+        {
+          "label": "PendingPaper",
+          "uri": "http://edas#PendingPaper",
+          "type": "Class",
+          "name": "PendingPaper",
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#PendingPaper",
+            "name": "PendingPaper",
+            "label": "PendingPaper",
+            "source": "edas"
+          },
+          "score": 0.7282953
+        },
+        {
+          "label": "Evaluated_Paper",
+          "uri": "http://ekaw#Evaluated_Paper",
+          "type": "Class",
+          "name": "Evaluated_Paper",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Evaluated_Paper",
+            "name": "Evaluated_Paper",
+            "label": "Evaluated_Paper",
+            "source": "ekaw"
+          },
+          "score": 0.72772336
+        },
+        {
+          "label": "reviewOfPaper",
+          "uri": "http://ekaw#reviewOfPaper",
+          "type": "ObjectProperty",
+          "name": "reviewOfPaper",
+          "payload": {
+            "type": "ObjectProperty",
+            "name": "reviewOfPaper",
+            "uri": "http://ekaw#reviewOfPaper",
+            "label": "reviewOfPaper",
+            "domain": "Review",
+            "range": "Paper",
+            "domainUri": "http://ekaw#Review",
+            "rangeUri": "http://ekaw#Paper",
+            "domains": [
+              "Review"
+            ],
+            "ranges": [
+              "Paper"
+            ],
+            "domainUris": [
+              "http://ekaw#Review"
+            ],
+            "rangeUris": [
+              "http://ekaw#Paper"
+            ],
+            "source": "ekaw"
+          },
+          "score": 0.7157293
+        },
+        {
+          "label": "reviewerOfPaper",
+          "uri": "http://ekaw#reviewerOfPaper",
+          "type": "ObjectProperty",
+          "name": "reviewerOfPaper",
+          "payload": {
+            "type": "ObjectProperty",
+            "name": "reviewerOfPaper",
+            "uri": "http://ekaw#reviewerOfPaper",
+            "label": "reviewerOfPaper",
+            "domain": "Possible_Reviewer",
+            "range": "Paper",
+            "domainUri": "http://ekaw#Possible_Reviewer",
+            "rangeUri": "http://ekaw#Paper",
+            "domains": [
+              "Possible_Reviewer"
+            ],
+            "ranges": [
+              "Paper"
+            ],
+            "domainUris": [
+              "http://ekaw#Possible_Reviewer"
+            ],
+            "rangeUris": [
+              "http://ekaw#Paper"
+            ],
+            "source": "ekaw"
+          },
+          "score": 0.7070349
+        }
+      ]
+    },
+    "context_filtered_matches": {
+      "Withdrawn Paper": [
+        {
+          "label": "WithdrawnPaper",
+          "uri": "http://edas#WithdrawnPaper",
+          "type": "Class",
+          "name": "WithdrawnPaper",
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#WithdrawnPaper",
+            "name": "WithdrawnPaper",
+            "label": "WithdrawnPaper",
+            "source": "edas"
+          },
+          "score": 0.976385
+        },
+        {
+          "label": "Rejected_Paper",
+          "uri": "http://ekaw#Rejected_Paper",
+          "type": "Class",
+          "name": "Rejected_Paper",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Rejected_Paper",
+            "name": "Rejected_Paper",
+            "label": "Rejected_Paper",
+            "source": "ekaw"
+          },
+          "score": 0.82096314
+        },
+        {
+          "label": "rejectPaper",
+          "uri": "http://cmt#rejectPaper",
+          "type": "ObjectProperty",
+          "name": "rejectPaper",
+          "payload": {
+            "type": "ObjectProperty",
+            "name": "rejectPaper",
+            "uri": "http://cmt#rejectPaper",
+            "label": "rejectPaper",
+            "domain": "Administrator",
+            "range": "Paper",
+            "domainUri": "http://cmt#Administrator",
+            "rangeUri": "http://cmt#Paper",
+            "domains": [
+              "Administrator"
+            ],
+            "ranges": [
+              "Paper"
+            ],
+            "domainUris": [
+              "http://cmt#Administrator"
+            ],
+            "rangeUris": [
+              "http://cmt#Paper"
+            ],
+            "source": "cmt"
+          },
+          "score": 0.77391046,
+          "selected_ends": {
+            "domain": [
+              "http://cmt#Administrator"
+            ],
+            "range": [
+              "http://cmt#Paper"
+            ]
+          }
+        },
+        {
+          "label": "Administrator",
+          "uri": "http://cmt#Administrator",
+          "type": "Class",
+          "score": 0.0,
+          "payload": {
+            "type": "Class",
+            "uri": "http://cmt#Administrator",
+            "label": "Administrator",
+            "source": "cmt"
+          },
+          "derived_from": "http://cmt#rejectPaper"
+        },
+        {
+          "label": "Paper",
+          "uri": "http://cmt#Paper",
+          "type": "Class",
+          "score": 0.0,
+          "payload": {
+            "type": "Class",
+            "uri": "http://cmt#Paper",
+            "label": "Paper",
+            "source": "cmt"
+          },
+          "derived_from": "http://cmt#rejectPaper"
+        },
+        {
+          "label": "Rejected_contribution",
+          "uri": "http://conference#Rejected_contribution",
+          "type": "Class",
+          "score": 0.0,
+          "payload": {
+            "type": "Class",
+            "uri": "http://conference#Rejected_contribution",
+            "label": "Rejected_contribution",
+            "source": "conference"
+          },
+          "expanded_from": "http://ekaw#Rejected_Paper",
+          "via_alignment": "conference:Rejected_contribution = ekaw:Rejected_Paper"
+        },
+        {
+          "label": "RejectedPaper",
+          "uri": "http://edas#RejectedPaper",
+          "type": "Class",
+          "score": 0.0,
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#RejectedPaper",
+            "label": "RejectedPaper",
+            "source": "edas"
+          },
+          "expanded_from": "http://ekaw#Rejected_Paper",
+          "via_alignment": "edas:RejectedPaper = ekaw:Rejected_Paper"
+        },
+        {
+          "label": "Administrator",
+          "uri": "http://confOf#Administrator",
+          "type": "Class",
+          "score": 0.0,
+          "payload": {
+            "type": "Class",
+            "uri": "http://confOf#Administrator",
+            "label": "Administrator",
+            "source": "confof"
+          },
+          "expanded_from": "http://cmt#Administrator",
+          "via_alignment": "cmt:Administrator = confof:Administrator"
+        },
+        {
+          "label": "Contribution",
+          "uri": "http://confOf#Contribution",
+          "type": "Class",
+          "score": 0.0,
+          "payload": {
+            "type": "Class",
+            "uri": "http://confOf#Contribution",
+            "label": "Contribution",
+            "source": "confof"
+          },
+          "expanded_from": "http://cmt#Paper",
+          "via_alignment": "cmt:Paper = confof:Contribution"
+        },
+        {
+          "label": "Paper",
+          "uri": "http://edas#Paper",
+          "type": "Class",
+          "score": 0.0,
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#Paper",
+            "label": "Paper",
+            "source": "edas"
+          },
+          "expanded_from": "http://cmt#Paper",
+          "via_alignment": "cmt:Paper = edas:Paper"
+        },
+        {
+          "label": "Paper",
+          "uri": "http://ekaw#Paper",
+          "type": "Class",
+          "score": 0.0,
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Paper",
+            "label": "Paper",
+            "source": "ekaw"
+          },
+          "expanded_from": "http://cmt#Paper",
+          "via_alignment": "cmt:Paper = ekaw:Paper"
+        }
+      ]
+    },
+    "context_removed_matches": {
+      "Withdrawn Paper": [
+        {
+          "label": "RejectedPaper",
+          "uri": "http://edas#RejectedPaper",
+          "type": "Class",
+          "name": "RejectedPaper",
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#RejectedPaper",
+            "name": "RejectedPaper",
+            "label": "RejectedPaper",
+            "source": "edas"
+          },
+          "score": 0.82934517
+        },
+        {
+          "label": "Submitted_Paper",
+          "uri": "http://ekaw#Submitted_Paper",
+          "type": "Class",
+          "name": "Submitted_Paper",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Submitted_Paper",
+            "name": "Submitted_Paper",
+            "label": "Submitted_Paper",
+            "source": "ekaw"
+          },
+          "score": 0.77481544
+        },
+        {
+          "label": "AcceptedPaper",
+          "uri": "http://edas#AcceptedPaper",
+          "type": "Class",
+          "name": "AcceptedPaper",
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#AcceptedPaper",
+            "name": "AcceptedPaper",
+            "label": "AcceptedPaper",
+            "source": "edas"
+          },
+          "score": 0.7559991
+        },
+        {
+          "label": "Accepted_Paper",
+          "uri": "http://ekaw#Accepted_Paper",
+          "type": "Class",
+          "name": "Accepted_Paper",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Accepted_Paper",
+            "name": "Accepted_Paper",
+            "label": "Accepted_Paper",
+            "source": "ekaw"
+          },
+          "score": 0.7520186
+        },
+        {
+          "label": "PublishedPaper",
+          "uri": "http://edas#PublishedPaper",
+          "type": "Class",
+          "name": "PublishedPaper",
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#PublishedPaper",
+            "name": "PublishedPaper",
+            "label": "PublishedPaper",
+            "source": "edas"
+          },
+          "score": 0.752005
+        },
+        {
+          "label": "acceptPaper",
+          "uri": "http://cmt#acceptPaper",
+          "type": "ObjectProperty",
+          "name": "acceptPaper",
+          "payload": {
+            "type": "ObjectProperty",
+            "name": "acceptPaper",
+            "uri": "http://cmt#acceptPaper",
+            "label": "acceptPaper",
+            "domain": "Administrator",
+            "range": "Paper",
+            "domainUri": "http://cmt#Administrator",
+            "rangeUri": "http://cmt#Paper",
+            "domains": [
+              "Administrator"
+            ],
+            "ranges": [
+              "Paper"
+            ],
+            "domainUris": [
+              "http://cmt#Administrator"
+            ],
+            "rangeUris": [
+              "http://cmt#Paper"
+            ],
+            "source": "cmt"
+          },
+          "score": 0.74180454
+        },
+        {
+          "label": "submitPaper",
+          "uri": "http://cmt#submitPaper",
+          "type": "ObjectProperty",
+          "name": "submitPaper",
+          "payload": {
+            "type": "ObjectProperty",
+            "name": "submitPaper",
+            "uri": "http://cmt#submitPaper",
+            "label": "submitPaper",
+            "domain": "Author",
+            "range": "Paper",
+            "domainUri": "http://cmt#Author",
+            "rangeUri": "http://cmt#Paper",
+            "domains": [
+              "Author"
+            ],
+            "ranges": [
+              "Paper"
+            ],
+            "domainUris": [
+              "http://cmt#Author"
+            ],
+            "rangeUris": [
+              "http://cmt#Paper"
+            ],
+            "source": "cmt"
+          },
+          "score": 0.7319639
+        },
+        {
+          "label": "PendingPaper",
+          "uri": "http://edas#PendingPaper",
+          "type": "Class",
+          "name": "PendingPaper",
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#PendingPaper",
+            "name": "PendingPaper",
+            "label": "PendingPaper",
+            "source": "edas"
+          },
+          "score": 0.7282953
+        },
+        {
+          "label": "Evaluated_Paper",
+          "uri": "http://ekaw#Evaluated_Paper",
+          "type": "Class",
+          "name": "Evaluated_Paper",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Evaluated_Paper",
+            "name": "Evaluated_Paper",
+            "label": "Evaluated_Paper",
+            "source": "ekaw"
+          },
+          "score": 0.72772336
+        },
+        {
+          "label": "reviewOfPaper",
+          "uri": "http://ekaw#reviewOfPaper",
+          "type": "ObjectProperty",
+          "name": "reviewOfPaper",
+          "payload": {
+            "type": "ObjectProperty",
+            "name": "reviewOfPaper",
+            "uri": "http://ekaw#reviewOfPaper",
+            "label": "reviewOfPaper",
+            "domain": "Review",
+            "range": "Paper",
+            "domainUri": "http://ekaw#Review",
+            "rangeUri": "http://ekaw#Paper",
+            "domains": [
+              "Review"
+            ],
+            "ranges": [
+              "Paper"
+            ],
+            "domainUris": [
+              "http://ekaw#Review"
+            ],
+            "rangeUris": [
+              "http://ekaw#Paper"
+            ],
+            "source": "ekaw"
+          },
+          "score": 0.7157293
+        },
+        {
+          "label": "reviewerOfPaper",
+          "uri": "http://ekaw#reviewerOfPaper",
+          "type": "ObjectProperty",
+          "name": "reviewerOfPaper",
+          "payload": {
+            "type": "ObjectProperty",
+            "name": "reviewerOfPaper",
+            "uri": "http://ekaw#reviewerOfPaper",
+            "label": "reviewerOfPaper",
+            "domain": "Possible_Reviewer",
+            "range": "Paper",
+            "domainUri": "http://ekaw#Possible_Reviewer",
+            "rangeUri": "http://ekaw#Paper",
+            "domains": [
+              "Possible_Reviewer"
+            ],
+            "ranges": [
+              "Paper"
+            ],
+            "domainUris": [
+              "http://ekaw#Possible_Reviewer"
+            ],
+            "rangeUris": [
+              "http://ekaw#Paper"
+            ],
+            "source": "ekaw"
+          },
+          "score": 0.7070349
+        }
+      ]
+    },
+    "top_sources": {
+      "edas": 0.976385,
+      "ekaw": 0.82096314,
+      "cmt": 0.0
+    },
+    "base_source": "edas",
+    "class_paths": [
+      {
+        "class": "http://edas#WithdrawnPaper",
+        "source": "edas",
+        "outgoing": [
+          [
+            [
+              "http://edas#WithdrawnPaper",
+              "http://edas#isWrittenBy",
+              "http://edas#Author"
+            ],
+            [
+              "http://edas#Author",
+              "http://edas#hasRelatedPaper",
+              "http://edas#RejectedPaper"
+            ]
+          ],
+          [
+            [
+              "http://edas#WithdrawnPaper",
+              "http://edas#isWrittenBy",
+              "http://edas#Author"
+            ],
+            [
+              "http://edas#RejectedPaper",
+              "http://edas#isWrittenBy",
+              "http://edas#Author"
+            ]
+          ],
+          [
+            [
+              "http://edas#WithdrawnPaper",
+              "http://edas#hasTopic",
+              "http://edas#Topic"
+            ],
+            [
+              "http://edas#Topic",
+              "http://edas#isTopicOf",
+              "http://edas#RejectedPaper"
+            ]
+          ],
+          [
+            [
+              "http://edas#WithdrawnPaper",
+              "http://edas#hasTopic",
+              "http://edas#Topic"
+            ],
+            [
+              "http://edas#RejectedPaper",
+              "http://edas#hasTopic",
+              "http://edas#Topic"
+            ]
+          ],
+          [
+            [
+              "http://edas#WithdrawnPaper",
+              "http://edas#isReviewedBy",
+              "http://edas#SessionChair"
+            ],
+            [
+              "http://edas#SessionChair",
+              "http://edas#isReviewing",
+              "http://edas#RejectedPaper"
+            ]
+          ],
+          [
+            [
+              "http://edas#WithdrawnPaper",
+              "http://edas#isReviewedBy",
+              "http://edas#SessionChair"
+            ],
+            [
+              "http://edas#SessionChair",
+              "http://edas#hasRelatedDocument",
+              "http://edas#RejectedPaper"
+            ]
+          ],
+          [
+            [
+              "http://edas#WithdrawnPaper",
+              "http://edas#isReviewedBy",
+              "http://edas#SessionChair"
+            ],
+            [
+              "http://edas#RejectedPaper",
+              "http://edas#isReviewedBy",
+              "http://edas#SessionChair"
+            ]
+          ],
+          [
+            [
+              "http://edas#WithdrawnPaper",
+              "http://edas#isReviewedBy",
+              "http://edas#SessionChair"
+            ],
+            [
+              "http://edas#RejectedPaper",
+              "http://edas#relatesTo",
+              "http://edas#SessionChair"
+            ]
+          ],
+          [
+            [
+              "http://edas#WithdrawnPaper",
+              "http://edas#isWrittenBy",
+              "http://edas#Author"
+            ],
+            [
+              "http://edas#Author",
+              "http://edas#hasRelatedPaper",
+              "http://edas#Paper"
+            ]
+          ],
+          [
+            [
+              "http://edas#WithdrawnPaper",
+              "http://edas#isWrittenBy",
+              "http://edas#Author"
+            ],
+            [
+              "http://edas#Paper",
+              "http://edas#isWrittenBy",
+              "http://edas#Author"
+            ]
+          ],
+          [
+            [
+              "http://edas#WithdrawnPaper",
+              "http://edas#hasTopic",
+              "http://edas#Topic"
+            ],
+            [
+              "http://edas#Topic",
+              "http://edas#isTopicOf",
+              "http://edas#Paper"
+            ]
+          ],
+          [
+            [
+              "http://edas#WithdrawnPaper",
+              "http://edas#hasTopic",
+              "http://edas#Topic"
+            ],
+            [
+              "http://edas#Paper",
+              "http://edas#hasTopic",
+              "http://edas#Topic"
+            ]
+          ],
+          [
+            [
+              "http://edas#WithdrawnPaper",
+              "http://edas#isReviewedBy",
+              "http://edas#SessionChair"
+            ],
+            [
+              "http://edas#SessionChair",
+              "http://edas#isReviewing",
+              "http://edas#Paper"
+            ]
+          ],
+          [
+            [
+              "http://edas#WithdrawnPaper",
+              "http://edas#isReviewedBy",
+              "http://edas#SessionChair"
+            ],
+            [
+              "http://edas#SessionChair",
+              "http://edas#hasRelatedDocument",
+              "http://edas#Paper"
+            ]
+          ],
+          [
+            [
+              "http://edas#WithdrawnPaper",
+              "http://edas#isReviewedBy",
+              "http://edas#SessionChair"
+            ],
+            [
+              "http://edas#Paper",
+              "http://edas#isReviewedBy",
+              "http://edas#SessionChair"
+            ]
+          ],
+          [
+            [
+              "http://edas#WithdrawnPaper",
+              "http://edas#isReviewedBy",
+              "http://edas#SessionChair"
+            ],
+            [
+              "http://edas#Paper",
+              "http://edas#relatesTo",
+              "http://edas#SessionChair"
+            ]
+          ]
+        ],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "class": "http://edas#RejectedPaper",
+        "source": "edas",
+        "outgoing": [
+          [
+            [
+              "http://edas#RejectedPaper",
+              "http://edas#isWrittenBy",
+              "http://edas#Author"
+            ],
+            [
+              "http://edas#WithdrawnPaper",
+              "http://edas#isWrittenBy",
+              "http://edas#Author"
+            ]
+          ],
+          [
+            [
+              "http://edas#RejectedPaper",
+              "http://edas#hasTopic",
+              "http://edas#Topic"
+            ],
+            [
+              "http://edas#WithdrawnPaper",
+              "http://edas#hasTopic",
+              "http://edas#Topic"
+            ]
+          ],
+          [
+            [
+              "http://edas#RejectedPaper",
+              "http://edas#isReviewedBy",
+              "http://edas#SessionChair"
+            ],
+            [
+              "http://edas#WithdrawnPaper",
+              "http://edas#isReviewedBy",
+              "http://edas#SessionChair"
+            ]
+          ],
+          [
+            [
+              "http://edas#RejectedPaper",
+              "http://edas#relatesTo",
+              "http://edas#SessionChair"
+            ],
+            [
+              "http://edas#WithdrawnPaper",
+              "http://edas#isReviewedBy",
+              "http://edas#SessionChair"
+            ]
+          ],
+          [
+            [
+              "http://edas#RejectedPaper",
+              "http://edas#relatesTo",
+              "http://edas#AcademicEvent"
+            ],
+            [
+              "http://edas#AcademicEvent",
+              "http://edas#hasRelatedDocument",
+              "http://edas#Paper"
+            ]
+          ],
+          [
+            [
+              "http://edas#RejectedPaper",
+              "http://edas#relatesTo",
+              "http://edas#AcademicEvent"
+            ],
+            [
+              "http://edas#Paper",
+              "http://edas#relatesTo",
+              "http://edas#AcademicEvent"
+            ]
+          ],
+          [
+            [
+              "http://edas#RejectedPaper",
+              "http://edas#relatesTo",
+              "http://edas#Conference"
+            ],
+            [
+              "http://edas#Conference",
+              "http://edas#hasRelatedDocument",
+              "http://edas#Paper"
+            ]
+          ],
+          [
+            [
+              "http://edas#RejectedPaper",
+              "http://edas#relatesTo",
+              "http://edas#Conference"
+            ],
+            [
+              "http://edas#Paper",
+              "http://edas#relatesTo",
+              "http://edas#Conference"
+            ]
+          ],
+          [
+            [
+              "http://edas#RejectedPaper",
+              "http://edas#relatesTo",
+              "http://edas#Person"
+            ],
+            [
+              "http://edas#Person",
+              "http://edas#hasRelatedDocument",
+              "http://edas#Paper"
+            ]
+          ],
+          [
+            [
+              "http://edas#RejectedPaper",
+              "http://edas#relatesTo",
+              "http://edas#Person"
+            ],
+            [
+              "http://edas#Paper",
+              "http://edas#relatesTo",
+              "http://edas#Person"
+            ]
+          ],
+          [
+            [
+              "http://edas#RejectedPaper",
+              "http://edas#relatesTo",
+              "http://edas#ConferenceSession"
+            ],
+            [
+              "http://edas#ConferenceSession",
+              "http://edas#hasRelatedDocument",
+              "http://edas#Paper"
+            ]
+          ],
+          [
+            [
+              "http://edas#RejectedPaper",
+              "http://edas#relatesTo",
+              "http://edas#ConferenceSession"
+            ],
+            [
+              "http://edas#Paper",
+              "http://edas#relatesTo",
+              "http://edas#ConferenceSession"
+            ]
+          ]
+        ],
+        "incoming": [
+          [
+            [
+              "http://edas#Author",
+              "http://edas#hasRelatedPaper",
+              "http://edas#RejectedPaper"
+            ],
+            [
+              "http://edas#WithdrawnPaper",
+              "http://edas#isWrittenBy",
+              "http://edas#Author"
+            ]
+          ],
+          [
+            [
+              "http://edas#Topic",
+              "http://edas#isTopicOf",
+              "http://edas#RejectedPaper"
+            ],
+            [
+              "http://edas#WithdrawnPaper",
+              "http://edas#hasTopic",
+              "http://edas#Topic"
+            ]
+          ],
+          [
+            [
+              "http://edas#SessionChair",
+              "http://edas#isReviewing",
+              "http://edas#RejectedPaper"
+            ],
+            [
+              "http://edas#WithdrawnPaper",
+              "http://edas#isReviewedBy",
+              "http://edas#SessionChair"
+            ]
+          ],
+          [
+            [
+              "http://edas#SessionChair",
+              "http://edas#hasRelatedDocument",
+              "http://edas#RejectedPaper"
+            ],
+            [
+              "http://edas#WithdrawnPaper",
+              "http://edas#isReviewedBy",
+              "http://edas#SessionChair"
+            ]
+          ]
+        ],
+        "values": []
+      },
+      {
+        "class": "http://edas#Paper",
+        "source": "edas",
+        "outgoing": [
+          [
+            [
+              "http://edas#Paper",
+              "http://edas#isWrittenBy",
+              "http://edas#Author"
+            ],
+            [
+              "http://edas#WithdrawnPaper",
+              "http://edas#isWrittenBy",
+              "http://edas#Author"
+            ]
+          ],
+          [
+            [
+              "http://edas#Paper",
+              "http://edas#hasTopic",
+              "http://edas#Topic"
+            ],
+            [
+              "http://edas#WithdrawnPaper",
+              "http://edas#hasTopic",
+              "http://edas#Topic"
+            ]
+          ],
+          [
+            [
+              "http://edas#Paper",
+              "http://edas#isReviewedBy",
+              "http://edas#SessionChair"
+            ],
+            [
+              "http://edas#WithdrawnPaper",
+              "http://edas#isReviewedBy",
+              "http://edas#SessionChair"
+            ]
+          ],
+          [
+            [
+              "http://edas#Paper",
+              "http://edas#relatesTo",
+              "http://edas#SessionChair"
+            ],
+            [
+              "http://edas#WithdrawnPaper",
+              "http://edas#isReviewedBy",
+              "http://edas#SessionChair"
+            ]
+          ],
+          [
+            [
+              "http://edas#Paper",
+              "http://edas#relatesTo",
+              "http://edas#AcademicEvent"
+            ],
+            [
+              "http://edas#RejectedPaper",
+              "http://edas#relatesTo",
+              "http://edas#AcademicEvent"
+            ]
+          ],
+          [
+            [
+              "http://edas#Paper",
+              "http://edas#relatesTo",
+              "http://edas#Conference"
+            ],
+            [
+              "http://edas#RejectedPaper",
+              "http://edas#relatesTo",
+              "http://edas#Conference"
+            ]
+          ],
+          [
+            [
+              "http://edas#Paper",
+              "http://edas#relatesTo",
+              "http://edas#Person"
+            ],
+            [
+              "http://edas#RejectedPaper",
+              "http://edas#relatesTo",
+              "http://edas#Person"
+            ]
+          ],
+          [
+            [
+              "http://edas#Paper",
+              "http://edas#relatesTo",
+              "http://edas#ConferenceSession"
+            ],
+            [
+              "http://edas#RejectedPaper",
+              "http://edas#relatesTo",
+              "http://edas#ConferenceSession"
+            ]
+          ]
+        ],
+        "incoming": [
+          [
+            [
+              "http://edas#Author",
+              "http://edas#hasRelatedPaper",
+              "http://edas#Paper"
+            ],
+            [
+              "http://edas#WithdrawnPaper",
+              "http://edas#isWrittenBy",
+              "http://edas#Author"
+            ]
+          ],
+          [
+            [
+              "http://edas#Topic",
+              "http://edas#isTopicOf",
+              "http://edas#Paper"
+            ],
+            [
+              "http://edas#WithdrawnPaper",
+              "http://edas#hasTopic",
+              "http://edas#Topic"
+            ]
+          ],
+          [
+            [
+              "http://edas#SessionChair",
+              "http://edas#isReviewing",
+              "http://edas#Paper"
+            ],
+            [
+              "http://edas#WithdrawnPaper",
+              "http://edas#isReviewedBy",
+              "http://edas#SessionChair"
+            ]
+          ],
+          [
+            [
+              "http://edas#SessionChair",
+              "http://edas#hasRelatedDocument",
+              "http://edas#Paper"
+            ],
+            [
+              "http://edas#WithdrawnPaper",
+              "http://edas#isReviewedBy",
+              "http://edas#SessionChair"
+            ]
+          ],
+          [
+            [
+              "http://edas#AcademicEvent",
+              "http://edas#hasRelatedDocument",
+              "http://edas#Paper"
+            ],
+            [
+              "http://edas#RejectedPaper",
+              "http://edas#relatesTo",
+              "http://edas#AcademicEvent"
+            ]
+          ],
+          [
+            [
+              "http://edas#Conference",
+              "http://edas#hasRelatedDocument",
+              "http://edas#Paper"
+            ],
+            [
+              "http://edas#RejectedPaper",
+              "http://edas#relatesTo",
+              "http://edas#Conference"
+            ]
+          ],
+          [
+            [
+              "http://edas#Person",
+              "http://edas#hasRelatedDocument",
+              "http://edas#Paper"
+            ],
+            [
+              "http://edas#RejectedPaper",
+              "http://edas#relatesTo",
+              "http://edas#Person"
+            ]
+          ],
+          [
+            [
+              "http://edas#ConferenceSession",
+              "http://edas#hasRelatedDocument",
+              "http://edas#Paper"
+            ],
+            [
+              "http://edas#RejectedPaper",
+              "http://edas#relatesTo",
+              "http://edas#ConferenceSession"
+            ]
+          ]
+        ],
+        "values": []
+      },
+      {
+        "class": "http://ekaw#Rejected_Paper",
+        "source": "ekaw",
+        "outgoing": [
+          [
+            [
+              "http://ekaw#Rejected_Paper",
+              "http://ekaw#updatedVersionOf",
+              "http://ekaw#Paper"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Rejected_Paper",
+              "http://ekaw#hasUpdatedVersion",
+              "http://ekaw#Paper"
+            ]
+          ]
+        ],
+        "incoming": [
+          [
+            [
+              "http://ekaw#Paper",
+              "http://ekaw#updatedVersionOf",
+              "http://ekaw#Rejected_Paper"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Paper",
+              "http://ekaw#hasUpdatedVersion",
+              "http://ekaw#Rejected_Paper"
+            ]
+          ]
+        ],
+        "values": []
+      },
+      {
+        "class": "http://ekaw#Paper",
+        "source": "ekaw",
+        "outgoing": [
+          [
+            [
+              "http://ekaw#Paper",
+              "http://ekaw#updatedVersionOf",
+              "http://ekaw#Rejected_Paper"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Paper",
+              "http://ekaw#hasUpdatedVersion",
+              "http://ekaw#Rejected_Paper"
+            ]
+          ]
+        ],
+        "incoming": [
+          [
+            [
+              "http://ekaw#Rejected_Paper",
+              "http://ekaw#updatedVersionOf",
+              "http://ekaw#Paper"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Rejected_Paper",
+              "http://ekaw#hasUpdatedVersion",
+              "http://ekaw#Paper"
+            ]
+          ]
+        ],
+        "values": []
+      },
+      {
+        "class": "http://cmt#Administrator",
+        "source": "cmt",
+        "outgoing": [
+          [
+            [
+              "http://cmt#Administrator",
+              "http://cmt#rejectPaper",
+              "http://cmt#Paper"
+            ]
+          ],
+          [
+            [
+              "http://cmt#Administrator",
+              "http://cmt#acceptPaper",
+              "http://cmt#Paper"
+            ]
+          ],
+          [
+            [
+              "http://cmt#Administrator",
+              "http://cmt#hasConflictOfInterest",
+              "http://cmt#Paper"
+            ]
+          ]
+        ],
+        "incoming": [
+          [
+            [
+              "http://cmt#Paper",
+              "http://cmt#acceptedBy",
+              "http://cmt#Administrator"
+            ]
+          ],
+          [
+            [
+              "http://cmt#Paper",
+              "http://cmt#rejectedBy",
+              "http://cmt#Administrator"
+            ]
+          ]
+        ],
+        "values": [
+          [
+            "http://cmt#Administrator",
+            "http://cmt#email",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://cmt#Administrator",
+            "http://cmt#name",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "class": "http://cmt#Paper",
+        "source": "cmt",
+        "outgoing": [
+          [
+            [
+              "http://cmt#Paper",
+              "http://cmt#acceptedBy",
+              "http://cmt#Administrator"
+            ]
+          ],
+          [
+            [
+              "http://cmt#Paper",
+              "http://cmt#rejectedBy",
+              "http://cmt#Administrator"
+            ]
+          ]
+        ],
+        "incoming": [
+          [
+            [
+              "http://cmt#Administrator",
+              "http://cmt#rejectPaper",
+              "http://cmt#Paper"
+            ]
+          ],
+          [
+            [
+              "http://cmt#Administrator",
+              "http://cmt#acceptPaper",
+              "http://cmt#Paper"
+            ]
+          ],
+          [
+            [
+              "http://cmt#Administrator",
+              "http://cmt#hasConflictOfInterest",
+              "http://cmt#Paper"
+            ]
+          ]
+        ],
+        "values": [
+          [
+            "http://cmt#Paper",
+            "http://cmt#paperID",
+            "http://www.w3.org/2001/XMLSchema#unsignedLong"
+          ],
+          [
+            "http://cmt#Paper",
+            "http://cmt#title",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "class": "http://conference#Rejected_contribution",
+        "source": "conference",
+        "outgoing": [
+          [
+            [
+              "http://conference#Rejected_contribution",
+              "http://conference#has_a_review_expertise",
+              "http://conference#Review_expertise"
+            ]
+          ],
+          [
+            [
+              "http://conference#Rejected_contribution",
+              "http://conference#has_been_assigned_a_review_reference",
+              "http://conference#Review_preference"
+            ]
+          ],
+          [
+            [
+              "http://conference#Rejected_contribution",
+              "http://conference#has_authors",
+              "http://conference#Person"
+            ]
+          ],
+          [
+            [
+              "http://conference#Rejected_contribution",
+              "http://conference#is_submitted_at",
+              "http://conference#Conference_volume"
+            ]
+          ],
+          [
+            [
+              "http://conference#Rejected_contribution",
+              "http://conference#has_a_review",
+              "http://conference#Review"
+            ]
+          ]
+        ],
+        "incoming": [
+          [
+            [
+              "http://conference#Review_expertise",
+              "http://conference#has_a_submitted_contribution",
+              "http://conference#Rejected_contribution"
+            ]
+          ],
+          [
+            [
+              "http://conference#Review_preference",
+              "http://conference#has_a_topic_or_a_submission_contribution",
+              "http://conference#Rejected_contribution"
+            ]
+          ],
+          [
+            [
+              "http://conference#Person",
+              "http://conference#contributes",
+              "http://conference#Rejected_contribution"
+            ]
+          ],
+          [
+            [
+              "http://conference#Conference_volume",
+              "http://conference#has_contributions",
+              "http://conference#Rejected_contribution"
+            ]
+          ],
+          [
+            [
+              "http://conference#Review",
+              "http://conference#reviews",
+              "http://conference#Rejected_contribution"
+            ]
+          ]
+        ],
+        "values": [
+          [
+            "http://conference#Rejected_contribution",
+            "http://conference#has_a_date_of_issue",
+            "http://www.w3.org/2001/XMLSchema#date"
+          ]
+        ]
+      },
+      {
+        "class": "http://confOf#Administrator",
+        "source": "confof",
+        "outgoing": [
+          [
+            [
+              "http://confOf#Administrator",
+              "http://confOf#employedBy",
+              "http://confOf#Organization"
+            ]
+          ],
+          [
+            [
+              "http://confOf#Administrator",
+              "http://confOf#hasCity",
+              "http://confOf#City"
+            ]
+          ],
+          [
+            [
+              "http://confOf#Administrator",
+              "http://confOf#hasCountry",
+              "http://confOf#Country"
+            ]
+          ]
+        ],
+        "incoming": [],
+        "values": [
+          [
+            "http://confOf#Administrator",
+            "http://confOf#hasPhone",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Administrator",
+            "http://confOf#hasSurname",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Administrator",
+            "http://confOf#hasHomePage",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Administrator",
+            "http://confOf#hasStreet",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Administrator",
+            "http://confOf#hasPostalCode",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Administrator",
+            "http://confOf#hasEmail",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Administrator",
+            "http://confOf#hasFirstName",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Administrator",
+            "http://confOf#hasFax",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "class": "http://confOf#Contribution",
+        "source": "confof",
+        "outgoing": [
+          [
+            [
+              "http://confOf#Contribution",
+              "http://confOf#dealsWith",
+              "http://confOf#Topic"
+            ]
+          ],
+          [
+            [
+              "http://confOf#Contribution",
+              "http://confOf#writtenBy",
+              "http://confOf#Author"
+            ]
+          ]
+        ],
+        "incoming": [
+          [
+            [
+              "http://confOf#Member_PC",
+              "http://confOf#reviewes",
+              "http://confOf#Contribution"
+            ]
+          ],
+          [
+            [
+              "http://confOf#Author",
+              "http://confOf#writes",
+              "http://confOf#Contribution"
+            ]
+          ]
+        ],
+        "values": [
+          [
+            "http://confOf#Contribution",
+            "http://confOf#contactEmail",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Contribution",
+            "http://confOf#abstract",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Contribution",
+            "http://confOf#hasKeyword",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Contribution",
+            "http://confOf#hasTitle",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Contribution",
+            "http://confOf#remark",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      }
+    ],
+    "summarize_class_paths": [
+      {
+        "label": "WithdrawnPaper",
+        "class": "http://edas#WithdrawnPaper",
+        "source": "edas",
+        "outgoing": [
+          "WithdrawnPaper -[isWrittenBy]-> Author",
+          "WithdrawnPaper -[hasTopic]-> Topic",
+          "WithdrawnPaper -[isReviewedBy]-> SessionChair",
+          "WithdrawnPaper -[isWrittenBy]-> Author -[hasRelatedPaper]-> RejectedPaper",
+          "WithdrawnPaper -[isWrittenBy]-> Author <-[isWrittenBy]- RejectedPaper",
+          "WithdrawnPaper -[hasTopic]-> Topic -[isTopicOf]-> RejectedPaper",
+          "WithdrawnPaper -[hasTopic]-> Topic <-[hasTopic]- RejectedPaper",
+          "WithdrawnPaper -[isReviewedBy]-> SessionChair -[isReviewing]-> RejectedPaper",
+          "WithdrawnPaper -[isReviewedBy]-> SessionChair -[hasRelatedDocument]-> RejectedPaper",
+          "WithdrawnPaper -[isReviewedBy]-> SessionChair <-[isReviewedBy]- RejectedPaper",
+          "WithdrawnPaper -[isReviewedBy]-> SessionChair <-[relatesTo]- RejectedPaper",
+          "WithdrawnPaper -[isWrittenBy]-> Author -[hasRelatedPaper]-> Paper",
+          "WithdrawnPaper -[isWrittenBy]-> Author <-[isWrittenBy]- Paper",
+          "WithdrawnPaper -[hasTopic]-> Topic -[isTopicOf]-> Paper",
+          "WithdrawnPaper -[hasTopic]-> Topic <-[hasTopic]- Paper",
+          "WithdrawnPaper -[isReviewedBy]-> SessionChair -[isReviewing]-> Paper",
+          "WithdrawnPaper -[isReviewedBy]-> SessionChair -[hasRelatedDocument]-> Paper",
+          "WithdrawnPaper -[isReviewedBy]-> SessionChair <-[isReviewedBy]- Paper",
+          "WithdrawnPaper -[isReviewedBy]-> SessionChair <-[relatesTo]- Paper"
+        ],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "label": "RejectedPaper",
+        "class": "http://edas#RejectedPaper",
+        "source": "edas",
+        "outgoing": [
+          "RejectedPaper -[isWrittenBy]-> Author",
+          "RejectedPaper -[hasTopic]-> Topic",
+          "RejectedPaper -[isReviewedBy]-> SessionChair",
+          "RejectedPaper -[relatesTo]-> SessionChair",
+          "RejectedPaper -[relatesTo]-> AcademicEvent",
+          "RejectedPaper -[relatesTo]-> Conference",
+          "RejectedPaper -[relatesTo]-> Person",
+          "RejectedPaper -[relatesTo]-> ConferenceSession",
+          "RejectedPaper -[isWrittenBy]-> Author <-[isWrittenBy]- WithdrawnPaper",
+          "RejectedPaper -[hasTopic]-> Topic <-[hasTopic]- WithdrawnPaper",
+          "RejectedPaper -[isReviewedBy]-> SessionChair <-[isReviewedBy]- WithdrawnPaper",
+          "RejectedPaper -[relatesTo]-> SessionChair <-[isReviewedBy]- WithdrawnPaper",
+          "RejectedPaper -[relatesTo]-> AcademicEvent -[hasRelatedDocument]-> Paper",
+          "RejectedPaper -[relatesTo]-> AcademicEvent <-[relatesTo]- Paper",
+          "RejectedPaper -[relatesTo]-> Conference -[hasRelatedDocument]-> Paper",
+          "RejectedPaper -[relatesTo]-> Conference <-[relatesTo]- Paper",
+          "RejectedPaper -[relatesTo]-> Person -[hasRelatedDocument]-> Paper",
+          "RejectedPaper -[relatesTo]-> Person <-[relatesTo]- Paper",
+          "RejectedPaper -[relatesTo]-> ConferenceSession -[hasRelatedDocument]-> Paper",
+          "RejectedPaper -[relatesTo]-> ConferenceSession <-[relatesTo]- Paper"
+        ],
+        "incoming": [
+          "Author -[hasRelatedPaper]-> RejectedPaper",
+          "Topic -[isTopicOf]-> RejectedPaper",
+          "SessionChair -[isReviewing]-> RejectedPaper",
+          "SessionChair -[hasRelatedDocument]-> RejectedPaper",
+          "RejectedPaper <-[hasRelatedPaper]- Author <-[isWrittenBy]- WithdrawnPaper",
+          "RejectedPaper <-[isTopicOf]- Topic <-[hasTopic]- WithdrawnPaper",
+          "RejectedPaper <-[isReviewing]- SessionChair <-[isReviewedBy]- WithdrawnPaper",
+          "RejectedPaper <-[hasRelatedDocument]- SessionChair <-[isReviewedBy]- WithdrawnPaper"
+        ],
+        "values": []
+      },
+      {
+        "label": "Paper",
+        "class": "http://edas#Paper",
+        "source": "edas",
+        "outgoing": [
+          "Paper -[isWrittenBy]-> Author",
+          "Paper -[hasTopic]-> Topic",
+          "Paper -[isReviewedBy]-> SessionChair",
+          "Paper -[relatesTo]-> SessionChair",
+          "Paper -[relatesTo]-> AcademicEvent",
+          "Paper -[relatesTo]-> Conference",
+          "Paper -[relatesTo]-> Person",
+          "Paper -[relatesTo]-> ConferenceSession",
+          "Paper -[isWrittenBy]-> Author <-[isWrittenBy]- WithdrawnPaper",
+          "Paper -[hasTopic]-> Topic <-[hasTopic]- WithdrawnPaper",
+          "Paper -[isReviewedBy]-> SessionChair <-[isReviewedBy]- WithdrawnPaper",
+          "Paper -[relatesTo]-> SessionChair <-[isReviewedBy]- WithdrawnPaper",
+          "Paper -[relatesTo]-> AcademicEvent <-[relatesTo]- RejectedPaper",
+          "Paper -[relatesTo]-> Conference <-[relatesTo]- RejectedPaper",
+          "Paper -[relatesTo]-> Person <-[relatesTo]- RejectedPaper",
+          "Paper -[relatesTo]-> ConferenceSession <-[relatesTo]- RejectedPaper"
+        ],
+        "incoming": [
+          "Author -[hasRelatedPaper]-> Paper",
+          "Topic -[isTopicOf]-> Paper",
+          "SessionChair -[isReviewing]-> Paper",
+          "SessionChair -[hasRelatedDocument]-> Paper",
+          "AcademicEvent -[hasRelatedDocument]-> Paper",
+          "Conference -[hasRelatedDocument]-> Paper",
+          "Person -[hasRelatedDocument]-> Paper",
+          "ConferenceSession -[hasRelatedDocument]-> Paper",
+          "Paper <-[hasRelatedPaper]- Author <-[isWrittenBy]- WithdrawnPaper",
+          "Paper <-[isTopicOf]- Topic <-[hasTopic]- WithdrawnPaper",
+          "Paper <-[isReviewing]- SessionChair <-[isReviewedBy]- WithdrawnPaper",
+          "Paper <-[hasRelatedDocument]- SessionChair <-[isReviewedBy]- WithdrawnPaper",
+          "Paper <-[hasRelatedDocument]- AcademicEvent <-[relatesTo]- RejectedPaper",
+          "Paper <-[hasRelatedDocument]- Conference <-[relatesTo]- RejectedPaper",
+          "Paper <-[hasRelatedDocument]- Person <-[relatesTo]- RejectedPaper",
+          "Paper <-[hasRelatedDocument]- ConferenceSession <-[relatesTo]- RejectedPaper"
+        ],
+        "values": []
+      },
+      {
+        "label": "Rejected_Paper",
+        "class": "http://ekaw#Rejected_Paper",
+        "source": "ekaw",
+        "outgoing": [
+          "Rejected_Paper -[updatedVersionOf]-> Paper",
+          "Rejected_Paper -[hasUpdatedVersion]-> Paper"
+        ],
+        "incoming": [
+          "Paper -[updatedVersionOf]-> Rejected_Paper",
+          "Paper -[hasUpdatedVersion]-> Rejected_Paper"
+        ],
+        "values": []
+      },
+      {
+        "label": "Paper",
+        "class": "http://ekaw#Paper",
+        "source": "ekaw",
+        "outgoing": [
+          "Paper -[updatedVersionOf]-> Rejected_Paper",
+          "Paper -[hasUpdatedVersion]-> Rejected_Paper"
+        ],
+        "incoming": [
+          "Rejected_Paper -[updatedVersionOf]-> Paper",
+          "Rejected_Paper -[hasUpdatedVersion]-> Paper"
+        ],
+        "values": []
+      },
+      {
+        "label": "Administrator",
+        "class": "http://cmt#Administrator",
+        "source": "cmt",
+        "outgoing": [
+          "Administrator -[rejectPaper]-> Paper",
+          "Administrator -[acceptPaper]-> Paper",
+          "Administrator -[hasConflictOfInterest]-> Paper"
+        ],
+        "incoming": [
+          "Paper -[acceptedBy]-> Administrator",
+          "Paper -[rejectedBy]-> Administrator"
+        ],
+        "values": [
+          [
+            "http://cmt#Administrator",
+            "http://cmt#email",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://cmt#Administrator",
+            "http://cmt#name",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "label": "Paper",
+        "class": "http://cmt#Paper",
+        "source": "cmt",
+        "outgoing": [
+          "Paper -[acceptedBy]-> Administrator",
+          "Paper -[rejectedBy]-> Administrator"
+        ],
+        "incoming": [
+          "Administrator -[rejectPaper]-> Paper",
+          "Administrator -[acceptPaper]-> Paper",
+          "Administrator -[hasConflictOfInterest]-> Paper"
+        ],
+        "values": [
+          [
+            "http://cmt#Paper",
+            "http://cmt#paperID",
+            "http://www.w3.org/2001/XMLSchema#unsignedLong"
+          ],
+          [
+            "http://cmt#Paper",
+            "http://cmt#title",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "label": "Rejected_contribution",
+        "class": "http://conference#Rejected_contribution",
+        "source": "conference",
+        "outgoing": [
+          "Rejected_contribution -[has_a_review_expertise]-> Review_expertise",
+          "Rejected_contribution -[has_been_assigned_a_review_reference]-> Review_preference",
+          "Rejected_contribution -[has_authors]-> Person",
+          "Rejected_contribution -[is_submitted_at]-> Conference_volume",
+          "Rejected_contribution -[has_a_review]-> Review"
+        ],
+        "incoming": [
+          "Review_expertise -[has_a_submitted_contribution]-> Rejected_contribution",
+          "Review_preference -[has_a_topic_or_a_submission_contribution]-> Rejected_contribution",
+          "Person -[contributes]-> Rejected_contribution",
+          "Conference_volume -[has_contributions]-> Rejected_contribution",
+          "Review -[reviews]-> Rejected_contribution"
+        ],
+        "values": [
+          [
+            "http://conference#Rejected_contribution",
+            "http://conference#has_a_date_of_issue",
+            "http://www.w3.org/2001/XMLSchema#date"
+          ]
+        ]
+      },
+      {
+        "label": "Administrator",
+        "class": "http://confOf#Administrator",
+        "source": "confof",
+        "outgoing": [
+          "Administrator -[employedBy]-> Organization",
+          "Administrator -[hasCity]-> City",
+          "Administrator -[hasCountry]-> Country"
+        ],
+        "incoming": [],
+        "values": [
+          [
+            "http://confOf#Administrator",
+            "http://confOf#hasPhone",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Administrator",
+            "http://confOf#hasSurname",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Administrator",
+            "http://confOf#hasHomePage",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Administrator",
+            "http://confOf#hasStreet",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Administrator",
+            "http://confOf#hasPostalCode",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Administrator",
+            "http://confOf#hasEmail",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Administrator",
+            "http://confOf#hasFirstName",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Administrator",
+            "http://confOf#hasFax",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "label": "Contribution",
+        "class": "http://confOf#Contribution",
+        "source": "confof",
+        "outgoing": [
+          "Contribution -[dealsWith]-> Topic",
+          "Contribution -[writtenBy]-> Author"
+        ],
+        "incoming": [
+          "Member_PC -[reviewes]-> Contribution",
+          "Author -[writes]-> Contribution"
+        ],
+        "values": [
+          [
+            "http://confOf#Contribution",
+            "http://confOf#contactEmail",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Contribution",
+            "http://confOf#abstract",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Contribution",
+            "http://confOf#hasKeyword",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Contribution",
+            "http://confOf#hasTitle",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Contribution",
+            "http://confOf#remark",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "label": "SessionChair",
+        "class": "http://edas#SessionChair",
+        "source": "edas",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://edas#SessionChair",
+            "http://edas#hasLastName",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://edas#SessionChair",
+            "http://edas#hasBiography",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://edas#SessionChair",
+            "http://edas#hasFirstName",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://edas#SessionChair",
+            "http://edas#hasEmail",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "label": "Author",
+        "class": "http://edas#Author",
+        "source": "edas",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "label": "Topic",
+        "class": "http://edas#Topic",
+        "source": "edas",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "label": "AcademicEvent",
+        "class": "http://edas#AcademicEvent",
+        "source": "edas",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://edas#AcademicEvent",
+            "http://edas#hasEndDateTime",
+            "http://www.w3.org/2001/XMLSchema#dateTime"
+          ],
+          [
+            "http://edas#AcademicEvent",
+            "http://edas#hasStartDateTime",
+            "http://www.w3.org/2001/XMLSchema#dateTime"
+          ]
+        ]
+      },
+      {
+        "label": "Person",
+        "class": "http://edas#Person",
+        "source": "edas",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://edas#Person",
+            "http://edas#hasLastName",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://edas#Person",
+            "http://edas#hasBiography",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://edas#Person",
+            "http://edas#hasFirstName",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://edas#Person",
+            "http://edas#hasEmail",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "label": "ConferenceSession",
+        "class": "http://edas#ConferenceSession",
+        "source": "edas",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "label": "Conference",
+        "class": "http://edas#Conference",
+        "source": "edas",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://edas#Conference",
+            "http://edas#registrationDueOn",
+            "http://www.w3.org/2001/XMLSchema#dateTime"
+          ],
+          [
+            "http://edas#Conference",
+            "http://edas#hasName",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://edas#Conference",
+            "http://edas#paperDueOn",
+            "http://www.w3.org/2001/XMLSchema#dateTime"
+          ],
+          [
+            "http://edas#Conference",
+            "http://edas#endDate",
+            "http://www.w3.org/2001/XMLSchema#dateTime"
+          ],
+          [
+            "http://edas#Conference",
+            "http://edas#startDate",
+            "http://www.w3.org/2001/XMLSchema#dateTime"
+          ],
+          [
+            "http://edas#Conference",
+            "http://edas#manuscriptDueOn",
+            "http://www.w3.org/2001/XMLSchema#dateTime"
+          ]
+        ]
+      },
+      {
+        "label": "Review_expertise",
+        "class": "http://conference#Review_expertise",
+        "source": "conference",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://conference#Review_expertise",
+            "http://conference#has_an_expertise",
+            null
+          ]
+        ]
+      },
+      {
+        "label": "Conference_volume",
+        "class": "http://conference#Conference_volume",
+        "source": "conference",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://conference#Conference_volume",
+            "http://conference#has_a_name",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://conference#Conference_volume",
+            "http://conference#has_a_location",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "label": "Review_preference",
+        "class": "http://conference#Review_preference",
+        "source": "conference",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://conference#Review_preference",
+            "http://conference#has_a_degree",
+            "http://www.w3.org/2001/XMLSchema#int"
+          ]
+        ]
+      },
+      {
+        "label": "Person",
+        "class": "http://conference#Person",
+        "source": "conference",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://conference#Person",
+            "http://conference#has_an_email",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://conference#Person",
+            "http://conference#has_gender",
+            null
+          ],
+          [
+            "http://conference#Person",
+            "http://conference#has_the_last_name",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://conference#Person",
+            "http://conference#has_the_first_name",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "label": "Review",
+        "class": "http://conference#Review",
+        "source": "conference",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://conference#Review",
+            "http://conference#has_a_date_of_issue",
+            "http://www.w3.org/2001/XMLSchema#date"
+          ]
+        ]
+      },
+      {
+        "label": "Country",
+        "class": "http://confOf#Country",
+        "source": "confof",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "label": "Organization",
+        "class": "http://confOf#Organization",
+        "source": "confof",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://confOf#Organization",
+            "http://confOf#hasStreet",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Organization",
+            "http://confOf#hasPostalCode",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "label": "City",
+        "class": "http://confOf#City",
+        "source": "confof",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "label": "Author",
+        "class": "http://confOf#Author",
+        "source": "confof",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://confOf#Author",
+            "http://confOf#hasPhone",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Author",
+            "http://confOf#hasSurname",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Author",
+            "http://confOf#hasHomePage",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Author",
+            "http://confOf#hasStreet",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Author",
+            "http://confOf#hasPostalCode",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Author",
+            "http://confOf#hasEmail",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Author",
+            "http://confOf#hasFirstName",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Author",
+            "http://confOf#hasFax",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "label": "Topic",
+        "class": "http://confOf#Topic",
+        "source": "confof",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "label": "Member_PC",
+        "class": "http://confOf#Member_PC",
+        "source": "confof",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://confOf#Member_PC",
+            "http://confOf#hasPhone",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Member_PC",
+            "http://confOf#hasSurname",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Member_PC",
+            "http://confOf#hasHomePage",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Member_PC",
+            "http://confOf#hasStreet",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Member_PC",
+            "http://confOf#hasPostalCode",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Member_PC",
+            "http://confOf#hasEmail",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Member_PC",
+            "http://confOf#hasFirstName",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Member_PC",
+            "http://confOf#hasFax",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      }
+    ],
+    "summarize_contextual_class_paths": [
+      {
+        "class": "http://edas#WithdrawnPaper",
+        "source": "edas",
+        "label": "WithdrawnPaper",
+        "outgoing": [],
+        "incoming": [],
+        "values": [],
+        "answers_question": true
+      },
+      {
+        "class": "http://ekaw#Rejected_Paper",
+        "source": "ekaw",
+        "label": "Rejected_Paper",
+        "outgoing": [],
+        "incoming": [],
+        "values": [],
+        "answers_question": true
+      },
+      {
+        "class": "http://conference#Rejected_contribution",
+        "source": "conference",
+        "label": "Rejected_contribution",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://conference#Rejected_contribution",
+            "http://conference#has_a_date_of_issue",
+            "http://www.w3.org/2001/XMLSchema#date"
+          ]
+        ],
+        "answers_question": true
+      }
+    ],
+    "selected_class_paths": [
+      {
+        "class": "http://edas#WithdrawnPaper",
+        "source": "edas",
+        "label": "WithdrawnPaper",
+        "outgoing": [],
+        "incoming": [],
+        "values": [],
+        "answers_question": true,
+        "complete_answer_branch": true,
+        "source_complete_answer_branch": true
+      }
+    ],
+    "validated_class_paths": [
+      {
+        "class": "http://edas#WithdrawnPaper",
+        "source": "edas",
+        "label": "WithdrawnPaper",
+        "outgoing": [],
+        "incoming": [],
+        "values": [],
+        "answers_question": true,
+        "complete_answer_branch": true,
+        "source_complete_answer_branch": true
+      },
+      {
+        "class": "http://ekaw#Rejected_Paper",
+        "source": "ekaw",
+        "label": "Rejected_Paper",
+        "outgoing": [],
+        "incoming": [],
+        "values": [],
+        "answers_question": true,
+        "complete_answer_branch": false,
+        "source_complete_answer_branch": false
+      },
+      {
+        "class": "http://conference#Rejected_contribution",
+        "source": "conference",
+        "label": "Rejected_contribution",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://conference#Rejected_contribution",
+            "http://conference#has_a_date_of_issue",
+            "http://www.w3.org/2001/XMLSchema#date"
+          ]
+        ],
+        "answers_question": true,
+        "complete_answer_branch": false,
+        "source_complete_answer_branch": false
+      }
+    ],
+    "path_scores": [
+      {
+        "source": "edas",
+        "chain": "",
+        "full": 0.8447355653617105,
+        "classes": 0.8448429531886319,
+        "relations": 0.8448429531886319,
+        "total": 0.8447892592751712,
+        "complete": true,
+        "kept": true,
+        "reason": "at or above tier threshold"
+      },
+      {
+        "source": "ekaw",
+        "chain": "",
+        "full": 0.684753644979922,
+        "classes": 0.6845047354791866,
+        "relations": 0.6845047354791866,
+        "total": 0.6846291902295543,
+        "complete": false,
+        "kept": true,
+        "reason": "at or above tier threshold"
+      },
+      {
+        "source": "conference",
+        "chain": "",
+        "full": 0.6187514696400469,
+        "classes": 0.6277883036146161,
+        "relations": 0.4728340088881928,
+        "total": 0.5922790276820469,
+        "complete": false,
+        "kept": true,
+        "reason": "at or above tier threshold"
+      }
+    ],
+    "source_scores": {
+      "edas": 0.8447892592751712
+    },
+    "provider_plan": [],
+    "cut_sources": [
+      "conference",
+      "ekaw"
+    ],
+    "alignment": [],
+    "query": "PREFIX edas: <http://edas#>\n\nSELECT DISTINCT ?withdrawnpaper\nWHERE {\n  SERVICE <http://192.168.100.45:3030/edas/sparql> {\n    ?withdrawnpaper a edas:WithdrawnPaper .\n  }\n}",
+    "token_usage": {
+      "by_agent": [
+        {
+          "agent": "agent6_path_filter",
+          "provider": "vercel",
+          "model": "meta/muse-spark-1.3",
+          "calls": 5,
+          "prompt_tokens": 6828,
+          "completion_tokens": 827,
+          "total_tokens": 7655,
+          "max_prompt_tokens": 1964,
+          "avg_prompt_tokens": 1366,
+          "calls_without_usage": 0
+        },
+        {
+          "agent": "agent4_match_relevance",
+          "provider": "vercel",
+          "model": "meta/muse-spark-1.3",
+          "calls": 3,
+          "prompt_tokens": 2727,
+          "completion_tokens": 367,
+          "total_tokens": 3094,
+          "max_prompt_tokens": 1009,
+          "avg_prompt_tokens": 909,
+          "calls_without_usage": 0
+        },
+        {
+          "agent": "agent7_sparql_generator",
+          "provider": "vercel",
+          "model": "meta/muse-spark-1.3",
+          "calls": 1,
+          "prompt_tokens": 2430,
+          "completion_tokens": 236,
+          "total_tokens": 2666,
+          "max_prompt_tokens": 2430,
+          "avg_prompt_tokens": 2430,
+          "calls_without_usage": 0
+        },
+        {
+          "agent": "agent1_extractor",
+          "provider": "vercel",
+          "model": "meta/muse-spark-1.3",
+          "calls": 1,
+          "prompt_tokens": 1172,
+          "completion_tokens": 44,
+          "total_tokens": 1216,
+          "max_prompt_tokens": 1172,
+          "avg_prompt_tokens": 1172,
+          "calls_without_usage": 0
+        },
+        {
+          "agent": "agent8_source_selector",
+          "provider": "vercel",
+          "model": "meta/muse-spark-1.3",
+          "calls": 1,
+          "prompt_tokens": 1083,
+          "completion_tokens": 61,
+          "total_tokens": 1144,
+          "max_prompt_tokens": 1083,
+          "avg_prompt_tokens": 1083,
+          "calls_without_usage": 0
+        }
+      ],
+      "totals": {
+        "calls": 11,
+        "prompt_tokens": 14240,
+        "completion_tokens": 1535,
+        "total_tokens": 15775
+      }
+    }
+  },
+  "elapsed_seconds": 21.376,
+  "finished_at": "2026-09-11T00:27:39.143217+00:00"
+}

@@ -1,0 +1,18 @@
+
+SELECT
+DISTINCT ?workshop ?conf ?deadline
+WHERE {
+
+    SERVICE <http://192.168.100.44:3030/ekaw/sparql> {
+        ?conf <http://ekaw#hasEvent> ?workshop .
+        ?conf <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ekaw#Conference> .
+        ?workshop <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ekaw#Workshop> .
+    }
+    SERVICE <http://192.168.100.44:3030/confof/sparql> {
+        ?workshop_confof <http://www.w3.org/2002/07/owl#sameAs> ?workshop .
+        ?workshop_confof a <http://confOf#Workshop> .
+        ?workshop_confof <http://confOf#hasAdministrativeEvent> ?confof_o2 .
+        ?confof_o2 a <http://confOf#Submission_event> .
+        ?confof_o2 <http://confOf#ends_on> ?deadline .
+    }
+}

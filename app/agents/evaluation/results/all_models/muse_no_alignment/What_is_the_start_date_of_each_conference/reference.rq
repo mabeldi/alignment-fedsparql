@@ -1,0 +1,38 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX cmt: <http://cmt#>
+PREFIX conference: <http://conference#>
+PREFIX confof: <http://confOf#>
+PREFIX edas: <http://edas#>
+
+# question: What is the start date of each conference?
+# CQA: conference_start_date
+# federation: UNION of complete alternative answers from each source.
+# caveat: cmt:date is schema-valid for Conference but is named only as a generic date.
+
+SELECT DISTINCT ?conference ?startDate
+WHERE {
+  {
+    # source: conference
+    SERVICE <http://192.168.100.45:3030/conference/sparql> {
+      ?conference rdf:type conference:Conference_volume .
+      ?conference conference:has_important_dates ?importantDates .
+      ?importantDates conference:is_a_starting_date ?startDate .
+    }
+  }
+  UNION
+  {
+    # source: confof
+    SERVICE <http://192.168.100.45:3030/confof/sparql> {
+      ?conference rdf:type confof:Conference .
+      ?conference confof:starts_on ?startDate .
+    }
+  }
+  UNION
+  {
+    # source: edas
+    SERVICE <http://192.168.100.45:3030/edas/sparql> {
+      ?conference rdf:type edas:Conference .
+      ?conference edas:startDate ?startDate .
+    }
+  }
+}

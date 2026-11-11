@@ -1,0 +1,39 @@
+
+PREFIX cmt: <http://cmt#>\nPREFIX conference: <http://conference#>\nPREFIX confof: <http://confOf#>\nPREFIX edas: <http://edas#>\nPREFIX ekaw: <http://ekaw#>\n\nSELECT
+DISTINCT ?author\nWHERE {
+  \n {
+    \n
+    SERVICE <http://192.168.100.45:3030/confof/sparql> {
+      \n ?author a confof:Author .
+      \n
+    }\n
+  }\n
+  UNION\n {
+    \n
+    SERVICE <http://192.168.100.45:3030/cmt/sparql> {
+      \n ?author a cmt:Author .
+      \n
+    }\n
+  }\n
+  UNION\n {
+    \n
+    SERVICE <http://192.168.100.45:3030/conference/sparql> {
+      \n ?author a conference:Regular_author .
+      \n
+    }\n
+  }\n
+  UNION\n {
+    \n
+    SERVICE <http://192.168.100.45:3030/edas/sparql> {
+      \n ?author a edas:Author .
+      \n
+    }\n
+  }\n
+  UNION\n {
+    \n
+    SERVICE <http://192.168.100.45:3030/ekaw/sparql> {
+      \n ?author a ekaw:Paper_Author .
+      \n
+    }\n
+  }\n
+}

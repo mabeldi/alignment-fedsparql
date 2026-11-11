@@ -1,0 +1,4 @@
+SELECT distinct ?s ?o WHERE {  
+?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://conference#Tutorial> . 
+?s <http://conference#has_a_track-workshop-tutorial_topic> ?o .   
+ }

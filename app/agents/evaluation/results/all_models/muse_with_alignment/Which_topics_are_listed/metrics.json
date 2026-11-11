@@ -1,0 +1,214 @@
+{
+  "format_version": 1,
+  "question_folder": "Which_topics_are_listed",
+  "calculated_at": "2026-09-12T19:56:31.812874+00:00",
+  "selected_runs": [
+    1,
+    2,
+    3
+  ],
+  "policy": {
+    "answer_comparison": "distinct complete value tuples; best global column assignment",
+    "extra_columns": "ignored after assignment; duplicate projected rows removed",
+    "split_union_columns": "not coalesced",
+    "rdf_identity": "saved value strings; ignore type, datatype, and language; instance URIs <source>-instances#<id> merged by <id> (one thing held by several sources); answer_raw_uri keeps every URI distinct",
+    "source_comparison": "distinct SERVICE endpoint IRIs in query text, not coordinator or runtime contacts",
+    "failures": "execution errors score answer F1=0 and exact_match=0; a query that neither parses nor executes scores source F1=0",
+    "unreachable_endpoint": "never judged, so unscored; aggregate withheld until executed again",
+    "missing_or_stale_artifacts": "unscored; aggregate withheld until repaired"
+  },
+  "runs": [
+    {
+      "run": 1,
+      "status": "scored",
+      "execution_success": 1,
+      "query_sha256": "7d14cdce7d3f2b4a433bd7043c731e894102d53d86ad57b22a0e1867ddf18f7e",
+      "result_count": 18663,
+      "source_selection": {
+        "true_positive": 5,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": 1,
+        "endpoints": [
+          "http://192.168.100.45:3030/cmt/sparql",
+          "http://192.168.100.45:3030/conference/sparql",
+          "http://192.168.100.45:3030/confof/sparql",
+          "http://192.168.100.45:3030/edas/sparql",
+          "http://192.168.100.45:3030/ekaw/sparql"
+        ],
+        "missing_endpoints": [],
+        "extra_endpoints": []
+      },
+      "answer": {
+        "true_positive": 7563,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": 1,
+        "column_mapping": {
+          "topic": "topic"
+        },
+        "ignored_generated_columns": [],
+        "generated_unique_rows": 7563,
+        "reference_unique_rows": 7563
+      },
+      "answer_raw_uri": {
+        "true_positive": 18663,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": 1,
+        "column_mapping": {
+          "topic": "topic"
+        },
+        "ignored_generated_columns": [],
+        "generated_unique_rows": 18663,
+        "reference_unique_rows": 18663
+      }
+    },
+    {
+      "run": 2,
+      "status": "scored",
+      "execution_success": 1,
+      "query_sha256": "c236c150c2534e63dd65272113493dbdd5459c699b70578708ff91b1e7016cdb",
+      "result_count": 18663,
+      "source_selection": {
+        "true_positive": 5,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": 1,
+        "endpoints": [
+          "http://192.168.100.45:3030/cmt/sparql",
+          "http://192.168.100.45:3030/conference/sparql",
+          "http://192.168.100.45:3030/confof/sparql",
+          "http://192.168.100.45:3030/edas/sparql",
+          "http://192.168.100.45:3030/ekaw/sparql"
+        ],
+        "missing_endpoints": [],
+        "extra_endpoints": []
+      },
+      "answer": {
+        "true_positive": 7563,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": 1,
+        "column_mapping": {
+          "topic": "topic"
+        },
+        "ignored_generated_columns": [],
+        "generated_unique_rows": 7563,
+        "reference_unique_rows": 7563
+      },
+      "answer_raw_uri": {
+        "true_positive": 18663,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": 1,
+        "column_mapping": {
+          "topic": "topic"
+        },
+        "ignored_generated_columns": [],
+        "generated_unique_rows": 18663,
+        "reference_unique_rows": 18663
+      }
+    },
+    {
+      "run": 3,
+      "status": "scored",
+      "execution_success": 1,
+      "query_sha256": "7d14cdce7d3f2b4a433bd7043c731e894102d53d86ad57b22a0e1867ddf18f7e",
+      "result_count": 18663,
+      "source_selection": {
+        "true_positive": 5,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": 1,
+        "endpoints": [
+          "http://192.168.100.45:3030/cmt/sparql",
+          "http://192.168.100.45:3030/conference/sparql",
+          "http://192.168.100.45:3030/confof/sparql",
+          "http://192.168.100.45:3030/edas/sparql",
+          "http://192.168.100.45:3030/ekaw/sparql"
+        ],
+        "missing_endpoints": [],
+        "extra_endpoints": []
+      },
+      "answer": {
+        "true_positive": 7563,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": 1,
+        "column_mapping": {
+          "topic": "topic"
+        },
+        "ignored_generated_columns": [],
+        "generated_unique_rows": 7563,
+        "reference_unique_rows": 7563
+      },
+      "answer_raw_uri": {
+        "true_positive": 18663,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": 1,
+        "column_mapping": {
+          "topic": "topic"
+        },
+        "ignored_generated_columns": [],
+        "generated_unique_rows": 18663,
+        "reference_unique_rows": 18663
+      }
+    }
+  ],
+  "question": "Which topics are listed?",
+  "reference": {
+    "folder": "C:\\Users\\beldi\\Desktop\\Generation_SPARQL\\sparrql-llm\\app\\agents\\evaluation\\results\\Which_topics_are_listed",
+    "query_sha256": "dbd3875bb5d90de0e95f8e9627513c39c7371d6461615ddb3001a4c7567d9915",
+    "result_count": 18663,
+    "variables": [
+      "topic"
+    ],
+    "endpoints": [
+      "http://192.168.100.45:3030/cmt/sparql",
+      "http://192.168.100.45:3030/conference/sparql",
+      "http://192.168.100.45:3030/confof/sparql",
+      "http://192.168.100.45:3030/edas/sparql",
+      "http://192.168.100.45:3030/ekaw/sparql"
+    ]
+  },
+  "status": "complete",
+  "aggregate": {
+    "run_count": 3,
+    "answer_precision_mean": 1.0,
+    "answer_recall_mean": 1.0,
+    "answer_f1_mean": 1.0,
+    "answer_f1_raw_uri_mean": 1.0,
+    "exact_match_accuracy": 1,
+    "source_selection_f1_mean": 1.0,
+    "execution_success_rate": 1
+  }
+}

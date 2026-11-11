@@ -1,0 +1,22 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX cmt: <http://cmt#>
+PREFIX ekaw: <http://ekaw#>
+
+# question: What are the titles of the papers that received a negative review?
+# sources: EKAW supplies the review polarity; CMT supplies the paper title.
+# federation: join aligned paper individuals with owl:sameAs.
+# note: the review is a CONDITION, not a returned column, so the projection is
+#       the title only. EKAW carries no title property, so one source cannot answer.
+
+SELECT DISTINCT ?title
+WHERE {
+  SERVICE <http://192.168.100.45:3030/ekaw/sparql> {
+    ?review a ekaw:Negative_Review ;
+            ekaw:reviewOfPaper ?paper .
+  }
+  SERVICE <http://192.168.100.45:3030/cmt/sparql> {
+    ?paperCmt owl:sameAs ?paper .
+    ?paperCmt cmt:title ?title .
+  }
+}

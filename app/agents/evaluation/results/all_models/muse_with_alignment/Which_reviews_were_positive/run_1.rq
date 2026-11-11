@@ -1,0 +1,6 @@
+PREFIX ekaw: <http://ekaw#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT DISTINCT ?positive_review
+WHERE {
+SERVICE <http://192.168.100.45:3030/ekaw/sparql> { ?positive_review a ekaw:Positive_Review . }
+}

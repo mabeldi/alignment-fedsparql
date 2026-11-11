@@ -1,0 +1,3 @@
+SELECT distinct ?s WHERE {  
+{ ?s <http://cmt#hasDecision> ?o2 . ?o2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://cmt#Acceptance> . } UNION  { ?s <http://cmt#acceptedBy> ?o2 . }  
+ }

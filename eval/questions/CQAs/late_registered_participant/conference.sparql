@@ -1,0 +1,4 @@
+SELECT distinct ?s WHERE {  
+?s a <http://conference#Conference_participant> .  
+?s a <http://conference#Late_paid_applicant> .  
+ }

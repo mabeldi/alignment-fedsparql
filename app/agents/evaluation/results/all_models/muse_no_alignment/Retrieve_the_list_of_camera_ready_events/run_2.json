@@ -1,0 +1,658 @@
+{
+  "question": "Retrieve the list of camera-ready events.",
+  "run": 2,
+  "status": "generated",
+  "endpoint": "http://127.0.0.1:8999/query",
+  "parallel_requests": 1,
+  "server_diagnostics_note": "Server token counters and debug files are shared across requests; do not use them for per-run measurements during concurrent requests.",
+  "started_at": "2026-09-12T19:44:38.824677+00:00",
+  "http_status": 200,
+  "response": {
+    "question": "Retrieve the list of camera-ready events.",
+    "alignments_enabled": false,
+    "extracted": {
+      "classes": [
+        "Camera Ready Event"
+      ],
+      "objectProperties": [],
+      "dataTypeProperties": [],
+      "literals": []
+    },
+    "matches": {
+      "Camera Ready Event": [
+        {
+          "label": "Camera_Ready_event",
+          "uri": "http://confOf#Camera_Ready_event",
+          "type": "Class",
+          "name": "Camera_Ready_event",
+          "payload": {
+            "type": "Class",
+            "uri": "http://confOf#Camera_Ready_event",
+            "name": "Camera_Ready_event",
+            "label": "Camera_Ready_event",
+            "source": "confof"
+          },
+          "score": 0.90244234
+        },
+        {
+          "label": "Camera_ready_contribution",
+          "uri": "http://conference#Camera_ready_contribution",
+          "type": "Class",
+          "name": "Camera_ready_contribution",
+          "payload": {
+            "type": "Class",
+            "uri": "http://conference#Camera_ready_contribution",
+            "name": "Camera_ready_contribution",
+            "label": "Camera_ready_contribution",
+            "source": "conference"
+          },
+          "score": 0.7313217
+        }
+      ]
+    },
+    "context_filtered_matches": {
+      "Camera Ready Event": [
+        {
+          "label": "Camera_Ready_event",
+          "uri": "http://confOf#Camera_Ready_event",
+          "type": "Class",
+          "name": "Camera_Ready_event",
+          "payload": {
+            "type": "Class",
+            "uri": "http://confOf#Camera_Ready_event",
+            "name": "Camera_Ready_event",
+            "label": "Camera_Ready_event",
+            "source": "confof"
+          },
+          "score": 0.90244234
+        },
+        {
+          "label": "Camera_ready_contribution",
+          "uri": "http://conference#Camera_ready_contribution",
+          "type": "Class",
+          "name": "Camera_ready_contribution",
+          "payload": {
+            "type": "Class",
+            "uri": "http://conference#Camera_ready_contribution",
+            "name": "Camera_ready_contribution",
+            "label": "Camera_ready_contribution",
+            "source": "conference"
+          },
+          "score": 0.7313217
+        }
+      ]
+    },
+    "context_removed_matches": {},
+    "top_sources": {
+      "confof": 0.90244234,
+      "conference": 0.7313217
+    },
+    "base_source": "confof",
+    "class_paths": [
+      {
+        "class": "http://confOf#Camera_Ready_event",
+        "source": "confof",
+        "outgoing": [
+          [
+            [
+              "http://confOf#Camera_Ready_event",
+              "http://confOf#follows",
+              "http://confOf#Administrative_event"
+            ]
+          ],
+          [
+            [
+              "http://confOf#Camera_Ready_event",
+              "http://confOf#parallel_with",
+              "http://confOf#Administrative_event"
+            ]
+          ]
+        ],
+        "incoming": [
+          [
+            [
+              "http://confOf#Administrative_event",
+              "http://confOf#follows",
+              "http://confOf#Camera_Ready_event"
+            ]
+          ],
+          [
+            [
+              "http://confOf#Administrative_event",
+              "http://confOf#parallel_with",
+              "http://confOf#Camera_Ready_event"
+            ]
+          ],
+          [
+            [
+              "http://confOf#Working_event",
+              "http://confOf#hasAdministrativeEvent",
+              "http://confOf#Camera_Ready_event"
+            ]
+          ]
+        ],
+        "values": [
+          [
+            "http://confOf#Camera_Ready_event",
+            "http://confOf#starts_on",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Camera_Ready_event",
+            "http://confOf#ends_on",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "class": "http://conference#Camera_ready_contribution",
+        "source": "conference",
+        "outgoing": [
+          [
+            [
+              "http://conference#Camera_ready_contribution",
+              "http://conference#has_a_review",
+              "http://conference#Review"
+            ]
+          ],
+          [
+            [
+              "http://conference#Camera_ready_contribution",
+              "http://conference#is_submitted_at",
+              "http://conference#Conference_volume"
+            ]
+          ],
+          [
+            [
+              "http://conference#Camera_ready_contribution",
+              "http://conference#has_a_review_expertise",
+              "http://conference#Review_expertise"
+            ]
+          ],
+          [
+            [
+              "http://conference#Camera_ready_contribution",
+              "http://conference#has_been_assigned_a_review_reference",
+              "http://conference#Review_preference"
+            ]
+          ],
+          [
+            [
+              "http://conference#Camera_ready_contribution",
+              "http://conference#has_authors",
+              "http://conference#Person"
+            ]
+          ]
+        ],
+        "incoming": [
+          [
+            [
+              "http://conference#Review",
+              "http://conference#reviews",
+              "http://conference#Camera_ready_contribution"
+            ]
+          ],
+          [
+            [
+              "http://conference#Conference_volume",
+              "http://conference#has_contributions",
+              "http://conference#Camera_ready_contribution"
+            ]
+          ],
+          [
+            [
+              "http://conference#Review_expertise",
+              "http://conference#has_a_submitted_contribution",
+              "http://conference#Camera_ready_contribution"
+            ]
+          ],
+          [
+            [
+              "http://conference#Review_preference",
+              "http://conference#has_a_topic_or_a_submission_contribution",
+              "http://conference#Camera_ready_contribution"
+            ]
+          ],
+          [
+            [
+              "http://conference#Person",
+              "http://conference#contributes",
+              "http://conference#Camera_ready_contribution"
+            ]
+          ]
+        ],
+        "values": [
+          [
+            "http://conference#Camera_ready_contribution",
+            "http://conference#has_a_date_of_issue",
+            "http://www.w3.org/2001/XMLSchema#date"
+          ]
+        ]
+      }
+    ],
+    "summarize_class_paths": [
+      {
+        "label": "Camera_Ready_event",
+        "class": "http://confOf#Camera_Ready_event",
+        "source": "confof",
+        "outgoing": [
+          "Camera_Ready_event -[follows]-> Administrative_event",
+          "Camera_Ready_event -[parallel_with]-> Administrative_event"
+        ],
+        "incoming": [
+          "Administrative_event -[follows]-> Camera_Ready_event",
+          "Administrative_event -[parallel_with]-> Camera_Ready_event",
+          "Working_event -[hasAdministrativeEvent]-> Camera_Ready_event"
+        ],
+        "values": [
+          [
+            "http://confOf#Camera_Ready_event",
+            "http://confOf#starts_on",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Camera_Ready_event",
+            "http://confOf#ends_on",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "label": "Camera_ready_contribution",
+        "class": "http://conference#Camera_ready_contribution",
+        "source": "conference",
+        "outgoing": [
+          "Camera_ready_contribution -[has_a_review]-> Review",
+          "Camera_ready_contribution -[is_submitted_at]-> Conference_volume",
+          "Camera_ready_contribution -[has_a_review_expertise]-> Review_expertise",
+          "Camera_ready_contribution -[has_been_assigned_a_review_reference]-> Review_preference",
+          "Camera_ready_contribution -[has_authors]-> Person"
+        ],
+        "incoming": [
+          "Review -[reviews]-> Camera_ready_contribution",
+          "Conference_volume -[has_contributions]-> Camera_ready_contribution",
+          "Review_expertise -[has_a_submitted_contribution]-> Camera_ready_contribution",
+          "Review_preference -[has_a_topic_or_a_submission_contribution]-> Camera_ready_contribution",
+          "Person -[contributes]-> Camera_ready_contribution"
+        ],
+        "values": [
+          [
+            "http://conference#Camera_ready_contribution",
+            "http://conference#has_a_date_of_issue",
+            "http://www.w3.org/2001/XMLSchema#date"
+          ]
+        ]
+      },
+      {
+        "label": "Working_event",
+        "class": "http://confOf#Working_event",
+        "source": "confof",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://confOf#Working_event",
+            "http://confOf#starts_on",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Working_event",
+            "http://confOf#ends_on",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Working_event",
+            "http://confOf#defaultChoice",
+            "http://www.w3.org/2001/XMLSchema#positiveInteger"
+          ],
+          [
+            "http://confOf#Working_event",
+            "http://confOf#minChoice",
+            "http://www.w3.org/2001/XMLSchema#positiveInteger"
+          ],
+          [
+            "http://confOf#Working_event",
+            "http://confOf#has_short_title",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Working_event",
+            "http://confOf#has_title",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Working_event",
+            "http://confOf#maxChoice",
+            "http://www.w3.org/2001/XMLSchema#positiveInteger"
+          ],
+          [
+            "http://confOf#Working_event",
+            "http://confOf#hasVAT",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Working_event",
+            "http://confOf#location",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "label": "Administrative_event",
+        "class": "http://confOf#Administrative_event",
+        "source": "confof",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://confOf#Administrative_event",
+            "http://confOf#starts_on",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Administrative_event",
+            "http://confOf#ends_on",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "label": "Review_expertise",
+        "class": "http://conference#Review_expertise",
+        "source": "conference",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://conference#Review_expertise",
+            "http://conference#has_an_expertise",
+            null
+          ]
+        ]
+      },
+      {
+        "label": "Conference_volume",
+        "class": "http://conference#Conference_volume",
+        "source": "conference",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://conference#Conference_volume",
+            "http://conference#has_a_name",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://conference#Conference_volume",
+            "http://conference#has_a_location",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "label": "Review",
+        "class": "http://conference#Review",
+        "source": "conference",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://conference#Review",
+            "http://conference#has_a_date_of_issue",
+            "http://www.w3.org/2001/XMLSchema#date"
+          ]
+        ]
+      },
+      {
+        "label": "Review_preference",
+        "class": "http://conference#Review_preference",
+        "source": "conference",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://conference#Review_preference",
+            "http://conference#has_a_degree",
+            "http://www.w3.org/2001/XMLSchema#int"
+          ]
+        ]
+      },
+      {
+        "label": "Person",
+        "class": "http://conference#Person",
+        "source": "conference",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://conference#Person",
+            "http://conference#has_an_email",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://conference#Person",
+            "http://conference#has_gender",
+            null
+          ],
+          [
+            "http://conference#Person",
+            "http://conference#has_the_last_name",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://conference#Person",
+            "http://conference#has_the_first_name",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      }
+    ],
+    "summarize_contextual_class_paths": [
+      {
+        "class": "http://confOf#Camera_Ready_event",
+        "source": "confof",
+        "label": "Camera_Ready_event",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://confOf#Camera_Ready_event",
+            "http://confOf#starts_on",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Camera_Ready_event",
+            "http://confOf#ends_on",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ],
+        "answers_question": true
+      },
+      {
+        "class": "http://conference#Camera_ready_contribution",
+        "source": "conference",
+        "label": "Camera_ready_contribution",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://conference#Camera_ready_contribution",
+            "http://conference#has_a_date_of_issue",
+            "http://www.w3.org/2001/XMLSchema#date"
+          ]
+        ],
+        "answers_question": true
+      }
+    ],
+    "selected_class_paths": [
+      {
+        "class": "http://confOf#Camera_Ready_event",
+        "source": "confof",
+        "label": "Camera_Ready_event",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://confOf#Camera_Ready_event",
+            "http://confOf#starts_on",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Camera_Ready_event",
+            "http://confOf#ends_on",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ],
+        "answers_question": true,
+        "complete_answer_branch": true,
+        "source_complete_answer_branch": true
+      }
+    ],
+    "validated_class_paths": [
+      {
+        "class": "http://confOf#Camera_Ready_event",
+        "source": "confof",
+        "label": "Camera_Ready_event",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://confOf#Camera_Ready_event",
+            "http://confOf#starts_on",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Camera_Ready_event",
+            "http://confOf#ends_on",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ],
+        "answers_question": true,
+        "complete_answer_branch": true,
+        "source_complete_answer_branch": true
+      },
+      {
+        "class": "http://conference#Camera_ready_contribution",
+        "source": "conference",
+        "label": "Camera_ready_contribution",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://conference#Camera_ready_contribution",
+            "http://conference#has_a_date_of_issue",
+            "http://www.w3.org/2001/XMLSchema#date"
+          ]
+        ],
+        "answers_question": true,
+        "complete_answer_branch": false,
+        "source_complete_answer_branch": false
+      }
+    ],
+    "path_scores": [
+      {
+        "source": "confof",
+        "chain": "",
+        "full": 0.6048033615127607,
+        "classes": 0.5883738371851365,
+        "relations": 0.33150607197528387,
+        "total": 0.545215046306978,
+        "complete": true,
+        "kept": true,
+        "reason": "at or above tier threshold"
+      },
+      {
+        "source": "conference",
+        "chain": "",
+        "full": 0.5425155422806365,
+        "classes": 0.4683517090848869,
+        "relations": 0.2936130417779189,
+        "total": 0.4704858922213681,
+        "complete": false,
+        "kept": true,
+        "reason": "at or above tier threshold"
+      }
+    ],
+    "source_scores": {
+      "confof": 0.545215046306978
+    },
+    "provider_plan": [],
+    "cut_sources": [
+      "conference"
+    ],
+    "alignment": [],
+    "query": "PREFIX confof: <http://confOf#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nSELECT DISTINCT ?camera_ready_event WHERE { SERVICE <http://192.168.100.45:3030/confof/sparql> { ?camera_ready_event a confof:Camera_Ready_event . } }",
+    "token_usage": {
+      "by_agent": [
+        {
+          "agent": "agent7_sparql_generator",
+          "provider": "vercel",
+          "model": "meta/muse-spark-1.3",
+          "calls": 1,
+          "prompt_tokens": 2577,
+          "completion_tokens": 1223,
+          "total_tokens": 3800,
+          "max_prompt_tokens": 2577,
+          "avg_prompt_tokens": 2577,
+          "calls_without_usage": 0
+        },
+        {
+          "agent": "agent6_path_filter",
+          "provider": "vercel",
+          "model": "meta/muse-spark-1.3",
+          "calls": 2,
+          "prompt_tokens": 2529,
+          "completion_tokens": 2407,
+          "total_tokens": 4936,
+          "max_prompt_tokens": 1321,
+          "avg_prompt_tokens": 1264,
+          "calls_without_usage": 0
+        },
+        {
+          "agent": "agent4_match_relevance",
+          "provider": "vercel",
+          "model": "meta/muse-spark-1.3",
+          "calls": 2,
+          "prompt_tokens": 1607,
+          "completion_tokens": 1025,
+          "total_tokens": 2632,
+          "max_prompt_tokens": 805,
+          "avg_prompt_tokens": 804,
+          "calls_without_usage": 0
+        },
+        {
+          "agent": "agent1_extractor",
+          "provider": "vercel",
+          "model": "meta/muse-spark-1.3",
+          "calls": 1,
+          "prompt_tokens": 1189,
+          "completion_tokens": 1572,
+          "total_tokens": 2761,
+          "max_prompt_tokens": 1189,
+          "avg_prompt_tokens": 1189,
+          "calls_without_usage": 0
+        },
+        {
+          "agent": "agent8_source_selector",
+          "provider": "vercel",
+          "model": "meta/muse-spark-1.3",
+          "calls": 1,
+          "prompt_tokens": 1178,
+          "completion_tokens": 597,
+          "total_tokens": 1775,
+          "max_prompt_tokens": 1178,
+          "avg_prompt_tokens": 1178,
+          "calls_without_usage": 0
+        }
+      ],
+      "totals": {
+        "calls": 7,
+        "prompt_tokens": 9080,
+        "completion_tokens": 6824,
+        "total_tokens": 15904
+      }
+    }
+  },
+  "elapsed_seconds": 52.22,
+  "finished_at": "2026-09-12T19:45:31.045546+00:00"
+}

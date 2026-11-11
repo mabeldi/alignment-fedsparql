@@ -1,0 +1,746 @@
+{
+  "question": "Retrieve the list of camera-ready events.",
+  "run": 2,
+  "status": "generated",
+  "endpoint": "http://127.0.0.1:8999/query",
+  "parallel_requests": 1,
+  "server_diagnostics_note": "Server token counters and debug files are shared across requests; do not use them for per-run measurements during concurrent requests.",
+  "started_at": "2026-09-12T19:20:33.245747+00:00",
+  "http_status": 200,
+  "response": {
+    "question": "Retrieve the list of camera-ready events.",
+    "alignments_enabled": true,
+    "extracted": {
+      "classes": [
+        "Camera Ready Event"
+      ],
+      "objectProperties": [],
+      "dataTypeProperties": [],
+      "literals": []
+    },
+    "matches": {
+      "Camera Ready Event": [
+        {
+          "label": "Camera_Ready_event",
+          "uri": "http://confOf#Camera_Ready_event",
+          "type": "Class",
+          "name": "Camera_Ready_event",
+          "payload": {
+            "type": "Class",
+            "uri": "http://confOf#Camera_Ready_event",
+            "name": "Camera_Ready_event",
+            "label": "Camera_Ready_event",
+            "source": "confof"
+          },
+          "score": 0.90244234
+        },
+        {
+          "label": "Camera_ready_contribution",
+          "uri": "http://conference#Camera_ready_contribution",
+          "type": "Class",
+          "name": "Camera_ready_contribution",
+          "payload": {
+            "type": "Class",
+            "uri": "http://conference#Camera_ready_contribution",
+            "name": "Camera_ready_contribution",
+            "label": "Camera_ready_contribution",
+            "source": "conference"
+          },
+          "score": 0.7313217
+        }
+      ]
+    },
+    "context_filtered_matches": {
+      "Camera Ready Event": [
+        {
+          "label": "Camera_Ready_event",
+          "uri": "http://confOf#Camera_Ready_event",
+          "type": "Class",
+          "name": "Camera_Ready_event",
+          "payload": {
+            "type": "Class",
+            "uri": "http://confOf#Camera_Ready_event",
+            "name": "Camera_Ready_event",
+            "label": "Camera_Ready_event",
+            "source": "confof"
+          },
+          "score": 0.90244234
+        },
+        {
+          "label": "Individual_Presentation",
+          "uri": "http://ekaw#Individual_Presentation",
+          "type": "Class",
+          "score": 0.0,
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Individual_Presentation",
+            "label": "Individual_Presentation",
+            "source": "ekaw"
+          },
+          "expanded_from": "http://confOf#Camera_Ready_event",
+          "via_alignment": "confof:Camera_Ready_event = ekaw:Individual_Presentation AND (ekaw:presentationOfPaper -> ekaw:Camera_Ready_Paper)"
+        }
+      ]
+    },
+    "context_removed_matches": {
+      "Camera Ready Event": [
+        {
+          "label": "Camera_ready_contribution",
+          "uri": "http://conference#Camera_ready_contribution",
+          "type": "Class",
+          "name": "Camera_ready_contribution",
+          "payload": {
+            "type": "Class",
+            "uri": "http://conference#Camera_ready_contribution",
+            "name": "Camera_ready_contribution",
+            "label": "Camera_ready_contribution",
+            "source": "conference"
+          },
+          "score": 0.7313217
+        }
+      ]
+    },
+    "top_sources": {
+      "confof": 0.90244234
+    },
+    "base_source": "confof",
+    "class_paths": [
+      {
+        "class": "http://confOf#Camera_Ready_event",
+        "source": "confof",
+        "outgoing": [
+          [
+            [
+              "http://confOf#Camera_Ready_event",
+              "http://confOf#follows",
+              "http://confOf#Administrative_event"
+            ]
+          ],
+          [
+            [
+              "http://confOf#Camera_Ready_event",
+              "http://confOf#parallel_with",
+              "http://confOf#Administrative_event"
+            ]
+          ]
+        ],
+        "incoming": [
+          [
+            [
+              "http://confOf#Administrative_event",
+              "http://confOf#follows",
+              "http://confOf#Camera_Ready_event"
+            ]
+          ],
+          [
+            [
+              "http://confOf#Administrative_event",
+              "http://confOf#parallel_with",
+              "http://confOf#Camera_Ready_event"
+            ]
+          ],
+          [
+            [
+              "http://confOf#Working_event",
+              "http://confOf#hasAdministrativeEvent",
+              "http://confOf#Camera_Ready_event"
+            ]
+          ]
+        ],
+        "values": [
+          [
+            "http://confOf#Camera_Ready_event",
+            "http://confOf#starts_on",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Camera_Ready_event",
+            "http://confOf#ends_on",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "class": "http://ekaw#Individual_Presentation",
+        "source": "ekaw",
+        "outgoing": [
+          [
+            [
+              "http://ekaw#Individual_Presentation",
+              "http://ekaw#presentationOfPaper",
+              "http://ekaw#Abstract"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Individual_Presentation",
+              "http://ekaw#presentationOfPaper",
+              "http://ekaw#Paper"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Individual_Presentation",
+              "http://ekaw#partOfEvent",
+              "http://ekaw#Event"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Individual_Presentation",
+              "http://ekaw#hasEvent",
+              "http://ekaw#Event"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Individual_Presentation",
+              "http://ekaw#heldIn",
+              "http://ekaw#Location"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Individual_Presentation",
+              "http://ekaw#coversTopic",
+              "http://ekaw#Research_Topic"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Individual_Presentation",
+              "http://ekaw#eventOnList",
+              "http://ekaw#Programme_Brochure"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Individual_Presentation",
+              "http://ekaw#eventOnList",
+              "http://ekaw#Web_Site"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Individual_Presentation",
+              "http://ekaw#organisedBy",
+              "http://ekaw#Organisation"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Individual_Presentation",
+              "http://ekaw#organisedBy",
+              "http://ekaw#Person"
+            ]
+          ]
+        ],
+        "incoming": [
+          [
+            [
+              "http://ekaw#Abstract",
+              "http://ekaw#paperPresentedAs",
+              "http://ekaw#Individual_Presentation"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Paper",
+              "http://ekaw#paperPresentedAs",
+              "http://ekaw#Individual_Presentation"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Session",
+              "http://ekaw#hasEvent",
+              "http://ekaw#Individual_Presentation"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Event",
+              "http://ekaw#partOfEvent",
+              "http://ekaw#Individual_Presentation"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Event",
+              "http://ekaw#hasEvent",
+              "http://ekaw#Individual_Presentation"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Location",
+              "http://ekaw#locationOf",
+              "http://ekaw#Individual_Presentation"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Programme_Brochure",
+              "http://ekaw#listsEvent",
+              "http://ekaw#Individual_Presentation"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Web_Site",
+              "http://ekaw#listsEvent",
+              "http://ekaw#Individual_Presentation"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Organisation",
+              "http://ekaw#organises",
+              "http://ekaw#Individual_Presentation"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Person",
+              "http://ekaw#organises",
+              "http://ekaw#Individual_Presentation"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Research_Topic",
+              "http://ekaw#topicCoveredBy",
+              "http://ekaw#Individual_Presentation"
+            ]
+          ]
+        ],
+        "values": []
+      }
+    ],
+    "summarize_class_paths": [
+      {
+        "label": "Camera_Ready_event",
+        "class": "http://confOf#Camera_Ready_event",
+        "source": "confof",
+        "outgoing": [
+          "Camera_Ready_event -[follows]-> Administrative_event",
+          "Camera_Ready_event -[parallel_with]-> Administrative_event"
+        ],
+        "incoming": [
+          "Administrative_event -[follows]-> Camera_Ready_event",
+          "Administrative_event -[parallel_with]-> Camera_Ready_event",
+          "Working_event -[hasAdministrativeEvent]-> Camera_Ready_event"
+        ],
+        "values": [
+          [
+            "http://confOf#Camera_Ready_event",
+            "http://confOf#starts_on",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Camera_Ready_event",
+            "http://confOf#ends_on",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "label": "Individual_Presentation",
+        "class": "http://ekaw#Individual_Presentation",
+        "source": "ekaw",
+        "outgoing": [
+          "Individual_Presentation -[presentationOfPaper]-> Abstract",
+          "Individual_Presentation -[presentationOfPaper]-> Paper",
+          "Individual_Presentation -[partOfEvent]-> Event",
+          "Individual_Presentation -[hasEvent]-> Event",
+          "Individual_Presentation -[heldIn]-> Location",
+          "Individual_Presentation -[coversTopic]-> Research_Topic",
+          "Individual_Presentation -[eventOnList]-> Programme_Brochure",
+          "Individual_Presentation -[eventOnList]-> Web_Site",
+          "Individual_Presentation -[organisedBy]-> Organisation",
+          "Individual_Presentation -[organisedBy]-> Person"
+        ],
+        "incoming": [
+          "Abstract -[paperPresentedAs]-> Individual_Presentation",
+          "Paper -[paperPresentedAs]-> Individual_Presentation",
+          "Session -[hasEvent]-> Individual_Presentation",
+          "Event -[partOfEvent]-> Individual_Presentation",
+          "Event -[hasEvent]-> Individual_Presentation",
+          "Location -[locationOf]-> Individual_Presentation",
+          "Programme_Brochure -[listsEvent]-> Individual_Presentation",
+          "Web_Site -[listsEvent]-> Individual_Presentation",
+          "Organisation -[organises]-> Individual_Presentation",
+          "Person -[organises]-> Individual_Presentation",
+          "Research_Topic -[topicCoveredBy]-> Individual_Presentation"
+        ],
+        "values": []
+      },
+      {
+        "label": "Administrative_event",
+        "class": "http://confOf#Administrative_event",
+        "source": "confof",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://confOf#Administrative_event",
+            "http://confOf#starts_on",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Administrative_event",
+            "http://confOf#ends_on",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "label": "Working_event",
+        "class": "http://confOf#Working_event",
+        "source": "confof",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://confOf#Working_event",
+            "http://confOf#starts_on",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Working_event",
+            "http://confOf#ends_on",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Working_event",
+            "http://confOf#minChoice",
+            "http://www.w3.org/2001/XMLSchema#positiveInteger"
+          ],
+          [
+            "http://confOf#Working_event",
+            "http://confOf#maxChoice",
+            "http://www.w3.org/2001/XMLSchema#positiveInteger"
+          ],
+          [
+            "http://confOf#Working_event",
+            "http://confOf#hasVAT",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Working_event",
+            "http://confOf#location",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Working_event",
+            "http://confOf#has_short_title",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Working_event",
+            "http://confOf#has_title",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Working_event",
+            "http://confOf#defaultChoice",
+            "http://www.w3.org/2001/XMLSchema#positiveInteger"
+          ]
+        ]
+      },
+      {
+        "label": "Research_Topic",
+        "class": "http://ekaw#Research_Topic",
+        "source": "ekaw",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "label": "Abstract",
+        "class": "http://ekaw#Abstract",
+        "source": "ekaw",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "label": "Programme_Brochure",
+        "class": "http://ekaw#Programme_Brochure",
+        "source": "ekaw",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "label": "Session",
+        "class": "http://ekaw#Session",
+        "source": "ekaw",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "label": "Web_Site",
+        "class": "http://ekaw#Web_Site",
+        "source": "ekaw",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "label": "Paper",
+        "class": "http://ekaw#Paper",
+        "source": "ekaw",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "label": "Person",
+        "class": "http://ekaw#Person",
+        "source": "ekaw",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "label": "Location",
+        "class": "http://ekaw#Location",
+        "source": "ekaw",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "label": "Organisation",
+        "class": "http://ekaw#Organisation",
+        "source": "ekaw",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "label": "Event",
+        "class": "http://ekaw#Event",
+        "source": "ekaw",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      }
+    ],
+    "summarize_contextual_class_paths": [
+      {
+        "class": "http://confOf#Camera_Ready_event",
+        "source": "confof",
+        "label": "Camera_Ready_event",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://confOf#Camera_Ready_event",
+            "http://confOf#starts_on",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Camera_Ready_event",
+            "http://confOf#ends_on",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ],
+        "answers_question": true
+      },
+      {
+        "class": "http://ekaw#Individual_Presentation",
+        "source": "ekaw",
+        "label": "Individual_Presentation",
+        "outgoing": [
+          "Individual_Presentation -[presentationOfPaper]-> Paper"
+        ],
+        "incoming": [],
+        "values": [],
+        "answers_question": false
+      }
+    ],
+    "selected_class_paths": [
+      {
+        "class": "http://confOf#Camera_Ready_event",
+        "source": "confof",
+        "label": "Camera_Ready_event",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://confOf#Camera_Ready_event",
+            "http://confOf#starts_on",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Camera_Ready_event",
+            "http://confOf#ends_on",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ],
+        "answers_question": true,
+        "complete_answer_branch": true,
+        "source_complete_answer_branch": true
+      },
+      {
+        "class": "http://ekaw#Individual_Presentation",
+        "source": "ekaw",
+        "label": "Individual_Presentation",
+        "outgoing": [
+          "Individual_Presentation -[presentationOfPaper]-> Paper"
+        ],
+        "incoming": [],
+        "values": [],
+        "answers_question": false,
+        "complete_answer_branch": false,
+        "source_complete_answer_branch": true
+      }
+    ],
+    "validated_class_paths": [
+      {
+        "class": "http://confOf#Camera_Ready_event",
+        "source": "confof",
+        "label": "Camera_Ready_event",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://confOf#Camera_Ready_event",
+            "http://confOf#starts_on",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Camera_Ready_event",
+            "http://confOf#ends_on",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ],
+        "answers_question": true,
+        "complete_answer_branch": true,
+        "source_complete_answer_branch": true
+      },
+      {
+        "class": "http://ekaw#Individual_Presentation",
+        "source": "ekaw",
+        "label": "Individual_Presentation",
+        "outgoing": [
+          "Individual_Presentation -[presentationOfPaper]-> Paper"
+        ],
+        "incoming": [],
+        "values": [],
+        "answers_question": false,
+        "complete_answer_branch": false,
+        "source_complete_answer_branch": true
+      }
+    ],
+    "path_scores": [
+      {
+        "source": "confof",
+        "chain": "",
+        "full": 0.6034450739621261,
+        "classes": 0.5883738371851365,
+        "relations": 0.33150607197528387,
+        "total": 0.5445359025316607,
+        "complete": true,
+        "kept": true,
+        "reason": "at or above tier threshold"
+      },
+      {
+        "source": "ekaw",
+        "chain": "Individual_Presentation -[presentationOfPaper]-> Paper",
+        "full": 0.3081676296369829,
+        "classes": 0.2456202139219847,
+        "relations": 0.27436575272037433,
+        "total": 0.2826430295391617,
+        "complete": false,
+        "kept": true,
+        "reason": "at or above tier threshold"
+      }
+    ],
+    "source_scores": {
+      "confof": 0.5445359025316607
+    },
+    "provider_plan": [],
+    "cut_sources": [],
+    "alignment": [
+      "<http://confOf#Camera_Ready_event> = <http://ekaw#Individual_Presentation> AND (<http://ekaw#presentationOfPaper> -> <http://ekaw#Camera_Ready_Paper>)",
+      "<http://edas#PaperPresentation> = <http://ekaw#Individual_Presentation>"
+    ],
+    "query": "PREFIX confof: <http://confOf#>\nPREFIX ekaw: <http://ekaw#>\nSELECT DISTINCT ?camera_ready_event WHERE { { SERVICE <http://192.168.100.45:3030/confof/sparql> { ?camera_ready_event a confof:Camera_Ready_event . } } UNION { SERVICE <http://192.168.100.45:3030/ekaw/sparql> { ?camera_ready_event a ekaw:Individual_Presentation . ?camera_ready_event ekaw:presentationOfPaper ?paper . ?paper a ekaw:Camera_Ready_Paper . } } }",
+    "token_usage": {
+      "by_agent": [
+        {
+          "agent": "agent7_sparql_generator",
+          "provider": "vercel",
+          "model": "meta/muse-spark-1.3",
+          "calls": 1,
+          "prompt_tokens": 3676,
+          "completion_tokens": 1480,
+          "total_tokens": 5156,
+          "max_prompt_tokens": 3676,
+          "avg_prompt_tokens": 3676,
+          "calls_without_usage": 0
+        },
+        {
+          "agent": "agent6_path_filter",
+          "provider": "vercel",
+          "model": "meta/muse-spark-1.3",
+          "calls": 2,
+          "prompt_tokens": 2598,
+          "completion_tokens": 5928,
+          "total_tokens": 8526,
+          "max_prompt_tokens": 1390,
+          "avg_prompt_tokens": 1299,
+          "calls_without_usage": 0
+        },
+        {
+          "agent": "agent4_match_relevance",
+          "provider": "vercel",
+          "model": "meta/muse-spark-1.3",
+          "calls": 2,
+          "prompt_tokens": 1607,
+          "completion_tokens": 3043,
+          "total_tokens": 4650,
+          "max_prompt_tokens": 805,
+          "avg_prompt_tokens": 804,
+          "calls_without_usage": 0
+        },
+        {
+          "agent": "agent8_source_selector",
+          "provider": "vercel",
+          "model": "meta/muse-spark-1.3",
+          "calls": 1,
+          "prompt_tokens": 1228,
+          "completion_tokens": 1511,
+          "total_tokens": 2739,
+          "max_prompt_tokens": 1228,
+          "avg_prompt_tokens": 1228,
+          "calls_without_usage": 0
+        },
+        {
+          "agent": "agent1_extractor",
+          "provider": "vercel",
+          "model": "meta/muse-spark-1.3",
+          "calls": 1,
+          "prompt_tokens": 1189,
+          "completion_tokens": 920,
+          "total_tokens": 2109,
+          "max_prompt_tokens": 1189,
+          "avg_prompt_tokens": 1189,
+          "calls_without_usage": 0
+        }
+      ],
+      "totals": {
+        "calls": 7,
+        "prompt_tokens": 10298,
+        "completion_tokens": 12882,
+        "total_tokens": 23180
+      }
+    }
+  },
+  "elapsed_seconds": 111.515,
+  "finished_at": "2026-09-12T19:22:24.760900+00:00"
+}

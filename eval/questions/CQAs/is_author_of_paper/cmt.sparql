@@ -1,0 +1,9 @@
+SELECT distinct ?s ?o WHERE {  
+?o <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://cmt#PaperFullVersion> .  
+{
+?s <http://cmt#writePaper> ?o .  
+}
+union{
+?s <http://cmt#co-writePaper> ?o .  
+}
+ }

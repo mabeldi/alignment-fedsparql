@@ -1,0 +1,272 @@
+{
+  "format_version": 1,
+  "question": "Who are the invited speakers?",
+  "query_file": "run_2.rq",
+  "query_sha256": "17b4c06ae5e12e41d7db6c4f994d84c95a39f49a91231d117d2a1a89c5619543",
+  "started_at": "2026-09-12T19:49:40.125397+00:00",
+  "status": "success",
+  "query_kind": "generated",
+  "run": 2,
+  "generation_metadata_file": "run_2.json",
+  "coordinator_endpoint": "http://192.168.100.45:3030/ekaw/sparql",
+  "variables": [
+    "invited_speaker"
+  ],
+  "result_count": 42,
+  "bindings": [
+    {
+      "invited_speaker": {
+        "type": "uri",
+        "value": "http://conference-instances#person-1341302983"
+      }
+    },
+    {
+      "invited_speaker": {
+        "type": "uri",
+        "value": "http://conference-instances#person-1774580366"
+      }
+    },
+    {
+      "invited_speaker": {
+        "type": "uri",
+        "value": "http://conference-instances#person-1829738435"
+      }
+    },
+    {
+      "invited_speaker": {
+        "type": "uri",
+        "value": "http://conference-instances#person-192530895"
+      }
+    },
+    {
+      "invited_speaker": {
+        "type": "uri",
+        "value": "http://conference-instances#person-1929654775"
+      }
+    },
+    {
+      "invited_speaker": {
+        "type": "uri",
+        "value": "http://conference-instances#person-1963090395"
+      }
+    },
+    {
+      "invited_speaker": {
+        "type": "uri",
+        "value": "http://conference-instances#person-265991146"
+      }
+    },
+    {
+      "invited_speaker": {
+        "type": "uri",
+        "value": "http://conference-instances#person-309461065"
+      }
+    },
+    {
+      "invited_speaker": {
+        "type": "uri",
+        "value": "http://conference-instances#person-406496095"
+      }
+    },
+    {
+      "invited_speaker": {
+        "type": "uri",
+        "value": "http://conference-instances#person-450950162"
+      }
+    },
+    {
+      "invited_speaker": {
+        "type": "uri",
+        "value": "http://conference-instances#person-951609492"
+      }
+    },
+    {
+      "invited_speaker": {
+        "type": "uri",
+        "value": "http://conference-instances#person-978415955"
+      }
+    },
+    {
+      "invited_speaker": {
+        "type": "uri",
+        "value": "http://conference-instances#person1411809058"
+      }
+    },
+    {
+      "invited_speaker": {
+        "type": "uri",
+        "value": "http://conference-instances#person1467614616"
+      }
+    },
+    {
+      "invited_speaker": {
+        "type": "uri",
+        "value": "http://conference-instances#person1538868257"
+      }
+    },
+    {
+      "invited_speaker": {
+        "type": "uri",
+        "value": "http://conference-instances#person1565413030"
+      }
+    },
+    {
+      "invited_speaker": {
+        "type": "uri",
+        "value": "http://conference-instances#person1810548801"
+      }
+    },
+    {
+      "invited_speaker": {
+        "type": "uri",
+        "value": "http://conference-instances#person507601721"
+      }
+    },
+    {
+      "invited_speaker": {
+        "type": "uri",
+        "value": "http://conference-instances#person532518369"
+      }
+    },
+    {
+      "invited_speaker": {
+        "type": "uri",
+        "value": "http://conference-instances#person684770799"
+      }
+    },
+    {
+      "invited_speaker": {
+        "type": "uri",
+        "value": "http://conference-instances#person735322579"
+      }
+    },
+    {
+      "invited_speaker": {
+        "type": "uri",
+        "value": "http://ekaw-instances#person-1341302983"
+      }
+    },
+    {
+      "invited_speaker": {
+        "type": "uri",
+        "value": "http://ekaw-instances#person-1774580366"
+      }
+    },
+    {
+      "invited_speaker": {
+        "type": "uri",
+        "value": "http://ekaw-instances#person-1829738435"
+      }
+    },
+    {
+      "invited_speaker": {
+        "type": "uri",
+        "value": "http://ekaw-instances#person-192530895"
+      }
+    },
+    {
+      "invited_speaker": {
+        "type": "uri",
+        "value": "http://ekaw-instances#person-1929654775"
+      }
+    },
+    {
+      "invited_speaker": {
+        "type": "uri",
+        "value": "http://ekaw-instances#person-1963090395"
+      }
+    },
+    {
+      "invited_speaker": {
+        "type": "uri",
+        "value": "http://ekaw-instances#person-265991146"
+      }
+    },
+    {
+      "invited_speaker": {
+        "type": "uri",
+        "value": "http://ekaw-instances#person-309461065"
+      }
+    },
+    {
+      "invited_speaker": {
+        "type": "uri",
+        "value": "http://ekaw-instances#person-406496095"
+      }
+    },
+    {
+      "invited_speaker": {
+        "type": "uri",
+        "value": "http://ekaw-instances#person-450950162"
+      }
+    },
+    {
+      "invited_speaker": {
+        "type": "uri",
+        "value": "http://ekaw-instances#person-951609492"
+      }
+    },
+    {
+      "invited_speaker": {
+        "type": "uri",
+        "value": "http://ekaw-instances#person-978415955"
+      }
+    },
+    {
+      "invited_speaker": {
+        "type": "uri",
+        "value": "http://ekaw-instances#person1411809058"
+      }
+    },
+    {
+      "invited_speaker": {
+        "type": "uri",
+        "value": "http://ekaw-instances#person1467614616"
+      }
+    },
+    {
+      "invited_speaker": {
+        "type": "uri",
+        "value": "http://ekaw-instances#person1538868257"
+      }
+    },
+    {
+      "invited_speaker": {
+        "type": "uri",
+        "value": "http://ekaw-instances#person1565413030"
+      }
+    },
+    {
+      "invited_speaker": {
+        "type": "uri",
+        "value": "http://ekaw-instances#person1810548801"
+      }
+    },
+    {
+      "invited_speaker": {
+        "type": "uri",
+        "value": "http://ekaw-instances#person507601721"
+      }
+    },
+    {
+      "invited_speaker": {
+        "type": "uri",
+        "value": "http://ekaw-instances#person532518369"
+      }
+    },
+    {
+      "invited_speaker": {
+        "type": "uri",
+        "value": "http://ekaw-instances#person684770799"
+      }
+    },
+    {
+      "invited_speaker": {
+        "type": "uri",
+        "value": "http://ekaw-instances#person735322579"
+      }
+    }
+  ],
+  "elapsed_seconds": 0.03,
+  "finished_at": "2026-09-12T19:49:40.155220+00:00"
+}

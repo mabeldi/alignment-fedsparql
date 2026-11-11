@@ -1,0 +1,1185 @@
+{
+  "question": "Which_conference_dinners_are_organised",
+  "run": 3,
+  "status": "generated",
+  "endpoint": "http://127.0.0.1:8999/query",
+  "parallel_requests": 1,
+  "server_diagnostics_note": "Server token counters and debug files are shared across requests; do not use them for per-run measurements during concurrent requests.",
+  "started_at": "2026-09-12T19:02:26.611078+00:00",
+  "http_status": 200,
+  "response": {
+    "question": "Which_conference_dinners_are_organised",
+    "alignments_enabled": true,
+    "extracted": {
+      "classes": [
+        "Conference Dinner"
+      ],
+      "objectProperties": [],
+      "dataTypeProperties": [],
+      "literals": []
+    },
+    "matches": {
+      "Conference Dinner": [
+        {
+          "label": "ConferenceDinner",
+          "uri": "http://edas#ConferenceDinner",
+          "type": "Class",
+          "name": "ConferenceDinner",
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#ConferenceDinner",
+            "name": "ConferenceDinner",
+            "label": "ConferenceDinner",
+            "source": "edas"
+          },
+          "score": 0.9117334
+        },
+        {
+          "label": "Conference_Banquet",
+          "uri": "http://ekaw#Conference_Banquet",
+          "type": "Class",
+          "name": "Conference_Banquet",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Conference_Banquet",
+            "name": "Conference_Banquet",
+            "label": "Conference_Banquet",
+            "source": "ekaw"
+          },
+          "score": 0.80851626
+        },
+        {
+          "label": "ConferenceEvent",
+          "uri": "http://edas#ConferenceEvent",
+          "type": "Class",
+          "name": "ConferenceEvent",
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#ConferenceEvent",
+            "name": "ConferenceEvent",
+            "label": "ConferenceEvent",
+            "source": "edas"
+          },
+          "score": 0.7710764
+        },
+        {
+          "label": "Conference",
+          "uri": "http://ekaw#Conference",
+          "type": "Class",
+          "name": "Conference",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Conference",
+            "name": "Conference",
+            "label": "Conference",
+            "source": "ekaw"
+          },
+          "score": 0.75474167
+        },
+        {
+          "label": "Conference",
+          "uri": "http://cmt#Conference",
+          "type": "Class",
+          "name": "Conference",
+          "payload": {
+            "type": "Class",
+            "uri": "http://cmt#Conference",
+            "name": "Conference",
+            "label": "Conference",
+            "source": "cmt"
+          },
+          "score": 0.75474167
+        },
+        {
+          "label": "Conference",
+          "uri": "http://edas#Conference",
+          "type": "Class",
+          "name": "Conference",
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#Conference",
+            "name": "Conference",
+            "label": "Conference",
+            "source": "edas"
+          },
+          "score": 0.75474167
+        },
+        {
+          "label": "Conference",
+          "uri": "http://confOf#Conference",
+          "type": "Class",
+          "name": "Conference",
+          "payload": {
+            "type": "Class",
+            "uri": "http://confOf#Conference",
+            "name": "Conference",
+            "label": "Conference",
+            "source": "confof"
+          },
+          "score": 0.75474167
+        },
+        {
+          "label": "Conference",
+          "uri": "http://conference#Conference",
+          "type": "Class",
+          "name": "Conference",
+          "payload": {
+            "type": "Class",
+            "uri": "http://conference#Conference",
+            "name": "Conference",
+            "label": "Conference",
+            "source": "conference"
+          },
+          "score": 0.7542552
+        },
+        {
+          "label": "ConferenceSession",
+          "uri": "http://edas#ConferenceSession",
+          "type": "Class",
+          "name": "ConferenceSession",
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#ConferenceSession",
+            "name": "ConferenceSession",
+            "label": "ConferenceSession",
+            "source": "edas"
+          },
+          "score": 0.70989585
+        }
+      ]
+    },
+    "context_filtered_matches": {
+      "Conference Dinner": [
+        {
+          "label": "ConferenceDinner",
+          "uri": "http://edas#ConferenceDinner",
+          "type": "Class",
+          "name": "ConferenceDinner",
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#ConferenceDinner",
+            "name": "ConferenceDinner",
+            "label": "ConferenceDinner",
+            "source": "edas"
+          },
+          "score": 0.9117334
+        },
+        {
+          "label": "Conference_Banquet",
+          "uri": "http://ekaw#Conference_Banquet",
+          "type": "Class",
+          "name": "Conference_Banquet",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Conference_Banquet",
+            "name": "Conference_Banquet",
+            "label": "Conference_Banquet",
+            "source": "ekaw"
+          },
+          "score": 0.80851626
+        },
+        {
+          "label": "Banquet",
+          "uri": "http://confOf#Banquet",
+          "type": "Class",
+          "score": 0.0,
+          "payload": {
+            "type": "Class",
+            "uri": "http://confOf#Banquet",
+            "label": "Banquet",
+            "source": "confof"
+          },
+          "expanded_from": "http://edas#ConferenceDinner",
+          "via_alignment": "edas:ConferenceDinner = confof:Banquet"
+        }
+      ]
+    },
+    "context_removed_matches": {
+      "Conference Dinner": [
+        {
+          "label": "ConferenceEvent",
+          "uri": "http://edas#ConferenceEvent",
+          "type": "Class",
+          "name": "ConferenceEvent",
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#ConferenceEvent",
+            "name": "ConferenceEvent",
+            "label": "ConferenceEvent",
+            "source": "edas"
+          },
+          "score": 0.7710764
+        },
+        {
+          "label": "Conference",
+          "uri": "http://ekaw#Conference",
+          "type": "Class",
+          "name": "Conference",
+          "payload": {
+            "type": "Class",
+            "uri": "http://ekaw#Conference",
+            "name": "Conference",
+            "label": "Conference",
+            "source": "ekaw"
+          },
+          "score": 0.75474167
+        },
+        {
+          "label": "Conference",
+          "uri": "http://cmt#Conference",
+          "type": "Class",
+          "name": "Conference",
+          "payload": {
+            "type": "Class",
+            "uri": "http://cmt#Conference",
+            "name": "Conference",
+            "label": "Conference",
+            "source": "cmt"
+          },
+          "score": 0.75474167
+        },
+        {
+          "label": "Conference",
+          "uri": "http://edas#Conference",
+          "type": "Class",
+          "name": "Conference",
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#Conference",
+            "name": "Conference",
+            "label": "Conference",
+            "source": "edas"
+          },
+          "score": 0.75474167
+        },
+        {
+          "label": "Conference",
+          "uri": "http://confOf#Conference",
+          "type": "Class",
+          "name": "Conference",
+          "payload": {
+            "type": "Class",
+            "uri": "http://confOf#Conference",
+            "name": "Conference",
+            "label": "Conference",
+            "source": "confof"
+          },
+          "score": 0.75474167
+        },
+        {
+          "label": "Conference",
+          "uri": "http://conference#Conference",
+          "type": "Class",
+          "name": "Conference",
+          "payload": {
+            "type": "Class",
+            "uri": "http://conference#Conference",
+            "name": "Conference",
+            "label": "Conference",
+            "source": "conference"
+          },
+          "score": 0.7542552
+        },
+        {
+          "label": "ConferenceSession",
+          "uri": "http://edas#ConferenceSession",
+          "type": "Class",
+          "name": "ConferenceSession",
+          "payload": {
+            "type": "Class",
+            "uri": "http://edas#ConferenceSession",
+            "name": "ConferenceSession",
+            "label": "ConferenceSession",
+            "source": "edas"
+          },
+          "score": 0.70989585
+        }
+      ]
+    },
+    "top_sources": {
+      "edas": 0.9117334,
+      "ekaw": 0.80851626
+    },
+    "base_source": "edas",
+    "class_paths": [
+      {
+        "class": "http://edas#ConferenceDinner",
+        "source": "edas",
+        "outgoing": [
+          [
+            [
+              "http://edas#ConferenceDinner",
+              "http://edas#hasProgramme",
+              "http://edas#Programme"
+            ]
+          ],
+          [
+            [
+              "http://edas#ConferenceDinner",
+              "http://edas#hasAttendee",
+              "http://edas#Person"
+            ]
+          ],
+          [
+            [
+              "http://edas#ConferenceDinner",
+              "http://edas#hasLocation",
+              "http://edas#Place"
+            ]
+          ],
+          [
+            [
+              "http://edas#ConferenceDinner",
+              "http://edas#hasMenu",
+              "http://edas#MealMenu"
+            ]
+          ]
+        ],
+        "incoming": [
+          [
+            [
+              "http://edas#Programme",
+              "http://edas#belongsToEvent",
+              "http://edas#ConferenceDinner"
+            ]
+          ],
+          [
+            [
+              "http://edas#Person",
+              "http://edas#attendeeAt",
+              "http://edas#ConferenceDinner"
+            ]
+          ],
+          [
+            [
+              "http://edas#Place",
+              "http://edas#isLocationOf",
+              "http://edas#ConferenceDinner"
+            ]
+          ],
+          [
+            [
+              "http://edas#MealMenu",
+              "http://edas#isMenuOf",
+              "http://edas#ConferenceDinner"
+            ]
+          ]
+        ],
+        "values": [
+          [
+            "http://edas#ConferenceDinner",
+            "http://edas#hasEndDateTime",
+            "http://www.w3.org/2001/XMLSchema#dateTime"
+          ],
+          [
+            "http://edas#ConferenceDinner",
+            "http://edas#hasStartDateTime",
+            "http://www.w3.org/2001/XMLSchema#dateTime"
+          ]
+        ]
+      },
+      {
+        "class": "http://ekaw#Conference_Banquet",
+        "source": "ekaw",
+        "outgoing": [
+          [
+            [
+              "http://ekaw#Conference_Banquet",
+              "http://ekaw#partOfEvent",
+              "http://ekaw#Event"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Conference_Banquet",
+              "http://ekaw#hasEvent",
+              "http://ekaw#Event"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Conference_Banquet",
+              "http://ekaw#heldIn",
+              "http://ekaw#Location"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Conference_Banquet",
+              "http://ekaw#coversTopic",
+              "http://ekaw#Research_Topic"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Conference_Banquet",
+              "http://ekaw#eventOnList",
+              "http://ekaw#Programme_Brochure"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Conference_Banquet",
+              "http://ekaw#eventOnList",
+              "http://ekaw#Web_Site"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Conference_Banquet",
+              "http://ekaw#organisedBy",
+              "http://ekaw#Organisation"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Conference_Banquet",
+              "http://ekaw#organisedBy",
+              "http://ekaw#Person"
+            ]
+          ]
+        ],
+        "incoming": [
+          [
+            [
+              "http://ekaw#Event",
+              "http://ekaw#partOfEvent",
+              "http://ekaw#Conference_Banquet"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Event",
+              "http://ekaw#hasEvent",
+              "http://ekaw#Conference_Banquet"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Location",
+              "http://ekaw#locationOf",
+              "http://ekaw#Conference_Banquet"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Programme_Brochure",
+              "http://ekaw#listsEvent",
+              "http://ekaw#Conference_Banquet"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Web_Site",
+              "http://ekaw#listsEvent",
+              "http://ekaw#Conference_Banquet"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Organisation",
+              "http://ekaw#organises",
+              "http://ekaw#Conference_Banquet"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Person",
+              "http://ekaw#organises",
+              "http://ekaw#Conference_Banquet"
+            ]
+          ],
+          [
+            [
+              "http://ekaw#Research_Topic",
+              "http://ekaw#topicCoveredBy",
+              "http://ekaw#Conference_Banquet"
+            ]
+          ]
+        ],
+        "values": []
+      },
+      {
+        "class": "http://confOf#Banquet",
+        "source": "confof",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://confOf#Banquet",
+            "http://confOf#starts_on",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Banquet",
+            "http://confOf#ends_on",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Banquet",
+            "http://confOf#minChoice",
+            "http://www.w3.org/2001/XMLSchema#positiveInteger"
+          ],
+          [
+            "http://confOf#Banquet",
+            "http://confOf#maxChoice",
+            "http://www.w3.org/2001/XMLSchema#positiveInteger"
+          ],
+          [
+            "http://confOf#Banquet",
+            "http://confOf#hasVAT",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Banquet",
+            "http://confOf#location",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Banquet",
+            "http://confOf#has_short_title",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Banquet",
+            "http://confOf#has_title",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Banquet",
+            "http://confOf#defaultChoice",
+            "http://www.w3.org/2001/XMLSchema#positiveInteger"
+          ]
+        ]
+      }
+    ],
+    "summarize_class_paths": [
+      {
+        "label": "ConferenceDinner",
+        "class": "http://edas#ConferenceDinner",
+        "source": "edas",
+        "outgoing": [
+          "ConferenceDinner -[hasProgramme]-> Programme",
+          "ConferenceDinner -[hasAttendee]-> Person",
+          "ConferenceDinner -[hasLocation]-> Place",
+          "ConferenceDinner -[hasMenu]-> MealMenu"
+        ],
+        "incoming": [
+          "Programme -[belongsToEvent]-> ConferenceDinner",
+          "Person -[attendeeAt]-> ConferenceDinner",
+          "Place -[isLocationOf]-> ConferenceDinner",
+          "MealMenu -[isMenuOf]-> ConferenceDinner"
+        ],
+        "values": [
+          [
+            "http://edas#ConferenceDinner",
+            "http://edas#hasEndDateTime",
+            "http://www.w3.org/2001/XMLSchema#dateTime"
+          ],
+          [
+            "http://edas#ConferenceDinner",
+            "http://edas#hasStartDateTime",
+            "http://www.w3.org/2001/XMLSchema#dateTime"
+          ]
+        ]
+      },
+      {
+        "label": "Conference_Banquet",
+        "class": "http://ekaw#Conference_Banquet",
+        "source": "ekaw",
+        "outgoing": [
+          "Conference_Banquet -[partOfEvent]-> Event",
+          "Conference_Banquet -[hasEvent]-> Event",
+          "Conference_Banquet -[heldIn]-> Location",
+          "Conference_Banquet -[coversTopic]-> Research_Topic",
+          "Conference_Banquet -[eventOnList]-> Programme_Brochure",
+          "Conference_Banquet -[eventOnList]-> Web_Site",
+          "Conference_Banquet -[organisedBy]-> Organisation",
+          "Conference_Banquet -[organisedBy]-> Person"
+        ],
+        "incoming": [
+          "Event -[partOfEvent]-> Conference_Banquet",
+          "Event -[hasEvent]-> Conference_Banquet",
+          "Location -[locationOf]-> Conference_Banquet",
+          "Programme_Brochure -[listsEvent]-> Conference_Banquet",
+          "Web_Site -[listsEvent]-> Conference_Banquet",
+          "Organisation -[organises]-> Conference_Banquet",
+          "Person -[organises]-> Conference_Banquet",
+          "Research_Topic -[topicCoveredBy]-> Conference_Banquet"
+        ],
+        "values": []
+      },
+      {
+        "label": "Banquet",
+        "class": "http://confOf#Banquet",
+        "source": "confof",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://confOf#Banquet",
+            "http://confOf#starts_on",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Banquet",
+            "http://confOf#ends_on",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Banquet",
+            "http://confOf#minChoice",
+            "http://www.w3.org/2001/XMLSchema#positiveInteger"
+          ],
+          [
+            "http://confOf#Banquet",
+            "http://confOf#maxChoice",
+            "http://www.w3.org/2001/XMLSchema#positiveInteger"
+          ],
+          [
+            "http://confOf#Banquet",
+            "http://confOf#hasVAT",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Banquet",
+            "http://confOf#location",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Banquet",
+            "http://confOf#has_short_title",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Banquet",
+            "http://confOf#has_title",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Banquet",
+            "http://confOf#defaultChoice",
+            "http://www.w3.org/2001/XMLSchema#positiveInteger"
+          ]
+        ]
+      },
+      {
+        "label": "Person",
+        "class": "http://edas#Person",
+        "source": "edas",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://edas#Person",
+            "http://edas#hasFirstName",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://edas#Person",
+            "http://edas#hasEmail",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://edas#Person",
+            "http://edas#hasLastName",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://edas#Person",
+            "http://edas#hasBiography",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ]
+        ]
+      },
+      {
+        "label": "Place",
+        "class": "http://edas#Place",
+        "source": "edas",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "label": "MealMenu",
+        "class": "http://edas#MealMenu",
+        "source": "edas",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "label": "Programme",
+        "class": "http://edas#Programme",
+        "source": "edas",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "label": "Person",
+        "class": "http://ekaw#Person",
+        "source": "ekaw",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "label": "Research_Topic",
+        "class": "http://ekaw#Research_Topic",
+        "source": "ekaw",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "label": "Location",
+        "class": "http://ekaw#Location",
+        "source": "ekaw",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "label": "Programme_Brochure",
+        "class": "http://ekaw#Programme_Brochure",
+        "source": "ekaw",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "label": "Web_Site",
+        "class": "http://ekaw#Web_Site",
+        "source": "ekaw",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "label": "Organisation",
+        "class": "http://ekaw#Organisation",
+        "source": "ekaw",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      },
+      {
+        "label": "Event",
+        "class": "http://ekaw#Event",
+        "source": "ekaw",
+        "outgoing": [],
+        "incoming": [],
+        "values": []
+      }
+    ],
+    "summarize_contextual_class_paths": [
+      {
+        "class": "http://edas#ConferenceDinner",
+        "source": "edas",
+        "label": "ConferenceDinner",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://edas#ConferenceDinner",
+            "http://edas#hasEndDateTime",
+            "http://www.w3.org/2001/XMLSchema#dateTime"
+          ],
+          [
+            "http://edas#ConferenceDinner",
+            "http://edas#hasStartDateTime",
+            "http://www.w3.org/2001/XMLSchema#dateTime"
+          ]
+        ],
+        "answers_question": true
+      },
+      {
+        "class": "http://ekaw#Conference_Banquet",
+        "source": "ekaw",
+        "label": "Conference_Banquet",
+        "outgoing": [
+          "Conference_Banquet -[organisedBy]-> Organisation",
+          "Conference_Banquet -[organisedBy]-> Person"
+        ],
+        "incoming": [],
+        "values": [],
+        "answers_question": false
+      },
+      {
+        "class": "http://confOf#Banquet",
+        "source": "confof",
+        "label": "Banquet",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://confOf#Banquet",
+            "http://confOf#starts_on",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Banquet",
+            "http://confOf#ends_on",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Banquet",
+            "http://confOf#minChoice",
+            "http://www.w3.org/2001/XMLSchema#positiveInteger"
+          ],
+          [
+            "http://confOf#Banquet",
+            "http://confOf#maxChoice",
+            "http://www.w3.org/2001/XMLSchema#positiveInteger"
+          ],
+          [
+            "http://confOf#Banquet",
+            "http://confOf#hasVAT",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Banquet",
+            "http://confOf#location",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Banquet",
+            "http://confOf#has_short_title",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Banquet",
+            "http://confOf#has_title",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Banquet",
+            "http://confOf#defaultChoice",
+            "http://www.w3.org/2001/XMLSchema#positiveInteger"
+          ]
+        ],
+        "answers_question": true
+      }
+    ],
+    "selected_class_paths": [
+      {
+        "class": "http://edas#ConferenceDinner",
+        "source": "edas",
+        "label": "ConferenceDinner",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://edas#ConferenceDinner",
+            "http://edas#hasEndDateTime",
+            "http://www.w3.org/2001/XMLSchema#dateTime"
+          ],
+          [
+            "http://edas#ConferenceDinner",
+            "http://edas#hasStartDateTime",
+            "http://www.w3.org/2001/XMLSchema#dateTime"
+          ]
+        ],
+        "answers_question": true,
+        "complete_answer_branch": true,
+        "source_complete_answer_branch": true
+      },
+      {
+        "class": "http://ekaw#Conference_Banquet",
+        "source": "ekaw",
+        "label": "Conference_Banquet",
+        "outgoing": [
+          "Conference_Banquet -[organisedBy]-> Organisation",
+          "Conference_Banquet -[organisedBy]-> Person"
+        ],
+        "incoming": [],
+        "values": [],
+        "answers_question": false,
+        "complete_answer_branch": false,
+        "source_complete_answer_branch": true
+      },
+      {
+        "class": "http://confOf#Banquet",
+        "source": "confof",
+        "label": "Banquet",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://confOf#Banquet",
+            "http://confOf#starts_on",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Banquet",
+            "http://confOf#ends_on",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Banquet",
+            "http://confOf#minChoice",
+            "http://www.w3.org/2001/XMLSchema#positiveInteger"
+          ],
+          [
+            "http://confOf#Banquet",
+            "http://confOf#maxChoice",
+            "http://www.w3.org/2001/XMLSchema#positiveInteger"
+          ],
+          [
+            "http://confOf#Banquet",
+            "http://confOf#hasVAT",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Banquet",
+            "http://confOf#location",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Banquet",
+            "http://confOf#has_short_title",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Banquet",
+            "http://confOf#has_title",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Banquet",
+            "http://confOf#defaultChoice",
+            "http://www.w3.org/2001/XMLSchema#positiveInteger"
+          ]
+        ],
+        "answers_question": true,
+        "complete_answer_branch": false,
+        "source_complete_answer_branch": true
+      }
+    ],
+    "validated_class_paths": [
+      {
+        "class": "http://edas#ConferenceDinner",
+        "source": "edas",
+        "label": "ConferenceDinner",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://edas#ConferenceDinner",
+            "http://edas#hasEndDateTime",
+            "http://www.w3.org/2001/XMLSchema#dateTime"
+          ],
+          [
+            "http://edas#ConferenceDinner",
+            "http://edas#hasStartDateTime",
+            "http://www.w3.org/2001/XMLSchema#dateTime"
+          ]
+        ],
+        "answers_question": true,
+        "complete_answer_branch": true,
+        "source_complete_answer_branch": true
+      },
+      {
+        "class": "http://ekaw#Conference_Banquet",
+        "source": "ekaw",
+        "label": "Conference_Banquet",
+        "outgoing": [
+          "Conference_Banquet -[organisedBy]-> Organisation",
+          "Conference_Banquet -[organisedBy]-> Person"
+        ],
+        "incoming": [],
+        "values": [],
+        "answers_question": false,
+        "complete_answer_branch": false,
+        "source_complete_answer_branch": true
+      },
+      {
+        "class": "http://confOf#Banquet",
+        "source": "confof",
+        "label": "Banquet",
+        "outgoing": [],
+        "incoming": [],
+        "values": [
+          [
+            "http://confOf#Banquet",
+            "http://confOf#starts_on",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Banquet",
+            "http://confOf#ends_on",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Banquet",
+            "http://confOf#minChoice",
+            "http://www.w3.org/2001/XMLSchema#positiveInteger"
+          ],
+          [
+            "http://confOf#Banquet",
+            "http://confOf#maxChoice",
+            "http://www.w3.org/2001/XMLSchema#positiveInteger"
+          ],
+          [
+            "http://confOf#Banquet",
+            "http://confOf#hasVAT",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Banquet",
+            "http://confOf#location",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Banquet",
+            "http://confOf#has_short_title",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Banquet",
+            "http://confOf#has_title",
+            "http://www.w3.org/2001/XMLSchema#string"
+          ],
+          [
+            "http://confOf#Banquet",
+            "http://confOf#defaultChoice",
+            "http://www.w3.org/2001/XMLSchema#positiveInteger"
+          ]
+        ],
+        "answers_question": true,
+        "complete_answer_branch": false,
+        "source_complete_answer_branch": true
+      }
+    ],
+    "path_scores": [
+      {
+        "source": "edas",
+        "chain": "",
+        "full": 0.7502210060961467,
+        "classes": 0.7840363689253277,
+        "relations": 0.28141959831717234,
+        "total": 0.6666053333891061,
+        "complete": true,
+        "kept": true,
+        "reason": "at or above tier threshold"
+      },
+      {
+        "source": "ekaw",
+        "chain": "Conference_Banquet -[organisedBy]-> Organisation",
+        "full": 0.7252519592756651,
+        "classes": 0.6076812864130433,
+        "relations": 0.5640426708819626,
+        "total": 0.6577388997381381,
+        "complete": false,
+        "kept": true,
+        "reason": "at or above tier threshold"
+      },
+      {
+        "source": "ekaw",
+        "chain": "Conference_Banquet -[organisedBy]-> Person",
+        "full": 0.6842972288018538,
+        "classes": 0.5646840998588941,
+        "relations": 0.5640426708819626,
+        "total": 0.6243623785349877,
+        "complete": false,
+        "kept": true,
+        "reason": "at or above tier threshold"
+      },
+      {
+        "source": "confof",
+        "chain": "",
+        "full": 0.6289596803984038,
+        "classes": 0.6097264771117824,
+        "relations": 0.4644026480390047,
+        "total": 0.5902783129405376,
+        "complete": false,
+        "kept": true,
+        "reason": "at or above tier threshold"
+      }
+    ],
+    "source_scores": {
+      "edas": 0.6666053333891061
+    },
+    "provider_plan": [],
+    "cut_sources": [],
+    "alignment": [
+      "<http://ekaw#Conference_Banquet> = <http://confOf#Banquet>",
+      "<http://edas#ConferenceDinner> = <http://confOf#Banquet>",
+      "<http://edas#ConferenceDinner> = <http://ekaw#Conference_Banquet>"
+    ],
+    "query": "PREFIX confof: <http://confOf#>\nPREFIX edas: <http://edas#>\nPREFIX ekaw: <http://ekaw#>\nSELECT DISTINCT ?conferencedinner WHERE { { SERVICE <http://192.168.100.45:3030/edas/sparql> { ?conferencedinner a edas:ConferenceDinner . } } UNION { SERVICE <http://192.168.100.45:3030/confof/sparql> { ?conferencedinner a confof:Banquet . } } UNION { SERVICE <http://192.168.100.45:3030/ekaw/sparql> { ?conferencedinner a ekaw:Conference_Banquet . } } }",
+    "token_usage": {
+      "by_agent": [
+        {
+          "agent": "agent7_sparql_generator",
+          "provider": "vercel",
+          "model": "meta/muse-spark-1.3",
+          "calls": 1,
+          "prompt_tokens": 4109,
+          "completion_tokens": 1152,
+          "total_tokens": 5261,
+          "max_prompt_tokens": 4109,
+          "avg_prompt_tokens": 4109,
+          "calls_without_usage": 0
+        },
+        {
+          "agent": "agent4_match_relevance",
+          "provider": "vercel",
+          "model": "meta/muse-spark-1.3",
+          "calls": 5,
+          "prompt_tokens": 4072,
+          "completion_tokens": 7844,
+          "total_tokens": 11916,
+          "max_prompt_tokens": 853,
+          "avg_prompt_tokens": 814,
+          "calls_without_usage": 0
+        },
+        {
+          "agent": "agent6_path_filter",
+          "provider": "vercel",
+          "model": "meta/muse-spark-1.3",
+          "calls": 3,
+          "prompt_tokens": 3685,
+          "completion_tokens": 5848,
+          "total_tokens": 9533,
+          "max_prompt_tokens": 1317,
+          "avg_prompt_tokens": 1228,
+          "calls_without_usage": 0
+        },
+        {
+          "agent": "agent8_source_selector",
+          "provider": "vercel",
+          "model": "meta/muse-spark-1.3",
+          "calls": 1,
+          "prompt_tokens": 1331,
+          "completion_tokens": 1516,
+          "total_tokens": 2847,
+          "max_prompt_tokens": 1331,
+          "avg_prompt_tokens": 1331,
+          "calls_without_usage": 0
+        },
+        {
+          "agent": "agent1_extractor",
+          "provider": "vercel",
+          "model": "meta/muse-spark-1.3",
+          "calls": 1,
+          "prompt_tokens": 1191,
+          "completion_tokens": 3218,
+          "total_tokens": 4409,
+          "max_prompt_tokens": 1191,
+          "avg_prompt_tokens": 1191,
+          "calls_without_usage": 0
+        }
+      ],
+      "totals": {
+        "calls": 11,
+        "prompt_tokens": 14388,
+        "completion_tokens": 19578,
+        "total_tokens": 33966
+      }
+    }
+  },
+  "elapsed_seconds": 110.897,
+  "finished_at": "2026-09-12T19:04:17.508341+00:00"
+}

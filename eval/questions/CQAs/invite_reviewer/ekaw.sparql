@@ -1,0 +1,7 @@
+SELECT distinct ?s ?o WHERE {  
+?o3 <http://ekaw#reviewWrittenBy> ?s .  
+?o3 <http://ekaw#reviewWrittenBy> ?o .
+?o <http://ekaw#reviewerOfPaper> ?o2 .
+?o3 <http://ekaw#reviewOfPaper> ?o2 .
+FILTER(?o!=?s)
+ }
